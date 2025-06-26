@@ -1,0 +1,469 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="Winter Soldier" id="8e74fa84-01d6-42e0-8b7d-b02638e96f5c" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card name="Winter Soldier" id="8e74fa84-01d6-42e0-8b7d-b02638054001">
+      <property name="CardNumber" value="54001a"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="winter_soldier"/>
+      <property name="HandSize" value="5"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="Defense" value="2"/>
+      <property name="HP" value="11"/>
+      <property name="Attribute" value="S.H.I.E.L.D. Soldier."/>
+      <property name="Text">&lt;i&gt;Lethal Protector&lt;/i&gt; — &lt;b&gt;Response&lt;/b&gt;: After you attack and defeat an enemy, remove 2 threat from a scheme.</property>
+      <property name="Quote">"The Red Room trained me to do terrible things. I use those skills to safeguard others now."</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Bucky Barnes" type="b">
+        <property name="CardNumber" value="54001b"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="hero"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="winter_soldier"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="11"/>
+        <property name="Attribute" value="S.H.I.E.L.D. Soldier."/>
+        <property name="Text">&lt;i&gt;Cybernetically Enhanced&lt;/i&gt; — &lt;b&gt;Action&lt;/b&gt;: Spend 1 resource of any type → search your deck and discard pile for Cybernetic Arm and put it into play. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
+        <property name="Quote">"Not bad for a ninety-nine-year-old veteran."</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Cybernetic Arm" id="8e74fa84-01d6-42e0-8b7d-b02638054002">
+      <property name="CardNumber" value="54002"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="winter_soldier"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Item. Tech."/>
+      <property name="Text">&lt;b&gt;Resource&lt;/b&gt;: Exhaust Cybernetic Arm → generate a [wild] resource for an [[Attack]] event. That event deals 1 additional damage.</property>
+      <property name="Quote">"Bucky was a skilled fighter before the arm. With it, he's downright scary." —Steve Rogers</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Black Widow" id="8e74fa84-01d6-42e0-8b7d-b02638054003">
+      <property name="CardNumber" value="54003"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="winter_soldier"/>
+      <property name="Thwart" value="2"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="S.H.I.E.L.D. Spy."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After you play Black Widow from your hand, return an [[Attack]] event from your discard pile to your hand.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Arm Block" id="8e74fa84-01d6-42e0-8b7d-b02638054004">
+      <property name="CardNumber" value="54004"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="winter_soldier"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Attack. Defense."/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt; &lt;i&gt;(attack/defense)&lt;/i&gt;: When an enemy attacks, deal 3 damage to it. If you exhausted Cybernetic Arm to pay for this event, prevent all damage from that enemy's attack.</property>
+    </card>
+    <card name="Metal Punch" id="8e74fa84-01d6-42e0-8b7d-b02638054005">
+      <property name="CardNumber" value="54005"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="3"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="winter_soldier"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 7 damage to en enemy. If you exhausted Cybernetic Arm to pay for this event, this attack gains overkill.</property>
+    </card>
+    <card name="Electrical Discharge" id="8e74fa84-01d6-42e0-8b7d-b02638054006">
+      <property name="CardNumber" value="54006"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="winter_soldier"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 4 damage to an enemy. If you paid for this event using a [energy] resource, stun that enemy.</property>
+      <property name="Quote">"They'd be just as shocked if you showed them your high school photo." —Black Widow</property>
+    </card>
+    <card name="Safe House #30" id="8e74fa84-01d6-42e0-8b7d-b02638054007">
+      <property name="CardNumber" value="54007"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="winter_soldier"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Location. S.H.I.E.L.D."/>
+      <property name="Text">&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Safe House #30 → search the encounter deck for a minion and put it into play engaged with you. &lt;i&gt;(Shuffle.)&lt;/i&gt; Then, draw 1 card.</property>
+      <property name="Quote">"You'll never guess who moved in next door." —Bucky Barnes</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Silent Infiltration" id="8e74fa84-01d6-42e0-8b7d-b02638054008">
+      <property name="CardNumber" value="54008"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="winter_soldier"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Preparation."/>
+      <property name="Text">&lt;b&gt;Hero Response&lt;/b&gt;: After you attack and defeat an enemy, discard this card → ready your hero and confuse an enemy.</property>
+      <property name="Quote">"They'll never know what hit 'em." —Winter Soldier</property>
+    </card>
+    <card name="Winter Armor" id="8e74fa84-01d6-42e0-8b7d-b02638054009">
+      <property name="CardNumber" value="54009"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="winter_soldier"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Armor."/>
+      <property name="Text">You get +3 hit points and gain steady.</property>
+      <property name="Quote">"The arm may be bulletproof, but the rest of me is still flesh and blood." —Winter Soldier</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Winter Mask" id="8e74fa84-01d6-42e0-8b7d-b02638054010">
+      <property name="CardNumber" value="54010"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="winter_soldier"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Item. Tech."/>
+      <property name="Text">You gain the [[Spy]] trait.
+&lt;b&gt;Hero Response&lt;/b&gt;: After you attack and defeat an enemy, exhaust Winter Mask → draw 1 card.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Winter Rifle" id="8e74fa84-01d6-42e0-8b7d-b02638054011">
+      <property name="CardNumber" value="54011"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="winter_soldier"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Weapon."/>
+      <property name="Text">Restricted.
+&lt;b&gt;Hero Interrupt&lt;/b&gt;: When Winter Soldier makes a basic attack, exhaust Winter Rifle → Winter Soldier gets +2 ATK for this attack. This attack gains piercing and ranged.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Captain America" id="8e74fa84-01d6-42e0-8b7d-b02638054012">
+      <property name="CardNumber" value="54012"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="aggression"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="S.H.I.E.L.D. Soldier."/>
+      <property name="Text">Toughness.
+&lt;b&gt;Response&lt;/b&gt;: After Captain America enters play, ready a [[S.H.I.E.L.D.]] character.</property>
+      <property name="Quote">"On your feet, soldier!"</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Deathlok" id="8e74fa84-01d6-42e0-8b7d-b02638054013">
+      <property name="CardNumber" value="54013"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="aggression"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="ThwartCost" value="2"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Cyborg. S.H.I.E.L.D."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After Deathlok enters play, search your deck and discard pile for a copy of S.H.I.E.L.D. Sidearm and attach it to him. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
+      <property name="Quote">"My body is infused with high-tech, mind-controlled weaponry."</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Firepower" id="8e74fa84-01d6-42e0-8b7d-b02638054014">
+      <property name="CardNumber" value="54014"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="3"/>
+      <property name="Faction" value="aggression"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Exhaust up to 3 [[Weapon]] upgrades you control → for each weapon upgrade exhausted this way, choose an enemy and deal 3 damage to it. This attack gains ranged.</property>
+    </card>
+    <card name="Spoiling for a Fight" id="8e74fa84-01d6-42e0-8b7d-b02638054016">
+      <property name="CardNumber" value="54016"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="3"/>
+      <property name="Faction" value="aggression"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Discard cards from the top of the encounter deck until you discard a minion. Put that minion into play engaged with you → ready your hero.</property>
+    </card>
+    <card name="Aggressive Stance" id="8e74fa84-01d6-42e0-8b7d-b02638054017">
+      <property name="CardNumber" value="54017"/>
+      <property name="Position" value="17"/>
+      <property name="Quantity" value="3"/>
+      <property name="Faction" value="aggression"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Preparation."/>
+      <property name="Text">Max 1 per player.
+&lt;b&gt;Hero Response&lt;/b&gt;: After you engage a minion, discard this card → search your deck for an [[Attack]] event and add it to your hand. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
+    </card>
+    <card name="Bambino" id="8e74fa84-01d6-42e0-8b7d-b02638054018">
+      <property name="CardNumber" value="54018"/>
+      <property name="Position" value="18"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="aggression"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Tech. Weapon."/>
+      <property name="Text">Attach to a [[S.H.I.E.L.D.]] character. While attached to an identity, this card gains restricted. Uses (3 ammo counters).
+&lt;b&gt;Interrupt&lt;/b&gt;: When attached character makes a basic attack, remove 1 ammo counter from here → this attack deals 3 additional damage and gains overkill.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Man on the Wall" id="8e74fa84-01d6-42e0-8b7d-b02638054019">
+      <property name="CardNumber" value="54019"/>
+      <property name="Position" value="19"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="aggression"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Title."/>
+      <property name="Text">Play only if your identity has the [[Soldier]] trait.
+&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust Man on the Wall → reduce the cost of the next card you play this phase by 1 for each minion engaged with you.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="S.H.I.E.L.D. Sidearm" id="8e74fa84-01d6-42e0-8b7d-b02638054020">
+      <property name="CardNumber" value="54020"/>
+      <property name="Position" value="20"/>
+      <property name="Quantity" value="3"/>
+      <property name="Faction" value="aggression"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Weapon."/>
+      <property name="Text">Attach to a [[S.H.I.E.L.D.]] character. Limit 1 per character. Uses (3 ammo counters).
+&lt;b&gt;Interrupt&lt;/b&gt;: When attached character makes a basic attack, exhaust S.H.I.E.L.D. Sidearm and remove 1 ammo counter from it → deal 1 damage to an enemy.</property>
+    </card>
+    <card name="Super-Soldiers" id="8e74fa84-01d6-42e0-8b7d-b02638054022">
+      <property name="CardNumber" value="54022"/>
+      <property name="Position" value="22"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="basic"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">Team-up (Captain America and Winter Soldier). Max 1 per deck.
+&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 6 damage to an enemy. Give Captain America and Winter Soldier each a tough status card.</property>
+    </card>
+    <card name="Winter, Widow, Soldier, Spy" id="8e74fa84-01d6-42e0-8b7d-b02638054023">
+      <property name="CardNumber" value="54023"/>
+      <property name="Position" value="23"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="basic"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">Team-up (Black Widow and Winter Soldier). Max 1 per deck.
+&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Put a [[Preparation]] upgrade from your discard pile into play. Deal 4 damage to an enemy.</property>
+    </card>
+    <card name="White Widow" id="8e74fa84-01d6-42e0-8b7d-b02638054032">
+      <property name="CardNumber" value="54032"/>
+      <property name="Position" value="32"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="protection"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="S.H.I.E.L.D. Spy."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After you resolve the ability of a [[Preparation]] card you control, heal damage from White Widow equal to that card's printed resource cost.</property>
+      <property name="Quote">"Surprise."</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="S.H.I.E.L.D. Deputy" id="8e74fa84-01d6-42e0-8b7d-b02638054033">
+      <property name="CardNumber" value="54033"/>
+      <property name="Position" value="33"/>
+      <property name="Quantity" value="3"/>
+      <property name="Faction" value="basic"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Weapon."/>
+      <property name="Text">Play only if your identity has the [[S.H.I.E.L.D.]] trait.
+Attach to a friendly character.
+Attached character gets +1 hit point and gains the [[S.H.I.E.L.D.]] trait.</property>
+    </card>
+    <card name="Red Room Programming" id="8e74fa84-01d6-42e0-8b7d-b02638054027" size="EncounterCard">
+      <property name="CardNumber" value="54027"/>
+      <property name="Position" value="27"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="DefaultSetupPile" value="Nemesis"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="winter_soldier"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;&lt;i&gt;Give to the Bucky Barnes player.&lt;/i&gt;&lt;/b&gt;
+You may flip to your alter-ego form. Choose:
+• Exhaust Bucky Barnes → remove this card from the game.
+• Discard the highest printed cost card from your hand and take indirect damage equal to its cost. Discard this obligation.</property>
+    </card>
+    <card name="Crossbones" id="8e74fa84-01d6-42e0-8b7d-b02638054028" size="EncounterCard">
+      <property name="CardNumber" value="54028"/>
+      <property name="Position" value="28"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="winter_soldier_nemesis"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Elite. Hydra."/>
+      <property name="Text">Quickstrike.
+[star] &lt;b&gt;Forced Response&lt;/b&gt;: After Crossbones attacks and defeats an ally, place 2 threat on the main scheme.
+&lt;i&gt;(Winter Soldier's nemesis minion.)&lt;/i&gt;</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Hydra Hit Squad" id="8e74fa84-01d6-42e0-8b7d-b02638054029" size="SchemeCard">
+      <property name="CardNumber" value="54029"/>
+      <property name="Position" value="29"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="winter_soldier_nemesis"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">Each [[Hydra]] minion gets +1 ATK and +2 hit points.
+&lt;b&gt;When Defeated&lt;/b&gt;: The player who defeated this scheme searches the encounter deck and discard pile for a [[Hydra]] minion and reveals it. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
+      <property name="Quote">Crossbones commands his own team of hand-picked Hydra goons.</property>
+    </card>
+    <card name="High-Tech Armament" id="8e74fa84-01d6-42e0-8b7d-b02638054030" size="EncounterCard">
+      <property name="CardNumber" value="54030"/>
+      <property name="Position" value="30"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="winter_soldier_nemesis"/>
+      <property name="Attack" value="1"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Tech. Weapon."/>
+      <property name="Text">Attach to Crossbones. Otherwise, attach to the villain.
+&lt;b&gt;Forced Response&lt;/b&gt;: After you attach High-Tech Armament to an enemy, that enemy activates against you.
+&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust a character you control → discard this card.</property>
+    </card>
+    <card name="Hydra Mercenary" id="8e74fa84-01d6-42e0-8b7d-b02638054031" size="EncounterCard">
+      <property name="CardNumber" value="54031"/>
+      <property name="Position" value="31"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="winter_soldier_nemesis"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="0"/>
+      <property name="Boost" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Hydra."/>
+      <property name="Text">Guard. &lt;i&gt;(While this minion is engaged with you, you cannot attack the villain.)&lt;/i&gt;</property>
+      <property name="Quote">"What is Hydra doing here?" —Carol Danvers</property>
+    </card>
+    <card name="Blizzard" id="8e74fa84-01d6-42e0-8b7d-b02638054034" size="EncounterCard">
+      <property name="CardNumber" value="54034"/>
+      <property name="Position" value="34"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="whiteout"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="4"/>
+      <property name="HP" value="16"/>
+      <property name="Attribute" value="Elite. Thunderbolt."/>
+      <property name="Text">Villainous. Victory 1.
+[star] &lt;b&gt;Forced Response&lt;/b&gt;: After Blizzard attacks a character, search the encounter deck and discard pile for Encased in Ice and attach it to that character. &lt;i&gt;(Shuffle.)&lt;/i&gt; Otherwise, stun the attacked character.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Encased in Ice" id="8e74fa84-01d6-42e0-8b7d-b02638054035" size="EncounterCard">
+      <property name="CardNumber" value="54035"/>
+      <property name="Position" value="35"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="whiteout"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Ice."/>
+      <property name="Text">Attach to your identity.
+Attached character cannot attack enemies other than this card.
+Any player can attack this card as if it were a minion. If there is 3 or more damage here, move all but 3 damage here to attached character and discard this card.</property>
+    </card>
+    <card name="Slippery Conditions" id="8e74fa84-01d6-42e0-8b7d-b02638054036" size="SchemeCard">
+      <property name="CardNumber" value="54036"/>
+      <property name="Position" value="36"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="whiteout"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Hazard" value="1"/>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After an ally enters play, exhaust it.</property>
+      <property name="Quote">"Watch your step!" —Blizzard</property>
+    </card>
+    <card name="Whiteout" id="8e74fa84-01d6-42e0-8b7d-b02638054037" size="EncounterCard">
+      <property name="CardNumber" value="54037"/>
+      <property name="Position" value="37"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="whiteout"/>
+      <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Find Blizzard and reveal him. &lt;i&gt;(If he is already in play, he engages you.)&lt;/i&gt; Blizzard activates against you. If no enemy activated this way, this card gains surge.
+&lt;hr /&gt;
+[star] &lt;b&gt;Boost&lt;/b&gt;: You are stunned. If you were already stunned, take 1 damage.</property>
+    </card>
+  </cards>
+</set>

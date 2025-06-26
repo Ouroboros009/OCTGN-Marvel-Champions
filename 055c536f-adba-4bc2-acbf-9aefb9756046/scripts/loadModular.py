@@ -169,7 +169,7 @@ def recommendedEncounter(group, villainName = ''):
     if villainName == 'M.O.D.O.K.':
         createCardsFromSet(group, "scientist_supreme", "Scientist Supreme", True)
     if villainName == 'Thunderbolts':
-        thunderboltSelectedModular = dialogBox_Setup(specialDeck(), "encounter_setup", ["Gravitational Pull", "Hard Sound", "Pale Little Spider", "Power of the Atom", "Supersonic", "The Leaper", "Extreme Risk", "Growing Strong"], "Modular encounter selection", "Select 1 + 1/hero modulars encounters:", min = 2, max = 1 + len(players), isFanmade = False)
+        thunderboltSelectedModular = dialogBox_Setup(specialDeck(), "encounter_setup", ["Gravitational Pull", "Hard Sound", "Pale Little Spider", "Power of the Atom", "Supersonic", "The Leaper", "Extreme Risk", "Growing Strong", "Techno", "Whiteout"], "Modular encounter selection", "Select 1 + 1/hero modulars encounters:", min = 1 + len(players), max = 1 + len(players), isFanmade = False)
         if thunderboltSelectedModular is None:
             deleteAllSharedCards()
             return

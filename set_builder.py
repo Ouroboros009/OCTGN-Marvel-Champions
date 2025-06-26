@@ -4,7 +4,7 @@ import os.path
 from os import path
 
 
-runFile = 'bp'
+runFile = 'winter'
 xmlSet = None
 packName = None
 runFileList = ["C:/Github/marvelsdb-json-data/pack/" + runFile + ".json", "C:/Github/marvelsdb-json-data/pack/" + runFile + "_encounter.json"]

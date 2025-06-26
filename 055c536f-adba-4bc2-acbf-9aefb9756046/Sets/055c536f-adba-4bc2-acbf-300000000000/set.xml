@@ -422,10 +422,12 @@
             <property name="Owner" value="growing_strong"/>
         </card>
         <card id="055c536f-adba-4bc2-acbf-300000000106" name="Techno">
+            <property name="Type" value="encounter_setup"/>
             <property name="Owner" value="techno"/>
         </card>
-        <card id="055c536f-adba-4bc2-acbf-300000000107" name="">
-            <property name="Owner" value=""/>
+        <card id="055c536f-adba-4bc2-acbf-300000000107" name="Whiteout">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="whiteout"/>
         </card>
         <card id="055c536f-adba-4bc2-acbf-300000009001" name="Nemesis: Vulture">
             <property name="Type" value="encounter_setup"/>
@@ -663,10 +665,12 @@
             <property name="Type" value="encounter_setup"/>
             <property name="Owner" value="silk_nemesis"/>
         </card>
-        <card id="055c536f-adba-4bc2-acbf-300000009060" name="Nemesis: ">
+        <card id="055c536f-adba-4bc2-acbf-300000009060" name="Nemesis: Viper">
+            <property name="Type" value="encounter_setup"/>
             <property name="Owner" value="falcon_nemesis"/>
         </card>
-        <card id="055c536f-adba-4bc2-acbf-300000009061" name="Nemesis: ">
+        <card id="055c536f-adba-4bc2-acbf-300000009061" name="Nemesis: Crossbones">
+            <property name="Type" value="encounter_setup"/>
             <property name="Owner" value="winter_soldier_nemesis"/>
         </card>
     </cards>

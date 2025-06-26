@@ -386,5 +386,9 @@ changelog = {
     '0000383': ("0.0.3.83", "10 May 2025", [
         "Shuri Hero pack added",
         "Silk Hero pack added"
+        ]),
+    '0000384': ("0.0.3.84", "20 June 2025", [
+        "Falcon Hero pack added",
+        "Winter Soldier Hero pack added"
         ])
 }

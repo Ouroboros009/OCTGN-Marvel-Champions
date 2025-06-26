@@ -1,0 +1,526 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="Falcon" id="dc47d9b6-c518-4972-b8bf-a1e1ab9d9f23" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card name="Falcon" id="dc47d9b6-c518-4972-b8bf-a1e1ab053001">
+      <property name="CardNumber" value="53001a"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="falcon"/>
+      <property name="HandSize" value="5"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="Defense" value="2"/>
+      <property name="HP" value="10"/>
+      <property name="Attribute" value="Aerial. Avenger."/>
+      <property name="Text">During the player phase, play with the top card of the encounter deck faceup.
+&lt;i&gt;Eagle-Eyed&lt;/i&gt; — &lt;b&gt;Response&lt;/b&gt;: After you play an [[Aerial]] card, discard the top card of the encounter deck.</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Sam Wilson" type="b">
+        <property name="CardNumber" value="53001b"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="hero"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="falcon"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="10"/>
+        <property name="Attribute" value="S.H.I.E.L.D."/>
+        <property name="Text">&lt;i&gt;Birds of a Feather&lt;/i&gt; — &lt;b&gt;Action&lt;/b&gt;: Discard 1 card from your hand → search your deck and discard pile for a [[Bird]] card and add it to your hand. (Limit once per round.)</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Redwing" id="dc47d9b6-c518-4972-b8bf-a1e1ab053002">
+      <property name="CardNumber" value="53002"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="falcon"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="Aerial. Avenger. Bird."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust Redwing, return him to your hand, and discard the top card of the encounter deck → choose to either deal X damage to an enemy or remove X threat from a scheme. X is the number of icons ([star] and [boost]) in the discarded card's boost area.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Bird of Prey" id="dc47d9b6-c518-4972-b8bf-a1e1ab053003">
+      <property name="CardNumber" value="53003"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="falcon"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Aerial. Attack."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 4 damage to an enemy. You may discard the top card of the encounter deck to deal 1 additional damage to that enemy for each icon ([star] and [boost]) in the discarded card's boost area.</property>
+    </card>
+    <card name="Bird's-Eye View" id="dc47d9b6-c518-4972-b8bf-a1e1ab053004">
+      <property name="CardNumber" value="53004"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="falcon"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Aerial. Thwart."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: Remove 3 threat from a scheme. You may discard the top card of the encounter deck to remove 1 additional threat from that scheme for each icon ([star] and [boost]) in the discarded card's boost area.</property>
+    </card>
+    <card name="Up, Up, and Away" id="dc47d9b6-c518-4972-b8bf-a1e1ab053005">
+      <property name="CardNumber" value="53005"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="falcon"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Aerial. Defense."/>
+      <property name="Text">&lt;b&gt;Hero Response&lt;/b&gt; &lt;i&gt;(defense)&lt;/i&gt;: After an attacking enemy is given a facedown boost card, look at that card and the top card of the encounter deck. You may swap those cards. Draw 1 card for each printed icon ([star] and [boost]) in the &lt;i&gt;(current)&lt;/i&gt; boost card's boost area.</property>
+    </card>
+    <card name="Falcon's Flock" id="dc47d9b6-c518-4972-b8bf-a1e1ab053006">
+      <property name="CardNumber" value="53006"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="falcon"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Aerial. Bird."/>
+      <property name="Text">Uses (5 bird counters).
+&lt;b&gt;Resource&lt;/b&gt;: Remove 1 bird counter from here → generate a [energy] resource for an [[Aerial]] card. (Limit once per card.)</property>
+      <property name="Quote">"Have you heard the word?" —Falcon</property>
+    </card>
+    <card name="Soup Kitchen" id="dc47d9b6-c518-4972-b8bf-a1e1ab053007">
+      <property name="CardNumber" value="53007"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="falcon"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Location."/>
+      <property name="Text">&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Sam Wilson and Soup Kitchen → heal damage from Sam Wilson equal to his REC and reduce the cost of the next ally or support played this phase by 2.</property>
+      <property name="Quote">In following his parents' examples of service, Sam sets an example for others.</property>
+    </card>
+    <card name="Aerial Evacuation" id="dc47d9b6-c518-4972-b8bf-a1e1ab053008">
+      <property name="CardNumber" value="53008"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="falcon"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Aerial. Preparation."/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt;: When another friendly character would be dealt any amount of damage, discard Aerial Evacuation → prevent all of that damage and change to alter-ego form. If that character is a hero, they also change to alter-ego form.</property>
+    </card>
+    <card name="Aerial Recon" id="dc47d9b6-c518-4972-b8bf-a1e1ab053009">
+      <property name="CardNumber" value="53009"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="falcon"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Aerial. Tactic."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust Aerial Recon and deal a player 1 facedown encounter card → place 1 recon counter here.
+&lt;b&gt;Interrupt&lt;/b&gt;: When a player would be dealt an encounter card, remove 1 recon counter from here instead.</property>
+    </card>
+    <card name="Battlefield Awareness" id="dc47d9b6-c518-4972-b8bf-a1e1ab053010">
+      <property name="CardNumber" value="53010"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="falcon"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Aerial. Skill."/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt;: When Falcon uses a basic power, exhaust Battlefield Awareness and discard the top card of the encounter deck → Falcon gets +1 to that power for this use for each icon ([star] and [boost]) in the discarded card's boost area.</property>
+    </card>
+    <card name="Draw Their Fire" id="dc47d9b6-c518-4972-b8bf-a1e1ab053011">
+      <property name="CardNumber" value="53011"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="falcon"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Aerial. Preparation."/>
+      <property name="Text">&lt;b&gt;Hero Response&lt;/b&gt;: After the villain phase begins, discard Draw Their Fire → Falcon does not exhaust to defend until the end of the phase.</property>
+      <property name="Quote">"Now, I can do this all day!" —Falcon</property>
+    </card>
+    <card name="Talon Line" id="dc47d9b6-c518-4972-b8bf-a1e1ab053012">
+      <property name="CardNumber" value="53012"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="falcon"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Item."/>
+      <property name="Text">&lt;b&gt;Hero Response&lt;/b&gt;: After you resolve Falcon's &lt;i&gt;"Eagle-Eyed"&lt;/i&gt; ability, discard Talon Line → for each icon in the discarded card's boost area, choose 1:
+• Ready a character you control.
+• Stun an enemy.</property>
+    </card>
+    <card name="Vibranium Microweave" id="dc47d9b6-c518-4972-b8bf-a1e1ab053013">
+      <property name="CardNumber" value="53013"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="falcon"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Tech. Wakanda."/>
+      <property name="Text">Falcon gets +1 DEF.
+&lt;b&gt;Hero Interrupt&lt;/b&gt;: When Falcon would take any amount of damage, exhaust Vibranium Microweave → prevent 1 of that damage and deal 1 damage to an enemy.</property>
+    </card>
+    <card name="Aero" id="dc47d9b6-c518-4972-b8bf-a1e1ab053015">
+      <property name="CardNumber" value="53015"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="leadership"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Aerial. Agent of Atlas."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust Aero → choose a player. Until the end of the phase, each [[Aerial]] character that player controls gets +1 ATK.</property>
+      <property name="Quote">"I sense trouble on the wind."</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Hugin &amp; Munin" id="dc47d9b6-c518-4972-b8bf-a1e1ab053017">
+      <property name="CardNumber" value="53017"/>
+      <property name="Position" value="17"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="leadership"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="Aerial. Asgard. Bird."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After Hugin &amp; Munin enter play, search the top 10 cards of the encounter deck for a minion and put it into play engaged with you → ready 1 character you control for each icon ([star] and [boost]) in that minion's boost area.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Spectrum" id="dc47d9b6-c518-4972-b8bf-a1e1ab053018">
+      <property name="CardNumber" value="53018"/>
+      <property name="Position" value="18"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="leadership"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="5"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Aerial. Avenger."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After you play Spectrum, tuck 1 card used to pay for her under her. If that card's printed resource has:
+[mental] – Spectrum gets +2 THW.
+[physical] – Spectrum gets +2 ATK.
+[energy] – Spectrum gets +2 hit points.
+[wild] – All of the above.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Strength in Diversity" id="dc47d9b6-c518-4972-b8bf-a1e1ab053019">
+      <property name="CardNumber" value="53019"/>
+      <property name="Position" value="19"/>
+      <property name="Quantity" value="3"/>
+      <property name="Faction" value="leadership"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Text">Alliance.
+&lt;b&gt;Hero Action&lt;/b&gt;: For each different [[Trait]] on friendly characters in play, choose:
+• Remove 1 threat from a scheme.
+• Deal 1 damage to an enemy.</property>
+    </card>
+    <card name="Flight Squadron" id="dc47d9b6-c518-4972-b8bf-a1e1ab053020">
+      <property name="CardNumber" value="53020"/>
+      <property name="Position" value="20"/>
+      <property name="Quantity" value="3"/>
+      <property name="Faction" value="leadership"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Team."/>
+      <property name="Text">Play only if your identity has the [[Aerial]] trait. Max 1 [[TEAM]] card per player.
+If each of your allies has the [[Aerial]] trait, increase your ally limit by 1 and this card gains: "&lt;b&gt;Response&lt;/b&gt;: After you play an [[Aerial]] card, exhaust this card → ready an ally you control."</property>
+    </card>
+    <card name="Resource Reserve" id="dc47d9b6-c518-4972-b8bf-a1e1ab053021">
+      <property name="CardNumber" value="53021"/>
+      <property name="Position" value="21"/>
+      <property name="Quantity" value="3"/>
+      <property name="Faction" value="leadership"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Location."/>
+      <property name="Text">Max 1 per player.
+Any player may spend the resource card tucked here as if it were in their hand.
+&lt;b&gt;Action&lt;/b&gt;: Exhaust Resource Reserve → tuck 1 resource card from your hand under here (to a maximum of 1).</property>
+    </card>
+    <card name="Captain America" id="dc47d9b6-c518-4972-b8bf-a1e1ab053023">
+      <property name="CardNumber" value="53023"/>
+      <property name="Position" value="23"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="leadership"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Title."/>
+      <property name="Text">Play only if you are the Bucky Barnes or Sam Wilson player.
+&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust Captain America and spend a [physical] resource → find Captain America's Shield and add it to your hand. If it leaves play this way, deal 4 damage to an enemy.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Wingman" id="dc47d9b6-c518-4972-b8bf-a1e1ab053024">
+      <property name="CardNumber" value="53024"/>
+      <property name="Position" value="24"/>
+      <property name="Quantity" value="3"/>
+      <property name="Faction" value="leadership"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Title."/>
+      <property name="Text">Attach to an [[Aerial]] ally. Max 1 per ally.
+&lt;b&gt;Interrupt&lt;/b&gt;: When another [[Aerial]] ally would take any amount of consequential damage, exhaust attached ally → prevent 1 of that damage.</property>
+    </card>
+    <card name="The Power of Flight" id="dc47d9b6-c518-4972-b8bf-a1e1ab053028">
+      <property name="CardNumber" value="53028"/>
+      <property name="Position" value="28"/>
+      <property name="Quantity" value="3"/>
+      <property name="Type" value="resource"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Text">Double the number of resources this card generates while paying for an [[AERIAL]] card.</property>
+    </card>
+    <card name="Captain America's Shield" id="dc47d9b6-c518-4972-b8bf-a1e1ab053034">
+      <property name="CardNumber" value="53034"/>
+      <property name="Position" value="34"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="leadership"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Item."/>
+      <property name="Text">Linked (Captain America upgrade). Restricted.
+Your hero gets +1 DEF and gains retaliate 1.</property>
+      <property name="Quote">"This shield is a symbol of freedom." —Captain America</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Winter Soldier" id="dc47d9b6-c518-4972-b8bf-a1e1ab053035">
+      <property name="CardNumber" value="53035"/>
+      <property name="Position" value="35"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="aggression"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="S.H.I.E.L.D. Soldier."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After Winter Soldier attacks and defeats an enemy, remove 2 threat from a scheme.</property>
+      <property name="Quote">"As long as I'm alive, you'll never fight alone."</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Misty Knight" id="dc47d9b6-c518-4972-b8bf-a1e1ab053036">
+      <property name="CardNumber" value="53036"/>
+      <property name="Position" value="36"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="justice"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Hero for Hire."/>
+      <property name="Text">[star] &lt;b&gt;Interrupt&lt;/b&gt;: When Misty Knight thwarts, look at the top 2 cards of the encounter deck and discard 1 of those cards. Misty Knight gets +1 THW for this thwart for each icon ([star] and [boost]) in the discarded card's boost area.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Ops Room" id="dc47d9b6-c518-4972-b8bf-a1e1ab053037">
+      <property name="CardNumber" value="53037"/>
+      <property name="Position" value="37"/>
+      <property name="Quantity" value="3"/>
+      <property name="Faction" value="protection"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="S.H.I.E.L.D."/>
+      <property name="Text">Uses (3 alert counters).
+&lt;b&gt;Interrupt&lt;/b&gt;: When a friendly character would take any amount of damage while defending, remove 1 alert counter from here → prevent 1 of that damage and remove 1 threat from a scheme.</property>
+    </card>
+    <card name="Harlem's Protector" id="dc47d9b6-c518-4972-b8bf-a1e1ab053029" size="EncounterCard">
+      <property name="CardNumber" value="53029"/>
+      <property name="Position" value="29"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="DefaultSetupPile" value="Nemesis"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="falcon"/>
+      <property name="Boost" value="2"/>
+      <property name="Scheme_Hazard" value="1"/>
+      <property name="Text">&lt;b&gt;&lt;i&gt;Give to the Sam Wilson player.&lt;/i&gt;&lt;/b&gt;
+Uses (3 emergency counters). Victory 0.
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Spend 1 resource of any type → remove 1 emergency counter from here.</property>
+    </card>
+    <card name="Viper" id="dc47d9b6-c518-4972-b8bf-a1e1ab053030" size="EncounterCard">
+      <property name="CardNumber" value="53030"/>
+      <property name="Position" value="30"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="falcon_nemesis"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Serpent Society."/>
+      <property name="Text">Quickstrike.
+[star] &lt;b&gt;Forced Response&lt;/b&gt;: After Viper activates, discard the top 5 cards of the encounter deck.
+&lt;i&gt;(Falcon's nemesis minion.)&lt;/i&gt;</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Serpent Solutions" id="dc47d9b6-c518-4972-b8bf-a1e1ab053031" size="SchemeCard">
+      <property name="CardNumber" value="53031"/>
+      <property name="Position" value="31"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="falcon_nemesis"/>
+      <property name="Boost" value="1"/>
+      <property name="BaseThreat" value="6"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After a [[Serpent Society]] minion is discarded from the top of the encounter deck, deal that minion to the first player as a facedown encounter card.</property>
+      <property name="Quote">"When you've got problems, you need Serpent Solutions." —Viper</property>
+    </card>
+    <card name="Serpent Soldier" id="dc47d9b6-c518-4972-b8bf-a1e1ab053032" size="EncounterCard">
+      <property name="CardNumber" value="53032"/>
+      <property name="Position" value="32"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="falcon_nemesis"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Serpent Society."/>
+      <property name="Text">Quickstrike.
+&lt;hr /&gt;
+[star] &lt;b&gt;Boost&lt;/b&gt;: Give the activating enemy an additional boost card.</property>
+    </card>
+    <card name="Adder-tisement" id="dc47d9b6-c518-4972-b8bf-a1e1ab053033" size="EncounterCard">
+      <property name="CardNumber" value="53033"/>
+      <property name="Position" value="33"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="falcon_nemesis"/>
+      <property name="Boost" value="1"/>
+      <property name="Text">Surge.
+&lt;b&gt;When Revealed&lt;/b&gt;: Shuffle each [[Serpent Society]] minion from the encounter discard pile into the encounter deck.</property>
+      <property name="Quote">When Viper took over the Serpent Society, he used his experience as an ad man to rebrand the group as "Serpent Solutions."</property>
+    </card>
+    <card name="Fixer" id="dc47d9b6-c518-4972-b8bf-a1e1ab053038" size="EncounterCard">
+      <property name="CardNumber" value="53038"/>
+      <property name="Position" value="38"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="techno"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="4"/>
+      <property name="HP" value="15"/>
+      <property name="Attribute" value="Elite. Genius. Thunderbolt."/>
+      <property name="Text">Villainous. Victory 1.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When a non-scenario-specific [[Tech]] attachment would be attached to the villain, attach it to Fixer instead. Text on that card that refers to "the villain" refers to Fixer instead.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Jet Pack" id="dc47d9b6-c518-4972-b8bf-a1e1ab053039" size="EncounterCard">
+      <property name="CardNumber" value="53039"/>
+      <property name="Position" value="39"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="techno"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Tech."/>
+      <property name="Text">Attach to Fixer. Otherwise, attach to the villain.
+Attached enemy gains [[Aerial]].
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When attached character would take 3 or more damage, prevent all of that damage and discard Jet Pack.</property>
+      <property name="Quote">Vrrrrrooooooom!</property>
+    </card>
+    <card name="Tech-Pac" id="dc47d9b6-c518-4972-b8bf-a1e1ab053040" size="EncounterCard">
+      <property name="CardNumber" value="53040"/>
+      <property name="Position" value="40"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="techno"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="3"/>
+      <property name="Attribute" value="Tech."/>
+      <property name="Text">Attach to Fixer. Otherwise, attach to the villain.
+[star] Attached enemy gets +1 ATK for each other [[Tech]] attachment it has.
+&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust any number of characters you control with a combined THW greater than attached enemy's SCH → discard this card.</property>
+    </card>
+    <card name="Technological Innovation" id="dc47d9b6-c518-4972-b8bf-a1e1ab053041" size="SchemeCard">
+      <property name="CardNumber" value="53041"/>
+      <property name="Position" value="41"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="techno"/>
+      <property name="Boost" value="2"/>
+      <property name="BaseThreat" value="4"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Acceleration" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Search the encounter deck and discard pile for a [[Tech]] attachment and reveal it. Place 1 additional threat here for each [[Tech]] card in play.</property>
+      <property name="Quote">"I'll turn their technology against them!" —Fixer</property>
+    </card>
+    <card name="Techno" id="dc47d9b6-c518-4972-b8bf-a1e1ab053042" size="EncounterCard">
+      <property name="CardNumber" value="53042"/>
+      <property name="Position" value="42"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="techno"/>
+      <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Find Fixer and reveal him. &lt;i&gt;(If he is already in play, he engages you.)&lt;/i&gt; Fixer activates against you. If no enemy activated this way, this card gains surge.
+&lt;hr /&gt;
+[star] &lt;b&gt;Boost&lt;/b&gt;: If this activation is an attack, it gains piercing.</property>
+    </card>
+  </cards>
+</set>

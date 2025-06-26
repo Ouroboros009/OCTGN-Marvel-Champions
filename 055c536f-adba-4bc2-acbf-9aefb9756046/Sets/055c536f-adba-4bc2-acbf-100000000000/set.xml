@@ -238,9 +238,11 @@
             <property name="Owner" value="silk" />
         </card>
         <card id="055c536f-adba-4bc2-acbf-100000000060" name="Falcon">
+            <property name="Type" value="hero_setup" />
             <property name="Owner" value="falcon" />
         </card>
         <card id="055c536f-adba-4bc2-acbf-100000000061" name="Winter Soldier">
+            <property name="Type" value="hero_setup" />
             <property name="Owner" value="winter_soldier" />
         </card>
     </cards>
