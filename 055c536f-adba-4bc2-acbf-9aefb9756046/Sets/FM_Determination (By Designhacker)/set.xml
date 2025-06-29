@@ -1721,7 +1721,7 @@ Piercing. Reckless  (&lt;i&gt;After this character enters play, place 1 threat o
       <property name="Type" value="upgrade"/>
       <property name="Cost" value="1"/>
       <property name="Resource_Mental" value="1"/>
-      <property name="Attribute" value="preparation. Tech."/>
+      <property name="Attribute" value="Preparation. Tech."/>
       <property name="Text">&lt;b&gt;Interrupt&lt;/b&gt;: When a boost card is turned faceup, discard Jury Rigged Tech and the top card of your deck → if that cardâ€™s printed cost is greater than X, where X is the number of icons ([star] and [boost]) on the boost card, place a total of X all-purpose counters on cards you control. Then, discard the boost card.</property>
       <property name="Unique" value="False"/>
     </card>
@@ -1738,6 +1738,25 @@ Piercing. Reckless  (&lt;i&gt;After this character enters play, place 1 threat o
 &lt;b&gt;Hero Response&lt;/b&gt;: After you change form, discard Radioactive Burst → resolve this cardâ€™s &lt;B&gt;Special&lt;/b&gt; ability.
 &lt;b&gt;Special&lt;/b&gt;: Deal damage to an enemy equal to your ATK. If 3 or more damage was dealt this way, stun that enemy.</property>
       <property name="Unique" value="False"/>
+    </card>
+    <card name="Spiders-Man: Peter Parker" id="65becd33-a610-4313-9d2f-27670e044222">
+      <property name="CardNumber" value="44222"/>
+      <property name="Position" value="222"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="determination"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="0"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="0"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="0"/>
+      <property name="Attribute" value="Spiders. Web-Warrior."/>
+      <property name="Text">Uses (5 spider counters). Fragile.
+[star] Spiders-man cannot leave play while he has 1 or more spiders counters on him.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When Spiders-man uses a basic power, remove 1 or more spider counters from here → deal 1 damage to an enemy for each counter removed this way.</property>
+      <property name="Unique" value="True"/>
     </card>
   </cards>
 </set>

@@ -387,8 +387,11 @@ changelog = {
         "Shuri Hero pack added",
         "Silk Hero pack added"
         ]),
-    '0000384': ("0.0.3.84", "20 June 2025", [
+    '0000384': ("0.0.3.84", "26 June 2025", [
         "Falcon Hero pack added",
         "Winter Soldier Hero pack added"
+        ]),
+    '0000385': ("0.0.3.85", "28 June 2025", [
+        "Fix: Captain America's Shield Linked keyword wasn't implemented"
         ])
 }
