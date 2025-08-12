@@ -2,8 +2,8 @@
 <game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     name="Marvel Champions"
     id="055c536f-adba-4bc2-acbf-9aefb9756046"
-    octgnVersion="3.4.389.0"
-    version="0.0.3.85"
+    octgnVersion="3.4.426.0"
+    version="0.0.3.86"
     scriptVersion="3.1.0.2"
     markersize="15"
     tags="OCTGN, Marvel, Champions"
@@ -233,6 +233,7 @@
             <groupaction menu="Draw" shortcut="CTRL+D" default="True" execute="draw" />
             <groupaction menu="Draw Many" shortcut="CTRL+SHIFT+D" execute="drawMany" />
             <groupaction menu="Draw Unrevealed" shortcut="CTRL+U" execute="drawUnrevealed" />
+            <groupaction menu="Draw Many Unrevealed" shortcut="CTRL+SHIFT+U" execute="drawManyUnrevealed" />
             <cardaction menu="Discard Card" shortcut="del" execute="discard" />
             <groupaction menu="Remove top X cards from the game" execute="removeTopXCards" />
         </group>

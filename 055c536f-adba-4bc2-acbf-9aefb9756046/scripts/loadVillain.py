@@ -1,3 +1,7 @@
+import clr
+clr.AddReference('System.Web.Extensions')
+from System.Web.Script.Serialization import JavaScriptSerializer
+
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #------------------------------------------------------------
@@ -49,7 +53,9 @@ Reset the game in order to generate a new deck."""
 
     # Load mandatory modulars for the scenario.
     if cardSelected[0].hasProperty("mandatoryModular"):
-        mandatoryDict = eval(cardSelected[0].mandatoryModular)
+        mandatoryDict = cardSelected[0].mandatoryModular
+        mandatoryDict = mandatoryDict.replace("True", "true").replace("False", "false")
+        mandatoryDict = dict(JavaScriptSerializer().DeserializeObject(mandatoryDict))
         for k, i in mandatoryDict.items():
             setName = i[0]
             pile = shared.piles[i[1]]

@@ -1,3 +1,7 @@
+import clr
+clr.AddReference('System.Web.Extensions')
+from System.Web.Script.Serialization import JavaScriptSerializer
+
 #------------------------------------------------------------
 # 'Load Hero' event
 #------------------------------------------------------------
@@ -86,10 +90,10 @@ Reset the game in order to generate a new deck."""
         aspectCardsList = createAPICards("https://marvelcdb.com/deck/view/{}".format(universal_prebuilt[universal_prebuilt_List[prebuilt_Choice-1]]), True)
 
     # Set all player variables
-    pList = eval(getGlobalVariable("playerList"))
+    pList = list(JavaScriptSerializer().DeserializeObject(getGlobalVariable("playerList")))
     pList.append(me._id)
-    setGlobalVariable("playerList",str(pList))
-    heroesPlayed = eval(getGlobalVariable("heroesPlayed"))
+    setGlobalVariable("playerList", str(pList))
+    heroesPlayed = list(JavaScriptSerializer().DeserializeObject(getGlobalVariable("heroesPlayed")))
     heroesPlayed.append(heroSet)
     setGlobalVariable("heroesPlayed", str(heroesPlayed))
 

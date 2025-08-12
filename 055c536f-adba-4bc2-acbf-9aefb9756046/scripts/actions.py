@@ -1,5 +1,5 @@
-import clr
 import re
+import clr
 clr.AddReference('System.Web.Extensions')
 from System.Web.Script.Serialization import JavaScriptSerializer
 
@@ -234,7 +234,7 @@ def setFirstPlayer(group = table, x = 0, y = 0):
     """
     mute()
 
-    playerList = eval(getGlobalVariable("playerList"))
+    playerList = list(JavaScriptSerializer().DeserializeObject(getGlobalVariable("playerList")))
     currentFirstPlayer = num(getGlobalVariable("firstPlayer"))
     # Check if first player is set (should be called only when game start) else change the first player
     if turnNumber() == 0:
@@ -250,7 +250,7 @@ def setFirstPlayer(group = table, x = 0, y = 0):
     firstPlayerToken = [card for card in table if card.Type == 'first_player']
     if len(firstPlayerToken) == 0:
         firstPlayerToken = [table.create("65377f60-0de4-4196-a49e-96a550b4df81", 0, 0, 1, True)]
-    firstPlHero = eval(getGlobalVariable("heroesPlayed"))[newFirstPlayer]
+    firstPlHero = list(JavaScriptSerializer().DeserializeObject(getGlobalVariable("heroesPlayed")))[newFirstPlayer]
     firstPlHeroCard = [c for c in table if (c.Type == 'hero' or c.Type == 'alter_ego') and c.Owner == firstPlHero]
     update()
     firstPlayerToken[0].controller = me
@@ -462,7 +462,7 @@ def advanceGame(group = None, x = 0, y = 0):
     debug("advanceGame triggered")
     if turnNumber() == 0:
         firstPlinList = num(getGlobalVariable("firstPlayer"))
-        firstPl = num(eval(getGlobalVariable("playerList"))[firstPlinList])
+        firstPl = num(list(JavaScriptSerializer().DeserializeObject(getGlobalVariable("playerList")))[firstPlinList])
         Player(firstPl).setActive()
     elif currentPhase()[1] == 1:
         doEndHeroPhase()
@@ -471,7 +471,7 @@ def advanceGame(group = None, x = 0, y = 0):
         setFirstPlayer()
         setGlobalVariable("phase", "Hero Phase")
         firstPlinList = num(getGlobalVariable("firstPlayer"))
-        firstPl = num(eval(getGlobalVariable("playerList"))[firstPlinList])
+        firstPl = num(list(JavaScriptSerializer().DeserializeObject(getGlobalVariable("playerList")))[firstPlinList])
         remoteCall(getActivePlayer(), "nextTurn", [Player(firstPl), True]) #Must be triggered by active player to add +1 to turn counter
         notify("Next Player is {}".format(Player(firstPl)))
         update()
@@ -542,17 +542,17 @@ def createCardsFromSet(group, owner, name, isShared = True):
 
         # standard/expert Definition
         if c.hasProperty("Standard") and gameDifficulty == 0:
-            standard = eval(c.properties["Standard"])
+            standard = c.properties["Standard"].strip().lower() == "true"
         else:
             standard = True
         if c.hasProperty("Expert") and gameDifficulty == 1:
-            expert = eval(c.properties["Expert"])
+            expert = c.properties["Expert"].strip().lower() == "true"
         else:
             expert = True
 
         # quantity Definition
         if c.hasProperty("Quantity"):
-            quantity = eval(c.properties["Quantity"])
+            quantity = int(c.properties["Quantity"])
         else:
             quantity = 1
 
@@ -1099,6 +1099,22 @@ def switchCard(card, x = 0, y = 0):
     elif card.group == me.hand:
         card_deck.moveTo(me.hand)
     card.moveTo(me.deck)
+
+def drawManyUnrevealed(group, count = None, x=0, y=0):
+    mute()
+    if len(group) == 0:
+        notifyBar("#FF0000", "Deck {} is empty!".format(group.name))
+        return
+    if deckLocked():
+        whisper("Your deck is locked, you cannot draw cards at this time")
+        return
+    if count is None:
+        count = askInteger("Draw how many cards?", 6)
+    if count is None or count < 0:
+        whisper("drawManyUnrevealed: invalid card count")
+        return
+    for i in range(0, count):
+        drawUnrevealed(group, x= i*10, y=0)
 
 def drawUnrevealed(group=None, x=0, y=0):
     mute()

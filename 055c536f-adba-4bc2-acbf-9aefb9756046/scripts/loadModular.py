@@ -1,3 +1,7 @@
+import clr
+clr.AddReference('System.Web.Extensions')
+from System.Web.Script.Serialization import JavaScriptSerializer
+
 #------------------------------------------------------------
 # 'Load Encounter' event
 #------------------------------------------------------------
@@ -179,8 +183,9 @@ def recommendedEncounter(group, villainName = ''):
     if villainName == 'Baron Zemo':
         createCardsFromSet(group, "scientist_supreme", "Scientist Supreme", True)
         createCardsFromSet(group, "s.h.i.e.l.d.", "S.H.I.E.L.D.", True)
-    elif len(recommendedModular) > 0:
-        recommendedModular = eval(recommendedModular)
+    elif recommendedModular <> "":
+        recommendedModular = recommendedModular.replace("True", "true").replace("False", "false")
+        recommendedModular = dict(JavaScriptSerializer().DeserializeObject(recommendedModular))
         for k, i in recommendedModular.items():
             setName = i[0]
             pile = shared.piles[i[1]]

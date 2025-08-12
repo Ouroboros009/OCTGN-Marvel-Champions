@@ -1,21 +1,36 @@
 from lxml import etree as ET
 import json
-import os.path
+import os
 from os import path
+import argparse
 
-
-runFile = 'winter'
+runFile = 'mk_by_hax'
+print(f'fm_{runFile}')  # Doit afficher fm_mystique_by_merlin
 xmlSet = None
 packName = None
-runFileList = ["C:/Github/marvelsdb-json-data/pack/" + runFile + ".json", "C:/Github/marvelsdb-json-data/pack/" + runFile + "_encounter.json"]
+runFileList = [
+    os.path.join("datapack", runFile + ".json"),
+    os.path.join("datapack", runFile + "_encounter.json")
+]
+print("runFileList:", runFileList)  # TRACE: affiche la liste des fichiers traités
 
+parser = argparse.ArgumentParser()
+parser.add_argument('--fanmade', action='store_true', help='Indique si le set est FanMade')
+args = parser.parse_args()
+FANMADE = args.fanmade
+print("FanMade:", FANMADE)  # TRACE
 
 def getPack(set_code):
-  with open("C:/Github/marvelsdb-json-data/packs.json") as pack_json_file:
-    packData = json.load(pack_json_file)
-    for i in packData:
-      if i['code'] == set_code:
-        return i
+    pack_path = os.path.join("datapack", f"{set_code}-pack.json")
+    with open(pack_path, encoding="utf-8") as pack_json_file:
+        packData = json.load(pack_json_file)
+        print("getPack packData:", packData)  # TRACE
+        # Si packData est un dict, transforme-le en liste
+        if isinstance(packData, dict):
+            packData = [packData]
+        for i in packData:
+            if isinstance(i, dict) and i.get('code') == set_code:
+                return i
 
 
 def findAlt(data, findValue):
@@ -27,24 +42,53 @@ def findAlt(data, findValue):
 def createXmlCards(fromFile):
     with open(fromFile) as json_file:
         data = json.load(json_file)
-        packInfo = getPack(data[1]['pack_code'])
-        packName = packInfo['name']
+        packInfo = getPack(data[0]['pack_code'])
         xmlSet = ET.Element('set')
         xmlSet.set('name', packInfo['name'])
         xmlSet.set('id', packInfo['octgn_id'])
         xmlSet.set('gameId', '055c536f-adba-4bc2-acbf-9aefb9756046')
         xmlSet.set('gameVersion', '0.0.0.0')
         xmlSet.set('version', '1.0.0.0')
-        ET.SubElement(xmlSet, 'cards')
+        xmlCards = ET.SubElement(xmlSet, 'cards')
+
+        # Ajout de la carte FanMade en premier si FANMADE est True
+        if FANMADE:
+            base_id = packInfo['octgn_id']
+            fanmade_id = base_id[:-6] + "000000"
+            bonus_id = base_id[:-6] + "990000"
+            # Correction robuste : Owner = set_code (comme toutes les autres cartes)
+            owner_hero = data[0].get('set_code', data[0].get('pack_code', runFile))
+            owner_nemesis = owner_hero + "_nemesis"
+
+            fan_card = ET.SubElement(xmlCards, 'card')
+            fan_card.set('id', fanmade_id)
+            fan_card.set('name', runFile)
+            prop_type = ET.SubElement(fan_card, 'property')
+            prop_type.set('name', 'Type')
+            prop_type.set('value', 'fm_hero_setup')
+            prop_owner = ET.SubElement(fan_card, 'property')
+            prop_owner.set('name', 'Owner')
+            prop_owner.set('value', owner_hero)
+
+            # Ajout d'une deuxième carte spéciale FanMade avec id se terminant par 990000
+            extra_card = ET.SubElement(xmlCards, 'card')
+            extra_card.set('id', bonus_id)
+            extra_card.set('name', runFile)
+            prop_type2 = ET.SubElement(extra_card, 'property')
+            prop_type2.set('name', 'Type')
+            prop_type2.set('value', 'fm_encounter_setup')
+            prop_owner2 = ET.SubElement(extra_card, 'property')
+            prop_owner2.set('name', 'Owner')
+            prop_owner2.set('value', owner_nemesis)
+
         return xmlSet
 
 
 def getPackName(fromFile):
     with open(fromFile) as json_file:
         data = json.load(json_file)
-        packInfo = getPack(data[1]['pack_code'])
-        packName = packInfo['name']
-        return packName
+        packInfo = getPack(data[0]['pack_code'])
+        return packInfo['name']
 
 
 def buildXmlProps(propDict, xmlElement):
@@ -329,9 +373,25 @@ def fillXmlSet(xmlSet, fromFile):
                     buildXmlProps(i, xmlCard)
                 elif i['type_code'] == 'obligation' or i['type_code'] == 'environment' or i['type_code'] == 'attachment' or i['type_code'] == 'minion' or i['type_code'] == 'treachery':
                     xmlCard.set('size', 'EncounterCard')
+                    # Ajout pour obligation : DefaultSetupPile = Nemesis
+                    if i['type_code'] == 'obligation':
+                        defaultSetup = ET.SubElement(xmlCard, 'property')
+                        defaultSetup.set('name', 'DefaultSetupPile')
+                        defaultSetup.set('value', 'Nemesis')
                     buildXmlProps(i, xmlCard)
                 else:
                     buildXmlProps(i, xmlCard)
+                # Ajout du Owner fanmade si FANMADE est True
+                if FANMADE:
+                    # Vérifie si un Owner existe déjà
+                    has_owner = any(
+                        prop.get('name') == 'Owner'
+                        for prop in xmlCard.findall('property')
+                    )
+                    if not has_owner:
+                        cardOwner = ET.SubElement(xmlCard, 'property')
+                        cardOwner.set('name', 'Owner')
+                        cardOwner.set('value', i.get('set_code', packName))
                 if 'back_link' in i.keys():
                     alternateCard = findAlt(data, i['back_link'])
                     cardAlternate = ET.SubElement(xmlCard, 'alternate')
@@ -356,7 +416,11 @@ for curFile in runFileList:
 if packName is None:
     packName = getPackName(curFile)
 
-# create a new XML file with the results
+# Création du dossier de sortie si besoin
+output_dir = f"C:/Github/OCTGN-Marvel-Champions/055c536f-adba-4bc2-acbf-9aefb9756046/Sets/{packName}"
+os.makedirs(output_dir, exist_ok=True)
+
+# Création du fichier XML
 mydata = ET.tostring(xmlSet, pretty_print=True, encoding='utf-8', xml_declaration=True, standalone="yes")
 
 modified_str = mydata.decode('utf-8')
@@ -364,5 +428,7 @@ modified_str = modified_str.replace('â†’', '→')
 modified_str = modified_str.replace('â€”', '—')
 mydata = modified_str.encode('utf-8')
 
-myfile = open("C:/Github/OCTGN-Marvel-Champions/055c536f-adba-4bc2-acbf-9aefb9756046/Sets/" + packName + "/set.xml", "wb")
-myfile.write(mydata)
+with open(f"{output_dir}/set.xml", "wb") as myfile:
+    myfile.write(mydata)
+
+

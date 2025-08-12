@@ -393,5 +393,9 @@ changelog = {
         ]),
     '0000385': ("0.0.3.85", "28 June 2025", [
         "Fix: Captain America's Shield Linked keyword wasn't implemented"
+        ]),
+    '0000386': ("0.0.3.86", "12 August 2025", [
+        "Feature: Added a function to draw multiple unrevealed cards.",
+        "Security: This update addresses a recently reported security issue."
         ])
 }
