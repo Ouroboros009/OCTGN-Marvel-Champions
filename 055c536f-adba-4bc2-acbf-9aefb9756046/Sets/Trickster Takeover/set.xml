@@ -1,0 +1,1268 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="Trickster Takeover" id="e1ad8fbe-b7e2-48f0-96ea-40362c3184da" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card name="Absorbing Man" id="e1ad8fbe-b7e2-48f0-96ea-40362c055063">
+      <property name="CardNumber" value="55063"/>
+      <property name="Position" value="63"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="basic"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="trickster_magic"/>
+      <property name="DefaultSetupPile" value="Removed"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="2"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="2"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Defiant."/>
+      <property name="Text">Linked (Absorbing Man minion). Victory 0. Does not count against your ally limit.
+[star] &lt;b&gt;Interrupt&lt;/b&gt;: When Absorbing Man attacks or thwarts, exhaust an upgrade or support you control. Absorbing Man gets +X to that power for this use, where X is that card's printed cost (to a maximum of +3).</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Titania" id="e1ad8fbe-b7e2-48f0-96ea-40362c055064">
+      <property name="CardNumber" value="55064"/>
+      <property name="Position" value="64"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="basic"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="trickster_magic"/>
+      <property name="DefaultSetupPile" value="Removed"/>
+      <property name="Thwart" value="2"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="3"/>
+      <property name="AttackCost" value="2"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Defiant."/>
+      <property name="Text">Linked (Titania minion). Victory 0. Does not count against your ally limit.
+[star] Titania's attacks gain overkill and piercing.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Whirlwind" id="e1ad8fbe-b7e2-48f0-96ea-40362c055065">
+      <property name="CardNumber" value="55065"/>
+      <property name="Position" value="65"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="basic"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="trickster_magic"/>
+      <property name="DefaultSetupPile" value="Removed"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="0"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Defiant."/>
+      <property name="Text">Linked (Whirlwind minion). Victory 0. Does not count against your ally limit.
+[star] &lt;b&gt;Interrupt&lt;/b&gt;: When Whirlwind attacks, remove 1 threat from each scheme in play. For each threat removed this way, Whirlwind gets +1 ATK for that attack.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Zzzax" id="e1ad8fbe-b7e2-48f0-96ea-40362c055066">
+      <property name="CardNumber" value="55066"/>
+      <property name="Position" value="66"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="basic"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="trickster_magic"/>
+      <property name="DefaultSetupPile" value="Removed"/>
+      <property name="Thwart" value="3"/>
+      <property name="ThwartCost" value="2"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="Defiant."/>
+      <property name="Text">Linked (Zzzax minion). Victory 0. Does not count against your ally limit.
+&lt;b&gt;Response&lt;/b&gt;: After Zzzax enters play, search the top 5 cards of your deck for a card with a printed [energy] resource and add it to your hand. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Enchantress" id="e1ad8fbe-b7e2-48f0-96ea-40362c055001" size="VillainCard">
+      <property name="CardNumber" value="55001"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="False"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="15"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Asgard. Mystic."/>
+      <property name="Text">[star] &lt;b&gt;Forced Response&lt;/b&gt;: After Enchantress attacks you, place 1 charm counter on the [[Enchantment]] card in your play area.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Enchantress" id="e1ad8fbe-b7e2-48f0-96ea-40362c055002" size="VillainCard">
+      <property name="CardNumber" value="55002"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Stage" value="2"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="16"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Asgard. Mystic."/>
+      <property name="Text">Steady. Toughness.
+&lt;b&gt;When Revealed&lt;/b&gt;: In standard mode, put the set-aside Future of Despair into play, then place an additional 3[per_hero] threat on it.
+[star] &lt;b&gt;Forced Response&lt;/b&gt;: After Enchantress attacks you, place 1 charm counter on the [[Enchantment]] card in your play area.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Enchantress" id="e1ad8fbe-b7e2-48f0-96ea-40362c055003" size="VillainCard">
+      <property name="CardNumber" value="55003"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Stage" value="3"/>
+      <property name="Standard" value="False"/>
+      <property name="Expert" value="True"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="3"/>
+      <property name="HP" value="18"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Asgard. Mystic."/>
+      <property name="Text">Steady. Toughness.
+&lt;b&gt;When Revealed&lt;/b&gt;: Put the set-aside Future of Despair into play, then place an additional 4[per_hero] threat on it.
+[star] &lt;b&gt;Forced Response&lt;/b&gt;: After Enchantress attacks you, place 1 charm counter on the [[Enchantment]] card in your play area.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Prime Real Estate" id="e1ad8fbe-b7e2-48f0-96ea-40362c055004" size="SchemeCard">
+      <property name="CardNumber" value="55004a"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Stage" value="1A"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">&lt;b&gt;Contents&lt;/b&gt;: Enchantress (I) and Enchantress (II). &lt;i&gt;(Enchantress (II) and Enchantress (III) instead for expert mode.)&lt;/i&gt; Enchantress and Standard encounter sets. One modular set &lt;i&gt;(Trickster Magic)&lt;/i&gt;.
+&lt;b&gt;Setup&lt;/b&gt;: Set the Future of Despair side scheme aside. Attach a random Hypnotic Gaze to each identity &lt;i&gt;(players cannot look at the reverse sides)&lt;/i&gt;. Set each remaining Hypnotic Gaze aside.</property>
+      <alternate name="Prime Real Estate" type="b" size="SchemeCard">
+        <property name="CardNumber" value="55004b"/>
+        <property name="Position" value="4"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="encounter"/>
+        <property name="DefaultSetupPile" value="Scheme"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="enchantress_villain"/>
+        <property name="Stage" value="1B"/>
+        <property name="BaseThreat" value="1"/>
+        <property name="BaseThreatFixed" value="False"/>
+        <property name="Threat" value="6"/>
+        <property name="EscalationThreat" value="1"/>
+        <property name="EscalationThreatFixed" value="False"/>
+        <property name="Text">&lt;b&gt;Forced Interrupt&lt;/b&gt;: When a charm counter would be placed on the [[Enchantment]] card in your play area, if your identity has the [[Enthralled]] trait, place 1 threat here instead.</property>
+        <property name="Quote">Enchantress sets out to conquer South America by turning all who oppose her into her enthralled lackeys.</property>
+      </alternate>
+    </card>
+    <card name="Sovereign Sorceress" id="e1ad8fbe-b7e2-48f0-96ea-40362c055005" size="SchemeCard">
+      <property name="CardNumber" value="55005a"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Stage" value="2A"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: If the Crown of the Enchantress attachment is in play, stun each identity. Otherwise, search the encounter deck and discard pile for Crown of the Enchantress and reveal it. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
+      <alternate name="Sovereign Sorceress" type="b" size="SchemeCard">
+        <property name="CardNumber" value="55005b"/>
+        <property name="Position" value="5"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="encounter"/>
+        <property name="DefaultSetupPile" value="Scheme"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="enchantress_villain"/>
+        <property name="Stage" value="2B"/>
+        <property name="BaseThreat" value="2"/>
+        <property name="BaseThreatFixed" value="False"/>
+        <property name="Threat" value="9"/>
+        <property name="EscalationThreat" value="1"/>
+        <property name="EscalationThreatFixed" value="False"/>
+        <property name="Text">&lt;b&gt;Forced Interrupt&lt;/b&gt;: When a charm counter would be placed on the [[Enchantment]] card in your play area, if your identity has the [[Enthralled]] trait, place 1 threat here instead.
+&lt;b&gt;If this stage is completed, the players lose the game.&lt;/b&gt;</property>
+      </alternate>
+    </card>
+    <card name="Future of Despair" id="e1ad8fbe-b7e2-48f0-96ea-40362c055006" size="SchemeCard">
+      <property name="CardNumber" value="55006"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="DefaultSetupPile" value="Side" />
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">Enchantress gains stalwart and cannot take damage.
+&lt;b&gt;When Revealed&lt;/b&gt;: Place 1 charm counter on each [[Enchantment]] card in play.</property>
+    </card>
+    <card name="Hypnotic Gaze" id="e1ad8fbe-b7e2-48f0-96ea-40362c055007" size="EncounterCard">
+      <property name="CardNumber" value="55007a"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="DefaultSetupPile" value="Side" />
+      <property name="Attribute" value="Enchantment."/>
+      <property name="Text">Permanent.
+Your identity gains the [[Defiant]] trait.
+If there are 5 or more charm counters here, remove each charm counter from here and flip this card.</property>
+      <alternate name="Trance of Envy" type="b" size="EncounterCard">
+        <property name="CardNumber" value="55007b"/>
+        <property name="Position" value="7"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="encounter"/>
+        <property name="Type" value="attachment"/>
+        <property name="Owner" value="enchantress_villain"/>
+        <property name="Attribute" value="Enchantment."/>
+        <property name="Text">Permanent.
+Your identity gains the [[Enthralled]] trait.
+&lt;b&gt;When Revealed&lt;/b&gt;: Discard a card you control. Otherwise, discard the top 8 cards of your deck.
+&lt;b&gt;Forced Action&lt;/b&gt;: Exhaust this card → give Enchantress a facedown boost card. Ready your identity.</property>
+      </alternate>
+    </card>
+    <card name="Hypnotic Gaze" id="e1ad8fbe-b7e2-48f0-96ea-40362c055008" size="EncounterCard">
+      <property name="CardNumber" value="55008a"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="DefaultSetupPile" value="Side" />
+      <property name="Attribute" value="Enchantment."/>
+      <property name="Text">Permanent.
+Your identity gains the [[Defiant]] trait.
+If there are 5 or more charm counters here, remove each charm counter from here and flip this card.</property>
+      <alternate name="Trance of Greed" type="b" size="EncounterCard">
+        <property name="CardNumber" value="55008b"/>
+        <property name="Position" value="8"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="encounter"/>
+        <property name="Type" value="attachment"/>
+        <property name="Owner" value="enchantress_villain"/>
+        <property name="Attribute" value="Enchantment."/>
+        <property name="Text">Permanent.
+Your identity gains the [[Enthralled]] trait.
+&lt;b&gt;When Revealed&lt;/b&gt;: You are confused. Otherwise, take 2 damage.
+&lt;b&gt;Forced Action&lt;/b&gt;: Exhaust this card → draw 1 card, then play that card &lt;i&gt;(paying its cost)&lt;/i&gt;. If you cannot, take 1 damage.</property>
+      </alternate>
+    </card>
+    <card name="Hypnotic Gaze" id="e1ad8fbe-b7e2-48f0-96ea-40362c055009" size="EncounterCard">
+      <property name="CardNumber" value="55009a"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="DefaultSetupPile" value="Side" />
+      <property name="Attribute" value="Enchantment."/>
+      <property name="Text">Permanent.
+Your identity gains the [[Defiant]] trait.
+If there are 5 or more charm counters here, remove each charm counter from here and flip this card.</property>
+      <alternate name="Trance of Pride" type="b" size="EncounterCard">
+        <property name="CardNumber" value="55009b"/>
+        <property name="Position" value="9"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="encounter"/>
+        <property name="Type" value="attachment"/>
+        <property name="Owner" value="enchantress_villain"/>
+        <property name="Attribute" value="Enchantment."/>
+        <property name="Text">Permanent.
+Your identity gains the [[Enthralled]] trait.
+&lt;b&gt;When Revealed&lt;/b&gt;: Exhaust your identity. Otherwise, discard 1 card at random from your hand.
+&lt;b&gt;Forced Action&lt;/b&gt;: Exhaust this card → place 1 threat on the main scheme. Remove 2 threat from a side scheme.</property>
+      </alternate>
+    </card>
+    <card name="Hypnotic Gaze" id="e1ad8fbe-b7e2-48f0-96ea-40362c055010" size="EncounterCard">
+      <property name="CardNumber" value="55010a"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="DefaultSetupPile" value="Side" />
+      <property name="Attribute" value="Enchantment."/>
+      <property name="Text">Permanent.
+Your identity gains the [[Defiant]] trait.
+If there are 5 or more charm counters here, remove each charm counter from here and flip this card.</property>
+      <alternate name="Trance of Sloth" type="b" size="EncounterCard">
+        <property name="CardNumber" value="55010b"/>
+        <property name="Position" value="10"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="encounter"/>
+        <property name="Type" value="attachment"/>
+        <property name="Owner" value="enchantress_villain"/>
+        <property name="Attribute" value="Enchantment."/>
+        <property name="Text">Permanent.
+Your identity gains the [[Enthralled]] trait.
+&lt;b&gt;When Revealed&lt;/b&gt;: You are stunned. Otherwise, place 2 threat on the main scheme.
+&lt;b&gt;Forced Action&lt;/b&gt;: Exhaust this card → heal 1 damage from Enchantress. Draw 1 card, then discard 1 card.</property>
+      </alternate>
+    </card>
+    <card name="Hypnotic Gaze" id="e1ad8fbe-b7e2-48f0-96ea-40362c055011" size="EncounterCard">
+      <property name="CardNumber" value="55011a"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="DefaultSetupPile" value="Side" />
+      <property name="Attribute" value="Enchantment."/>
+      <property name="Text">Permanent.
+Your identity gains the [[Defiant]] trait.
+If there are 5 or more charm counters here, remove each charm counter from here and flip this card.</property>
+      <alternate name="Trance of Wrath" type="b" size="EncounterCard">
+        <property name="CardNumber" value="55011b"/>
+        <property name="Position" value="11"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="encounter"/>
+        <property name="Type" value="attachment"/>
+        <property name="Owner" value="enchantress_villain"/>
+        <property name="Attribute" value="Enchantment."/>
+        <property name="Text">Permanent.
+Your identity gains the [[Enthralled]] trait.
+&lt;b&gt;When Revealed&lt;/b&gt;: Search the top 5 cards of the encounter deck for a card and reveal it. &lt;i&gt;(Shuffle.)&lt;/i&gt;
+&lt;b&gt;Forced Action&lt;/b&gt;: Exhaust this card → take 1 indirect damage. Deal 2 damage to a minion.</property>
+      </alternate>
+    </card>
+    <card name="Alluring Call" id="e1ad8fbe-b7e2-48f0-96ea-40362c055012" size="EncounterCard">
+      <property name="CardNumber" value="55012"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Attribute" value="Temptation."/>
+      <property name="Text">Attach to your identity.
+&lt;b&gt;Forced Action&lt;/b&gt;: Exhaust this card → place 1 charm counter on the [[Enchantment]] card in your play area. Play a card from your hand, reducing its resource cost by 1.
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust this card → discard this card.
+&lt;hr /&gt;
+[star] &lt;b&gt;Boost&lt;/b&gt;: Reveal this card.</property>
+    </card>
+    <card name="Kiss of Temptation" id="e1ad8fbe-b7e2-48f0-96ea-40362c055013" size="EncounterCard">
+      <property name="CardNumber" value="55013"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Attribute" value="Temptation."/>
+      <property name="Text">Attach to your identity.
+&lt;b&gt;Forced Action&lt;/b&gt;: Exhaust this card → place 1 charm counter on the [[Enchantment]] card in your play area. Draw 1 card, then discard 1 card from your hand.
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust this card → discard this card.
+&lt;hr /&gt;
+[star] &lt;b&gt;Boost&lt;/b&gt;: Reveal this card.</property>
+    </card>
+    <card name="Love Concoction" id="e1ad8fbe-b7e2-48f0-96ea-40362c055014" size="EncounterCard">
+      <property name="CardNumber" value="55014"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Attribute" value="Item. Temptation."/>
+      <property name="Text">Attach to your identity.
+&lt;b&gt;Forced Action&lt;/b&gt;: Exhaust this card → place 1 charm counter on the [[Enchantment]] card in your play area. Ready your identity.
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust this card → discard this card.
+&lt;hr /&gt;
+[star] &lt;b&gt;Boost&lt;/b&gt;: Reveal this card.</property>
+    </card>
+    <card name="Seduced" id="e1ad8fbe-b7e2-48f0-96ea-40362c055015" size="EncounterCard">
+      <property name="CardNumber" value="55015"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Attach to your identity.
+You cannot make basic attacks or play [[Attack]] events.
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Spend [energy] [mental] resources → discard this card.</property>
+      <property name="Quote">"You love me, don't you?" —Enchantress</property>
+    </card>
+    <card name="Crown of the Enchantress" id="e1ad8fbe-b7e2-48f0-96ea-40362c055016" size="EncounterCard">
+      <property name="CardNumber" value="55016"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Boost" value="3"/>
+      <property name="Attribute" value="Item."/>
+      <property name="Text">Attach to Enchantress.
+In expert mode, Enchantress gains stalwart.
+[star] &lt;b&gt;Forced Response&lt;/b&gt;: After Enchantress schemes against you, place 1 charm counter on the [[Enchantment]] card in your play area.
+&lt;b&gt;Hero Action&lt;/b&gt;: Each player exhausts their identity and takes 1 damage → discard this card.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Enthralled Lackey" id="e1ad8fbe-b7e2-48f0-96ea-40362c055017" size="EncounterCard">
+      <property name="CardNumber" value="55017"/>
+      <property name="Position" value="17"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Enthralled."/>
+      <property name="Text">Quickstrike.
+[star] &lt;b&gt;Forced Response&lt;/b&gt;: After this minion attacks you, place 1 charm counter on the [[Enchantment]] card in your play area.
+&lt;hr /&gt;
+[star] &lt;b&gt;Boost&lt;/b&gt;: Choose to either place 1 charm counter on the [[Enchantment]] card in your play area or confuse your identity.</property>
+    </card>
+    <card name="Enthralled Brute" id="e1ad8fbe-b7e2-48f0-96ea-40362c055018" size="EncounterCard">
+      <property name="CardNumber" value="55018"/>
+      <property name="Position" value="18"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="1"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="Brute. Enthralled."/>
+      <property name="Text">Guard.
+[star] While this minion is engaged with a player whose identity has the [[Enthralled]] trait, this minion gets +3 hit points.
+&lt;hr /&gt;
+[star] &lt;b&gt;Boost&lt;/b&gt;: Choose to either place 1 charm counter on the [[Enchantment]] card in your play area or exhaust your identity.</property>
+    </card>
+    <card name="Sindr" id="e1ad8fbe-b7e2-48f0-96ea-40362c055019" size="EncounterCard">
+      <property name="CardNumber" value="55019"/>
+      <property name="Position" value="19"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Attack" value="4"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Elite. Giant."/>
+      <property name="Text">[star] Sindr's attacks deal indirect damage.
+&lt;b&gt;When Revealed&lt;/b&gt;: If your identity has the [[Defiant]] trait, Sindr activates against you. If your identity has the [[Enthralled]] trait, give Sindr a tough status card.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Ulik" id="e1ad8fbe-b7e2-48f0-96ea-40362c055020" size="EncounterCard">
+      <property name="CardNumber" value="55020"/>
+      <property name="Position" value="20"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="0"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Brute. Troll."/>
+      <property name="Text">In expert mode, Ulik gains toughness.
+&lt;b&gt;Forced Response&lt;/b&gt;: After a player deals any amount of damage to Enchantress, Ulik attacks that player.
+&lt;b&gt;When Defeated&lt;/b&gt;: Enchantress attacks the player who defeated Ulik and gets +1 ATK for that attack.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Law of Attraction" id="e1ad8fbe-b7e2-48f0-96ea-40362c055021" size="SchemeCard">
+      <property name="CardNumber" value="55021"/>
+      <property name="Position" value="21"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Boost" value="1"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Acceleration" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Discard cards from the top of the encounter deck until an [[Enthralled]] minion is discarded. Reveal that minion.
+&lt;hr /&gt;
+[star] &lt;b&gt;Boost&lt;/b&gt;: Place 1 charm counter on the [[Enchantment]] card in your play area.</property>
+    </card>
+    <card name="Spellbound" id="e1ad8fbe-b7e2-48f0-96ea-40362c055022" size="SchemeCard">
+      <property name="CardNumber" value="55022"/>
+      <property name="Position" value="22"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Boost" value="1"/>
+      <property name="BaseThreat" value="4"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Crisis" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Each player whose identity has the [[Defiant]] trait places 1 charm counter on the [[Enchantment]] card in their play area. Each player whose identity has the [[Enthralled]] trait discards a card they control.</property>
+    </card>
+    <card name="&quot;Do My Bidding&quot;" id="e1ad8fbe-b7e2-48f0-96ea-40362c055023" size="EncounterCard">
+      <property name="CardNumber" value="55023"/>
+      <property name="Position" value="23"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Boost" value="3"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: If your identity has the [[Defiant]] trait, choose one. If your identity has the [[Enthralled]] trait, do both in any order:
+• Search the encounter deck and discard pile for a minion and reveal it. &lt;i&gt;(Shuffle.)&lt;/i&gt;
+• Search the encounter deck and discard pile for a side scheme and reveal it. &lt;i&gt;(Shuffle.)&lt;/i&gt;</property>
+    </card>
+    <card name="Magical Restraints" id="e1ad8fbe-b7e2-48f0-96ea-40362c055024" size="EncounterCard">
+      <property name="CardNumber" value="55024"/>
+      <property name="Position" value="24"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: If your identity has the [[Defiant]] trait, choose one. If your identity has the [[Enthralled]] trait, do both in any order:
+• You are stunned. Place 1 charm counter on the [[Enchantment]] card in your play area.
+• You are confused. Place 1 charm counter on the [[Enchantment]] card in your play area.</property>
+    </card>
+    <card name="Spell Blast" id="e1ad8fbe-b7e2-48f0-96ea-40362c055025" size="EncounterCard">
+      <property name="CardNumber" value="55025"/>
+      <property name="Position" value="25"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: If your identity has the [[Defiant]] trait, choose one. If your identity has the [[Enthralled]] trait, do both in any order:
+• Enchantress schemes (with +1 SCH in expert mode).
+• Enchantress attacks you (with +1 ATK in expert mode).</property>
+    </card>
+    <card name="Spell Shards" id="e1ad8fbe-b7e2-48f0-96ea-40362c055026" size="EncounterCard">
+      <property name="CardNumber" value="55026"/>
+      <property name="Position" value="26"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="enchantress_villain"/>
+      <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Take 3 indirect damage. If your identity took any amount of damage this way, place 1 charm counter on the [[Enchantment]] card in your play area.
+&lt;hr /&gt;
+[star] &lt;b&gt;Boost&lt;/b&gt;: Place 1 charm counter on the [[Enchantment]] card in your play area.</property>
+    </card>
+    <card name="Loki, God of Lies" id="e1ad8fbe-b7e2-48f0-96ea-40362c055027" size="VillainCard">
+      <property name="CardNumber" value="55027a"/>
+      <property name="Position" value="27"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Stage" value="1"/>
+      <property name="Standard" value="True"/>
+      <property name="Expert" value="True"/>
+      <property name="Attack" value="None"/>
+      <property name="Scheme" value="None"/>
+      <property name="HP" value="20"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Asgard. Mystic."/>
+      <property name="Text">If Loki, God of Lies has 10[per_hero] or fewer remaining hit points, flip this card.</property>
+      <property name="Quote">"Kneel."</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Loki, God of Lies" type="b" size="VillainCard">
+        <property name="CardNumber" value="55027b"/>
+        <property name="Position" value="27"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="encounter"/>
+        <property name="DefaultSetupPile" value="Villain"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="god_of_lies"/>
+        <property name="Stage" value="2"/>
+        <property name="Attack" value="None"/>
+        <property name="Scheme" value="None"/>
+        <property name="HP" value="20"/>
+        <property name="HP_Per_Hero" value="True"/>
+        <property name="Attribute" value="Asgard. Mystic."/>
+        <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Each group in standard mode attaches their set-aside Intense Focus to the [[Avatar of Loki]] villain in their game area. Each group in expert mode flips their Intense Focus attachment to its Total Focus side.
+&lt;b&gt;If Loki, God of Lies is defeated, all players in all groups win the game.&lt;/b&gt;</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Worlds Collide" id="e1ad8fbe-b7e2-48f0-96ea-40362c055028" size="SchemeCard">
+      <property name="CardNumber" value="55028a"/>
+      <property name="Position" value="28"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Stage" value="A"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">&lt;b&gt;Contents&lt;/b&gt;: Loki, God of Lies (1). God of Lies and Standard encounter sets. One modular encounter set &lt;i&gt;(Trickster Magic)&lt;/i&gt;.
+&lt;b&gt;Setup&lt;/b&gt;: Create a separate game area for each player group &lt;i&gt;(see page 9 of rules insert)&lt;/i&gt;. Each group follows the instructions on Mischief and Mayhem (1A).</property>
+      <alternate name="Worlds Collide" type="b" size="SchemeCard">
+        <property name="CardNumber" value="55028b"/>
+        <property name="Position" value="28"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="encounter"/>
+        <property name="DefaultSetupPile" value="Scheme"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="god_of_lies"/>
+        <property name="Stage" value="B"/>
+        <property name="BaseThreat" value="0"/>
+        <property name="BaseThreatFixed" value="False"/>
+        <property name="Threat" value="2"/>
+        <property name="EscalationThreat" value="0"/>
+        <property name="EscalationThreatFixed" value="False"/>
+        <property name="Text">Each [per_hero] icon on Loki, God of Lies counts the total number of players in all game areas.
+Each [per_group] icon on this scheme counts the total number of groups in all pods.
+Cards cannot affect this scheme or Loki, God of Lies, unless they refer to those cards by title.
+&lt;b&gt;If this stage is completed, the players lose the game.&lt;/b&gt;</property>
+      </alternate>
+    </card>
+    <card name="Loki the Rascal" id="e1ad8fbe-b7e2-48f0-96ea-40362c055029" size="VillainCard">
+      <property name="CardNumber" value="55029a"/>
+      <property name="Position" value="29"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Stage" value="A1"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="1"/>
+      <property name="HP" value="15"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Avatar of Loki."/>
+      <property name="Text">[star] &lt;b&gt;Forced Response&lt;/b&gt;: After you resolve a boost card during Loki the Rascal's activation, if that card is a treachery, either deal it to yourself as a facedown encounter card or spend 1 resource of any type.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When this villain would be defeated, place 5[per_hero] shatter counters here and flip this card instead.</property>
+      <alternate name="Fading Figment" type="b" size="VillainCard">
+        <property name="CardNumber" value="55029b"/>
+        <property name="Position" value="29"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="encounter"/>
+        <property name="DefaultSetupPile" value="Villain"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="god_of_lies"/>
+        <property name="Stage" value="A2"/>
+        <property name="Attack" value="None"/>
+        <property name="Scheme" value="None"/>
+        <property name="HP" value="99"/>
+        <property name="Attribute" value="Illusion."/>
+        <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Shatter the illusion &lt;i&gt;(see the set-aside Shatter the Illusion card)&lt;/i). Choose a group in your pod, then place synergy counters on their Unified Front environment equal to the number of players in their group.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Loki the Miscreant" id="e1ad8fbe-b7e2-48f0-96ea-40362c055030" size="VillainCard">
+      <property name="CardNumber" value="55030a"/>
+      <property name="Position" value="30"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Stage" value="B1"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="HP" value="15"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Avatar of Loki."/>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After you resolve a treachery, place 1 threat on the main scheme and 1 threat on a side scheme.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When this villain would be defeated, place 5[per_hero] shatter counters here and flip this card instead.</property>
+      <alternate name="Fading Figment" type="b" size="VillainCard">
+        <property name="CardNumber" value="55030b"/>
+        <property name="Position" value="30"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="encounter"/>
+        <property name="DefaultSetupPile" value="Villain"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="god_of_lies"/>
+        <property name="Stage" value="B2"/>
+        <property name="Attack" value="None"/>
+        <property name="Scheme" value="None"/>
+        <property name="HP" value="99"/>
+        <property name="Attribute" value="Illusion."/>
+        <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Shatter the illusion &lt;i&gt;(see the set-aside Shatter the Illusion card)&lt;/i). Choose a group in your pod, then place synergy counters on their Mounting Resistance environment equal to the number of players in their group.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Loki the Knave" id="e1ad8fbe-b7e2-48f0-96ea-40362c055031" size="VillainCard">
+      <property name="CardNumber" value="55031a"/>
+      <property name="Position" value="31"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Stage" value="C1"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="2"/>
+      <property name="HP" value="15"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Avatar of Loki."/>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After you resolve a treachery, deal 1 damage to your identity and 1 damage to an ally you control.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When this villain would be defeated, place 5[per_hero] shatter counters here and flip this card instead.</property>
+      <alternate name="Fading Figment" type="b" size="VillainCard">
+        <property name="CardNumber" value="55031b"/>
+        <property name="Position" value="31"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="encounter"/>
+        <property name="DefaultSetupPile" value="Villain"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="god_of_lies"/>
+        <property name="Stage" value="C2"/>
+        <property name="Attack" value="None"/>
+        <property name="Scheme" value="None"/>
+        <property name="HP" value="99"/>
+        <property name="Attribute" value="Illusion."/>
+        <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Shatter the illusion &lt;i&gt;(see the set-aside Shatter the Illusion card)&lt;/i). Choose a group in your pod, then place synergy counters on their Domineering Force environment equal to the number of players in their group.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Loki the Wretch" id="e1ad8fbe-b7e2-48f0-96ea-40362c055032" size="VillainCard">
+      <property name="CardNumber" value="55032a"/>
+      <property name="Position" value="32"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="DefaultSetupPile" value="Villain"/>
+      <property name="Type" value="villain"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Stage" value="D1"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="1"/>
+      <property name="HP" value="15"/>
+      <property name="HP_Per_Hero" value="True"/>
+      <property name="Attribute" value="Avatar of Loki."/>
+      <property name="Text">[star] &lt;b&gt;Forced Interrupt&lt;/b&gt;: When Loki the Wretch activates against you, discard the top card of the encounter deck. If a treachery was discarded this way, Loki the Wretch gets +1 SCH and +1 ATK for this activation.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When this villain would be defeated, place 5[per_hero] shatter counters here and flip this card instead.</property>
+      <alternate name="Fading Figment" type="b" size="VillainCard">
+        <property name="CardNumber" value="55032b"/>
+        <property name="Position" value="32"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="encounter"/>
+        <property name="DefaultSetupPile" value="Villain"/>
+        <property name="Type" value="villain"/>
+        <property name="Owner" value="god_of_lies"/>
+        <property name="Stage" value="D2"/>
+        <property name="Attack" value="None"/>
+        <property name="Scheme" value="None"/>
+        <property name="HP" value="99"/>
+        <property name="Attribute" value="Illusion."/>
+        <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Shatter the illusion &lt;i&gt;(see the set-aside Shatter the Illusion card)&lt;/i). Choose a group in your pod, then place synergy counters on their Feigned Retreat environment equal to the number of players in their group.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Mischief and Mayhem" id="e1ad8fbe-b7e2-48f0-96ea-40362c055033" size="SchemeCard">
+      <property name="CardNumber" value="55033a"/>
+      <property name="Position" value="33"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="DefaultSetupPile" value="Scheme"/>
+      <property name="Type" value="main_scheme"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Stage" value="1A"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">&lt;b&gt;Setup&lt;/b&gt;: After resolving Worlds Collide (A), do the following:
+1. Put a random [[Avatar of Loki]] villain into play. Set each other [[Avatar of Loki]] villain and the Shatter the Illusion card aside.
+2. Put each [[Synergy]] environment into play.
+3. In standard mode, set the Intense Focus attachment aside. In expert mode, attach it to the [[Avatar of Loki]] villain in play.</property>
+      <alternate name="Mischief and Mayhem" type="b" size="SchemeCard">
+        <property name="CardNumber" value="55033b"/>
+        <property name="Position" value="33"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="encounter"/>
+        <property name="DefaultSetupPile" value="Scheme"/>
+        <property name="Type" value="main_scheme"/>
+        <property name="Owner" value="god_of_lies"/>
+        <property name="Stage" value="1B"/>
+        <property name="BaseThreat" value="0"/>
+        <property name="BaseThreatFixed" value="True"/>
+        <property name="Threat" value="8"/>
+        <property name="EscalationThreat" value="1"/>
+        <property name="EscalationThreatFixed" value="False"/>
+        <property name="Text">&lt;b&gt;Forced Interrupt&lt;/b&gt;: When this scheme would be completed, remove all threat from here and place 1 threat on Worlds Collide instead.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When an identity would be defeated, change that identity's form to alter-ego, set its hit point dial to 1, and place 1 threat on Worlds Collide instead.</property>
+      </alternate>
+    </card>
+    <card name="Intense Focus" id="e1ad8fbe-b7e2-48f0-96ea-40362c055034" size="EncounterCard">
+      <property name="CardNumber" value="55034a"/>
+      <property name="Position" value="34"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="DefaultSetupPile" value="Side"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Permanent.
+The [[Avatar of Loki]] villain gets +2[per_hero] hit points and gains steady.
+&lt;b&gt;When Revealed&lt;/b&gt;: In standard mode, discard the top 2[per_hero] cards of the encounter deck and the top 5 cards of each player deck.</property>
+      <alternate name="Total Focus" type="b" size="EncounterCard">
+        <property name="CardNumber" value="55034b"/>
+        <property name="Position" value="34"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="encounter"/>
+        <property name="Type" value="attachment"/>
+        <property name="Owner" value="god_of_lies"/>
+        <property name="Attack" value="1"/>
+        <property name="Scheme" value="1"/>
+        <property name="Attribute" value="Condition."/>
+        <property name="Text">Permanent.
+The [[Avatar of Loki]] villain gets +3[per_hero] hit points and gains steady.
+&lt;b&gt;When Revealed&lt;/b&gt;: Discard the top 2[per_hero] cards of the encounter deck and the top 5 cards of each player deck. Find Dark Scepter and reveal it. If Dark Scepter did not enter play this way, give the [[Avatar of Loki]] villain a tough status card.</property>
+      </alternate>
+    </card>
+    <card name="Wrapped in Chains" id="e1ad8fbe-b7e2-48f0-96ea-40362c055035" size="EncounterCard">
+      <property name="CardNumber" value="55035"/>
+      <property name="Position" value="35"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Attach to your identiy.
+Attached identity cannot ready.
+&lt;b&gt;When Revealed&lt;/b&gt;: Exhaust your identity.
+&lt;b&gt;Hero Action&lt;/b&gt;: Spend 2 resources of the same type → discard this card. Place 1 shatter counter on the [[Avatar of Loki]] villain.</property>
+    </card>
+    <card name="Dark Scepter" id="e1ad8fbe-b7e2-48f0-96ea-40362c055036" size="EncounterCard">
+      <property name="CardNumber" value="55036"/>
+      <property name="Position" value="36"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Attack" value="1"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Item. Weapon."/>
+      <property name="Text">Attach to the [[Avatar of Loki]] villain.
+The [[Avatar of Loki]] villain gains stalwart.
+Treacheries cannot be canceled.
+&lt;b&gt;Hero Response&lt;/b&gt;: After you resolve a treachery, spend 2 resources of the same type → discard this card.</property>
+    </card>
+    <card name="Draugr Buddy" id="e1ad8fbe-b7e2-48f0-96ea-40362c055037" size="EncounterCard">
+      <property name="CardNumber" value="55037"/>
+      <property name="Position" value="37"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="0"/>
+      <property name="Boost" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="Undead."/>
+      <property name="Text">Guard.
+&lt;b&gt;When Defeated&lt;/b&gt;: The defeating player discards the top card of the encounter deck. If that card is a treachery, deal Draugr Buddy to that player as a facedown encounter card.</property>
+    </card>
+    <card name="Grendell" id="e1ad8fbe-b7e2-48f0-96ea-40362c055038" size="EncounterCard">
+      <property name="CardNumber" value="55038"/>
+      <property name="Position" value="38"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Brute. Dark Elf."/>
+      <property name="Text">Guard.
+[star] &lt;b&gt;Forced Interrupt&lt;/b&gt;: When Grendell attacks, discard the top 3 cards of the encounter deck. For each treachery discarded this way, Grendell gets +1 ATK for this attack.
+&lt;b&gt;When Defeated&lt;/b&gt;: Place 3 shatter counters on the [[Avatar of Loki]] villain.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Malekith" id="e1ad8fbe-b7e2-48f0-96ea-40362c055039" size="EncounterCard">
+      <property name="CardNumber" value="55039"/>
+      <property name="Position" value="39"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="5"/>
+      <property name="Attribute" value="Dark Elf."/>
+      <property name="Text">Retaliate 1.
+[star] &lt;b&gt;Forced Response&lt;/b&gt;: After Malekith attacks you, discard the top card of the encounter deck. If that card is a treachery, deal it to yourself as a facedown encounter card.
+&lt;b&gt;When Defeated&lt;/b&gt;: Place 2 shatter counters on the [[Avatar of Loki]] villain.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Minotaur" id="e1ad8fbe-b7e2-48f0-96ea-40362c055040" size="EncounterCard">
+      <property name="CardNumber" value="55040"/>
+      <property name="Position" value="40"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="Brute. Creature."/>
+      <property name="Text">Toughness.
+&lt;b&gt;When Revealed&lt;/b&gt;: If there are 5 or more treacheries in the encounter discard pile, Minotaur activates against you.
+&lt;b&gt;When Defeated&lt;/b&gt;: Place 2 shatter counters on the [[Avatar of Loki]] villain.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="The Mangog" id="e1ad8fbe-b7e2-48f0-96ea-40362c055041" size="EncounterCard">
+      <property name="CardNumber" value="55041"/>
+      <property name="Position" value="41"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Attack" value="4"/>
+      <property name="Scheme" value="3"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="10"/>
+      <property name="Attribute" value="Brute. Creature. Elite."/>
+      <property name="Text">Victory 1.
+Any player in your pod can attack The Mangog as if it were in their game area.
+&lt;b&gt;When Defeated&lt;/b&gt;: Each group in your pod places 3 shatter counters on their [[Avatar of Loki]] villain and 1 synergy counter on one of their [[Synergy]] environments.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Fenris Wolf" id="e1ad8fbe-b7e2-48f0-96ea-40362c055042" size="EncounterCard">
+      <property name="CardNumber" value="55042"/>
+      <property name="Position" value="42"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="7"/>
+      <property name="Attribute" value="Creature. Elite."/>
+      <property name="Text">Guard. Patrol.
+
+&lt;b&gt;When Defeated&lt;/b&gt;: Place 3 shatter counters on the [[Avatar of Loki]] villain. Choose a group in your pod, then place 1 synergy counter on their Mounting Resistance environment.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Hraesvelgr" id="e1ad8fbe-b7e2-48f0-96ea-40362c055043" size="EncounterCard">
+      <property name="CardNumber" value="55043"/>
+      <property name="Position" value="43"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="7"/>
+      <property name="Attribute" value="Creature. Elite."/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Discard the top 3 cards of the encounter deck. If a treachery was discarded this way, take 2 indirect damage.
+&lt;b&gt;When Defeated&lt;/b&gt;: Place 3 shatter counters on the [[Avatar of Loki]] villain. Choose a group in your pod, then place 1 synergy counter on their Domineering Force environment.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Laufey" id="e1ad8fbe-b7e2-48f0-96ea-40362c055044" size="EncounterCard">
+      <property name="CardNumber" value="55044"/>
+      <property name="Position" value="44"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="7"/>
+      <property name="Attribute" value="Elite. Giant."/>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After a character attacks Laufey, discard the top card of the encounter deck. If that card is a treachery, stun the attacker.
+&lt;b&gt;When Defeated&lt;/b&gt;: Place 3 shatter counters on the [[Avatar of Loki]] villain. Choose a group in your pod, then place 1 synergy counter on their Unified Front environment.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Aura of Stasis" id="e1ad8fbe-b7e2-48f0-96ea-40362c055045" size="SchemeCard">
+      <property name="CardNumber" value="55045"/>
+      <property name="Position" value="45"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Boost" value="1"/>
+      <property name="BaseThreat" value="4"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Crisis" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Discard the top 2 cards of the encounter deck (top 3 cards instead in expert mode). If a treachery was discarded this way, exhaust your identity.</property>
+    </card>
+    <card name="Door Between Worlds" id="e1ad8fbe-b7e2-48f0-96ea-40362c055046" size="SchemeCard">
+      <property name="CardNumber" value="55046"/>
+      <property name="Position" value="46"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="7"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Acceleration" value="1"/>
+      <property name="Scheme_Crisis" value="1"/>
+      <property name="Scheme_Hazard" value="1"/>
+      <property name="Text">Victory 1.
+Any player in your pod can thwart Door Between Worlds as if it were in their game area.
+&lt;b&gt;When Defeated&lt;/b&gt;: Each group in your pod places 3 shatter counters on their [[Avatar of Loki]] villain and 1 synergy counter on one of their [[Synergy]] environments.</property>
+    </card>
+    <card name="Lofty Goals" id="e1ad8fbe-b7e2-48f0-96ea-40362c055047" size="SchemeCard">
+      <property name="CardNumber" value="55047"/>
+      <property name="Position" value="47"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="BaseThreat" value="5"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Acceleration" value="1"/>
+      <property name="Text">&lt;b&gt;When Defeated&lt;/b&gt;: Place 2 shatter counters on the [[Avatar of Loki]] villain.
+&lt;hr /&gt;
+[star] &lt;b&gt;Boost&lt;/b&gt;: Take 1 indirect damage for each character you control.</property>
+    </card>
+    <card name="New Jotunheim" id="e1ad8fbe-b7e2-48f0-96ea-40362c055048" size="SchemeCard">
+      <property name="CardNumber" value="55048"/>
+      <property name="Position" value="48"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="6"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Acceleration" value="1"/>
+      <property name="Text">&lt;b&gt;When Defeated&lt;/b&gt;: Place 3 shatter counters on the [[Avatar of Loki]] villain. Choose a group in your pod, then place 1 synergy counter on their Feigned Retreat environment.</property>
+    </card>
+    <card name="Dark Arts" id="e1ad8fbe-b7e2-48f0-96ea-40362c055049" size="EncounterCard">
+      <property name="CardNumber" value="55049"/>
+      <property name="Position" value="49"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Text">In expert mode, this card gains incite 1.
+&lt;b&gt;When Revealed&lt;/b&gt;: Search the encounter discard pile for a minion and reveal it. Otherwise, place 3 threat on the main scheme.
+&lt;hr /&gt;
+[star] &lt;b&gt;Boost&lt;/b&gt;: Place 1 threat on the main scheme for each character you control.</property>
+    </card>
+    <card name="Dirty Trick" id="e1ad8fbe-b7e2-48f0-96ea-40362c055050" size="EncounterCard">
+      <property name="CardNumber" value="55050"/>
+      <property name="Position" value="50"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Remove 1 shatter counter from the [[Avatar of Loki]] villain. Take 2 damage (3 damage instead in expert mode).
+&lt;hr /&gt;
+[star] &lt;b&gt;Boost&lt;/b&gt;: Take 1 indirect damage for each character you control.</property>
+    </card>
+    <card name="Stories and Lies" id="e1ad8fbe-b7e2-48f0-96ea-40362c055051" size="EncounterCard">
+      <property name="CardNumber" value="55051"/>
+      <property name="Position" value="51"/>
+      <property name="Quantity" value="3"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Swap the [[Avatar of Loki]] villain in play with a random set-aside [[Avatar of Loki]] villain. Then:
+• If Loki the Knave or Loki the Miscreant is in play, he schemes (with +1 SCH in expert mode).
+• If Loki the Rascal or Loki the Wretch is in play, he attacks you (with +1 ATK in expert mode).</property>
+    </card>
+    <card name="Domineering Force" id="e1ad8fbe-b7e2-48f0-96ea-40362c055052" size="EncounterCard">
+      <property name="CardNumber" value="55052"/>
+      <property name="Position" value="52"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="environment"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Attribute" value="Synergy."/>
+      <property name="Text">Permanent.
+Max 1[per_hero] synergy counters here.
+&lt;b&gt;Interrupt&lt;/b&gt;: When a friendly character attacks, remove 1 synergy counter from here → that attack deals 4 additional damage.</property>
+    </card>
+    <card name="Feigned Retreat" id="e1ad8fbe-b7e2-48f0-96ea-40362c055053" size="EncounterCard">
+      <property name="CardNumber" value="55053"/>
+      <property name="Position" value="53"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="environment"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Attribute" value="Synergy."/>
+      <property name="Text">Permanent.
+Max 1[per_hero] synergy counters here.
+&lt;b&gt;Interrupt&lt;/b&gt;: When an identity would take any amount of damage, remove 1 synergy counter from here → prevent 4 of that damage.</property>
+    </card>
+    <card name="Mounting Resistance" id="e1ad8fbe-b7e2-48f0-96ea-40362c055054" size="EncounterCard">
+      <property name="CardNumber" value="55054"/>
+      <property name="Position" value="54"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="environment"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Attribute" value="Synergy."/>
+      <property name="Text">Permanent.
+Max 1[per_hero] synergy counters here.
+&lt;b&gt;Interrupt&lt;/b&gt;: When a friendly character thwarts, remove 1 synergy counter from here → that thwart removes 4 additional threat.</property>
+    </card>
+    <card name="Unified Front" id="e1ad8fbe-b7e2-48f0-96ea-40362c055055" size="EncounterCard">
+      <property name="CardNumber" value="55055"/>
+      <property name="Position" value="55"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="environment"/>
+      <property name="Owner" value="god_of_lies"/>
+      <property name="Attribute" value="Synergy."/>
+      <property name="Text">Permanent.
+Max 1[per_hero] synergy counters here.
+&lt;b&gt;Resource&lt;/b&gt;: Remove 1 synergy counter from here → generate [wild] [wild] resources.</property>
+    </card>
+    <card name="Absorbing Man" id="e1ad8fbe-b7e2-48f0-96ea-40362c055056" size="EncounterCard">
+      <property name="CardNumber" value="55056"/>
+      <property name="Position" value="56"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="trickster_magic"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="7"/>
+      <property name="Attribute" value="Brute. Elite. Enthralled."/>
+      <property name="Text">Guard. Victory 1.
+[star] While Absorbing Man is engaged with you, he gets +X ATK, where X is the printed cost of the highest-cost card you control.
+&lt;b&gt;When Defeated&lt;/b&gt;: The player who defeated this minion puts the set-aside Absorbing Man ally into play under their control.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Titania" id="e1ad8fbe-b7e2-48f0-96ea-40362c055057" size="EncounterCard">
+      <property name="CardNumber" value="55057"/>
+      <property name="Position" value="57"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="trickster_magic"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="3"/>
+      <property name="HP" value="8"/>
+      <property name="Attribute" value="Brute. Elite. Enthralled."/>
+      <property name="Text">Steady. Victory 1.
+[star] Titania's attacks gain overkill.
+&lt;b&gt;When Defeated&lt;/b&gt;: The player who defeated this minion puts the set-aside Titania ally into play under their control.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Whirlwind" id="e1ad8fbe-b7e2-48f0-96ea-40362c055058" size="EncounterCard">
+      <property name="CardNumber" value="55058"/>
+      <property name="Position" value="58"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="trickster_magic"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="1"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Elite. Enthralled."/>
+      <property name="Text">Quickstrike. Victory 1.
+[star] &lt;b&gt;Forced Response&lt;/b&gt;: After Whirlwind attacks you, take 1 indirect damage for each side scheme in play.
+&lt;b&gt;When Defeated&lt;/b&gt;: The player who defeated this minion puts the set-aside Whirlwind ally into play under their control.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Zzzax" id="e1ad8fbe-b7e2-48f0-96ea-40362c055059" size="EncounterCard">
+      <property name="CardNumber" value="55059"/>
+      <property name="Position" value="59"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="trickster_magic"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Elite. Enthralled."/>
+      <property name="Text">Retaliate 1. Victory 1.
+&lt;b&gt;When Revealed&lt;/b&gt;: Discard the top 4 cards of your deck. For each printed [energy] resource discarded this way, take 1 indirect damage.
+&lt;b&gt;When Defeated&lt;/b&gt;: The player who defeated this minion puts the set-aside Zzzax ally into play under their control.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="The Trickster Tango" id="e1ad8fbe-b7e2-48f0-96ea-40362c055060" size="SchemeCard">
+      <property name="CardNumber" value="55060"/>
+      <property name="Position" value="60"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="trickster_magic"/>
+      <property name="Boost" value="1"/>
+      <property name="BaseThreat" value="4"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Acceleration" value="2"/>
+      <property name="Text">The villain gains stalwart. &lt;i&gt;(They cannot be stunned or confused.)&lt;/i&gt;
+&lt;hr /&gt;
+[star] &lt;b&gt;Boost&lt;/b&gt;: If this activation is an attack, it gains overkill.</property>
+    </card>
+    <card name="Puppet Master" id="e1ad8fbe-b7e2-48f0-96ea-40362c055061" size="SchemeCard">
+      <property name="CardNumber" value="55061"/>
+      <property name="Position" value="61"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="trickster_magic"/>
+      <property name="Boost" value="1"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Scheme_Hazard" value="1"/>
+      <property name="Text">In expert mode, this scheme gains hinder 1[per_hero].
+Allies cannot thwart this scheme or defend against the villain's attacks.</property>
+    </card>
+    <card name="Love Triangle" id="e1ad8fbe-b7e2-48f0-96ea-40362c055062" size="EncounterCard">
+      <property name="CardNumber" value="55062"/>
+      <property name="Position" value="62"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="trickster_magic"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">Attach to an ally you control. Otherwise, this card gains surge.
+Attached ally cannot attack the villain or defend against the villain's attacks.
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust attached ally and spend a [mental] resource → discard this card.</property>
+    </card>
+    <card name="Shatter the Illusion" id="e1ad8fbe-b7e2-48f0-96ea-40362c055067" size="EncounterCard">
+      <property name="CardNumber" value="55067"/>
+      <property name="Position" value="67"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="trickster_takeover_side"/>
+      <property name="DefaultSetupPile" value="Side"/>
+    </card>
+    <card name="Epic Multiplayer Reminder" id="e1ad8fbe-b7e2-48f0-96ea-40362c055068" size="EncounterCard">
+      <property name="CardNumber" value="55068"/>
+      <property name="Position" value="68"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="trickster_takeover_side"/>
+      <property name="DefaultSetupPile" value="Side"/>
+    </card>
+  </cards>
+</set>

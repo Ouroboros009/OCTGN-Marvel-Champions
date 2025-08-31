@@ -4,7 +4,7 @@ import os
 from os import path
 import argparse
 
-runFile = 'mk_by_hax'
+runFile = 'tt'
 print(f'fm_{runFile}')  # Doit afficher fm_mystique_by_merlin
 xmlSet = None
 packName = None

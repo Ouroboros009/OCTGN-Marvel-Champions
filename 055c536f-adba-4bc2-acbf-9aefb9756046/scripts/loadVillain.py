@@ -406,6 +406,35 @@ def villainSetup(group=table, x = 0, y = 0):
         shared.piles['Temporary'].collapsed = False
         shuffle(sideDeck())
 
+    elif vName == "God of Lies":
+        # If we loaded the encounter deck - add the first villain and main scheme cards to the table
+        mainSchemeCards[0].moveToTable(tableLocations['mainScheme'][0], tableLocations['mainScheme'][1])
+        mainSchemeCards[1].moveToTable(tableLocations['mainScheme'][0] + 100, tableLocations['mainScheme'][1])
+        villainCards[0].moveToTable(villainX(1, 0), tableLocations['villain'][1])
+        for i in range(0, len(getPlayers())):
+            vCards = sorted(filter(lambda card: card.Type == "villain", villainDeck()), key=lambda c: c.CardNumber)
+            randomLoki = rnd(0, len(vCards)-1)
+            vCards[randomLoki].moveToTable(playerX(i), -100)
+        
+        vCards = sorted(filter(lambda card: card.Type == "villain", villainDeck()), key=lambda c: c.CardNumber)
+        for c in vCards:
+            c.moveTo(sideDeck())
+        
+        # Put each Synergy cards into play.
+        synergyCards = sorted(filter(lambda card: card.Attribute == "Synergy.", encounterDeck()), key=lambda c: c.CardNumber)
+        synergyX = tableLocations['villain'][0] - 100
+        synergyY = tableLocations['villain'][1]
+        for c in synergyCards:
+           synergyX = synergyX - 70
+           c.moveToTable(synergyX, synergyY)
+        
+        # In standard mode, set the Intense Focus attachment aside. In expert mode, attach it to the [[Avatar of Loki]] villain in play
+        if gameDifficulty == "1":
+            revealCardOnSetup("Intense Focus", "55034a", tableLocations['villain'][0]-55, tableLocations['villain'][1]+15, True, True)
+            vCardOnTable = sorted(filter(lambda card: card.Type == "villain" and card.Attribute == "Avatar of Loki.", table), reverse=True)
+            for c in vCardOnTable:
+                addMarker(c, 0, 0, 17 * len(getPlayers()))
+
     else:
         # If we loaded the encounter deck - add the first villain and main scheme cards to the table
         mainSchemeCards[0].moveToTable(tableLocations['mainScheme'][0], tableLocations['mainScheme'][1])
@@ -846,3 +875,20 @@ def SpecificVillainSetup(vName = ''):
             if c.Type == 'environment' and lookForAttribute(c, "Setting."):
                 c.moveTo(encounterDiscardDeck())
         shuffleSetIntoEncounter(sideDeck(), x = 0, y = 0, random = True)
+
+
+    if vName == 'Enchantress':
+        if msCardOnTable[0].CardNumber == "55004a": # Stage 1 main scheme
+            # Hypnotic Gaze attached to each player
+            for i in range(0, len(getPlayers())):
+                attCards = filter(lambda card: card.Type == "attachment", sideDeck())
+                rndCard = rnd(0, len(attCards)-1)
+                attCards[rndCard].moveToTable(playerX(i), -70)
+
+        if vCardOnTable[0].CardNumber == "55002" and gameDifficulty == "0": # Enchantress II
+            c = revealCardOnSetup("Future of Despair", "55006", ssX, ssY, False, True)
+            addMarker(c, 0, 0, 5 * len(getPlayers()))
+
+        if vCardOnTable[0].CardNumber == "55003" and gameDifficulty == "1": # Enchantress II
+            c = revealCardOnSetup("Future of Despair", "55006", ssX, ssY, False, True)
+            addMarker(c, 0, 0, 6 * len(getPlayers()))

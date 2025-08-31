@@ -283,5 +283,16 @@
             <property name="nbModular" value="2"/>
             <property name="mandatoryModular" value="{'s.h.i.e.l.d._executive_board':['S.H.I.E.L.D. Executive Board', 'Encounter', False], 'executive_board_evidence':['Executive Board Evidence', 'Side', False]}"/>
         </card>
+        <card id="055c536f-adba-4bc2-acbf-200000000052" name="Enchantress">
+            <property name="Type" value="villain_setup" />
+            <property name="Owner" value="enchantress_villain"/>
+            <property name="nbModular" value="1"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-200000000053" name="God of Lies">
+            <property name="Type" value="villain_setup" />
+            <property name="Owner" value="god_of_lies"/>
+            <property name="nbModular" value="1"/>
+            <property name="mandatoryModular" value="{'trickster_takeover_side':['Trickster Takeover Side', 'Side', False]}"/>
+        </card>
     </cards>
 </set>

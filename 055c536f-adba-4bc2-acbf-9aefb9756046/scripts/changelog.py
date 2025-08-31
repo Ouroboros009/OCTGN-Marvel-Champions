@@ -397,5 +397,9 @@ changelog = {
     '0000386': ("0.0.3.86", "12 August 2025", [
         "Feature: Added a function to draw multiple unrevealed cards.",
         "Security: This update addresses a recently reported security issue."
+        ]),
+    '0000387': ("0.0.3.87", "31 August 2025", [
+        "Trickster Takeover Scenario pack added",
+        "Security: This update addresses another recently reported security issue."
         ])
 }

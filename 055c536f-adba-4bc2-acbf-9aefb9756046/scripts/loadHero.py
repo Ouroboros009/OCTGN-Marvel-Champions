@@ -70,7 +70,7 @@ Reset the game in order to generate a new deck."""
             whisper("Error: Invalid URL.")
             return
 
-        aspectCardsList = createAPICards(url, False)
+        aspectCardsList = RemoteCallBlocker.createAPICards(url, False)
         if not fanmade:
             cardSelected = me.piles["Setup"].top()
             heroSet = cardSelected.Owner
@@ -87,7 +87,7 @@ Reset the game in order to generate a new deck."""
             me.setGlobalVariable("heroPlayed", heroSet)
         universal_prebuilt_List = sorted(universal_prebuilt.keys())
         prebuilt_Choice = askChoice("What Universal Pre-Built deck do you want to load?", universal_prebuilt_List)
-        aspectCardsList = createAPICards("https://marvelcdb.com/deck/view/{}".format(universal_prebuilt[universal_prebuilt_List[prebuilt_Choice-1]]), True)
+        aspectCardsList = RemoteCallBlocker.createAPICards("https://marvelcdb.com/deck/view/{}".format(universal_prebuilt[universal_prebuilt_List[prebuilt_Choice-1]]), True)
 
     # Set all player variables
     pList = list(JavaScriptSerializer().DeserializeObject(getGlobalVariable("playerList")))
@@ -356,65 +356,68 @@ def changeOwner(cards, hero_id):
         if card.Owner is None or card.Owner in ["", "basic", "justice", "leadership", "protection", "aggression"]:
             card.Owner = hero_id
 
-def createAPICards(url, fanmade = False):
-    """
-    Create the deck by loading cards from a marvelcdb URL.
-    This function can load the whole deck or only cards that do not belong to the Hero (in this case, parameters 'filter'
-    and 'new_owner' must be specified)
-    """
-    notify("Looking {} for deck.".format(url))
-    all_cards = []
+class RemoteCallBlocker:
+    """Methods in this class cannot be remote called because calling them requires using the '.' character, which isn't allowed in remote calls."""
+    @staticmethod
+    def createAPICards(url, fanmade = False):
+        """
+        Create the deck by loading cards from a marvelcdb URL.
+        This function can load the whole deck or only cards that do not belong to the Hero (in this case, parameters 'filter'
+        and 'new_owner' must be specified)
+        """
+        notify("Looking {} for deck.".format(url))
+        all_cards = []
 
-    protocol = url.split("://")[0]
-    if "marvelcdb.com/" in str(url):
-        webadress = "marvelcdb.com"
-    else:
-        webadress = url.split("://")[1].split("/")[0]
+        protocol = url.split("://")[0]
+        if "marvelcdb.com/" in str(url):
+            webadress = "marvelcdb.com"
+        else:
+            webadress = url.split("://")[1].split("/")[0]
 
-    deckid = url.split("view/")[1].split("/")[0]
-    if "decklist/" in str(url):
-        data, code = webRead("{}://{}/api/public/decklist/{}".format(protocol, webadress, deckid))
-    elif "deck/" in str(url):
-        data, code = webRead("{}://{}/api/public/deck/{}".format(protocol, webadress, deckid))
-    if code != 200:
-        whisper("Error retrieving online deck data, please try again.")
-        return
-    try:
-        deckname = JavaScriptSerializer().DeserializeObject(data)["hero_name"]
-        deck = JavaScriptSerializer().DeserializeObject(data)["slots"]
-        hero_id = JavaScriptSerializer().DeserializeObject(data)["hero_code"]
-        if not fanmade:
-            heroCards = queryCard({"Type":"hero", "CardNumber":hero_id}, True)
-            heroCard = me.piles["Setup"].create(heroCards[0], 1)
-            setupCardModel = queryCard({"Type":"hero_setup", "Owner":heroCard.Owner}, True)
-            if len(setupCardModel) == 0:
-                setupCardModel = queryCard({"Type":"fm_hero_setup", "Owner":heroCard.Owner}, True)
-            setupCard = me.Setup.create(setupCardModel[0], 1)
-            heroCard.delete()
-        chars_to_remove = ['[',']']
-        rx = '[' + re.escape(''.join(chars_to_remove)) + ']'
-        for id in deck:
-            line = re.sub(rx,'',str(id))
-            line = line.split(',')
-            cardid = line[0]
-            qty = int(line[1].strip())
-            cardModel = queryCard({"CardNumber":cardid}, True)
-            if len(cardModel) == 0:
-                notify("Card not found in octgn database. Code from marvelcdb url : {}.".format(cardid))
-                continue 
-            cards = me.Deck.create(cardModel[0], qty)
-            if qty == 1:
-                isAspectCard = cards.Owner == ""
-                if isAspectCard:
-                    all_cards.append(cards)
+        deckid = url.split("view/")[1].split("/")[0]
+        if "decklist/" in str(url):
+            data, code = webRead("{}://{}/api/public/decklist/{}".format(protocol, webadress, deckid))
+        elif "deck/" in str(url):
+            data, code = webRead("{}://{}/api/public/deck/{}".format(protocol, webadress, deckid))
+        if code != 200:
+            whisper("Error retrieving online deck data, please try again.")
+            return
+        try:
+            deckname = JavaScriptSerializer().DeserializeObject(data)["hero_name"]
+            deck = JavaScriptSerializer().DeserializeObject(data)["slots"]
+            hero_id = JavaScriptSerializer().DeserializeObject(data)["hero_code"]
+            if not fanmade:
+                heroCards = queryCard({"Type":"hero", "CardNumber":hero_id}, True)
+                heroCard = me.piles["Setup"].create(heroCards[0], 1)
+                setupCardModel = queryCard({"Type":"hero_setup", "Owner":heroCard.Owner}, True)
+                if len(setupCardModel) == 0:
+                    setupCardModel = queryCard({"Type":"fm_hero_setup", "Owner":heroCard.Owner}, True)
+                setupCard = me.Setup.create(setupCardModel[0], 1)
+                heroCard.delete()
+            chars_to_remove = ['[',']']
+            rx = '[' + re.escape(''.join(chars_to_remove)) + ']'
+            for id in deck:
+                line = re.sub(rx,'',str(id))
+                line = line.split(',')
+                cardid = line[0]
+                qty = int(line[1].strip())
+                cardModel = queryCard({"CardNumber":cardid}, True)
+                if len(cardModel) == 0:
+                    notify("Card not found in octgn database. Code from marvelcdb url : {}.".format(cardid))
+                    continue 
+                cards = me.Deck.create(cardModel[0], qty)
+                if qty == 1:
+                    isAspectCard = cards.Owner == ""
+                    if isAspectCard:
+                        all_cards.append(cards)
+                    else:
+                        cards.delete()
                 else:
-                    cards.delete()
-            else:
-                isAspectCard = cards[0].Owner == ""
-                if isAspectCard:
-                    all_cards.extend(cards)
-                else:
-                    [c.delete() for c in cards]
-        return all_cards
-    except ValueError:
-        whisper("Error retrieving online deck data, please try again. If you are trying to load a non published deck make sure you have edited your account to select 'Share Your Decks'")
+                    isAspectCard = cards[0].Owner == ""
+                    if isAspectCard:
+                        all_cards.extend(cards)
+                    else:
+                        [c.delete() for c in cards]
+            return all_cards
+        except ValueError:
+            whisper("Error retrieving online deck data, please try again. If you are trying to load a non published deck make sure you have edited your account to select 'Share Your Decks'")

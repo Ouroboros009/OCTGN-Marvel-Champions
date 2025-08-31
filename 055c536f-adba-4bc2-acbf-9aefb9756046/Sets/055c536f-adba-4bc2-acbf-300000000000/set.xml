@@ -429,6 +429,10 @@
             <property name="Type" value="encounter_setup"/>
             <property name="Owner" value="whiteout"/>
         </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000108" name="Trickster Magic">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="trickster_magic"/>
+        </card>
         <card id="055c536f-adba-4bc2-acbf-300000009001" name="Nemesis: Vulture">
             <property name="Type" value="encounter_setup"/>
             <property name="Owner" value="spider_man_nemesis"/>

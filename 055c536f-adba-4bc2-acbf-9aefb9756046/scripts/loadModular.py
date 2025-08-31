@@ -183,6 +183,10 @@ def recommendedEncounter(group, villainName = ''):
     if villainName == 'Baron Zemo':
         createCardsFromSet(group, "scientist_supreme", "Scientist Supreme", True)
         createCardsFromSet(group, "s.h.i.e.l.d.", "S.H.I.E.L.D.", True)
+    if villainName == 'Enchantress':
+        createCardsFromSet(group, "trickster_magic", "Trickster Magic", True)
+    if villainName == 'Gods of Lies':
+        createCardsFromSet(group, "trickster_magic", "Trickster Magic", True)
     elif recommendedModular <> "":
         recommendedModular = recommendedModular.replace("True", "true").replace("False", "false")
         recommendedModular = dict(JavaScriptSerializer().DeserializeObject(recommendedModular))
