@@ -662,7 +662,7 @@ Cards cannot affect this scheme or Loki, God of Lies, unless they refer to those
         <property name="Stage" value="A2"/>
         <property name="Attack" value="None"/>
         <property name="Scheme" value="None"/>
-        <property name="HP" value="99"/>
+        <property name="HP" value="0"/>
         <property name="Attribute" value="Illusion."/>
         <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Shatter the illusion &lt;i&gt;(see the set-aside Shatter the Illusion card)&lt;/i). Choose a group in your pod, then place synergy counters on their Unified Front environment equal to the number of players in their group.</property>
         <property name="Unique" value="True"/>
@@ -695,7 +695,7 @@ Cards cannot affect this scheme or Loki, God of Lies, unless they refer to those
         <property name="Stage" value="B2"/>
         <property name="Attack" value="None"/>
         <property name="Scheme" value="None"/>
-        <property name="HP" value="99"/>
+        <property name="HP" value="0"/>
         <property name="Attribute" value="Illusion."/>
         <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Shatter the illusion &lt;i&gt;(see the set-aside Shatter the Illusion card)&lt;/i). Choose a group in your pod, then place synergy counters on their Mounting Resistance environment equal to the number of players in their group.</property>
         <property name="Unique" value="True"/>
@@ -728,7 +728,7 @@ Cards cannot affect this scheme or Loki, God of Lies, unless they refer to those
         <property name="Stage" value="C2"/>
         <property name="Attack" value="None"/>
         <property name="Scheme" value="None"/>
-        <property name="HP" value="99"/>
+        <property name="HP" value="0"/>
         <property name="Attribute" value="Illusion."/>
         <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Shatter the illusion &lt;i&gt;(see the set-aside Shatter the Illusion card)&lt;/i). Choose a group in your pod, then place synergy counters on their Domineering Force environment equal to the number of players in their group.</property>
         <property name="Unique" value="True"/>
@@ -761,7 +761,7 @@ Cards cannot affect this scheme or Loki, God of Lies, unless they refer to those
         <property name="Stage" value="D2"/>
         <property name="Attack" value="None"/>
         <property name="Scheme" value="None"/>
-        <property name="HP" value="99"/>
+        <property name="HP" value="0"/>
         <property name="Attribute" value="Illusion."/>
         <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Shatter the illusion &lt;i&gt;(see the set-aside Shatter the Illusion card)&lt;/i). Choose a group in your pod, then place synergy counters on their Feigned Retreat environment equal to the number of players in their group.</property>
         <property name="Unique" value="True"/>
@@ -1013,7 +1013,7 @@ Any player in your pod can attack The Mangog as if it were in their game area.
       <property name="Owner" value="god_of_lies"/>
       <property name="Boost" value="3"/>
       <property name="BaseThreat" value="7"/>
-      <property name="BaseThreatFixed" value="False"/>
+      <property name="BaseThreatFixed" value="True"/>
       <property name="EscalationThreatFixed" value="False"/>
       <property name="Scheme_Acceleration" value="1"/>
       <property name="Scheme_Crisis" value="1"/>

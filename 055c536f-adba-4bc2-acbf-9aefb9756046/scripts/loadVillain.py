@@ -408,17 +408,14 @@ def villainSetup(group=table, x = 0, y = 0):
 
     elif vName == "God of Lies":
         # If we loaded the encounter deck - add the first villain and main scheme cards to the table
-        mainSchemeCards[0].moveToTable(tableLocations['mainScheme'][0], tableLocations['mainScheme'][1])
-        mainSchemeCards[1].moveToTable(tableLocations['mainScheme'][0] + 100, tableLocations['mainScheme'][1])
+        mainSchemeCards[0].moveToTable(tableLocations['mainScheme'][0] + 80, tableLocations['mainScheme'][1])
+        mainSchemeCards[1].moveToTable(tableLocations['mainScheme'][0] + 180, tableLocations['mainScheme'][1])
         villainCards[0].moveToTable(villainX(1, 0), tableLocations['villain'][1])
-        for i in range(0, len(getPlayers())):
-            vCards = sorted(filter(lambda card: card.Type == "villain", villainDeck()), key=lambda c: c.CardNumber)
-            randomLoki = rnd(0, len(vCards)-1)
-            vCards[randomLoki].moveToTable(playerX(i), -100)
         
+        # Put a rondom Avatar of Loki villain into play.
         vCards = sorted(filter(lambda card: card.Type == "villain", villainDeck()), key=lambda c: c.CardNumber)
-        for c in vCards:
-            c.moveTo(sideDeck())
+        randomLoki = rnd(0, len(vCards)-1)
+        vCards[randomLoki].moveToTable(villainX(1, 0) + 80, tableLocations['villain'][1])
         
         # Put each Synergy cards into play.
         synergyCards = sorted(filter(lambda card: card.Attribute == "Synergy.", encounterDeck()), key=lambda c: c.CardNumber)
