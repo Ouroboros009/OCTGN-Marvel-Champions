@@ -401,5 +401,8 @@ changelog = {
     '0000387': ("0.0.3.87", "31 August 2025", [
         "Trickster Takeover Scenario pack added",
         "Security: This update addresses another recently reported security issue."
+        ]),
+    '0000388': ("0.0.3.88", "02 September 2025", [
+        "Fix: Loki, God of Lies setup."
         ])
 }

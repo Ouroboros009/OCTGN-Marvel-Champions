@@ -1475,7 +1475,7 @@ def nextVillainStage(group=None, x=0, y=0):
         group = villainDeck()
     if len(group) == 0 and vName != "Apocalypse": return
 
-    if vName not in ('The Wrecking Crew', 'Loki'):
+    if vName not in ('The Wrecking Crew', 'Loki', 'God of Lies'):
         choice = askChoice("Do you want to reveal the next sequential stage of the villain deck ?", [], [], ["Yes", "No"])
         if choice != -1: return
 
@@ -1931,6 +1931,18 @@ def setHPOnCharacter(card):
             if len(previous_loki) == 1 and len(new_loki) == 1:
                 notify("Copy all markers from actual Loki to new one!")
                 switchCards(previous_loki[0], new_loki[0], h = 1, t = 1, s = 1, c = 1, a = 1)
+
+    if card.Type == "villain" and card.Attribute == "Avatar of Loki." and getGlobalVariable("villainSetup") == "God of Lies":
+        lokis_on_table = [c for c in table if c.Type == 'villain' and c.Attribute == 'Avatar of Loki.']
+        if len(lokis_on_table) == 2: # There should be 2 Loki cards on table: the previous one and the new one
+            # The 'previous' one is the one that has still some HP, the 'new' one enters play and then has not yet defined HP
+            previous_loki = [c for c in lokis_on_table if c.markers[HealthMarker] > 0]
+            new_loki = [c for c in lokis_on_table if c.markers[HealthMarker] == 0]
+            if len(previous_loki) == 1 and len(new_loki) == 1:
+                notify("Copy all markers from actual Loki to new one!")
+                switchCards(previous_loki[0], new_loki[0], h = 1, t = 1, s = 1, c = 1, a = 1)
+                previous_loki[0].moveTo(villainDeck())
+                shuffle(villainDeck())
 
     if (card.Type == "hero" or card.Type == "alter_ego") and card.Owner == "ironheart":
         ironheart_on_table = [c for c in table if (c.Type == 'hero' or c.Type == 'alter_ego') and c.Owner == "ironheart"]
