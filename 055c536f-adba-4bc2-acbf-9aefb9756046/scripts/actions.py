@@ -257,6 +257,18 @@ def setFirstPlayer(group = table, x = 0, y = 0):
     firstPlayerToken[0].moveToTable(firstPlHeroCard[0].position[0], firstPlHeroCard[0].position[1]-40)
     firstPlayerToken[0].sendToBack()
 
+def getFirstPlayerPosition(group = table, x = 0, y = 0):
+    """
+    Gets firstPlayer position.
+    """
+    mute()
+    
+    firstPlayer = int(JavaScriptSerializer().DeserializeObject(getGlobalVariable("firstPlayer")))
+    firstPlHero = list(JavaScriptSerializer().DeserializeObject(getGlobalVariable("heroesPlayed")))[firstPlayer]
+    firstPlHeroCard = [c for c in table if (c.Type == 'hero' or c.Type == 'alter_ego') and c.Owner == firstPlHero]
+    update()
+    return firstPlHeroCard[0].position[0], firstPlHeroCard[0].position[1]
+
 def setActiveVillain(card, x = 0, y = 0):
     if isVillain([card]):
         vCards = filter(lambda card: card.Type == "villain", table)
@@ -288,20 +300,8 @@ def initializeGame():
     update()
 
 #Triggered event OnLoadDeck
-# args: player, groups
 def deckLoaded(args):
-    mute()
-    if args.player != me:
-        return
-
-    isShared = False
-    isPlayer = False
-    for g in args.groups:
-        if (g.name == 'Hand') or (g.name in me.piles):
-            isPlayer = True
-
-    update()
-    tableSetup(table, 0, 0, isPlayer, isShared)
+    whisper("The plugin has implemented a custom loading deck mechanic, so the default loading deck process has been disabled")
 
 #Triggered event OnPlayerGlobalVariableChanged
 #We use this to manage turn and phase management by tracking changes to the player "done" variable
@@ -360,6 +360,14 @@ def turnPassed(args):
 #Triggered event OnScriptedCardsMoved and OnCardsMoved
 def moveCards(args):
     mute()
+    for card in args.cards:
+        x, y = card.position
+        cardIndex = card.index
+        if isinstance(args.toGroups[0], Table) and (x % 10 <> 0 or y % 10 <> 0):
+            x = round(x / 10) * 10
+            y = round(y / 10) * 10 
+            card.moveToTable(x, y)
+            card.index = cardIndex
     autoCharges(args)
     magikDeck(args)
 
@@ -399,28 +407,6 @@ def dialogBox_Setup(group, type, nameList, title, text, min = 1, max = 1, isFanm
         return
     else:
         return cardsSelected
-
-def tableSetup(group=table, x=0, y=0, doPlayer=True, doEncounter=False):
-    mute()
-
-    if not getLock():
-        whisper("Others players are setting up, please try manual setup again (Ctrl+Shift+S)")
-        return
-
-    unlockDeck()
-
-    if doPlayer:
-        heroSetup()
-
-    if doEncounter:
-        villainSetup()
-
-    if not clearLock():
-        notify("Players performed setup at the same time causing problems, please reset and try again")
-
-    update()
-
-    checkSetup()
 
 def checkSetup(group = None, x = 0, y = 0):
     g = getGlobalVariable("playersSetup")
@@ -1370,7 +1356,6 @@ def moveToVictory(card, x=0, y=0):
 
 def nextSchemeStage(group=None, x=0, y=0):
     mute()
-    schemeCards = []
 
     # Global Variable
     vName = getGlobalVariable("villainSetup")
@@ -1380,87 +1365,17 @@ def nextSchemeStage(group=None, x=0, y=0):
         group = mainSchemeDeck()
     if len(group) == 0: return
 
-    if vName not in ('Kang'):
-        choice = askChoice("Do you want to reveal the next sequential stage of the scheme deck ?", [], [], ["Yes", "No"])
-        if choice != -1: return
-
     if group.controller != me:
         remoteCall(group.controller, "nextSchemeStage", [group, x, y])
         return
 
     if vName == 'Kang':
         whisper("You can't advance to next scheme using \"Next Scheme\" function for Kang. Use \"Next Villain\" instead")
-    elif vName == 'Mansion Attack':
-        msCards = sorted(filter(lambda card: card.Type == "main_scheme", mainSchemeDeck()), key=lambda c: c.CardNumber)
-        if len(msCards) > 0:
-            randomScheme = rnd(0, len(msCards)-1)
-        for c in table:
-            if c.Type == 'main_scheme':
-                x, y = c.position
-                c.moveTo(victoryDisplay())
-                msCards[randomScheme].moveToTable(x, y)
-    elif vName == 'Mister Sinister':
-        msCards = sorted(filter(lambda card: card.Type == "main_scheme" and card.Stage == "2", mainSchemeDeck()), key=lambda c: c.CardNumber)
-        if len(msCards) > 0:
-            randomScheme = rnd(0, len(msCards)-1)
-        else:
-            msCards = sorted(filter(lambda card: card.Type == "main_scheme", mainSchemeDeck()), key=lambda c: c.CardNumber)
-            randomScheme = 0
-        for c in table:
-            if c.Type == 'main_scheme':
-                x, y = c.position
-                currentAcceleration = c.markers[AccelerationMarker]
-                c.moveTo(removedFromGameDeck())
-                msCards[randomScheme].moveToTable(x, y)
-                msCards[randomScheme].markers[AccelerationMarker] = currentAcceleration
     else:
-        for c in table:
-            if c.Type == 'main_scheme' and len(mainSchemeDeck()) > 0:
-                x, y = c.position
-                currentScheme = num(c.CardNumber[:-1])
-                currentAcceleration = c.markers[AccelerationMarker]
-                c.moveToBottom(removedFromGameDeck())
-                break
+        choice = askChoice("Do you want to reveal the next sequential stage of the scheme deck ?", [], [], ["Yes", "No"])
+        if choice != -1: return
 
-        for card in mainSchemeDeck():
-            if num(card.CardNumber[:-1]) == currentScheme + 1:
-                card.moveToTable(x, y)
-                card.anchor = False
-                card.markers[AccelerationMarker] = currentAcceleration
-                notify("{} advances scheme to '{}'".format(me, card))
-                break
-
-    if vName == 'Morlock Siege':
-        if card.CardNumber == "40078a": # Stage 2 main scheme
-            # Hide treachery shuffled in encounter deck
-            treacheryCard = filter(lambda card: card.CardNumber == "40080", sideDeck())
-            treacheryCard[0].moveTo(encounterDeck())
-            notifyBar("#FF0000", "Hide! treachery card has been shuffled into the encounter deck.")
-            shuffle(encounterDeck())
-            # Morlock Ally controlled by each player
-            morlockCard = filter(lambda card: card.CardNumber == "40079", sideDeck())
-            for i in range(0, len(getPlayers())):
-                if len(getPlayers()) == 1:
-                    morlockCard[i].moveToTable(playerX(i)-35, 0)
-                    morlockCard[1].moveToTable(playerX(i)+35, 0)
-                else:
-                    morlockCard[i].moveToTable(playerX(i), 0)
-
-    if vName == 'Baron Zemo':
-        vCardOnTable = sorted(filter(lambda card: card.Type == "villain", table), reverse=True)
-        vilX, vilY = vCardOnTable[0].position
-        if card.CardNumber == "50168a": # Stage 2 main scheme
-            shift = 0
-            for c in shared.piles['Temporary']:
-                c.moveToTable(vilX-70+shift, vilY+100)
-                c.isFaceUp = False
-                shift += 70
-
-        if card.CardNumber == "50169a": # Stage 3 main scheme
-            revealCardOnSetup("Baron Zemo's Sword", "50170", vilX-15, vilY+5, isAttachment=True)
-            vCardOnTable[0].alternate = "b"
-            clearMarker(vCardOnTable[0])
-            setHPOnCharacter(vCardOnTable[0])
+    nextSchemeStageSetup(vName)
 
 
 def nextVillainStage(group=None, x=0, y=0):
@@ -1475,242 +1390,15 @@ def nextVillainStage(group=None, x=0, y=0):
         group = villainDeck()
     if len(group) == 0 and vName != "Apocalypse": return
 
-    if vName not in ('The Wrecking Crew', 'Loki', 'God of Lies'):
-        choice = askChoice("Do you want to reveal the next sequential stage of the villain deck ?", [], [], ["Yes", "No"])
-        if choice != -1: return
-
     if group.controller != me:
         remoteCall(group.controller, "nextVillainStage", [group, x, y])
         return
 
-    if vName == 'The Wrecking Crew':
-        villainOnTable = filter(lambda card: card.Type == 'villain', table)
-        villainChoice = askChoice("Which villain is defeated ?", [c.Name for c in villainOnTable])
-        vCards = filter(lambda card: card.Owner == villainOnTable[villainChoice-1].Owner and (card.Type == 'villain' or card.Type == 'side_scheme'), table)
-        for c in vCards:
-            c.moveToBottom(removedFromGameDeck())
+    if vName not in ('The Wrecking Crew', 'Loki', 'God of Lies'):
+        choice = askChoice("Do you want to reveal the next sequential stage of the villain deck ?", [], [], ["Yes", "No"])
+        if choice != -1: return
 
-    elif vName == 'Kang':
-        vCardsOnTable = sorted(filter(lambda card: card.Type == "villain", table), key=lambda c: c.CardNumber)
-        vCards = sorted(filter(lambda card: card.Type == "villain", villainDeck()), key=lambda c: c.CardNumber)
-        msCardsOnTable = sorted(filter(lambda card: card.Type == "main_scheme", table), key=lambda c: c.CardNumber)
-        msCards = sorted(filter(lambda card: card.Type == "main_scheme", mainSchemeDeck()), key=lambda c: c.CardNumber)
-        update()
-        if vCardsOnTable[0].CardNumber == "11001" or vCardsOnTable[0].CardNumber == "11034":# Kang I (Standard or Expert)
-            y = vCardsOnTable[0].position[1]
-            vCardsOnTable[0].moveToBottom(removedFromGameDeck())
-            if msCardsOnTable[0].CardNumber == "11007b": # Stage 1 main scheme
-                msX, msY = msCardsOnTable[0].position
-                if len(getPlayers()) == 1:
-                    msCards[0].moveToTable(msX, msY)
-                else:
-                    msCards[0].moveToTable(tableLocations['mainSchemeCentered'][0],tableLocations['mainSchemeCentered'][1])
-                msCardsOnTable[0].moveToBottom(removedFromGameDeck())
-                loop = len(vCards) - 1
-                while loop > 0:
-                    vCards = sorted(filter(lambda card: card.Type == "villain", villainDeck()), key=lambda c: c.CardNumber)
-                    ssCards = sorted(filter(lambda card: card.Type == "main_scheme", mainSchemeDeck()), key=lambda c: c.CardNumber)
-                    randomKang = rnd(0, len(vCards)-2)
-                    if loop > len(getPlayers()):
-                        vCards[randomKang].moveToBottom(removedFromGameDeck())
-                        ssCards[randomKang].moveToBottom(removedFromGameDeck())
-                    else:
-                        vCards[randomKang].moveToTable(villainX(len(getPlayers()), len(getPlayers()) - loop), y)
-                        ssCards[randomKang].moveToTable(villainX(len(getPlayers()), len(getPlayers()) - loop)-10, y+100)
-                    loop -= 1
-        else:
-            choice = askChoice("Are all players ready to advance to stage 4A ?", ["Yes", "No"])
-            if choice == None or choice == 2: return
-            for c in vCardsOnTable:
-                c.moveToBottom(removedFromGameDeck())
-            for c in msCardsOnTable:
-                c.moveToBottom(removedFromGameDeck())
-            vCards = sorted(filter(lambda card: card.Type == "villain", villainDeck()), key=lambda c: c.CardNumber)
-            ssCards = sorted(filter(lambda card: card.Type == "main_scheme", mainSchemeDeck()), key=lambda c: c.CardNumber)
-            lastIndex = len(vCards)-1
-            vCards[lastIndex].moveToTable(villainX(1,0), tableLocations['villain'][1])
-            ssCards[lastIndex].moveToTable(tableLocations['mainScheme'][0], tableLocations['mainScheme'][1])
-
-    elif vName == 'Tower Defense':
-        for c in table:
-            if c.Type == 'villain':
-                if c.Name == 'Proxima Midnight':
-                    x1, y1 = c.position
-                    if len(c.alternates) > 1:
-                        currentVillain1 = num(c.CardNumber[:-1])
-                    else:
-                        currentVillain1 = num(c.CardNumber)
-                    currentStun1 = c.markers[StunnedMarker]
-                    currentTough1 = c.markers[ToughMarker]
-                    currentConfused1 = c.markers[ConfusedMarker]
-                    currentAcceleration1 = c.markers[AccelerationMarker]
-                    currentAllPurpose1 = c.markers[AllPurposeMarker]
-                    c.moveToBottom(removedFromGameDeck())
-                if c.Name == 'Corvus Glaive':
-                    x2, y2 = c.position
-                    if len(c.alternates) > 1:
-                        currentVillain2 = num(c.CardNumber[:-1])
-                    else:
-                        currentVillain2 = num(c.CardNumber)
-                    currentStun2 = c.markers[StunnedMarker]
-                    currentTough2 = c.markers[ToughMarker]
-                    currentConfused2 = c.markers[ConfusedMarker]
-                    currentAcceleration2 = c.markers[AccelerationMarker]
-                    currentAllPurpose2 = c.markers[AllPurposeMarker]
-                    c.moveToBottom(removedFromGameDeck())
-
-        for card in villainDeck():
-            if len(card.alternates) > 1:
-                checkNumber = num(card.CardNumber[:-1])
-            else:
-                checkNumber = num(card.CardNumber)
-                if checkNumber == currentVillain1 + 1:
-                    card.moveToTable(x1, y1)
-                    card.markers[StunnedMarker] = currentStun1
-                    card.markers[ToughMarker] = currentTough1
-                    card.markers[ConfusedMarker] = currentConfused1
-                    card.markers[AccelerationMarker] = currentAcceleration1
-                    card.markers[AllPurposeMarker] = currentAllPurpose1
-                    card.anchor = False
-                if checkNumber == currentVillain2 + 1:
-                    card.moveToTable(x2, y2)
-                    card.markers[StunnedMarker] = currentStun2
-                    card.markers[ToughMarker] = currentTough2
-                    card.markers[ConfusedMarker] = currentConfused2
-                    card.markers[AccelerationMarker] = currentAcceleration2
-                    card.markers[AllPurposeMarker] = currentAllPurpose2
-                    card.anchor = False
-                    SpecificVillainSetup(vName)
-                    notify("{} advances Villain to the next stage".format(me))
-
-    elif vName == 'Loki':
-        vCards = sorted(filter(lambda card: card.Type == "villain", villainDeck()), key=lambda c: c.CardNumber)
-        if len(vCards) > 0:
-            randomLoki = rnd(0, len(vCards)-1) # Returns a random INTEGER value and use it to choose which Loki will be loaded
-
-        for c in table:
-            if c.Type == 'villain':
-                x, y = c.position
-                currentHealth = c.markers[HealthMarker]
-                currentStun = c.markers[StunnedMarker]
-                currentTough = c.markers[ToughMarker]
-                currentConfused = c.markers[ConfusedMarker]
-                currentAllPurpose = c.markers[AllPurposeMarker]
-                choice = askChoice("What do you want to do ?", ["Put Loki in Victory Pile and bring another one", "Swap Loki with another Loki"])
-                if choice == None: return
-                if choice == 1:
-                    c.moveTo(victoryDisplay())
-                    vCards[randomLoki].moveToTable(x, y)
-                    vCards[randomLoki].markers[ToughMarker] = currentTough
-                    vCards[randomLoki].markers[StunnedMarker] = currentStun
-                    vCards[randomLoki].markers[ConfusedMarker] = currentConfused
-                    vCards[randomLoki].markers[AllPurposeMarker] = currentAllPurpose
-                if choice == 2:
-                    vCards[randomLoki].moveToTable(x, y)
-                    vCards[randomLoki].markers[HealthMarker] = currentHealth
-                    vCards[randomLoki].markers[ToughMarker] = currentTough
-                    vCards[randomLoki].markers[StunnedMarker] = currentStun
-                    vCards[randomLoki].markers[ConfusedMarker] = currentConfused
-                    vCards[randomLoki].markers[AllPurposeMarker] = currentAllPurpose
-                    c.moveTo(villainDeck())
-
-    elif vName == 'Mansion Attack':
-        vCards = sorted(filter(lambda card: card.Type == "villain", villainDeck()), key=lambda c: c.CardNumber)
-        if len(vCards) > 0:
-            randomVillain = rnd(0, len(vCards)-1) # Returns a random INTEGER value and use it to choose which Loki will be loaded
-        for c in table:
-            if c.Type == 'villain':
-                x, y = c.position
-                c.moveTo(victoryDisplay())
-                vCards[randomVillain].moveToTable(x, y)
-                if gameDifficulty == "1":
-                    vCards[randomVillain].alternate = "b"
-
-    elif vName == 'Morlock Siege':
-        vCards = sorted(filter(lambda card: card.Type == "villain", villainDeck()), key=lambda c: c.CardNumber)
-        if len(vCards) > 0:
-            randomVillain = rnd(0, len(vCards)-1) # Returns a random INTEGER value and use it to choose which Loki will be loaded
-        for c in table:
-            if c.Type == 'villain':
-                x, y = c.position
-                c.moveTo(victoryDisplay())
-                vCards[randomVillain].moveToTable(x, y)
-                if gameDifficulty == "1":
-                    vCards[randomVillain].alternate = "b"
-
-    elif vName == 'Apocalypse':
-        vCardOnTable = sorted(filter(lambda card: card.Type == "villain", table), key=lambda c: c.CardNumber)
-        if vCardOnTable[0].CardNumber == "45101a":
-            vCardOnTable[0].markers[HealthMarker] = 0
-            vCardOnTable[0].alternate = "b"
-            if vCardOnTable[0].markers[ToughMarker] == 0:
-                lookForToughness(vCardOnTable[0])
-            setHPOnCharacter(vCardOnTable[0])
-        elif vCardOnTable[0].CardNumber == "45101b":
-            x, y = vCardOnTable[0].position
-            if len(vCardOnTable[0].alternates) > 1:
-                currentVillain = num(vCardOnTable[0].CardNumber[:-1])
-            else:
-                currentVillain = num(vCardOnTable[0].CardNumber)
-            currentStun = vCardOnTable[0].markers[StunnedMarker]
-            currentTough = vCardOnTable[0].markers[ToughMarker]
-            currentConfused = vCardOnTable[0].markers[ConfusedMarker]
-            currentAcceleration = vCardOnTable[0].markers[AccelerationMarker]
-            currentAllPurpose = vCardOnTable[0].markers[AllPurposeMarker]
-            vCardOnTable[0].moveToBottom(removedFromGameDeck())
-
-            vCards = sorted(filter(lambda card: card.Type == "villain", villainDeck()), key=lambda c: c.CardNumber)
-            if len(vCards[0].alternates) > 1:
-                checkNumber = num(vCards[0].CardNumber[:-1])
-            else:
-                checkNumber = num(vCards[0].CardNumber)
-            if checkNumber == currentVillain + 1:
-                vCards[0].moveToTable(x, y)
-                vCards[0].markers[StunnedMarker] = currentStun
-                vCards[0].markers[ToughMarker] = currentTough
-                vCards[0].markers[ConfusedMarker] = currentConfused
-                vCards[0].markers[AccelerationMarker] = currentAcceleration
-                vCards[0].markers[AllPurposeMarker] = currentAllPurpose
-                notify("{} advances Villain to the next stage".format(me))
-        elif vCardOnTable[0].CardNumber == "45102a":
-            vCardOnTable[0].markers[HealthMarker] = 0
-            vCardOnTable[0].alternate = "b"
-            if vCardOnTable[0].markers[ToughMarker] == 0:
-                lookForToughness(vCardOnTable[0])
-            setHPOnCharacter(vCardOnTable[0])
-
-    else:
-        for c in table:
-            if c.Type == 'villain':
-                x, y = c.position
-                if len(c.alternates) > 1:
-                    currentVillain = num(c.CardNumber[:-1])
-                else:
-                    currentVillain = num(c.CardNumber)
-                currentStun = c.markers[StunnedMarker]
-                currentTough = c.markers[ToughMarker]
-                currentConfused = c.markers[ConfusedMarker]
-                currentAcceleration = c.markers[AccelerationMarker]
-                currentAllPurpose = c.markers[AllPurposeMarker]
-                currentAlternate = c.alternate
-                c.moveToBottom(removedFromGameDeck())
-
-        for card in villainDeck():
-            if len(card.alternates) > 1:
-                checkNumber = num(card.CardNumber[:-1])
-            else:
-                checkNumber = num(card.CardNumber)
-            if checkNumber == currentVillain + 1:
-                card.moveToTable(x, y)
-                card.markers[StunnedMarker] = currentStun
-                card.markers[ToughMarker] = currentTough
-                card.markers[ConfusedMarker] = currentConfused
-                card.markers[AccelerationMarker] = currentAcceleration
-                card.markers[AllPurposeMarker] = currentAllPurpose
-                card.alternate = currentAlternate
-                card.anchor = False
-                SpecificVillainSetup(vName)
-                notify("{} advances Villain to the next stage".format(me))
+    nextVillainStageSetup(vName)
 
 
 def clearTargets(group=table, x=0, y=0):

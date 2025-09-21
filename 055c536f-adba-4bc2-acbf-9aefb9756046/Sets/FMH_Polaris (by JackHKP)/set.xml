@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='utf-8'?>
+<set name="(FMH) Polaris (Lorna Dane) (By JackHKP)" id="ab4e6448-4f17-5734-8f18-f41e30c00f09" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="ab4e6448-4f17-5734-8f18-f41e30000000" name="Polaris (Lorna Dane) (By JackHKP)">
+      <property name="Type" value="fm_hero_setup" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+    </card>
+    <card id="ab4e6448-4f17-5734-8f18-f41e30990000" name="Polaris (Lorna Dane) (By JackHKP)">
+      <property name="Type" value="fm_encounter_setup" />
+      <property name="Owner" value="fm_polaris_JackHKP_nemesis" />
+    </card>
+    <card name="Polaris" id="ab4e6448-4f17-5734-8f18-f41e30000001">
+      <property name="CardNumber" value="200401a" />
+      <property name="Position" value="1" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="hero" />
+      <property name="HP" value="9" />
+      <property name="HandSize" value="4" />
+      <property name="Attribute" value="[[X-Men.]]" />
+      <property name="Text"><i>Electromagnetism Manipulation</i> — <b>Action</b>: Search the top 6 cards of your deck for up to 2 [[magnetic]] cards and add them to your hand. Shuffle your deck. (Limit once per round.)
+<i>“I am a big gun. Or have you forgotten?”</i></property>
+      <alternate name="Lorna Dane" type="b">
+        <property name="CardNumber" value="200401b" />
+        <property name="Position" value="1" />
+        <property name="Owner" value="fm_polaris_JackHKP" />
+        <property name="Type" value="alter_ego" />
+        <property name="HP" value="9" />
+        <property name="HandSize" value="6" />
+        <property name="Attribute" value="[[Mutant.]]" />
+        <property name="Text"><i>Geomagnetic Link</i> — <b>Action</b>: Shuffle up to 2 [[magnetic]] cards from your discard pile into your deck. For each card shuffled this way, heal 1 damage from Lorna Dane. (Limit once per round.)
+<i>“Complicated. It's my brand.”</i></property>
+      </alternate>
+    </card>
+    <card name="Havok (Alex Summers)" id="ab4e6448-4f17-5734-8f18-f41e30000002">
+      <property name="CardNumber" value="200402" />
+      <property name="Position" value="2" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="2" />
+      <property name="Attribute" value="[[X-Men.]]" />
+      <property name="Text"><b>Response</b>: After Havok attacks, put each copy of Magnetized Debris in your discard pile on top of your deck (limit once per round).
+<i>"... this is what I have been most afraid of, ever since I first manifested my powers - using it to kill."</i></property>
+    </card>
+    <card name="Disarmament" id="ab4e6448-4f17-5734-8f18-f41e30000003">
+      <property name="CardNumber" value="200403" />
+      <property name="Position" value="3" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Magnetic. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b>: Choose:
+• Remove 2 threat from a scheme
+• Discard an attached copy of Magnetized Debris from an enemy → discard an attachment with the text "<b>Hero Action</b>" or "<b>Hero Response</b>" from that enemy.</property>
+    </card>
+    <card name="Electromagnetic Pulse" id="ab4e6448-4f17-5734-8f18-f41e30000004">
+      <property name="CardNumber" value="200404" />
+      <property name="Position" value="4" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[ Attack. Magnetic. Superpower.]]" />
+      <property name="Text"><b>Hero Action </b><i>(attack)</i>: Deal 5 damage to an enemy. This attack gains overkill. You may discard X attached copies of Magnetized Debris from among enemies → this attack deals 2X additional damage. If none were discarded this way, confuse an enemy.</property>
+    </card>
+    <card name="Forcefield Exoskeleton" id="ab4e6448-4f17-5734-8f18-f41e30000005">
+      <property name="CardNumber" value="200405" />
+      <property name="Position" value="5" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Magnetic. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b>: Choose:
+• Ready and heal 1 damage from an ally. 
+• Discard X attached copies of Magnetized Debris from among enemies → give X friendly characters a tough status card.
+<i>"Little electromagnetic shield for us..." -Polaris</i></property>
+    </card>
+    <card name="Hold it Together" id="ab4e6448-4f17-5734-8f18-f41e30000006">
+      <property name="CardNumber" value="200406" />
+      <property name="Position" value="6" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Magnetic. Superpower. Thwart.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(thwart)</i>: Remove 4 threat from a scheme. You may discard X attached copies of Magnetized Debris from among enemies → remove X additional threat from that scheme.
+<i>"Spoiler alert: I struggle with this. A lot." -Polaris</i></property>
+    </card>
+    <card name="Hold it Together" id="ab4e6448-4f17-5734-8f18-f41e30000007">
+      <property name="CardNumber" value="200407" />
+      <property name="Position" value="7" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Magnetic. Superpower. Thwart.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(thwart)</i>: Remove 4 threat from a scheme. You may discard X attached copies of Magnetized Debris from among enemies → remove X additional threat from that scheme.
+<i>"Spoiler alert: I struggle with this. A lot." -Polaris</i></property>
+    </card>
+    <card name="Magnetized Debris" id="ab4e6448-4f17-5734-8f18-f41e30000008">
+      <property name="CardNumber" value="200408" />
+      <property name="Position" value="8" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Magnetic. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(attack)</i>: Deal 2 damage to an enemy. If you overpaid for this card with a [energy] resource, this attack gains piercing and deals 1 additional damage. If that enemy is defeated by this attack, shuffle this card into your deck. Otherwise, attach this card facedown to that enemy.</property>
+    </card>
+    <card name="Magnetized Debris" id="ab4e6448-4f17-5734-8f18-f41e30000009">
+      <property name="CardNumber" value="200409" />
+      <property name="Position" value="9" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Magnetic. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(attack)</i>: Deal 2 damage to an enemy. If you overpaid for this card with a [energy] resource, this attack gains piercing and deals 1 additional damage. If that enemy is defeated by this attack, shuffle this card into your deck. Otherwise, attach this card facedown to that enemy.</property>
+    </card>
+    <card name="Magnetized Debris" id="ab4e6448-4f17-5734-8f18-f41e30000010">
+      <property name="CardNumber" value="200410" />
+      <property name="Position" value="10" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Magnetic. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(attack)</i>: Deal 2 damage to an enemy. If you overpaid for this card with a [energy] resource, this attack gains piercing and deals 1 additional damage. If that enemy is defeated by this attack, shuffle this card into your deck. Otherwise, attach this card facedown to that enemy.</property>
+    </card>
+    <card name="Magnetized Debris" id="ab4e6448-4f17-5734-8f18-f41e30000011">
+      <property name="CardNumber" value="200411" />
+      <property name="Position" value="11" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Magnetic. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(attack)</i>: Deal 2 damage to an enemy. If you overpaid for this card with a [energy] resource, this attack gains piercing and deals 1 additional damage. If that enemy is defeated by this attack, shuffle this card into your deck. Otherwise, attach this card facedown to that enemy.</property>
+    </card>
+    <card name="Opposites Attract" id="ab4e6448-4f17-5734-8f18-f41e30000012">
+      <property name="CardNumber" value="200412" />
+      <property name="Position" value="12" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Magnetic. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b>: Choose a player. Deal 2 damage to the villain and each enemy engaged with that player. For each enemy damaged this way, you may discard an attached copy of Magnetized Debris from that enemy to stun it.</property>
+    </card>
+    <card name="Boneyard" id="ab4e6448-4f17-5734-8f18-f41e30000013">
+      <property name="CardNumber" value="200413" />
+      <property name="Position" value="13" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="support" />
+      <property name="Attribute" value="[[Location. X-Men.]]" />
+      <property name="Text"><b>Interrupt</b>: When a Magnetized Debris would be shuffled from your discard pile into your deck, attach it facedown under here instead. 
+<b>Hero Interrupt</b>: When Polaris would take any amount of damage from an attack, shuffle a card under here into your deck → prevent 2 of that damage.</property>
+    </card>
+    <card name="Magnetic Levitation" id="ab4e6448-4f17-5734-8f18-f41e30000014">
+      <property name="CardNumber" value="200414" />
+      <property name="Position" value="14" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Condition. Magnetic. Superpower.]]" />
+      <property name="Text">Polaris gains the [[aerial]] trait.<b>
+Hero Response</b>: After you play a Magnetized Debris, exhaust this card → ready Polaris.
+<i>"Well, clever is my middle name." -Polaris</i></property>
+    </card>
+    <card name="Mistress of Magnetism" id="ab4e6448-4f17-5734-8f18-f41e30000015">
+      <property name="CardNumber" value="200415" />
+      <property name="Position" value="15" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[ Title.]]" />
+      <property name="Text">Magnetized Debris gains "This attack gains ranged<b>."
+Hero Resource</b>: Exhaust this card → generate a [energy] resource. you may discard X attached copies of Magnetized Debris from among enemies to generate X additional [energy] resource.</property>
+    </card>
+    <card name="Wrapped in Metal" id="ab4e6448-4f17-5734-8f18-f41e30000016">
+      <property name="CardNumber" value="200416" />
+      <property name="Position" value="16" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Condition. Magnetic.]]" />
+      <property name="Text">Attach to an enemy.
+Reduce the cost to play this card by 1 for each copy of Magnetized Debris attached to the target.<b>
+Forced Interrupt</b>: When the attached enemy would activate, discard this card instead.</property>
+    </card>
+    <card name="Energetic Duo" id="ab4e6448-4f17-5734-8f18-f41e30000023">
+      <property name="CardNumber" value="200423" />
+      <property name="Position" value="23" />
+      <property name="Type" value="event" />
+      <property name="Text">Team-Up (Havok and Polaris). Max 1 per deck.
+<b>Hero Response</b>: After Havok deals any amount of damage, each player who controls Havok or Polaris may search their deck for an identity-specific card (up to 2 identity-specific cards instead if they control both) and add them to their hand.</property>
+    </card>
+    <card name="The Fragmented Past" id="ab4e6448-4f17-5734-8f18-f41e30000017" size="EncounterCard">
+      <property name="CardNumber" value="200417" />
+      <property name="Position" value="17" />
+      <property name="Owner" value="fm_polaris_JackHKP" />
+      <property name="Type" value="obligation" />
+      <property name="DefaultSetupPile" value="Nemesis" />
+      <property name="Text"><b>When Revealed</b>: Discard each attached copy of Magnetized Debris.
+<b>Forced Response</b>: After you play a [[magnetic]] card, take 2 damage.
+<b>Alter-Ego Action</b>: Exhaust Lorna Dane → remove The Fragmented Past from the game.</property>
+    </card>
+    <card name="&quot;Daddy Issues&quot;" id="ab4e6448-4f17-5734-8f18-f41e30000018" size="SchemeCard">
+      <property name="CardNumber" value="200418" />
+      <property name="Position" value="18" />
+      <property name="Owner" value="fm_polaris_JackHKP_nemesis" />
+      <property name="Type" value="side_scheme" />
+      <property name="BaseThreat" value="4" />
+      <property name="BaseThreatFixed" value="True" />
+      <property name="Text"><b>When Revealed</b>: Search the encounter deck and discard pile for the Magneto minion and put it into play engaged with you. Seek a [[magnetic]] card from the Polaris player's deck and attach it facedown under the Magneto minion. If Magneto did not enter play this way, place 2[per_hero] threat here.
+[acceleration]</property>
+    </card>
+    <card name="Magneto" id="ab4e6448-4f17-5734-8f18-f41e30000019" size="EncounterCard">
+      <property name="CardNumber" value="200419" />
+      <property name="Position" value="19" />
+      <property name="Owner" value="fm_polaris_JackHKP_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="5" />
+      <property name="Attribute" value="[[Elite. Mutant.]]" />
+      <property name="Text"><b>Forced Response</b>: After a [[magnetic]] event or treachery has been resolved, attach it facedown under here.
+<b>Forced Interrupt</b>: When Magneto would take any amount of damage, if there are any [[magnetic]] cards attached under here, discard one of them instead.
+<i>(Polaris’s nemesis minion.)</i></property>
+    </card>
+    <card name="Magnetized Shrapnel" id="ab4e6448-4f17-5734-8f18-f41e30000020" size="EncounterCard">
+      <property name="CardNumber" value="200420" />
+      <property name="Position" value="20" />
+      <property name="Owner" value="fm_polaris_JackHKP_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Attribute" value="[[Magnetic.]]" />
+      <property name="Text"><b>When Revealed</b>: Take 3 indirect damage. The Polaris player may spend X [energy] resource to prevent X of that damage.
+[star]<b>Boost</b>: Take 1 indirect damage. Shuffle this card into the encounter deck.</property>
+    </card>
+    <card name="Magnetized Shrapnel" id="ab4e6448-4f17-5734-8f18-f41e30000021" size="EncounterCard">
+      <property name="CardNumber" value="200421" />
+      <property name="Position" value="21" />
+      <property name="Owner" value="fm_polaris_JackHKP_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Attribute" value="[[Magnetic.]]" />
+      <property name="Text"><b>When Revealed</b>: Take 3 indirect damage. The Polaris player may spend X [energy] resource to prevent X of that damage.
+[star]<b>Boost</b>: Take 1 indirect damage. Shuffle this card into the encounter deck.</property>
+    </card>
+    <card name="Magnetized Shrapnel" id="ab4e6448-4f17-5734-8f18-f41e30000022" size="EncounterCard">
+      <property name="CardNumber" value="200422" />
+      <property name="Position" value="22" />
+      <property name="Owner" value="fm_polaris_JackHKP_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Attribute" value="[[Magnetic.]]" />
+      <property name="Text"><b>When Revealed</b>: Take 3 indirect damage. The Polaris player may spend X [energy] resource to prevent X of that damage.
+[star]<b>Boost</b>: Take 1 indirect damage. Shuffle this card into the encounter deck.</property>
+    </card>
+  </cards>
+</set>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
-<set name="(FM) Determination (By Designhacker)" id="65becd33-a610-4313-9d2f-27670ebe7b5b" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+<set name="(FMS) Determination (By Designhacker)" id="65becd33-a610-4313-9d2f-27670ebe7b5b" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
   <cards>
     <card name="Cable " id="65becd33-a610-4313-9d2f-27670e044101">
       <property name="CardNumber" value="44101"/>

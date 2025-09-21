@@ -2,7 +2,7 @@
 @echo off
 title OCTGN FanMade Deck Installer
 cls
-SET  Version=0.6
+SET  Version=0.7
 if exist "%~dp0OCTGN-Pack-Installer_V%Version%.ps1" (
 	PowerShell.exe -ExecutionPolicy Bypass -File "%~dp0OCTGN-Pack-Installer_V%Version%.ps1"
 ) else (

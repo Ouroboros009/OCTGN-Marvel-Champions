@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='utf-8'?>
+<set name="(FMH) Mystique (Raven Darkhölme) (By Merlin)" id="15bee02e-f628-5492-9f96-3be16dd0aa3a" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="15bee02e-f628-5492-9f96-3be16d000000" name="Mystique (Raven Darkhölme) (By Merlin)">
+      <property name="Type" value="fm_hero_setup" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+    </card>
+    <card id="15bee02e-f628-5492-9f96-3be16d990000" name="Mystique (Raven Darkhölme) (By Merlin)">
+      <property name="Type" value="fm_encounter_setup" />
+      <property name="Owner" value="fm_mystique_Merlin_nemesis" />
+    </card>
+    <card name="Mystique" id="15bee02e-f628-5492-9f96-3be16d000001">
+      <property name="CardNumber" value="70301a" />
+      <property name="Position" value="1" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="hero" />
+      <property name="HP" value="10" />
+      <property name="HandSize" value="5" />
+      <property name="Attribute" value="[[Spy. X-Men.]]" />
+      <property name="Text"><i>True Form </i>—<b> Response</b>: After you flip a shapeshift form upgrade, if all shapeshift form upgrades are facedown, ready your identity.
+<i>“yes, That’s me!” - Raven</i></property>
+      <alternate name="Raven Darkhölme" type="b">
+        <property name="CardNumber" value="70301b" />
+        <property name="Position" value="1" />
+        <property name="Owner" value="fm_mystique_Merlin" />
+        <property name="Type" value="alter_ego" />
+        <property name="HP" value="10" />
+        <property name="HandSize" value="6" />
+        <property name="Attribute" value="[[Mutant.]]" />
+        <property name="Text"><b>Setup</b>:<i> </i>Put the Shapeshifter upgrade into play. Put all 3 shapeshift form upgrades into play, facedown.<i>
+Fast Heal</i> — <b>Action</b>: Heal 1 damage or remove a status card from Raven Darkhölme. (Limit once per round.)</property>
+      </alternate>
+    </card>
+    <card name="Shapeshifter" id="15bee02e-f628-5492-9f96-3be16d000002">
+      <property name="CardNumber" value="70302" />
+      <property name="Position" value="2" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Condition. Superpower.]]" />
+      <property name="Text">Permanent. Setup.<b>
+Action</b>: Exhaust Shapeshifter → choose a shapeshift form upgrade and flip that card.</property>
+    </card>
+    <card name="Civilian" id="15bee02e-f628-5492-9f96-3be16d000003">
+      <property name="CardNumber" value="70303a" />
+      <property name="Position" value="3" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Condition. Superpower.]]" />
+      <property name="Text">Shapeshift Form. Permanent. Setup.<b>
+Action</b>: Exhaust Civilian → remove 1 threat from a scheme.
+<b>Forced Response</b>: When this card is turned faceup, flip each other shapeshift form upgrades facedown.</property>
+      <alternate name="Civilian" type="b">
+        <property name="CardNumber" value="70303b" />
+        <property name="Position" value="3" />
+        <property name="Owner" value="fm_mystique_Merlin" />
+        <property name="Type" value="upgrade" />
+        <property name="Attribute" value="[[Condition. Superpower.]]" />
+        <property name="Text">Shapeshift Form. Permanent. Setup.<b>
+Action</b>: Exhaust Civilian → remove 1 threat from a scheme.
+<b>Forced Response</b>: When this card is turned faceup, flip each other shapeshift form upgrades facedown.</property>
+      </alternate>
+    </card>
+    <card name="Enemy" id="15bee02e-f628-5492-9f96-3be16d000004">
+      <property name="CardNumber" value="70304a" />
+      <property name="Position" value="4" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Condition. Superpower.]]" />
+      <property name="Text">Shapeshift Form. Permanent. Setup.<b>
+Action</b>: Exhaust Enemy → deal 1 damage to an enemy.
+<b>Forced Response</b>: When this card is turned faceup, flip each other shapeshift form upgrades facedown.</property>
+      <alternate name="Enemy" type="b">
+        <property name="CardNumber" value="70304b" />
+        <property name="Position" value="4" />
+        <property name="Owner" value="fm_mystique_Merlin" />
+        <property name="Type" value="upgrade" />
+        <property name="Attribute" value="[[Condition. Superpower.]]" />
+        <property name="Text">Shapeshift Form. Permanent.<b>
+Action</b>: Exhaust Enemy → deal 1 damage to an enemy.
+<b>Forced Response</b>: When this card is turned faceup, flip each other shapeshift form upgrades facedown.</property>
+      </alternate>
+    </card>
+    <card name="Friend" id="15bee02e-f628-5492-9f96-3be16d000005">
+      <property name="CardNumber" value="70305a" />
+      <property name="Position" value="5" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Condition. Superpower.]]" />
+      <property name="Text">Shapeshift Form. Permanent. Setup.<b>
+Action</b>: Exhaust Friend → ready a hero other than Mystique or an ally.
+<b>Forced Response</b>: When this card is turned faceup, flip each other shapeshift form upgrades facedown.</property>
+      <alternate name="Friend" type="b">
+        <property name="CardNumber" value="70305b" />
+        <property name="Position" value="5" />
+        <property name="Owner" value="fm_mystique_Merlin" />
+        <property name="Type" value="upgrade" />
+        <property name="Attribute" value="[[Condition. Superpower.]]" />
+        <property name="Text">Shapeshift Form. Permanent.<b>
+Action</b>: Exhaust Friend → ready a hero other than Mystique or an ally.
+<b>Forced Response</b>: When this card is turned faceup, flip each other shapeshift form upgrades facedown.</property>
+      </alternate>
+    </card>
+    <card name="Destiny (Irene Adler)" id="15bee02e-f628-5492-9f96-3be16d000006">
+      <property name="CardNumber" value="70306" />
+      <property name="Position" value="6" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="2" />
+      <property name="Attribute" value="[[Psionic. X-Men.]]" />
+      <property name="Text"><b>Interrupt</b>: When a boost card is turned faceup during a scheme activation, discard the top card of the encounter deck. You may count the number of boost icons on that card instead (limit once per phase).
+<i>“The near future slips away and my mind rushes..." </i></property>
+    </card>
+    <card name="Infiltration" id="15bee02e-f628-5492-9f96-3be16d000007" size="PlayerSchemeCard">
+      <property name="CardNumber" value="70307" />
+      <property name="Position" value="7" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="player_side_scheme" />
+      <property name="BaseThreat" value="6" />
+      <property name="BaseThreatFixed" value="True" />
+      <property name="Text">Victory 0.
+Characters other than Mystique cannot remove threat from Infiltration.
+<b>When Defeated</b>: Choose to deal 5 damage to an enemy or remove 3 threat from a scheme.
+While Infiltration is in the victory display, Mystique ignores the guard and patrol keywords, and any crisis icon ([crisis]) in play.</property>
+    </card>
+    <card name="Shapeshifter Focus" id="15bee02e-f628-5492-9f96-3be16d000008">
+      <property name="CardNumber" value="70308" />
+      <property name="Position" value="8" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Skill.]]" />
+      <property name="Text"><b>Hero resource</b>: Exhaust Shapeshifter Focus → generate a [wild] resource for a [[shapeshifter]] card.<i>
+"Maybe you should worry about just being happy with what you have.” </i></property>
+    </card>
+    <card name="Deception" id="15bee02e-f628-5492-9f96-3be16d000009">
+      <property name="CardNumber" value="70309" />
+      <property name="Position" value="9" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Shapeshifter. Tactic.]]" />
+      <property name="Text">Max 1 per round.
+<b>Action</b>: Flip all shapeshift form upgrades facedown and ready them. Draw 1 card. Choose a shapeshift form upgrade and flip that card faceup.</property>
+    </card>
+    <card name="Deception" id="15bee02e-f628-5492-9f96-3be16d000010">
+      <property name="CardNumber" value="70310" />
+      <property name="Position" value="10" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Shapeshifter. Tactic.]]" />
+      <property name="Text">Max 1 per round.
+<b>Action</b>: Flip all shapeshift form upgrades facedown and ready them. Draw 1 card. Choose a shapeshift form upgrade and flip that card faceup.</property>
+    </card>
+    <card name="Deception" id="15bee02e-f628-5492-9f96-3be16d000011">
+      <property name="CardNumber" value="70311" />
+      <property name="Position" value="11" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Shapeshifter. Tactic.]]" />
+      <property name="Text">Max 1 per round.
+<b>Action</b>: Flip all shapeshift form upgrades facedown and ready them. Draw 1 card. Choose a shapeshift form upgrade and flip that card faceup.</property>
+    </card>
+    <card name="Quick and Dirty" id="15bee02e-f628-5492-9f96-3be16d000012">
+      <property name="CardNumber" value="70312" />
+      <property name="Position" value="12" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Shapeshifter.]]" />
+      <property name="Text"><b>Hero Action</b> (<i>attack</i>): Deal 4 damage to an enemy. If the Enemy shapeshift form upgrade is faceup, this attack deals 2 additional damage and gains overkill.
+<i>"I will get it.”
+</i></property>
+    </card>
+    <card name="Quick and Dirty" id="15bee02e-f628-5492-9f96-3be16d000013">
+      <property name="CardNumber" value="70313" />
+      <property name="Position" value="13" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Shapeshifter.]]" />
+      <property name="Text"><b>Hero Action</b> (<i>attack</i>): Deal 4 damage to an enemy. If the Enemy shapeshift form upgrade is faceup, this attack deals 2 additional damage and gains overkill.
+<i>"I will get it.”
+</i></property>
+    </card>
+    <card name="Quick and Dirty" id="15bee02e-f628-5492-9f96-3be16d000014">
+      <property name="CardNumber" value="70314" />
+      <property name="Position" value="14" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Shapeshifter.]]" />
+      <property name="Text"><b>Hero Action</b> (<i>attack</i>): Deal 4 damage to an enemy. If the Enemy shapeshift form upgrade is faceup, this attack deals 2 additional damage and gains overkill.
+<i>"I will get it.”
+</i></property>
+    </card>
+    <card name="Unconditional Love" id="15bee02e-f628-5492-9f96-3be16d000015">
+      <property name="CardNumber" value="70315" />
+      <property name="Position" value="15" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Condition.]]" />
+      <property name="Text"><b>Action</b>: If Destiny/Irene Adler is in play, ready Destiny/Irene Adler and Mystique/Raven Darkhölme. Otherwise search your deck and discard pile for Destiny and add her to your hand. (Shuffle your deck.)
+<i>“A rope through Time.”
+</i></property>
+    </card>
+    <card name="Really ?" id="15bee02e-f628-5492-9f96-3be16d000016">
+      <property name="CardNumber" value="70316" />
+      <property name="Position" value="16" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Defense. Shapeshifter.]]" />
+      <property name="Text"><b>Hero interrupt</b> (<i>defense</i>): When you would take any amount of damage, prevent 3 of that damage. If the Friend shapeshift form upgrade is faceup, draw 1 card.
+<i>“Surprise!”</i></property>
+    </card>
+    <card name="Really ?" id="15bee02e-f628-5492-9f96-3be16d000017">
+      <property name="CardNumber" value="70317" />
+      <property name="Position" value="17" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Defense. Shapeshifter.]]" />
+      <property name="Text"><b>Hero interrupt</b> (<i>defense</i>): When you would take any amount of damage, prevent 3 of that damage. If the Friend shapeshift form upgrade is faceup, draw 1 card.
+<i>“Surprise!”</i></property>
+    </card>
+    <card name="Unnoticed" id="15bee02e-f628-5492-9f96-3be16d000018">
+      <property name="CardNumber" value="70318" />
+      <property name="Position" value="18" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Shapeshifter. Thwart.]]" />
+      <property name="Text"><b>Hero Action</b> (<i>thwart</i>): Remove 3 threat from a scheme ignoring the crisis ([crisis] ) icon. If the Civilian shapeshift form upgrade is faceup, remove 1 threat from each scheme.
+<i>“Hello Raven, please tell me you didn't kill the poor soldier.” — Destiny</i></property>
+    </card>
+    <card name="Unnoticed" id="15bee02e-f628-5492-9f96-3be16d000019">
+      <property name="CardNumber" value="70319" />
+      <property name="Position" value="19" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Shapeshifter. Thwart.]]" />
+      <property name="Text"><b>Hero Action</b> (<i>thwart</i>): Remove 3 threat from a scheme ignoring the crisis ([crisis] ) icon. If the Civilian shapeshift form upgrade is faceup, remove 1 threat from each scheme.
+<i>“Hello Raven, please tell me you didn't kill the poor soldier.” — Destiny</i></property>
+    </card>
+    <card name="Happy Family" id="15bee02e-f628-5492-9f96-3be16d000020">
+      <property name="CardNumber" value="70320" />
+      <property name="Position" value="20" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Condition.]]" />
+      <property name="Text"><b>Action</b>: If you are in hero form, flip to alter-ego form. Heal 4 damage among Raven Darkhölme, Destiny/Irene Adler, Rogue/Anna Marie.
+<i>“No small thing, letting me in on the secret.”
+</i></property>
+    </card>
+    <card name="My Love" id="15bee02e-f628-5492-9f96-3be16d000021" size="EncounterCard">
+      <property name="CardNumber" value="70321" />
+      <property name="Position" value="21" />
+      <property name="Owner" value="fm_mystique_Merlin" />
+      <property name="Type" value="obligation" />
+      <property name="DefaultSetupPile" value="Nemesis" />
+      <property name="Text">You may flip to alter-ego form. Choose:
+Exhaust Raven Darkhölme and Destiny → remove My Love from the game. Any player may help pay the cost for this ability.
+Discard Destiny. If no card was discarded this way, this card gains surge. Discard this obligation.</property>
+    </card>
+    <card name="Mister Sinister" id="15bee02e-f628-5492-9f96-3be16d000022" size="EncounterCard">
+      <property name="CardNumber" value="70322" />
+      <property name="Position" value="22" />
+      <property name="Owner" value="fm_mystique_Merlin_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="5" />
+      <property name="Attribute" value="[[Elite. Genius.]]" />
+      <property name="Text">Incite 2. Villainous.<b>
+</b>While Destiny's Warning side scheme is in play, Mister Sinister does not activate.<i> </i><b>
+When Revealed</b>: If Mister Sinister is already in play, discard this card then Mister Sinister activates against you even if Destiny's Warning side scheme is in play.</property>
+    </card>
+    <card name="Destiny's Warning" id="15bee02e-f628-5492-9f96-3be16d000023" size="SchemeCard">
+      <property name="CardNumber" value="70323" />
+      <property name="Position" value="23" />
+      <property name="Owner" value="fm_mystique_Merlin_nemesis" />
+      <property name="Type" value="side_scheme" />
+      <property name="BaseThreat" value="3" />
+      <property name="Text">Wha--? You Spoilsport--!
+<b>When Revealed</b>: remove 1[per_hero] from the main scheme.
+[star] <b>Boost</b>: Put Destiny's Warning into play. 
+[hazard][hazard]</property>
+    </card>
+    <card name="So, what's the plan ?" id="15bee02e-f628-5492-9f96-3be16d000024" size="EncounterCard">
+      <property name="CardNumber" value="70324" />
+      <property name="Position" value="24" />
+      <property name="Owner" value="fm_mystique_Merlin_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Attribute" value="[[Temporal.]]" />
+      <property name="Text"><b>When Revealed</b>: Remove 1[per_hero] threat from Destiny's Warning. If you cannot, Mister Sinister activates against you. If you cannot, this card gains surge.</property>
+    </card>
+    <card name="So, what's the plan ?" id="15bee02e-f628-5492-9f96-3be16d000025" size="EncounterCard">
+      <property name="CardNumber" value="70325" />
+      <property name="Position" value="25" />
+      <property name="Owner" value="fm_mystique_Merlin_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Attribute" value="[[Temporal.]]" />
+      <property name="Text"><b>When Revealed</b>: Remove 1[per_hero] threat from Destiny's Warning. If you cannot, Mister Sinister activates against you. If you cannot, this card gains surge.</property>
+    </card>
+    <card name="So, what's the plan ?" id="15bee02e-f628-5492-9f96-3be16d000026" size="EncounterCard">
+      <property name="CardNumber" value="70326" />
+      <property name="Position" value="26" />
+      <property name="Owner" value="fm_mystique_Merlin_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Attribute" value="[[Temporal.]]" />
+      <property name="Text"><b>When Revealed</b>: Remove 1[per_hero] threat from Destiny's Warning. If you cannot, Mister Sinister activates against you. If you cannot, this card gains surge.</property>
+    </card>
+  </cards>
+</set>

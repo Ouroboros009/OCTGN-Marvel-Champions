@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="(FMH) Moon Knight (By Hax)" id="fb5e24e2-4df6-4512-9638-fd350335fb3b" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="fb5e24e2-4df6-4512-9638-fd3503000000" name="mk_by_hax">
+      <property name="Type" value="fm_hero_setup"/>
+      <property name="Owner" value="moon_knight_by_hax"/>
+    </card>
+    <card id="fb5e24e2-4df6-4512-9638-fd3503990000" name="mk_by_hax">
+      <property name="Type" value="fm_encounter_setup"/>
+      <property name="Owner" value="moon_knight_by_hax_nemesis"/>
+    </card>
+    <card id="fb5e24e2-4df6-4512-9638-fd3503031001" name="Moon Knight">
+      <property name="CardNumber" value="10326a"/>
+      <property name="Owner" value="moon_knight_by_hax"/>
+      <property name="Type" value="hero"/>
+      <property name="Faction" value="hero"/>
+      <property name="Unique" value="True"/>
+      <property name="Attack" value="1"/>
+      <property name="Defense" value="2"/>
+      <property name="HP" value="11"/>
+      <property name="HandSize" value="4"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
+      <property name="Thwart" value="2"/>
+      <alternate name="Marc Spector" type="b">
+        <property name="CardNumber" value="10326b"/>
+        <property name="Owner" value="moon_knight_by_hax"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Faction" value="hero"/>
+        <property name="Unique" value="True"/>
+        <property name="Recovery" value="4"/>
+        <property name="HP" value="11"/>
+        <property name="HandSize" value="7"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
+      </alternate>
+      <alternate name="Mister Knight" type="c">
+        <property name="CardNumber" value="10326c"/>
+        <property name="Owner" value="moon_knight_by_hax"/>
+        <property name="Type" value="hero"/>
+        <property name="Faction" value="hero"/>
+        <property name="Unique" value="True"/>
+        <property name="Attack" value="2"/>
+        <property name="Defense" value="2"/>
+        <property name="HP" value="11"/>
+        <property name="HandSize" value="4"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
+        <property name="Thwart" value="1"/>
+      </alternate>
+      <alternate name="Steven Grant" type="d">
+        <property name="CardNumber" value="10326d"/>
+        <property name="Owner" value="moon_knight_by_hax"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Faction" value="hero"/>
+        <property name="Unique" value="True"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="11"/>
+        <property name="HandSize" value="6"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
+      </alternate>
+      <alternate name="Jake Lockley" type="e">
+        <property name="CardNumber" value="10326e"/>
+        <property name="Owner" value="moon_knight_by_hax"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Faction" value="hero"/>
+        <property name="Unique" value="True"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="11"/>
+        <property name="HandSize" value="6"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
+      </alternate>
+    </card>
+    <card name="Echo" id="fb5e24e2-4df6-4512-9638-fd3503031002">
+      <property name="CardNumber" value="10327"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="moon_knight_by_hax"/>
+      <property name="Thwart" value="None"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="None"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Avenger."/>
+      <property name="Text">Echo gets THW and ATK equal to your active hero's THW and ATK. If you are in alter-ego form, Echo cannot atttack or thwart</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Khonshu" id="fb5e24e2-4df6-4512-9638-fd3503031003">
+      <property name="CardNumber" value="10328"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="moon_knight_by_hax"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Condition?"/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Frenchie" id="fb5e24e2-4df6-4512-9638-fd3503031004">
+      <property name="CardNumber" value="10329"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="moon_knight_by_hax"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Persona. Preparation."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Different Folks" id="fb5e24e2-4df6-4512-9638-fd3503031005">
+      <property name="CardNumber" value="10330"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="moon_knight_by_hax"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Condition."/>
+    </card>
+    <card name="Different Strokes" id="fb5e24e2-4df6-4512-9638-fd3503031006">
+      <property name="CardNumber" value="10331"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="moon_knight_by_hax"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Mental" value="1"/>
+    </card>
+    <card name="Deck and Cover" id="fb5e24e2-4df6-4512-9638-fd3503031007">
+      <property name="CardNumber" value="10332"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="moon_knight_by_hax"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack."/>
+    </card>
+    <card name="Figth or Foil" id="fb5e24e2-4df6-4512-9638-fd3503031008">
+      <property name="CardNumber" value="10333"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="moon_knight_by_hax"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+    </card>
+    <card name="Gear Up" id="fb5e24e2-4df6-4512-9638-fd3503031009">
+      <property name="CardNumber" value="10334"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="moon_knight_by_hax"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Defense. Tactic."/>
+    </card>
+    <card name="Where 'd He Go" id="fb5e24e2-4df6-4512-9638-fd3503031010">
+      <property name="CardNumber" value="10335"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="moon_knight_by_hax"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+    </card>
+    <card name="Versality" id="fb5e24e2-4df6-4512-9638-fd3503031011">
+      <property name="CardNumber" value="10336"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="moon_knight_by_hax"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Wild" value="1"/>
+    </card>
+    <card name="Seek Help" id="fb5e24e2-4df6-4512-9638-fd3503031012" size="EncounterCard">
+      <property name="DefaultSetupPile" value="Nemesis"/>
+      <property name="CardNumber" value="10337"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="moon_knight_by_hax_nemesis"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Bushman" id="fb5e24e2-4df6-4512-9638-fd3503031013" size="EncounterCard">
+      <property name="CardNumber" value="10338"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="moon_knight_by_hax_nemesis"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Mercenary."/>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Mano a Mano" id="fb5e24e2-4df6-4512-9638-fd3503031014" size="SchemeCard">
+      <property name="CardNumber" value="10339"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="moon_knight_by_hax_nemesis"/>
+      <property name="Boost" value="1"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+    </card>
+    <card name="Cull the Weak" id="fb5e24e2-4df6-4512-9638-fd3503031015" size="EncounterCard">
+      <property name="CardNumber" value="10340"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="moon_knight_by_hax_nemesis"/>
+      <property name="Boost" value="1"/>
+    </card>
+    <card name="Bushman's Knife" id="fb5e24e2-4df6-4512-9638-fd3503031016" size="EncounterCard">
+      <property name="CardNumber" value="10341"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="moon_knight_by_hax_nemesis"/>
+      <property name="Boost" value="1"/>
+      <property name="Attribute" value="Weapon."/>
+    </card>
+  </cards>
+</set>

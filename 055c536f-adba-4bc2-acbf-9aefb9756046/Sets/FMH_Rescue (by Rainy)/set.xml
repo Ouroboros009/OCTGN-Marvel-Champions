@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='utf-8'?>
+<set name="(FMH) Rescue (Pepper Potts) (By Rainy)" id="744249b2-f7f3-55df-8f1a-69a48606a411" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="744249b2-f7f3-55df-8f1a-69a486000000" name="Rescue (Pepper Potts) (By Rainy)">
+      <property name="Type" value="fm_hero_setup" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+    </card>
+    <card id="744249b2-f7f3-55df-8f1a-69a486990000" name="Rescue (Pepper Potts) (By Rainy)">
+      <property name="Type" value="fm_encounter_setup" />
+      <property name="Owner" value="fm_rescue_Rainy_nemesis" />
+    </card>
+    <card name="Rescue" id="744249b2-f7f3-55df-8f1a-69a486000001">
+      <property name="CardNumber" value="10301a" />
+      <property name="Position" value="1" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="hero" />
+      <property name="HP" value="11" />
+      <property name="HandSize" value="5" />
+      <property name="Attribute" value="[[Aerial. Avenger.]]" />
+      <property name="Text"><i>Rapid Responder</i> — [star] <b>Response</b>: After you use your basic DEF, make a basic thwart or attack without exhausting Rescue.
+<i>“How do I feel, Tony? Invincible.”</i></property>
+      <alternate name="Pepper Potts" type="b">
+        <property name="CardNumber" value="10301b" />
+        <property name="Position" value="1" />
+        <property name="Owner" value="fm_rescue_Rainy" />
+        <property name="Type" value="alter_ego" />
+        <property name="HP" value="11" />
+        <property name="HandSize" value="6" />
+        <property name="Attribute" value="[[Civilian.]]" />
+        <property name="Text"><i>Executive</i> — <b>Action</b>: Each player may discard 1 card from their hand to search their deck for a [[tech]] upgrade and add it to their hand. (Limit once per round.)
+<i>“Do you know why I've given so much of my life to Tony Stark? It's because I </i>believe<i> in him.”</i></property>
+      </alternate>
+    </card>
+    <card name="Iron Man (Tony Stark)" id="744249b2-f7f3-55df-8f1a-69a486000002">
+      <property name="CardNumber" value="10302" />
+      <property name="Position" value="2" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="3" />
+      <property name="Attribute" value="[[Aerial. Avenger.]]" />
+      <property name="Text">[star]<b> Interrupt</b>: When Iron Man uses a basic power, spend 1 resource of any type → Iron Man gets +2 to that basic power for that use.
+<i>“Modesty has never been my strong suit. But then, my "strong suit" is literally a strong suit.”</i></property>
+    </card>
+    <card name="Stark Resilient" id="744249b2-f7f3-55df-8f1a-69a486000011">
+      <property name="CardNumber" value="10311" />
+      <property name="Position" value="11" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="support" />
+      <property name="Attribute" value="[[Business. Location.]]" />
+      <property name="Text"><b>Resource</b>: Exhaust Stark Resilient → generate a [wild] resource for any player.
+<i>“I hereby irrevocably make you CEO of the company.” —Tony Stark</i></property>
+    </card>
+    <card name="First Responder" id="744249b2-f7f3-55df-8f1a-69a486000012">
+      <property name="CardNumber" value="10312" />
+      <property name="Position" value="12" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Skill. Title.]]" />
+      <property name="Text">Uses (3 medical counters).<b>
+Hero Response</b>: After another character takes damage, exhaust this card and remove 1 medical counter from it → heal 1 damage from that character (2 damage instead if they are an identity).</property>
+    </card>
+    <card name="Magnetic Deflector" id="744249b2-f7f3-55df-8f1a-69a486000013">
+      <property name="CardNumber" value="10313" />
+      <property name="Position" value="13" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Item. Tech.]]" />
+      <property name="Text"><b>Hero Interrupt </b><i>(defense)</i>: When an enemy initiates an attack, discard the top card of your deck → that enemy gets -1 ATK for that attack. (Limit twice per round.)
+<i>“That gun won't do anything against this suit.” —Rescue</i></property>
+    </card>
+    <card name="Model V Chassis" id="744249b2-f7f3-55df-8f1a-69a486000014">
+      <property name="CardNumber" value="10314" />
+      <property name="Position" value="14" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Armor. Tech.]]" />
+      <property name="Text">You get +3 hit points. <b>
+Hero Response</b>: After you defend and take no damage, exhaust Model V Chassis and spend 1 resource of any type → give Rescue a tough status card.
+<i>“Ultra durable. Top of the line.” —Tony Stark</i></property>
+    </card>
+    <card name="Model V Helmet" id="744249b2-f7f3-55df-8f1a-69a486000015">
+      <property name="CardNumber" value="10315" />
+      <property name="Position" value="15" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Armor. Tech.]]" />
+      <property name="Text">Rescue gets +1 THW and ignores the patrol keyword. 
+<b>Hero Response</b> <i>(thwart)</i>: After a side scheme enters play, exhaust Model V Helmet → remove 1 threat from that scheme (2 threat instead if a crisis icon ([crisis]) is in play).</property>
+    </card>
+    <card name="Repulsor Gauntlets" id="744249b2-f7f3-55df-8f1a-69a486000016">
+      <property name="CardNumber" value="10316" />
+      <property name="Position" value="16" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Tech. Weapon.]]" />
+      <property name="Text">Rescue gets +1 ATK.
+<b>Hero Interrupt</b>: When Rescue makes a basic attack, exhaust Repulsor Gauntlets → that attack gains ranged.
+ 
+<i>“I don't want to hurt you, but you leave me no choice.” —Rescue</i></property>
+    </card>
+    <card name="Magnetic Restraints" id="744249b2-f7f3-55df-8f1a-69a486000003">
+      <property name="CardNumber" value="10303" />
+      <property name="Position" value="3" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Superpower.]]" />
+      <property name="Text"><b>Hero Action</b>: Choose one:
+• Stun an enemy.
+• Choose an attachment with the text "<b>Hero Action</b>" or "<b>Hero Response</b>" and discard it.
+<i>“Magnetic restraint field. That'll lock you down.” —Rescue</i></property>
+    </card>
+    <card name="Repulsor Blasts" id="744249b2-f7f3-55df-8f1a-69a486000005">
+      <property name="CardNumber" value="10305" />
+      <property name="Position" value="5" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Superpower.]]" />
+      <property name="Text"><b>Hero Action </b><i>(attack)</i>: Deal 2 damage to an enemy. This attack gains ranged. Spend X [energy] resources (to a maximum of 3) → repeat this attack X times against targets of your choosing. 
+<i>“I'm not a violent person, but I can't let you hurt innocent people.” —Rescue</i></property>
+    </card>
+    <card name="Repulsor Blasts" id="744249b2-f7f3-55df-8f1a-69a486000004">
+      <property name="CardNumber" value="10304" />
+      <property name="Position" value="4" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Superpower.]]" />
+      <property name="Text"><b>Hero Action </b><i>(attack)</i>: Deal 2 damage to an enemy. This attack gains ranged. Spend X [energy] resources (to a maximum of 3) → repeat this attack X times against targets of your choosing. 
+<i>“I'm not a violent person, but I can't let you hurt innocent people.” —Rescue</i></property>
+    </card>
+    <card name="Responsive" id="744249b2-f7f3-55df-8f1a-69a486000008">
+      <property name="CardNumber" value="10308" />
+      <property name="Position" value="8" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Superpower.]]" />
+      <property name="Text"><b>Hero Response</b>: After you use a basic power, ready Rescue. You get +1 to a basic power of your choice (<i>THW, ATK </i>or<i> DEF</i>) until the end of the round.
+<i>“My reaction time and reflexes are enhanced beyond human limits. I'm literally a rapid responder.”
+—Rescue</i></property>
+    </card>
+    <card name="Responsive" id="744249b2-f7f3-55df-8f1a-69a486000007">
+      <property name="CardNumber" value="10307" />
+      <property name="Position" value="7" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Superpower.]]" />
+      <property name="Text"><b>Hero Response</b>: After you use a basic power, ready Rescue. You get +1 to a basic power of your choice (<i>THW, ATK </i>or<i> DEF</i>) until the end of the round.
+<i>“My reaction time and reflexes are enhanced beyond human limits. I'm literally a rapid responder.”
+—Rescue</i></property>
+    </card>
+    <card name="Responsive" id="744249b2-f7f3-55df-8f1a-69a486000006">
+      <property name="CardNumber" value="10306" />
+      <property name="Position" value="6" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Superpower.]]" />
+      <property name="Text"><b>Hero Response</b>: After you use a basic power, ready Rescue. You get +1 to a basic power of your choice (<i>THW, ATK </i>or<i> DEF</i>) until the end of the round.
+<i>“My reaction time and reflexes are enhanced beyond human limits. I'm literally a rapid responder.”
+—Rescue</i></property>
+    </card>
+    <card name="Search and Rescue" id="744249b2-f7f3-55df-8f1a-69a486000010">
+      <property name="CardNumber" value="10310" />
+      <property name="Position" value="10" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Tactic. Thwart.]]" />
+      <property name="Text"><b>Hero Action </b><i>(thwart)</i>: Remove 3 threat from a scheme. If there is a crisis icon ([crisis]) in play, remove 2 additional threat from that scheme and this thwart ignores the crisis icon. 
+<i>“H.A.P.P.Y., run the search-and-rescue scan for heartbeats.” —Rescue</i></property>
+    </card>
+    <card name="Search and Rescue" id="744249b2-f7f3-55df-8f1a-69a486000009">
+      <property name="CardNumber" value="10309" />
+      <property name="Position" value="9" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Tactic. Thwart.]]" />
+      <property name="Text"><b>Hero Action </b><i>(thwart)</i>: Remove 3 threat from a scheme. If there is a crisis icon ([crisis]) in play, remove 2 additional threat from that scheme and this thwart ignores the crisis icon. 
+<i>“H.A.P.P.Y., run the search-and-rescue scan for heartbeats.” —Rescue</i></property>
+    </card>
+    <card name="Helicopter Crash" id="744249b2-f7f3-55df-8f1a-69a486000018" size="SchemeCard">
+      <property name="CardNumber" value="10318" />
+      <property name="Position" value="18" />
+      <property name="Owner" value="fm_rescue_Rainy_nemesis" />
+      <property name="Type" value="side_scheme" />
+      <property name="BaseThreat" value="2" />
+      <property name="Text"><i>A news helicopter has crashed in a heavily populated area and civilians are in danger! Evacuate them before the chopper explodes and any more lives are lost.
+</i>
+[acceleration][crisis]</property>
+    </card>
+    <card name="Burning Building" id="744249b2-f7f3-55df-8f1a-69a486000019" size="EncounterCard">
+      <property name="CardNumber" value="10319" />
+      <property name="Position" value="19" />
+      <property name="Owner" value="fm_rescue_Rainy_nemesis" />
+      <property name="Type" value="environment" />
+      <property name="Attribute" value="[[Disaster. Location.]]" />
+      <property name="Text"><b>Forced Response</b>: After the villain phase begins, deal 1 indirect damage to each player.
+<b>Hero Action</b>: Exhaust your hero and spend a [physical] resource → discard Burning Building.
+[crisis]</property>
+    </card>
+    <card name="Wounded Civilians" id="744249b2-f7f3-55df-8f1a-69a486000020" size="EncounterCard">
+      <property name="CardNumber" value="10320" />
+      <property name="Position" value="20" />
+      <property name="Owner" value="fm_rescue_Rainy_nemesis" />
+      <property name="Type" value="obligation" />
+      <property name="DefaultSetupPile" value="Nemesis" />
+      <property name="Text">Uses (1[per_hero] civilian counters).
+<b>Interrupt</b>: When a player would heal damage from a character, remove 1 civilian counter from here instead.
+[acceleration][acceleration]</property>
+    </card>
+    <card name="Catastrophic Collision" id="744249b2-f7f3-55df-8f1a-69a486000021" size="EncounterCard">
+      <property name="CardNumber" value="10321" />
+      <property name="Position" value="21" />
+      <property name="Owner" value="fm_rescue_Rainy_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Text">Peril. <b>
+When Revealed</b>: Choose one:
+• Deal 2[per_hero] indirect damage to the players. This damage gains piercing.
+• Deal each player 1 facedown encounter card.
+• Each player discards the highest-cost card from their hand.</property>
+    </card>
+    <card name="Innocent Bystander" id="744249b2-f7f3-55df-8f1a-69a486000022" size="EncounterCard">
+      <property name="CardNumber" value="10322" />
+      <property name="Position" value="22" />
+      <property name="Owner" value="fm_rescue_Rainy_nemesis" />
+      <property name="Type" value="attachment" />
+      <property name="Attribute" value="[[Civilian. Persona.]]" />
+      <property name="Text">Attach to your identity.
+You get -1 hand size.
+<b>Hero Action</b>: Exhaust your hero → discard this card and remove 1 threat from a scheme. 
+ [star]<b> Boost</b>: Place 2 threat on the main scheme.</property>
+    </card>
+    <card name="Board Meeting" id="744249b2-f7f3-55df-8f1a-69a486000017" size="EncounterCard">
+      <property name="CardNumber" value="10317" />
+      <property name="Position" value="17" />
+      <property name="Owner" value="fm_rescue_Rainy" />
+      <property name="Type" value="obligation" />
+      <property name="DefaultSetupPile" value="Nemesis" />
+      <property name="Text">You may flip to alter-ego form. Choose:
+Exhaust Pepper Potts → remove Board Meeting from the game.
+Discard 1 [[tech]] upgrade you control. If no upgrade was discarded this way, this card gains surge. Discard this obligation.</property>
+    </card>
+  </cards>
+</set>

@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='utf-8'?>
+<set name="(FMH) Ghost Rider (Johnny Blaze) (By Swept_&amp;_Jiub)" id="8a4a4ea7-f221-51fd-9475-1d693cfab27e" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="8a4a4ea7-f221-51fd-9475-1d693c000000" name="Ghost Rider (Johnny Blaze) (By Swept_&amp;_Jiub)">
+      <property name="Type" value="fm_hero_setup" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+    </card>
+    <card id="8a4a4ea7-f221-51fd-9475-1d693c990000" name="Ghost Rider (Johnny Blaze) (By Swept_&amp;_Jiub)">
+      <property name="Type" value="fm_encounter_setup" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub_nemesis" />
+    </card>
+    <card name="Ghost Rider" id="8a4a4ea7-f221-51fd-9475-1d693c000001">
+      <property name="CardNumber" value="201101a" />
+      <property name="Position" value="1" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="hero" />
+      <property name="HP" value="14" />
+      <property name="HandSize" value="4" />
+      <property name="Attribute" value="[[Avenger. Infernal.]]" />
+      <property name="Text">X is equal to the number of card types in the encounter discard pile.
+<i>Sins Laid Bare</i> — <b>Action</b>: Discard the top card of the encounter deck. (Limit once per round).</property>
+      <alternate name="Johnny Blaze" type="b">
+        <property name="CardNumber" value="201101b" />
+        <property name="Position" value="1" />
+        <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+        <property name="Type" value="alter_ego" />
+        <property name="HP" value="14" />
+        <property name="HandSize" value="6" />
+        <property name="Attribute" value="[[Civilian. Host.]]" />
+        <property name="Text"><i>Contractually Obliged </i>— <b>Forced Response</b>: After the villain schemes, change to Hero form. 
+<b>Setup</b>: Search your deck and discard pile for The Open Road and add it to your hand.</property>
+      </alternate>
+    </card>
+    <card name="Ghost Rider (Danny KEtch)" id="8a4a4ea7-f221-51fd-9475-1d693c000002">
+      <property name="CardNumber" value="201102" />
+      <property name="Position" value="2" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="3" />
+      <property name="Attribute" value="[[Infernal.]]" />
+      <property name="Text">Reduce the cost to play this card by 1 for each different type of card in the encounter discard pile.
+<i>“Why do you bother running? I am not to be escaped.”</i></property>
+    </card>
+    <card name="Hellfire Blast" id="8a4a4ea7-f221-51fd-9475-1d693c000003">
+      <property name="CardNumber" value="201103" />
+      <property name="Position" value="3" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Infernal.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(attack)</i>: Deal 4 damage to an enemy.
+<b>Hellbound</b> <i>(attack)</i>: Deal 4 damage to an enemy.
+<i>“This fire ain’t meant to scald the flesh...” — Ghost Rider</i></property>
+    </card>
+    <card name="Hellfire Blast" id="8a4a4ea7-f221-51fd-9475-1d693c000004">
+      <property name="CardNumber" value="201104" />
+      <property name="Position" value="4" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Infernal.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(attack)</i>: Deal 4 damage to an enemy.
+<b>Hellbound</b> <i>(attack)</i>: Deal 4 damage to an enemy.
+<i>“This fire ain’t meant to scald the flesh...” — Ghost Rider</i></property>
+    </card>
+    <card name="Sin Eater" id="8a4a4ea7-f221-51fd-9475-1d693c000005">
+      <property name="CardNumber" value="201105" />
+      <property name="Position" value="5" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Infernal. Thwart.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(thwart)</i>: Remove 3 threat from a scheme. 
+<b>Hellbound</b>: Heal 1 damage for each threat removed this way.
+<i>“Hell to Pay" is more than an expression...it's a law.”
+</i></property>
+    </card>
+    <card name="Sin Eater" id="8a4a4ea7-f221-51fd-9475-1d693c000006">
+      <property name="CardNumber" value="201106" />
+      <property name="Position" value="6" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Infernal. Thwart.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(thwart)</i>: Remove 3 threat from a scheme. 
+<b>Hellbound</b>: Heal 1 damage for each threat removed this way.
+<i>“Hell to Pay" is more than an expression...it's a law.”
+</i></property>
+    </card>
+    <card name="Seek Out Sin" id="8a4a4ea7-f221-51fd-9475-1d693c000007">
+      <property name="CardNumber" value="201107" />
+      <property name="Position" value="7" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Skill.]]" />
+      <property name="Text"><b>Hero Action</b>: Discard 2 cards from the top of the encounter deck. Draw a card for each different type of card discarded this way.</property>
+    </card>
+    <card name="Seek Out Sin" id="8a4a4ea7-f221-51fd-9475-1d693c000008">
+      <property name="CardNumber" value="201108" />
+      <property name="Position" value="8" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Skill.]]" />
+      <property name="Text"><b>Hero Action</b>: Discard 2 cards from the top of the encounter deck. Draw a card for each different type of card discarded this way.</property>
+    </card>
+    <card name="Penance Stare" id="8a4a4ea7-f221-51fd-9475-1d693c000009">
+      <property name="CardNumber" value="201109" />
+      <property name="Position" value="9" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(attack)</i>: Deal damage to the villain equal to the amount of threat on schemes in play. (To a maximum of 5 damage.)
+<b>Hellbound</b>: Stun and confuse the villain.</property>
+    </card>
+    <card name="Penance Stare" id="8a4a4ea7-f221-51fd-9475-1d693c000010">
+      <property name="CardNumber" value="201110" />
+      <property name="Position" value="10" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(attack)</i>: Deal damage to the villain equal to the amount of threat on schemes in play. (To a maximum of 5 damage.)
+<b>Hellbound</b>: Stun and confuse the villain.</property>
+    </card>
+    <card name="Otherworldly Aura" id="8a4a4ea7-f221-51fd-9475-1d693c000011">
+      <property name="CardNumber" value="201111" />
+      <property name="Position" value="11" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Infernal. Superpower.]]" />
+      <property name="Text"><b>Hero Interrupt</b>: When you would take damage, place that damage here instead. Then, if there is at least 4 damage here, discard this card.
+<b>Hellbound Hero Interrupt: </b>When an enemy initiates an attack against you, deal 2 damage to that enemy.</property>
+    </card>
+    <card name="Guilty!" id="8a4a4ea7-f221-51fd-9475-1d693c000012">
+      <property name="CardNumber" value="201112" />
+      <property name="Position" value="12" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[ Accusation.]]" />
+      <property name="Text">Attach to the villain.
+<b>Response</b>: After a player deals damage to attached character with an [[infernal]] card, that player draws a card. (Limit twice per phase.)</property>
+    </card>
+    <card name="Hell Cycle" id="8a4a4ea7-f221-51fd-9475-1d693c000013">
+      <property name="CardNumber" value="201113" />
+      <property name="Position" value="13" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[ Infernal. Vehicle.]]" />
+      <property name="Text">Restricted.
+Your hero gets +1 THW.
+<b>Hero Resource</b>: Exhaust Hell Cycle → generate a [wild] resource.
+<i>“I ride, and Hell follows with me.”</i></property>
+    </card>
+    <card name="Infernal Chains" id="8a4a4ea7-f221-51fd-9475-1d693c000014">
+      <property name="CardNumber" value="201114" />
+      <property name="Position" value="14" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[ Infernal. Weapon.]]" />
+      <property name="Text"><b>Hero Action </b><i>(attack)</i>: Exhaust Infernal Chains and spend a [wild] resource → deal 2 damage to up to X enemies, where X is the number of different card types in the encounter discard pile.</property>
+    </card>
+    <card name="War In Heaven" id="8a4a4ea7-f221-51fd-9475-1d693c000015" size="PlayerSchemeCard">
+      <property name="CardNumber" value="201115" />
+      <property name="Position" value="15" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="player_side_scheme" />
+      <property name="BaseThreat" value="5" />
+      <property name="BaseThreatFixed" value="True" />
+      <property name="Text">Victory 0.
+Characters other than Ghost Rider cannot remove threat from War In Heaven.
+<b>When Defeated</b>: Summon the Fine Print obligation and place it under this card. Fine Print is always considered to be in the encounter discard pile, and cannot be removed from under this card.</property>
+    </card>
+    <card name="The Open Road" id="8a4a4ea7-f221-51fd-9475-1d693c000016">
+      <property name="CardNumber" value="201116" />
+      <property name="Position" value="16" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="support" />
+      <property name="Attribute" value="[[ Location.]]" />
+      <property name="Text"><b>Alter-Ego Action</b>: Exhaust The Open Road → Shuffle an [[infernal ]]card from your discard pile into your deck. You get +1 hand size until the end of the phase
+<b>Interrupt</b>: Exhaust The Open Road → cancel the effects of ”<i>Contractually</i> <i>Obliged</i>.”</property>
+    </card>
+    <card name="Hell On Earth" id="8a4a4ea7-f221-51fd-9475-1d693c000018" size="SchemeCard">
+      <property name="CardNumber" value="201118" />
+      <property name="Position" value="18" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub_nemesis" />
+      <property name="Type" value="side_scheme" />
+      <property name="BaseThreat" value="2" />
+      <property name="Text"><i>Hotel Inferno is open for business, and Mephisto isn’t planning on letting our heroes check out any time soon!
+</i><b>When Revealed</b>: Discard the top card of the encounter deck for each [[infernal]] card in play.
+[hazard]</property>
+    </card>
+    <card name="Fine Print" id="8a4a4ea7-f221-51fd-9475-1d693c000017" size="EncounterCard">
+      <property name="CardNumber" value="201117" />
+      <property name="Position" value="17" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub" />
+      <property name="Type" value="obligation" />
+      <property name="DefaultSetupPile" value="Nemesis" />
+      <property name="Text">Exhuast your identity and flip to hero form, if able. You cannot change forms next round. Discard Fine Print.
+<i>“Guess I was kidding myself into believing that I had a choice in this thing, huh?”
+-Johnny Blaze
+</i></property>
+    </card>
+    <card name="Mephisto" id="8a4a4ea7-f221-51fd-9475-1d693c000019" size="EncounterCard">
+      <property name="CardNumber" value="201119" />
+      <property name="Position" value="19" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="6" />
+      <property name="Attribute" value="[[Infernal. King.]]" />
+      <property name="Text">Incite 1. Villainous.</property>
+    </card>
+    <card name="Pandemonium" id="8a4a4ea7-f221-51fd-9475-1d693c000020" size="EncounterCard">
+      <property name="CardNumber" value="201120" />
+      <property name="Position" value="20" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Attribute" value="[[Infernal.]]" />
+      <property name="Text"><b>When Revealed</b>: Each player searches the discard pile for a minion and puts it into play engaged with them. If no minions were put into play, this card gains surge.</property>
+    </card>
+    <card name="Unmade" id="8a4a4ea7-f221-51fd-9475-1d693c000022" size="EncounterCard">
+      <property name="CardNumber" value="201122" />
+      <property name="Position" value="22" />
+      <property name="Owner" value="fm_ghost_rider_Swept_&amp;_Jiub_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Attribute" value="[[Infernal.]]" />
+      <property name="Text">Surge.
+<b>When Revealed</b>: Choose and discard an identity-specific card from your hand.</property>
+    </card>
+  </cards>
+</set>

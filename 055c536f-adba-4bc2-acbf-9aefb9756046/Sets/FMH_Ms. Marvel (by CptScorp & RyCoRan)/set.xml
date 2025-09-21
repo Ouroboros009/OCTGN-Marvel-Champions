@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='utf-8'?>
+<set name="(FMH) Ms. Marvel (Carol Danvers) (By CptScorp_&amp;_RyCoRan)" id="a4082154-3c42-520c-ade7-5ee1eca38441" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="a4082154-3c42-520c-ade7-5ee1ec000000" name="Ms. Marvel (Carol Danvers) (By CptScorp_&amp;_RyCoRan)">
+      <property name="Type" value="fm_hero_setup" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+    </card>
+    <card id="a4082154-3c42-520c-ade7-5ee1ec990000" name="Ms. Marvel (Carol Danvers) (By CptScorp_&amp;_RyCoRan)">
+      <property name="Type" value="fm_encounter_setup" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan_nemesis" />
+    </card>
+    <card name="Ms. Marvel" id="a4082154-3c42-520c-ade7-5ee1ec000001">
+      <property name="CardNumber" value="201501a" />
+      <property name="Position" value="1" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="hero" />
+      <property name="HP" value="12" />
+      <property name="HandSize" value="5" />
+      <property name="Attribute" value="[[Aerial. Avenger.]]" />
+      <property name="Text"><i>Rechannel</i> — <b>Action</b>: Spend a [energy] resource and heal 1 damage from Ms. Marvel → draw 1 card. (Limit once per round.)
+<i>“Always get up. If you always get up, then it's never over.”</i></property>
+      <alternate name="Carol Danvers" type="b">
+        <property name="CardNumber" value="201501b" />
+        <property name="Position" value="1" />
+        <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+        <property name="Type" value="alter_ego" />
+        <property name="HP" value="12" />
+        <property name="HandSize" value="6" />
+        <property name="Attribute" value="[[S.H.I.E.L.D. Soldier.]]" />
+        <property name="Text"><i>Commander</i> — <b>Action</b>: Choose a 	player to draw 1 card. (Limit once per round.)
+<i>“I'm kind of done with you telling me what I can't do.”</i></property>
+      </alternate>
+    </card>
+    <card name="Spider-Woman (jessica drew)" id="a4082154-3c42-520c-ade7-5ee1ec000002">
+      <property name="CardNumber" value="201502" />
+      <property name="Position" value="2" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="2" />
+      <property name="Attribute" value="[[Avenger. Spy.]]" />
+      <property name="Text"><b>Response</b>: After Spider-Woman 	enters play, confuse an enemy. If 		you paid for this card with only [energy] resources, stun that enemy.
+<i>“This is what I wanted: helping the innocent by hospitalizing the guilty.”</i></property>
+    </card>
+    <card name="Crisis Interdiction" id="a4082154-3c42-520c-ade7-5ee1ec000003">
+      <property name="CardNumber" value="201503" />
+      <property name="Position" value="3" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Thwart.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(thwart)</i>: Remove 3 threat from a scheme. If you overpaid for this card with a [energy] resource, remove 3 threat from a scheme. 
+<i>"If we could, let's skip the whole - ambush me and make me fight for my life thing."</i></property>
+    </card>
+    <card name="Crisis Interdiction" id="a4082154-3c42-520c-ade7-5ee1ec000004">
+      <property name="CardNumber" value="201504" />
+      <property name="Position" value="4" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Thwart.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(thwart)</i>: Remove 3 threat from a scheme. If you overpaid for this card with a [energy] resource, remove 3 threat from a scheme. 
+<i>"If we could, let's skip the whole - ambush me and make me fight for my life thing."</i></property>
+    </card>
+    <card name="Photonic Blast" id="a4082154-3c42-520c-ade7-5ee1ec000006">
+      <property name="CardNumber" value="201506" />
+      <property name="Position" value="6" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(attack)</i>: Deal 5 damage to an enemy. If you paid for this card using a [energy] resource, draw 1 card. 
+<i>"I sort of accidentally blasted him in the crotch. Seven times in the crotch. Poor guy turned blue."</i></property>
+    </card>
+    <card name="Photonic Blast" id="a4082154-3c42-520c-ade7-5ee1ec000005">
+      <property name="CardNumber" value="201505" />
+      <property name="Position" value="5" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(attack)</i>: Deal 5 damage to an enemy. If you paid for this card using a [energy] resource, draw 1 card. 
+<i>"I sort of accidentally blasted him in the crotch. Seven times in the crotch. Poor guy turned blue."</i></property>
+    </card>
+    <card name="Cosmic Overload" id="a4082154-3c42-520c-ade7-5ee1ec000008">
+      <property name="CardNumber" value="201508" />
+      <property name="Position" value="8" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Superpower.]]" />
+      <property name="Text">You can only spend [energy] resources to pay for this card.<b>
+Hero Action</b> <i>(attack)</i>: Deal 2 damage to an enemy for each [energy] resource used to pay for this card. This attack gains piercing and overkill.</property>
+    </card>
+    <card name="Cosmic Overload" id="a4082154-3c42-520c-ade7-5ee1ec000007">
+      <property name="CardNumber" value="201507" />
+      <property name="Position" value="7" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Superpower.]]" />
+      <property name="Text">You can only spend [energy] resources to pay for this card.<b>
+Hero Action</b> <i>(attack)</i>: Deal 2 damage to an enemy for each [energy] resource used to pay for this card. This attack gains piercing and overkill.</property>
+    </card>
+    <card name="Marvelous Might" id="a4082154-3c42-520c-ade7-5ee1ec000009">
+      <property name="CardNumber" value="201509" />
+      <property name="Position" value="9" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Superpower. Thwart.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(thwart)</i>: Remove a total of 3 threat from among schemes in play. If this removes the last threat from a scheme, stun or confuse the villain. 
+<i>
+"All right, you gigantic Skrull &amp;%$#. Time for you to die."</i></property>
+    </card>
+    <card name="Energy Absorption" id="a4082154-3c42-520c-ade7-5ee1ec000011">
+      <property name="CardNumber" value="201511" />
+      <property name="Position" value="11" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="resource" />
+    </card>
+    <card name="Energy Absorption" id="a4082154-3c42-520c-ade7-5ee1ec000012">
+      <property name="CardNumber" value="201512" />
+      <property name="Position" value="12" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="resource" />
+    </card>
+    <card name="Simon Williams" id="a4082154-3c42-520c-ade7-5ee1ec000013">
+      <property name="CardNumber" value="201513" />
+      <property name="Position" value="13" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="support" />
+      <property name="Attribute" value="[[Persona.]]" />
+      <property name="Text"><b>Alter-Ego Action</b>: Exhaust Simon Williams → return the bottommost card with a printed [energy] resource from your discard pile to your hand.
+<i>“Uh...if you can get us any help - GET IT!” —Wonder Man</i></property>
+    </card>
+    <card name="Ms. Marvel's Suit" id="a4082154-3c42-520c-ade7-5ee1ec000014">
+      <property name="CardNumber" value="201514" />
+      <property name="Position" value="14" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Item.]]" />
+      <property name="Text">You get +4 hit points.
+<b>Hero Interrupt:</b> When you would take any amount of damage from an attack, exhaust Ms. Marvel's Suit and spend an [energy] resource → prevent 2 of that damage.
+<i>“needs quote here!” —Ms. Marvel</i></property>
+    </card>
+    <card name="Cosmic Might" id="a4082154-3c42-520c-ade7-5ee1ec000015">
+      <property name="CardNumber" value="201515" />
+      <property name="Position" value="15" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Superpower.]]" />
+      <property name="Text">Ms. Marvel gets +1 ATK.
+<b>Hero Resource:</b> Exhaust Cosmic Might → generate a [energy] resource for an identity-specific event.
+<i></i></property>
+    </card>
+    <card name="Kree Durability" id="a4082154-3c42-520c-ade7-5ee1ec000016">
+      <property name="CardNumber" value="201516" />
+      <property name="Position" value="16" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Condition.]]" />
+      <property name="Text">Ms. Marvel gets +1 DEF.
+<b>Hero Response:</b> After you defeat an enemy or remove the last threat from a scheme, exhaust Kree Durability → ready Ms. Marvel.</property>
+    </card>
+    <card name="Seventh Sense" id="a4082154-3c42-520c-ade7-5ee1ec000010">
+      <property name="CardNumber" value="201510" />
+      <property name="Position" value="10" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Superpower.]]" />
+      <property name="Text"><b>Hero Interrupt</b>: When you reveal a card from the encounter deck, cancel the effects of that card and discard it.			 
+<i>"I'm not going to run away from anything...ever again."</i></property>
+    </card>
+    <card name="Identity Crisis" id="a4082154-3c42-520c-ade7-5ee1ec000017" size="EncounterCard">
+      <property name="CardNumber" value="201517" />
+      <property name="Position" value="17" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan" />
+      <property name="Type" value="obligation" />
+      <property name="DefaultSetupPile" value="Nemesis" />
+      <property name="Text">You may flip to alter-ego form. Choose:
+Exhaust Carol Danvers → remove Identity Crisis from the game.
+Discard 1 [[persona]] support you control. If no support was discarded this way, this card gains surge. Discard this obligation.</property>
+    </card>
+    <card name="Rogue Rivalry" id="a4082154-3c42-520c-ade7-5ee1ec000018" size="SchemeCard">
+      <property name="CardNumber" value="201518" />
+      <property name="Position" value="18" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan_nemesis" />
+      <property name="Type" value="side_scheme" />
+      <property name="BaseThreat" value="4" />
+      <property name="BaseThreatFixed" value="True" />
+      <property name="Text"><i>Ms. Marvel has been targeted by Mystique. Acting impulsively, Rogue has decided to take matters into her own hands.</i><b>
+Forced Response</b>: After the villain phase begins, each player discards a random card from their hand.
+[crisis]</property>
+    </card>
+    <card name="Rogue" id="a4082154-3c42-520c-ade7-5ee1ec000019" size="EncounterCard">
+      <property name="CardNumber" value="201519" />
+      <property name="Position" value="19" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="6" />
+      <property name="Attribute" value="[[Brotherhood Of Mutants. Elite.]]" />
+      <property name="Text">Guard. Teamwork ([[brotherhood of mutants]]). Toughness.
+[star] <b>Forced Response</b>: After Rogue attacks you, discard a [energy] resource 	from your hand, if able.
+<i>(Ms. Marvel’s nemesis minion.)</i></property>
+    </card>
+    <card name="Mystique" id="a4082154-3c42-520c-ade7-5ee1ec000020" size="EncounterCard">
+      <property name="CardNumber" value="201520" />
+      <property name="Position" value="20" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="5" />
+      <property name="Attribute" value="[[Brotherhood Of Mutants. Elite.]]" />
+      <property name="Text">Patrol. Teamwork ([[brotherhood of mutants]]). 
+<b>When Defeated</b>: Choose to either spend a [mental] resource or confuse your identity.								 
+ [star] <b>Boost</b>: You are confused.</property>
+    </card>
+    <card name="Rogue Assault" id="a4082154-3c42-520c-ade7-5ee1ec000021" size="EncounterCard">
+      <property name="CardNumber" value="201521" />
+      <property name="Position" value="21" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Text"><b>When Revealed (Alter-Ego)</b>: Place threat on the main scheme equal to the total number of [energy] resources in your hand. 
+<b>When Revealed (Hero)</b>: Take indirect damage equal to the total number of [energy] resources in your hand.</property>
+    </card>
+    <card name="Veiled Ambush" id="a4082154-3c42-520c-ade7-5ee1ec000022" size="EncounterCard">
+      <property name="CardNumber" value="201522" />
+      <property name="Position" value="22" />
+      <property name="Owner" value="fm_ms._marvel_CptScorp_&amp;_RyCoRan_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Text"><b>When Revealed (Alter-Ego)</b>: The villain schemes. Place 1 threat on each side scheme. 
+<b>When Revealed (Hero)</b>: The villain attacks you. Place 1 threat on each 	side scheme.</property>
+    </card>
+  </cards>
+</set>

@@ -404,5 +404,27 @@ changelog = {
         ]),
     '0000388': ("0.0.3.88", "02 September 2025", [
         "Fix: Loki, God of Lies setup."
+        ]),
+    '0000389': ("0.0.3.89", "21 September 2025", [
+        "Enhancement: Add magnetic grid for card positioning."
+        "Fanmade: Hunting Season (By Nugget) scenarios added.",
+        "Fanmade: Blink (By Kajislav) hero added.",
+        "Fanmade: Destiny (By Merlin) hero added.",
+        "Fanmade: Ghost Rider (By Swept & Jiub) hero added.",
+        "Fanmade: Iron Fist (By Merlin) hero added.",
+        "Fanmade: Manifold (By BlueHG) hero added.",
+        "Fanmade: Mantis (By BlueHG) hero added.",
+        "Fanmade: Mighty Thor (By Rainy) hero added.",
+        "Fanmade: Moon Knight (By Hax) hero added.",
+        "Fanmade: Ms Marvel (By CptScorp) hero added.",
+        "Fanmade: Mystique (By Merlin) hero added.",
+        "Fanmade: Polaris (By JackHKP) hero added.",
+        "Fanmade: Rescue (By Rainy) hero added.",
+        "Fanmade: Rom (By Alias & Merlin) hero added.",
+        "Fanmade: Ser Reddwyn (By JustATuna) hero added.",
+        "Fanmade: Singularity (By Phenexian) hero added.",
+        "Fanmade: Spider-Man 2099 (By Rainy) hero added.",
+        "Fanmade: Weapon Hex (By Merlin) hero added.",
+        "Fanmade: Yondu (By Hax) hero added."
         ])
 }

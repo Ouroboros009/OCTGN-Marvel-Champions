@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='utf-8'?>
+<set name="(FMH) Blink (Clarice Ferguson) (By Kajislav)" id="381bd788-111a-5f4f-a3eb-bcb150fa67c5" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="381bd788-111a-5f4f-a3eb-bcb150000000" name="Blink (Clarice Ferguson) (By Kajislav)">
+      <property name="Type" value="fm_hero_setup" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+    </card>
+    <card id="381bd788-111a-5f4f-a3eb-bcb150990000" name="Blink (Clarice Ferguson) (By Kajislav)">
+      <property name="Type" value="fm_encounter_setup" />
+      <property name="Owner" value="fm_blink_Kajislav_nemesis" />
+    </card>
+    <card name="Blink" id="381bd788-111a-5f4f-a3eb-bcb150000001">
+      <property name="CardNumber" value="201001a" />
+      <property name="Position" value="1" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="hero" />
+      <property name="HP" value="9" />
+      <property name="HandSize" value="5" />
+      <property name="Attribute" value="[[X-Men.]]" />
+      <property name="Text"><i>Portal Manipulation</i> — <b>Action</b>: Return 1 [[portal]] upgrade from play to your hand. (Limit once per round.)
+<b>Response</b>: After you change to this form, shuffle 1 [[portal]] upgrade from your discard pile into your deck.</property>
+      <alternate name="Clarice Ferguson" type="b">
+        <property name="CardNumber" value="201001b" />
+        <property name="Position" value="1" />
+        <property name="Owner" value="fm_blink_Kajislav" />
+        <property name="Type" value="alter_ego" />
+        <property name="HP" value="9" />
+        <property name="HandSize" value="6" />
+        <property name="Attribute" value="[[Mutant.]]" />
+        <property name="Text"><i>Deserved Vacation</i><b> </b>—<b> Forced Response</b>: After you change to this form, shuffle each [[portal]] upgrade from play into your deck. Heal 2 damage from your identity for each upgrade shuffled this way.
+<i>"I've decided that I need a break myself…"</i></property>
+      </alternate>
+    </card>
+    <card name="Sabretooth (Victor Creed)" id="381bd788-111a-5f4f-a3eb-bcb150000002">
+      <property name="CardNumber" value="201002" />
+      <property name="Position" value="2" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="3" />
+      <property name="Attribute" value="[[X-Men.]]" />
+      <property name="Text"><b>Response</b>: After Sabretooth enters your hand, if there is a [[portal]] upgrade in play, put Sabretooth into play under your control.
+<i>"I don't make the rules. I just get screwed by 'em."</i></property>
+    </card>
+    <card name="Assault Redirection" id="381bd788-111a-5f4f-a3eb-bcb150000003">
+      <property name="CardNumber" value="201003" />
+      <property name="Position" value="3" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Defense. Superpower.]]" />
+      <property name="Text"><b>Hero Interrupt </b><i>(defense)</i>: When a character would take any amount of damage from an attack, prevent all of that damage. You may discard a [[portal]] upgrade attached to an enemy to deal damage to that enemy equal to the amount prevented this way.<i>
+"I don't plan on dying at all! 'least, not today..." —Blink</i></property>
+    </card>
+    <card name="Assault Redirection" id="381bd788-111a-5f4f-a3eb-bcb150000004">
+      <property name="CardNumber" value="201004" />
+      <property name="Position" value="4" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Defense. Superpower.]]" />
+      <property name="Text"><b>Hero Interrupt </b><i>(defense)</i>: When a character would take any amount of damage from an attack, prevent all of that damage. You may discard a [[portal]] upgrade attached to an enemy to deal damage to that enemy equal to the amount prevented this way.<i>
+"I don't plan on dying at all! 'least, not today..." —Blink</i></property>
+    </card>
+    <card name="Everywhere at Once" id="381bd788-111a-5f4f-a3eb-bcb150000005">
+      <property name="CardNumber" value="201005" />
+      <property name="Position" value="5" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Thwart.]]" />
+      <property name="Text"><b>Hero Action</b><i> (attack/thwart)</i>: Deal 2 damage to each enemy with a [[portal]] upgrade attached. Remove 2 threat from each scheme with a [[portal ]]upgrade attached.
+<i>"I don't plan on dying at all! 'least, not today…" —Blink</i></property>
+    </card>
+    <card name="Everywhere at Once" id="381bd788-111a-5f4f-a3eb-bcb150000006">
+      <property name="CardNumber" value="201006" />
+      <property name="Position" value="6" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Thwart.]]" />
+      <property name="Text"><b>Hero Action</b><i> (attack/thwart)</i>: Deal 2 damage to each enemy with a [[portal]] upgrade attached. Remove 2 threat from each scheme with a [[portal ]]upgrade attached.
+<i>"I don't plan on dying at all! 'least, not today…" —Blink</i></property>
+    </card>
+    <card name="Everywhere at Once" id="381bd788-111a-5f4f-a3eb-bcb150000007">
+      <property name="CardNumber" value="201007" />
+      <property name="Position" value="7" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Thwart.]]" />
+      <property name="Text"><b>Hero Action</b><i> (attack/thwart)</i>: Deal 2 damage to each enemy with a [[portal]] upgrade attached. Remove 2 threat from each scheme with a [[portal ]]upgrade attached.
+<i>"I don't plan on dying at all! 'least, not today…" —Blink</i></property>
+    </card>
+    <card name="Lose Footing" id="381bd788-111a-5f4f-a3eb-bcb150000008">
+      <property name="CardNumber" value="201008" />
+      <property name="Position" value="8" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(attack)</i>: Deal 3 damage to an enemy. Deal 2 additional damage to that enemy for each [[portal]] upgrade attached to it.
+<i>“I wasn't trying to port you away. I was trying to 'port you to pieces!” —Blink</i></property>
+    </card>
+    <card name="Multiple 'porting" id="381bd788-111a-5f4f-a3eb-bcb150000009">
+      <property name="CardNumber" value="201009" />
+      <property name="Position" value="9" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Superpower. Thwart.]]" />
+      <property name="Text"><b>Hero Action </b><i>(thwart)</i>: Remove 2 threat from a scheme. Remove 2 additional threat from that scheme for each [[portal]] upgrade attached to it.
+<i>"Blinking into solid objects is something I tend to avoid. For obvious reasons." —Blink</i></property>
+    </card>
+    <card name="Crystal Palace" id="381bd788-111a-5f4f-a3eb-bcb150000010">
+      <property name="CardNumber" value="201010" />
+      <property name="Position" value="10" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="support" />
+      <property name="Attribute" value="[[Location.]]" />
+      <property name="Text"><b>Response</b>: After a [[portal]] upgrade is discarded from play, exhaust Crystal Palace → attach it facedown here.
+<b>Alter-Ego Action</b>: Exhaust Crystal Palace → add each [[portal]] upgrade attached here to your hand.
+<i>“Who lives in a pineapple under the sea? SpongeBob SquarePants!” —Rachel Carpenter</i></property>
+    </card>
+    <card name="Blink's Quiver" id="381bd788-111a-5f4f-a3eb-bcb150000011">
+      <property name="CardNumber" value="201011" />
+      <property name="Position" value="11" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Item.]]" />
+      <property name="Text"><b>Hero Action</b>: Exhaust Blink's Quiver → search your deck for a [[portal]] upgrade and add it to your hand. Shuffle your deck.
+<i>“Have a nice trip! Don't forget to write!” —Blink</i></property>
+    </card>
+    <card name="Portal" id="381bd788-111a-5f4f-a3eb-bcb150000015">
+      <property name="CardNumber" value="201015" />
+      <property name="Position" value="15" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Portal.]]" />
+      <property name="Text">Hero form only. Attach to an enemy or a scheme.<b>
+Interrupt</b>: When attached enemy or scheme would be a target of an [[attack]] or [[thwart]] event, reduce that event's resource cost by 2. Discard this card after that event resolves.</property>
+    </card>
+    <card name="Portal" id="381bd788-111a-5f4f-a3eb-bcb150000014">
+      <property name="CardNumber" value="201014" />
+      <property name="Position" value="14" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Portal.]]" />
+      <property name="Text">Hero form only. Attach to an enemy or a scheme.<b>
+Interrupt</b>: When attached enemy or scheme would be a target of an [[attack]] or [[thwart]] event, reduce that event's resource cost by 2. Discard this card after that event resolves.</property>
+    </card>
+    <card name="Portal" id="381bd788-111a-5f4f-a3eb-bcb150000016">
+      <property name="CardNumber" value="201016" />
+      <property name="Position" value="16" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Portal.]]" />
+      <property name="Text">Hero form only. Attach to an enemy or a scheme.<b>
+Interrupt</b>: When attached enemy or scheme would be a target of an [[attack]] or [[thwart]] event, reduce that event's resource cost by 2. Discard this card after that event resolves.</property>
+    </card>
+    <card name="Portal" id="381bd788-111a-5f4f-a3eb-bcb150000013">
+      <property name="CardNumber" value="201013" />
+      <property name="Position" value="13" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Portal.]]" />
+      <property name="Text">Hero form only. Attach to an enemy or a scheme.<b>
+Interrupt</b>: When attached enemy or scheme would be a target of an [[attack]] or [[thwart]] event, reduce that event's resource cost by 2. Discard this card after that event resolves.</property>
+    </card>
+    <card name="Portal" id="381bd788-111a-5f4f-a3eb-bcb150000012">
+      <property name="CardNumber" value="201012" />
+      <property name="Position" value="12" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Portal.]]" />
+      <property name="Text">Hero form only. Attach to an enemy or a scheme.<b>
+Interrupt</b>: When attached enemy or scheme would be a target of an [[attack]] or [[thwart]] event, reduce that event's resource cost by 2. Discard this card after that event resolves.</property>
+    </card>
+    <card name="Stranger in This Reality" id="381bd788-111a-5f4f-a3eb-bcb150000017" size="EncounterCard">
+      <property name="CardNumber" value="201017" />
+      <property name="Position" value="17" />
+      <property name="Owner" value="fm_blink_Kajislav" />
+      <property name="Type" value="obligation" />
+      <property name="DefaultSetupPile" value="Nemesis" />
+      <property name="Text">You may flip to alter-ego form. Choose:
+Exhaust Clarice Ferguson → remove Stranger in This Reality from the game.
+Discard each [[portal]] upgrade from play. If no [[portal]] upgrade was discarded this way, this card gains surge. Discard this obligation.</property>
+    </card>
+    <card name="Little Surprise" id="381bd788-111a-5f4f-a3eb-bcb150000023">
+      <property name="CardNumber" value="201023" />
+      <property name="Position" value="23" />
+      <property name="Owner" value="fm_aggression_Kajislav" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack.]]" />
+      <property name="Text"><b>Hero Interrupt</b> <i>(attack)</i>: When an enemy schemes, deal 4 damage to that enemy.
+<i>"My name is Blink, and I'm here to make sure you don't get out." —Blink</i></property>
+    </card>
+    <card name="Timebroker" id="381bd788-111a-5f4f-a3eb-bcb150000018" size="EncounterCard">
+      <property name="CardNumber" value="201018" />
+      <property name="Position" value="18" />
+      <property name="Owner" value="fm_blink_Kajislav_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="1" />
+      <property name="Attribute" value="[[Illusion.]]" />
+      <property name="Text">Timebroker cannot take damage. [star] <b>Forced Response</b>: After Timebroker activates, place 2 threat on the Damaged Reality side scheme.<b>
+Forced Response</b>: After Timebroker enters play, find the Damaged Reality side scheme and reveal it. 
+<i>(Blink's nemesis minion.)
+</i></property>
+    </card>
+    <card name="Damaged Reality" id="381bd788-111a-5f4f-a3eb-bcb150000019" size="SchemeCard">
+      <property name="CardNumber" value="201019" />
+      <property name="Position" value="19" />
+      <property name="Owner" value="fm_blink_Kajislav_nemesis" />
+      <property name="Type" value="side_scheme" />
+      <property name="BaseThreat" value="2" />
+      <property name="BaseThreatFixed" value="True" />
+      <property name="Text"><i>Timebreakers had accidentally damaged many realities across the Multiverse and tricked heroes into fixing their mistake.</i>
+<b>When Revealed</b>: Place 1 additional threat here for each upgrade in play. Then, discard an upgrade you control.
+<b>When Defeated</b>: Discard Timebroker. 
+[crisis] 
+ [star] <b>Boost</b>: Reveal this card.</property>
+    </card>
+    <card name="Timebreakers" id="381bd788-111a-5f4f-a3eb-bcb150000021" size="EncounterCard">
+      <property name="CardNumber" value="201021" />
+      <property name="Position" value="21" />
+      <property name="Owner" value="fm_blink_Kajislav_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Text"><b>When Revealed</b>: Search the encounter deck and discard pile for Timebroker and reveal him. <i>(Shuffle.)</i> If Timebroker does not enter play this way, this card gains surge. 
+<i>"Must we really sacrifice a reality just to teach them a lesson?" —Timebreakers </i></property>
+    </card>
+    <card name="Timebreakers" id="381bd788-111a-5f4f-a3eb-bcb150000022" size="EncounterCard">
+      <property name="CardNumber" value="201022" />
+      <property name="Position" value="22" />
+      <property name="Owner" value="fm_blink_Kajislav_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Text"><b>When Revealed</b>: Search the encounter deck and discard pile for Timebroker and reveal him. <i>(Shuffle.)</i> If Timebroker does not enter play this way, this card gains surge. 
+<i>"Must we really sacrifice a reality just to teach them a lesson?" —Timebreakers </i></property>
+    </card>
+    <card name="Timebreakers" id="381bd788-111a-5f4f-a3eb-bcb150000020" size="EncounterCard">
+      <property name="CardNumber" value="201020" />
+      <property name="Position" value="20" />
+      <property name="Owner" value="fm_blink_Kajislav_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Text"><b>When Revealed</b>: Search the encounter deck and discard pile for Timebroker and reveal him. <i>(Shuffle.)</i> If Timebroker does not enter play this way, this card gains surge. 
+<i>"Must we really sacrifice a reality just to teach them a lesson?" —Timebreakers </i></property>
+    </card>
+    <card name="Earth-295" id="381bd788-111a-5f4f-a3eb-bcb150000024">
+      <property name="CardNumber" value="201024" />
+      <property name="Position" value="24" />
+      <property name="Owner" value="fm_basic_Kajislav" />
+      <property name="Type" value="support" />
+      <property name="Attribute" value="[[Multiverse. Location.]]" />
+      <property name="Text"><b>Action</b>: Exhaust Earth-295 and spend 1 resource of any type → ready a unique ([unique]) ally, support or upgrade in play.<i>
+An alternate timeline was created by Legion after he had travelled back in time and accidentally caused the death of his own father, Charles Xavier.</i></property>
+    </card>
+    <card name="Mimic (Calvin Rankin)" id="381bd788-111a-5f4f-a3eb-bcb150000025">
+      <property name="CardNumber" value="201025" />
+      <property name="Position" value="25" />
+      <property name="Owner" value="fm_basic_Kajislav" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="3" />
+      <property name="Attribute" value="[[X-Men.]]" />
+      <property name="Text">[star] <b>Action</b>: Choose a character in play → until the end of the round, Mimic's THW is equal to that character's printed THW <i>(SCH instead if you choose an enemy) </i>and his ATK is equal to that character's printed ATK.<i>
+"I'm as powerful as all of you put together!"</i>
+<i>“I may be dishonored, but you are in no way honorable enough to fight against me."</i></property>
+    </card>
+    <card name="Morph (Kevin Sidney)" id="381bd788-111a-5f4f-a3eb-bcb150000026">
+      <property name="CardNumber" value="201026" />
+      <property name="Position" value="26" />
+      <property name="Owner" value="fm_basic_Kajislav" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="3" />
+      <property name="Attribute" value="[[X-Men.]]" />
+      <property name="Text"><b>Action</b>: Shuffle Morph into the encounter deck.
+<b>When Revealed</b>: Discard Morph.<i>
+"Happens that way sometimes. True love meets reality. Usually, reality wins."</i></property>
+    </card>
+    <card name="Nocturne (Talia Wagner)" id="381bd788-111a-5f4f-a3eb-bcb150000027">
+      <property name="CardNumber" value="201027" />
+      <property name="Position" value="27" />
+      <property name="Owner" value="fm_aggression_Kajislav" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="2" />
+      <property name="Attribute" value="[[X-Men.]]" />
+      <property name="Text"><b>Response</b>: After Nocturne enters play, deal 1 damage to a minion for each upgrade you control.
+<i>“Relax, I rarely fight people in my underwear."</i></property>
+    </card>
+    <card name="Proper Funeral" id="381bd788-111a-5f4f-a3eb-bcb150000028">
+      <property name="CardNumber" value="201028" />
+      <property name="Position" value="28" />
+      <property name="Owner" value="fm_basic_Kajislav" />
+      <property name="Type" value="event" />
+      <property name="Text">Alliance. Max 1 per phase.<b>
+Response</b>: After an ally is defeated, remove that ally from the game → draw 3 cards.
+<i>"Cal died fighting for what he believed in. I'll tell you how it happened, and why he's been gone..." —Blink</i></property>
+    </card>
+    <card name="Tallus" id="381bd788-111a-5f4f-a3eb-bcb150000029">
+      <property name="CardNumber" value="201029" />
+      <property name="Position" value="29" />
+      <property name="Owner" value="fm_basic_Kajislav" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Item.]]" />
+      <property name="Text"><b>Action</b>: Exhaust Tallus → look at the top card of your deck. If that card is an event, you may play it <i>(paying its cost)</i>. Shuffle your deck.
+<b>Response</b>: After a [[location]] support enters play, ready Tallus.</property>
+    </card>
+  </cards>
+</set>

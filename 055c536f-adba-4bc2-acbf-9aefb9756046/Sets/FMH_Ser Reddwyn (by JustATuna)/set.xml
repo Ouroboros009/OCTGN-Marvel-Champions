@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='utf-8'?>
+<set name="(FMH) Ser Reddwyn (Wyn) (By JustATuna)" id="6db56efb-88fb-5b74-9dc8-c546b403121e" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="6db56efb-88fb-5b74-9dc8-c546b4000000" name="Ser Reddwyn (Wyn) (By JustATuna)">
+      <property name="Type" value="fm_hero_setup" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+    </card>
+    <card id="6db56efb-88fb-5b74-9dc8-c546b4990000" name="Ser Reddwyn (Wyn) (By JustATuna)">
+      <property name="Type" value="fm_encounter_setup" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna_nemesis" />
+    </card>
+    <card name="Aiko Maki" id="6db56efb-88fb-5b74-9dc8-c546b4000002">
+      <property name="CardNumber" value="201402" />
+      <property name="Position" value="2" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="3" />
+      <property name="Attribute" value="[[Centurion.]]" />
+      <property name="Text"><b>Response</b>: After Aiko Maki enters play, shuffle a [[cosmic entity]] card from your hand or discard pile into the encounter deck.
+<i>“Just know that I love you too.”</i></property>
+    </card>
+    <card name="Advance the Ritual" id="6db56efb-88fb-5b74-9dc8-c546b4000021" size="EncounterCard">
+      <property name="CardNumber" value="201421" />
+      <property name="Position" value="21" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Text"><b>When Revealed</b>: Choose: Either place 4 threat on Babylon Event, or deal yourself 2 encounter cards. 
+[star] <b>Boost</b>: Choose: Either place 2 threat on Babylon Event, or this card gains [boost][boost].
+<i>“Regrets are for the dream. You are awake now. Open your eyes.” -Cubisk Core</i></property>
+    </card>
+    <card name="Advance the Ritual" id="6db56efb-88fb-5b74-9dc8-c546b4000020" size="EncounterCard">
+      <property name="CardNumber" value="201420" />
+      <property name="Position" value="20" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Text"><b>When Revealed</b>: Choose: Either place 4 threat on Babylon Event, or deal yourself 2 encounter cards. 
+[star] <b>Boost</b>: Choose: Either place 2 threat on Babylon Event, or this card gains [boost][boost].
+<i>“Regrets are for the dream. You are awake now. Open your eyes.” -Cubisk Core</i></property>
+    </card>
+    <card name="Avatar of Magic" id="6db56efb-88fb-5b74-9dc8-c546b4000010">
+      <property name="CardNumber" value="201410" />
+      <property name="Position" value="10" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="resource" />
+      <property name="Text">When paying for an [[artifact]], [[cosmic entity]] or [[spell]], generate this card’s printed resource from your discard pile by shuffling it into your deck.</property>
+    </card>
+    <card name="Avatar of Magic" id="6db56efb-88fb-5b74-9dc8-c546b4000011">
+      <property name="CardNumber" value="201411" />
+      <property name="Position" value="11" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="resource" />
+      <property name="Text">When paying for an [[artifact]], [[cosmic entity]] or [[spell]], generate this card’s printed resource from your discard pile by shuffling it into your deck.</property>
+    </card>
+    <card name="Babylon Event" id="6db56efb-88fb-5b74-9dc8-c546b4000019" size="SchemeCard">
+      <property name="CardNumber" value="201419" />
+      <property name="Position" value="19" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna_nemesis" />
+      <property name="Type" value="side_scheme" />
+      <property name="BaseThreat" value="5" />
+      <property name="BaseThreatFixed" value="True" />
+      <property name="Text"><i>“That spell... Did I hear it incorrectly, or was that the beginning of an elder pantheon breach?” -Jericho Drumm
+</i>Permanent.
+<b>Forced Response</b>: After threat is placed here, if there is at least 10 threat here, each player takes damage equal to half their printed hit points.</property>
+    </card>
+    <card name="Invoke a Favor" id="6db56efb-88fb-5b74-9dc8-c546b4000007">
+      <property name="CardNumber" value="201407" />
+      <property name="Position" value="7" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Spell.]]" />
+      <property name="Text"><b>Hero Action</b>: Search the encounter deck for a [[cosmic entity]] and reveal it → choose:
+• <i> </i>Deal 7 damage to an enemy.
+• <i> </i>Remove 5 threat from a scheme.
+<i>“All I know is that you’ve made a mortal enemy.” -Wyn</i></property>
+    </card>
+    <card name="Invoke a Favor" id="6db56efb-88fb-5b74-9dc8-c546b4000008">
+      <property name="CardNumber" value="201408" />
+      <property name="Position" value="8" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Spell.]]" />
+      <property name="Text"><b>Hero Action</b>: Search the encounter deck for a [[cosmic entity]] and reveal it → choose:
+• <i> </i>Deal 7 damage to an enemy.
+• <i> </i>Remove 5 threat from a scheme.
+<i>“All I know is that you’ve made a mortal enemy.” -Wyn</i></property>
+    </card>
+    <card name="Invoke a Favor" id="6db56efb-88fb-5b74-9dc8-c546b4000009">
+      <property name="CardNumber" value="201409" />
+      <property name="Position" value="9" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Spell.]]" />
+      <property name="Text"><b>Hero Action</b>: Search the encounter deck for a [[cosmic entity]] and reveal it → choose:
+• <i> </i>Deal 7 damage to an enemy.
+• <i> </i>Remove 5 threat from a scheme.
+<i>“All I know is that you’ve made a mortal enemy.” -Wyn</i></property>
+    </card>
+    <card name="Cosmic Audience" id="6db56efb-88fb-5b74-9dc8-c546b4000023">
+      <property name="CardNumber" value="201423" />
+      <property name="Position" value="23" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Condition.]]" />
+      <property name="Text">Player under any player’s control. Max 1 per player.
+<b>Response</b>: After you reveal a [[cosmic entity]] card, exhaust this card → draw 1 card.</property>
+    </card>
+    <card name="Cosmic Bargainer" id="6db56efb-88fb-5b74-9dc8-c546b4000005">
+      <property name="CardNumber" value="201405" />
+      <property name="Position" value="5" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Skill.]]" />
+      <property name="Text"><b>Alter-Ego Action</b>: Choose a player → that player searches their deck and discard pile for an [[artifact]] or a [[cosmic entity]] card and adds it to their hand.
+<i>“I bet we can trade this in for something good.” 
+-Ser Reddwyn</i></property>
+    </card>
+    <card name="Cosmic Intervention" id="6db56efb-88fb-5b74-9dc8-c546b4000006">
+      <property name="CardNumber" value="201406" />
+      <property name="Position" value="6" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Spell.]]" />
+      <property name="Text"><b>Hero Interrupt</b>: When a card is revealed from the encounter deck, search the encounter deck for a [[cosmic entity]] card and reveal it → cancel all of the card’s effects and discard it.</property>
+    </card>
+    <card name="Cubisk Core" id="6db56efb-88fb-5b74-9dc8-c546b4000018" size="EncounterCard">
+      <property name="CardNumber" value="201418" />
+      <property name="Position" value="18" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="6" />
+      <property name="Attribute" value="[[Mystic.]]" />
+      <property name="Text">[star] Cubisk Core gets +1 SCH and +1 ATK for each [[cosmic entity]] in the removed- from-game area.
+<i>(Ser Reddwyn’s nemesis minion.) </i>
+[star] <b>Boost</b>: This card gains [boost] for each [[cosmic entity]] in the removed-from-game area.
+<i>“I am here to destroy the dream and wake you from your slumber...”</i></property>
+    </card>
+    <card name="Dimitri Krakov" id="6db56efb-88fb-5b74-9dc8-c546b4000016">
+      <property name="CardNumber" value="201416" />
+      <property name="Position" value="16" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="support" />
+      <property name="Attribute" value="[[Genius. Persona.]]" />
+      <property name="Text"><b>Interrupt</b>: When you play a [[cosmic entity]], exhaust Dimitri Krakov → instead of shuffling it into the encounter deck, choose to either place it at the top or the bottom.
+<i>“Calculating the odds that this is a good idea...”</i></property>
+    </card>
+    <card name="Finale" id="6db56efb-88fb-5b74-9dc8-c546b4000022" size="EncounterCard">
+      <property name="CardNumber" value="201422" />
+      <property name="Position" value="22" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Text"><b>When Revealed</b>: Each character you control takes 2 damage. For each character defeated this way, place 2 threat on Babylon Event. 
+[star] <b>Boost</b>: Choose: Either place 3 threat on Babylon Event, or this card gains [boost][boost][boost].
+<i>“Regrets are for the dream. You are awake now. Open your eyes.” -Cubisk Core</i></property>
+    </card>
+    <card name="Ser Reddwyn" id="6db56efb-88fb-5b74-9dc8-c546b4000001">
+      <property name="CardNumber" value="201401a" />
+      <property name="Position" value="1" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="hero" />
+      <property name="HP" value="12" />
+      <property name="HandSize" value="5" />
+      <property name="Attribute" value="[[Mystic.]]" />
+      <property name="Text"><i>Cosmic Commune </i>— <b>Interrupt</b>: When a [[cosmic entity]] is drawn as a boost card, deal it to any player as an encounter card. (Limit once per phase.)
+<i>“You’ve had the sugar, now here’s the salt.”</i></property>
+      <alternate name="Wyn" type="b">
+        <property name="CardNumber" value="201401b" />
+        <property name="Position" value="1" />
+        <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+        <property name="Type" value="alter_ego" />
+        <property name="HP" value="12" />
+        <property name="HandSize" value="6" />
+        <property name="Attribute" value="[[Mystic.]]" />
+        <property name="Text"><i>Avatar of Magic</i> — You may include [[cosmic entity ]]and [[spell ]]cards in your deck from aspects other than your chosen aspect.
+<b>Action</b>: Shuffle X [[cosmic entity ]]cards from your removed-from-game area into your deck → draw X cards.</property>
+      </alternate>
+    </card>
+    <card name="Immortality" id="6db56efb-88fb-5b74-9dc8-c546b4000012">
+      <property name="CardNumber" value="201412" />
+      <property name="Position" value="12" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Superpower.]]" />
+      <property name="Text"><b>Response</b>: After your deck resets, exhaust Immortality → heal 3 damage from your identity card.
+<i>“No, I’m old. You’re just tired.” -Ser Reddwyn</i></property>
+    </card>
+    <card name="Lady Death" id="6db56efb-88fb-5b74-9dc8-c546b4000024">
+      <property name="CardNumber" value="201424" />
+      <property name="Position" value="24" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Cosmic Entity.]]" />
+      <property name="Text"><b>Action</b>: Shuffle this card into the encounter deck (without looking).
+<b>When Revealed</b>: Deal 1 damage to ALL characters. Remove this card from the game. This effect cannot be canceled.</property>
+    </card>
+    <card name="Oblivion" id="6db56efb-88fb-5b74-9dc8-c546b4000025">
+      <property name="CardNumber" value="201425" />
+      <property name="Position" value="25" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Cosmic Entity.]]" />
+      <property name="Text"><b>Action</b>: Shuffle this card into the encounter deck (without looking).
+<b>When Revealed</b>: Stun the villain and remove this card from the game. This effect cannot be canceled.</property>
+    </card>
+    <card name="Preordained" id="6db56efb-88fb-5b74-9dc8-c546b4000026">
+      <property name="CardNumber" value="201426" />
+      <property name="Position" value="26" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Cosmic Entity.]]" />
+      <property name="Text"><b>Action</b>: Shuffle this card into the encounter deck (without looking).
+<b>When Revealed</b>: Discard the top 3 cards of your deck. Add 1 card discarded this way to your hand. Remove this card from the game. This effect cannot be canceled.</property>
+    </card>
+    <card name="Sharpened Soul" id="6db56efb-88fb-5b74-9dc8-c546b4000013">
+      <property name="CardNumber" value="201413" />
+      <property name="Position" value="13" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Spell. Weapon.]]" />
+      <property name="Text">Ser Reddwyn gets +2 ATK.
+<b>Forced Interrupt</b>: At the start of your turn, place this card on top of your deck.
+<i>“It’s about manifesting an object of power that’s a reflection of who you are.” -Ser Reddwyn</i></property>
+    </card>
+    <card name="The Buchcub" id="6db56efb-88fb-5b74-9dc8-c546b4000014">
+      <property name="CardNumber" value="201414" />
+      <property name="Position" value="14" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Artifact. Item.]]" />
+      <property name="Text">Attach to an non-[[elite]] minion.
+Attached minion cannot activate. Treat its printed text box as if it were blank.
+<i>“The longer you read it, the more it eats your mind.” -Ser Reddwyn</i></property>
+    </card>
+    <card name="The Contemplator" id="6db56efb-88fb-5b74-9dc8-c546b4000027">
+      <property name="CardNumber" value="201427" />
+      <property name="Position" value="27" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Cosmic Entity.]]" />
+      <property name="Text"><b>Action</b>: Shuffle this card into the encounter deck (without looking).
+<b>When Revealed</b>: Give your identity a tough status card and remove this card from the game. This effect cannot be canceled.</property>
+    </card>
+    <card name="The Possesor" id="6db56efb-88fb-5b74-9dc8-c546b4000028">
+      <property name="CardNumber" value="201428" />
+      <property name="Position" value="28" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Cosmic Entity.]]" />
+      <property name="Text"><b>Action</b>: Shuffle this card into the encounter deck (without looking).
+<b>When Revealed</b>: Confuse the villain and remove this card from the game. This effect cannot be canceled.</property>
+    </card>
+    <card name="The-Natural-Order" id="6db56efb-88fb-5b74-9dc8-c546b4000004">
+      <property name="CardNumber" value="201404" />
+      <property name="Position" value="4" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Cosmic Entity.]]" />
+      <property name="Text"><b>Action</b>: Shuffle this card into the encounter deck (without looking).
+<b>When Revealed</b>: Search your deck and discard pile for an upgrade, add it to your hand and remove this card from the game. This effect cannot be canceled.</property>
+    </card>
+    <card name="The-Powers-That-Be" id="6db56efb-88fb-5b74-9dc8-c546b4000003">
+      <property name="CardNumber" value="201403" />
+      <property name="Position" value="3" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Cosmic Entity.]]" />
+      <property name="Text"><b>Action</b>: Shuffle this card into the encounter deck (without looking).
+<b>When Revealed</b>: Search your deck and discard pile for a resource, add it to your hand and remove this card from the game. This effect cannot be canceled.</property>
+    </card>
+    <card name="Wyn’s Bracelet" id="6db56efb-88fb-5b74-9dc8-c546b4000015">
+      <property name="CardNumber" value="201415" />
+      <property name="Position" value="15" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Artifact. Item.]]" />
+      <property name="Text"><b>Action</b>: Exhaust Wyn’s Bracelet → discard the top 3 cards of your deck. Add 1 [[cosmic entity ]]or [[spell ]]card discarded this way to your hand.</property>
+    </card>
+    <card name="Avatar’s Duty" id="6db56efb-88fb-5b74-9dc8-c546b4000017" size="EncounterCard">
+      <property name="CardNumber" value="201417" />
+      <property name="Position" value="17" />
+      <property name="Owner" value="fm_ser_reddwyn_JustATuna" />
+      <property name="Type" value="obligation" />
+      <property name="DefaultSetupPile" value="Nemesis" />
+      <property name="Text">You may flip to alter-ego form. Choose:
+Exhaust Wyn → remove Avatar’s Duty from the game.
+Place each [[cosmic entity ]]card from your removed-from-game area into your discard pile. This card gains surge.</property>
+    </card>
+  </cards>
+</set>

@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="(FMH) Yondu (By Hax)" id="8ed5030f-bb57-4682-aad0-fc5f5368cc77" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="8ed5030f-bb57-4682-aad0-fc5f53000000" name="yondu_by_hax">
+      <property name="Type" value="fm_hero_setup"/>
+      <property name="Owner" value="yondu_by_hax"/>
+    </card>
+    <card id="8ed5030f-bb57-4682-aad0-fc5f53990000" name="yondu_by_hax">
+      <property name="Type" value="fm_encounter_setup"/>
+      <property name="Owner" value="yondu_by_hax_nemesis"/>
+    </card>
+    <card name="Yondu" id="8ed5030f-bb57-4682-aad0-fc5f53013001">
+      <property name="CardNumber" value="201301a"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="yondu_by_hax"/>
+      <property name="HandSize" value="5"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="2"/>
+      <property name="Defense" value="2"/>
+      <property name="HP" value="10"/>
+      <property name="Attribute" value="Guardian. Ravager."/>
+      <property name="Text">&lt;i&gt;D'ast Whistlin'&lt;/i&gt; - &lt;b&gt;Interrupt&lt;/b&gt;: When the Yaka Arrow uprgrade is attached to or removed from an enemy, deal 1 damage to that enemy. When it is attached to your identity, heal 1 damage from Yondu.</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Yondu Udonta" type="b">
+        <property name="CardNumber" value="201301b"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="hero"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="yondu_by_hax"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="10"/>
+        <property name="Attribute" value="Outlaw"/>
+        <property name="Text">&lt;i&gt;Crew Cut&lt;/i&gt; - &lt;b&gt;Action&lt;/b&gt;: Summon the Tahlei upgrade and add it to your hand. (Limit once per round)
+&lt;I&gt;Whistlin'&lt;/i&gt; - &lt;b&gt;Action&lt;/b&gt;:Exhaust Yondu Udonta → summon the Yaka Arrow upgrade and add it to your hand.</property>
+      </alternate>
+    </card>
+    <card name="Cheap Shot" id="8ed5030f-bb57-4682-aad0-fc5f53013002">
+      <property name="CardNumber" value="201302"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="yondu_by_hax"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; (&lt;i&gt;attack&lt;/i&gt;): Stun an enemy. Then, if that enemy has the Yaka Arrow upgrade attached, deal 6 damages to that enemy.</property>
+      <property name="Quote">“EYou caught me.” - Yondu</property>
+    </card>
+    <card name="Fight Dirty" id="8ed5030f-bb57-4682-aad0-fc5f53013003">
+      <property name="CardNumber" value="201303"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="yondu_by_hax"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; (&lt;i&gt;attack&lt;/i&gt;): Confuse an enemy. Then, if that enemy has the Yaka Arrow upgrade attached, deal 6 damages to that enemy.</property>
+      <property name="Quote">“ESo, how's I look playin' the hero?” - Yondu</property>
+    </card>
+    <card name="Whistle While You Work" id="8ed5030f-bb57-4682-aad0-fc5f53013004">
+      <property name="CardNumber" value="201304"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="yondu_by_hax"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Tactic."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Attach the Yaka Arrow upgrade to Yondu→ready Yondu and the Tahlei upgrade. If the Yaka Arrow upgrade is not in play, summon it and add it to your hand instead.</property>
+      <property name="Quote">“EI do what Iwant, when I want, how I want.” - Yondu</property>
+    </card>
+    <card name="Tough Motherlover" id="8ed5030f-bb57-4682-aad0-fc5f53013005">
+      <property name="CardNumber" value="201305"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="yondu_by_hax"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">&lt;b&gt;Action&lt;/b&gt;: Give Yondu a tough status card. Then, if you have the Yaka Arrow upgrade in your hand, draw a card.</property>
+      <property name="Quote">“ETough to whistle with grillz!” - Yondu</property>
+    </card>
+    <card name="Twirlin' and Whirlin'" id="8ed5030f-bb57-4682-aad0-fc5f53013006">
+      <property name="CardNumber" value="201306"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="4"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="yondu_by_hax"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Attach the Yaka Arrow upgrade to an enemy or to your identity. You may resolve this ability up to 3 times.</property>
+      <property name="Quote">“EI don't use my hand to fly the arrow boy, I use my heart...” - Yondu</property>
+    </card>
+    <card name="Jackpot!" id="8ed5030f-bb57-4682-aad0-fc5f53013007">
+      <property name="CardNumber" value="201307"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="resource"/>
+      <property name="Owner" value="yondu_by_hax"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After you spend this card, treat the next card you spend as if it has double the resources.</property>
+      <property name="Quote">“EGot enough to buy my way out of this life!”</property>
+    </card>
+    <card name="Ravager Redshirts" id="8ed5030f-bb57-4682-aad0-fc5f53013008">
+      <property name="CardNumber" value="201308"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="yondu_by_hax"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt;: When you would take any amount of damage from an enemy with the Yaka Arrow upgrade attached, exhaust Ravager Redshirts → prevent up to 2 of that damage.</property>
+    </card>
+    <card name="Invest" id="8ed5030f-bb57-4682-aad0-fc5f53013009">
+      <property name="CardNumber" value="201309"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="yondu_by_hax"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Item. Tactic."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust Invest and spend 2 or more resources from your hand. If the number of resources spent this way was:
+&lt;ul&gt;
+  &lt;li&gt;2 â€“ Attach the Yaka Arrow upgrade to an enemy or to your identity.&lt;/li&gt;
+  &lt;li&gt;3 â€“ Ready Yondu and the Tahlei upgrade.&lt;/li&gt;
+  &lt;li&gt;4 or more â€“ Draw 5 cards.&lt;/li&gt;
+&lt;/ul&gt;</property>
+    </card>
+    <card name="Ravage" id="8ed5030f-bb57-4682-aad0-fc5f53013010">
+      <property name="CardNumber" value="201310"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="yondu_by_hax"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Skill. Tactic."/>
+      <property name="Text">&lt;b&gt;Hero Response&lt;/b&gt;: After the Yaka Arrow upgrade is attached to a minion, exhaust Ravage → that minion gains fragile. &lt;i&gt;(Attacks against fragile minions gain overkill.)&lt;/i&gt;</property>
+    </card>
+    <card name="Tahlei" id="8ed5030f-bb57-4682-aad0-fc5f53013011">
+      <property name="CardNumber" value="201311"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="yondu_by_hax"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Mental" value="2"/>
+      <property name="Attribute" value="Tech."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust Tahlei → attach the Yaka Arrow upgrade to an enemy or to your identity.</property>
+      <property name="Quote">“EI'm about to be a twirlin' and whirlin'. I'm about to be a d'ast darn dandy.” - Yondu</property>
+    </card>
+    <card name="Yaka Arrow" id="8ed5030f-bb57-4682-aad0-fc5f53013012">
+      <property name="CardNumber" value="201312"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="yondu_by_hax"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Tech. Weapon."/>
+      <property name="Text">While Yaka Arrow is attached to Yondu, he gets +1 THW and +1 ATK.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When Attached enemy is defeated, attach Yaka Arrow to an enemy, to your identity, or add it to your hand.</property>
+    </card>
+    <card name="Banished" id="8ed5030f-bb57-4682-aad0-fc5f53013013" size="EncounterCard">
+      <property name="DefaultSetupPile" value="Nemesis"/>
+      <property name="CardNumber" value="201313"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="yondu_by_hax"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;Give to the Yondu Udonta player.&lt;/b&gt;
+You may flip to alter-ego form. Choose:
+  â€¢ Exhaust your alter-ego → remove Banished from the game.
+  â€¢ Discard the Yaka Arrow upgrade and exhaust the Tahlei upgrade. Discard this obligation.</property>
+    </card>
+    <card name="Price on Your Head" id="8ed5030f-bb57-4682-aad0-fc5f53013014" size="SchemeCard">
+      <property name="CardNumber" value="201314"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="yondu_by_hax_nemesis"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After a friendly character is defeated, heal 1 damage from Sav'rkk. If Sav'rkk is not in play, heal 1 damage from the villain instead.</property>
+      <property name="Quote">“The heroes are on the bad side of some nasty intergalactic malcontents who have sent the bounty hunter Sav'rkk after them”</property>
+    </card>
+    <card name="Sav'rkk" id="8ed5030f-bb57-4682-aad0-fc5f53013015" size="EncounterCard">
+      <property name="CardNumber" value="201315"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="yondu_by_hax_nemesis"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="Elite. Scoundrel."/>
+      <property name="Text">Upgrades cannot be removed from Sav'kk.
+&lt;b&gt;When Revealed&lt;/b&gt;: Summon the Sword-Gun-Arm Attachment and attach it to Sav'rkk.</property>
+      <property name="Quote">“ELive like a dog, die like a dog”</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Sword-Gun-Arm" id="8ed5030f-bb57-4682-aad0-fc5f53013016" size="EncounterCard">
+      <property name="CardNumber" value="201316"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="yondu_by_hax_nemesis"/>
+      <property name="Attack" value="1"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Weapon."/>
+      <property name="Text">Attach to Sav'rkk. If you cannot, attach to the minion withe the highest ATK. If you cannot, this card gain surge.
+[star] Attached character's attacks gain overkill.
+&lt;b&gt;Forced Response&lt;/b&gt;: When attached character has 2 or less remaining hit points, discard Sword-Gun-Arm.</property>
+    </card>
+    <card name="Hard to Kill" id="8ed5030f-bb57-4682-aad0-fc5f53013017" size="EncounterCard">
+      <property name="CardNumber" value="201317"/>
+      <property name="Position" value="17"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="yondu_by_hax_nemesis"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: If Sav'rkk is in play, he heals 2 damages. Otherwise, summon Sav'rkk and reveal him.
+ [star] &lt;b&gt;Boost&lt;/b&gt;: The vilain heals 2 damages.</property>
+      <property name="Quote">“ELet us see what chas hod in store for us this time...” - Sav'rkk</property>
+    </card>
+    <card name="Savage Destruction" id="8ed5030f-bb57-4682-aad0-fc5f53013018" size="EncounterCard">
+      <property name="CardNumber" value="201318"/>
+      <property name="Position" value="18"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="yondu_by_hax_nemesis"/>
+      <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: If Sav'rkk is in play, he attacks you. Ohterwise, summon Sav'rkk and reveal him.</property>
+      <property name="Quote">“A toast. To your ruin” - Sav'rkk</property>
+    </card>
+  </cards>
+</set>

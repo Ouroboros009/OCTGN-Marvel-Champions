@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="(FMH) Mighty Thor (By Rainy)" id="a9f65411-f86b-48a8-bcac-0564be7f1ab9" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="a9f65411-f86b-48a8-bcac-0564be000000" name="mighty_thor_by_rainy">
+      <property name="Type" value="fm_hero_setup"/>
+      <property name="Owner" value="mighty_thor_by_rainy"/>
+    </card>
+    <card id="a9f65411-f86b-48a8-bcac-0564be990000" name="mighty_thor_by_rainy">
+      <property name="Type" value="fm_encounter_setup"/>
+      <property name="Owner" value="mighty_thor_by_rainy_nemesis"/>
+    </card>
+    <card name="Thor" id="a9f65411-f86b-48a8-bcac-0564be021001">
+      <property name="CardNumber" value="202101a"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="mighty_thor_by_rainy"/>
+      <property name="HandSize" value="5"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="Defense" value="2"/>
+      <property name="HP" value="13"/>
+      <property name="Attribute" value="Asgard. Avenger."/>
+      <property name="Text">&lt;i&gt;Worthy&lt;/i&gt; - &lt;b&gt;Action&lt;/b&gt;: Search your deck and discard pile for the Mjolnir upgrade and add it to your hand. Shuffle your deck. (Limit once per round.)</property>
+      <property name="Quote">"There must always be a Thor."</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Jane Foster" type="b">
+        <property name="CardNumber" value="202101b"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="hero"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="mighty_thor_by_rainy"/>
+        <property name="HandSize" value="5"/>
+        <property name="Recovery" value="2"/>
+        <property name="HP" value="13"/>
+        <property name="Attribute" value="Civilian. Doctor."/>
+        <property name="Text">&lt;i&gt;Physician&lt;/i&gt; - &lt;b&gt;Action&lt;/b&gt;: Heal 1 damage from another friendly character. (Limit once per round.)
+&lt;i&gt;Survivor&lt;/i&gt; - Jane Foster gets +1 hand size if her Chemotherapy obligation is set aside or removed from the game.</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Roz Solomon" id="a9f65411-f86b-48a8-bcac-0564be021002">
+      <property name="CardNumber" value="202102"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="mighty_thor_by_rainy"/>
+      <property name="Thwart" value="2"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="S.H.I.E.L.D. Spy."/>
+      <property name="Text">[star] &lt;b&gt;Interrupt&lt;/b&gt;: When Roz Solomon thwarts, exhaust Congress of Worlds or a &lt;b&gt;&lt;i&gt;S.H.I.E.L.D.&lt;/i&gt;&lt;/b&gt; card you control → she gets +2 THW for that use.</property>
+      <property name="Quote">"Let's all remember the most important objective here... nobody break my earpieces. Those things aren't cheap."</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Hammer Swing" id="a9f65411-f86b-48a8-bcac-0564be021003">
+      <property name="CardNumber" value="202103"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="3"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="mighty_thor_by_rainy"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack. Defense."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Exhaust Mjolnir and spend 1 resource → deal 4 damage to an enemy.
+&lt;b&gt;Hero Interrupt&lt;/b&gt; &lt;i&gt;(defense)&lt;/i&gt;: When you would take any amount of damage, exhaust Mjolnir → prevent all of that damage.</property>
+    </card>
+    <card name="Lightning Strike" id="a9f65411-f86b-48a8-bcac-0564be021004">
+      <property name="CardNumber" value="202104"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="mighty_thor_by_rainy"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Attack. Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Deal 6 damage to an enemy and 1 damage to each enemy engaged with you. If you paid for this card using only [energy] resources, stun an enemy.</property>
+      <property name="Quote">"I command the lightning and the thunder!" -Thor</property>
+    </card>
+    <card name="Stand Fast" id="a9f65411-f86b-48a8-bcac-0564be021005">
+      <property name="CardNumber" value="202105"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="mighty_thor_by_rainy"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Skill."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Ready Thor and Mjolnir. If you paid for this card using only [energy] resources, give Thor a tough status card.</property>
+      <property name="Quote">"You shall not take this city! Not while Thor yet lives!"</property>
+    </card>
+    <card name="Congress of Worlds" id="a9f65411-f86b-48a8-bcac-0564be021006">
+      <property name="CardNumber" value="202106"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="mighty_thor_by_rainy"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Asgard. Location. Organization."/>
+      <property name="Text">&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Congress of Worlds and spend 1 resource → remove 2 threat from the main scheme or 3 threat from a side scheme.</property>
+      <property name="Quote">"Is this the congress or worlds, or a confederation of cowards?" -Senator from Alfheim</property>
+    </card>
+    <card name="Medical Clinic" id="a9f65411-f86b-48a8-bcac-0564be021007">
+      <property name="CardNumber" value="202107"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="mighty_thor_by_rainy"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Location."/>
+      <property name="Text">Jane Foster gets +2 REC.
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Medical Clinic and spend 1 resource → heal 3 damage from an identity.</property>
+      <property name="Quote">"Let &lt;b&gt;us&lt;/b&gt; worry about the other patients, doctor."</property>
+    </card>
+    <card name="Scrying Pool" id="a9f65411-f86b-48a8-bcac-0564be021008">
+      <property name="CardNumber" value="202108"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="mighty_thor_by_rainy"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Asgard. Location."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust Scrying Pool → look at the top card of a deck. You may discard that card. If a treachery was looked at this way, remove 1 threat from a scheme. If an event was looked at from a player deck this way, that player draws 1 card.</property>
+    </card>
+    <card name="Goddess of Thunder" id="a9f65411-f86b-48a8-bcac-0564be021009">
+      <property name="CardNumber" value="202109"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="mighty_thor_by_rainy"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Asgard. Title."/>
+      <property name="Text">&lt;b&gt;Hero Resource&lt;/b&gt;: Exhaust Goddess of Thunder → generate a [energy] resource, or [energy] e resources instead for a Thor card.</property>
+      <property name="Quote">"Stand down, or you too will know the wrath of the goddess of thunder!" -Thor</property>
+    </card>
+    <card name="Mighty" id="a9f65411-f86b-48a8-bcac-0564be021010">
+      <property name="CardNumber" value="202110"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="mighty_thor_by_rainy"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Condition. Superpower."/>
+      <property name="Text">You get +2 hit points.
+Thor gets +1 DEF and gains retaliate 1.</property>
+      <property name="Quote">"You came here seeking battle. Battle you have found!" -Thor</property>
+    </card>
+    <card name="Mjolnir" id="a9f65411-f86b-48a8-bcac-0564be021011">
+      <property name="CardNumber" value="202111"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="mighty_thor_by_rainy"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="2"/>
+      <property name="Attribute" value="Asgard. Weapon."/>
+      <property name="Text">Restricted.
+Thor gets +1 ATK and gains the &lt;b&gt;&lt;i&gt;AERIAL&lt;/i&gt;&lt;/b&gt; trait.
+&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Discard Mjolnir → deal 2 damage to an enemy. This attack gains ranged.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Unyielding" id="a9f65411-f86b-48a8-bcac-0564be021012">
+      <property name="CardNumber" value="202112"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="mighty_thor_by_rainy"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Condition."/>
+      <property name="Text">&lt;b&gt;Hero Response&lt;/b&gt; &lt;i&gt;(thwart)&lt;/i&gt;: After Thor is attacked and takes no damage, exhaust Unyielding → remove 2 threat from a scheme. You may spend 1 resource to ready Thor.</property>
+      <property name="Quote">"It will take more than bullets to defeat me."</property>
+    </card>
+    <card name="Chemotherapy" id="a9f65411-f86b-48a8-bcac-0564be021013" size="EncounterCard">
+      <property name="DefaultSetupPile" value="Nemesis"/>
+      <property name="CardNumber" value="202113"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="mighty_thor_by_rainy"/>
+      <property name="Boost" value="1"/>
+      <property name="Text">&lt;b&gt;&lt;i&gt;Give to the Jane Foster player.&lt;/i&gt;&lt;/b&gt;
+Flip to alter-ego form. Choose:
+• Exhaust Jane Foster and Medical Clinic → remove Chemotherapy from the game.
+• Choose to either discard 2 cards or take 2 damage. Discard this obligation.</property>
+      <property name="Quote">"Except for the dying part, having cancer is a piece of cake compared to getting rid of it."</property>
+    </card>
+    <card name="War of the Realms" id="a9f65411-f86b-48a8-bcac-0564be021014" size="SchemeCard">
+      <property name="CardNumber" value="202114"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="mighty_thor_by_rainy_nemesis"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Each player takes 1 indirect damage for each character they control.
+[hazard]</property>
+      <property name="Quote">Malekith's scheming and manipulation has brought war to all of the known realms. His armies must be defeated, but there will be many casualties.</property>
+    </card>
+    <card name="Malekith" id="a9f65411-f86b-48a8-bcac-0564be021015" size="EncounterCard">
+      <property name="CardNumber" value="202115"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="mighty_thor_by_rainy_nemesis"/>
+      <property name="Attack" value="1"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="6"/>
+      <property name="Attribute" value="Dark Elf. Mystic."/>
+      <property name="Text">[star] &lt;b&gt;Forced Response&lt;/b&gt;: After Malekith activates, each player takes 1 indirect damage.
+&lt;i&gt;(Thor's nemesis minion.)&lt;/i&gt;</property>
+      <property name="Quote">"Welcome to the War of the Realms, you fools. And know... your bleeding has scarcely begun."</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="War Witches" id="a9f65411-f86b-48a8-bcac-0564be021016" size="EncounterCard">
+      <property name="CardNumber" value="202116"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="mighty_thor_by_rainy_nemesis"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Dark Elf. Mystic."/>
+      <property name="Text">[star] &lt;b&gt;Forced Interrupt&lt;/b&gt;: When War Witches would attack, they scheme instead.
+&lt;b&gt;Forced Response&lt;/b&gt;: After threat is placed on the main scheme, the engaged player takes 1 indirect damage.</property>
+      <property name="Quote">"We smell the darkness in your soul... and we will turn it to fire!"</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Execute" id="a9f65411-f86b-48a8-bcac-0564be021017" size="EncounterCard">
+      <property name="CardNumber" value="202117"/>
+      <property name="Position" value="17"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mighty_thor_by_rainy_nemesis"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Defeat the ally in play with the highest remaining hit points. If no ally was defeated this way, this card gains surge.</property>
+    </card>
+    <card name="Hostile Takeover" id="a9f65411-f86b-48a8-bcac-0564be021018" size="EncounterCard">
+      <property name="CardNumber" value="202118"/>
+      <property name="Position" value="18"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="mighty_thor_by_rainy_nemesis"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Choose to either discard the support you control with the highest cost or take damage equal to its cost (this damage ignores tough status cards). If no support was discarded and no damage was taken this way, this card gains surge.</property>
+    </card>
+  </cards>
+</set>

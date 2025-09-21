@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="(FMH) Manifold (By BlueHG)" id="0a6276d1-079f-4b56-83f6-da46aa177d8d" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="0a6276d1-079f-4b56-83f6-da46aa000000" name="manifold_by_bluehg">
+      <property name="Type" value="fm_hero_setup"/>
+      <property name="Owner" value="manifold_by_bluehg"/>
+    </card>
+    <card id="0a6276d1-079f-4b56-83f6-da46aa990000" name="manifold_by_bluehg">
+      <property name="Type" value="fm_encounter_setup"/>
+      <property name="Owner" value="manifold_by_bluehg_nemesis"/>
+    </card>
+    <card name="Manifold" id="0a6276d1-079f-4b56-83f6-da46aa017001">
+      <property name="CardNumber" value="201701a"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="manifold_by_bluehg"/>
+      <property name="HandSize" value="5"/>
+      <property name="Thwart" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="Defense" value="2"/>
+      <property name="HP" value="9"/>
+      <property name="Attribute" value="S.W.O.R.D."/>
+      <property name="Text">&lt;i&gt;The Universe Speaks&lt;/i&gt; - &lt;b&gt;Response&lt;/b&gt;: After you change to this form, flip the Battlefield support to Its &lt;b&gt;&lt;i&gt;TRAVELED &lt;/i&gt;&lt;/b&gt;side.
+&lt;b&gt;Forced Response&lt;/b&gt;: At the end of the round, flip each &lt;b&gt;&lt;i&gt;TRAVELED&lt;/i&gt;&lt;/b&gt; support to its &lt;b&gt;&lt;i&gt;UNTRAVELED&lt;/i&gt;&lt;/b&gt; side.</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Eden Fesi" type="b">
+        <property name="CardNumber" value="201701b"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="hero"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="manifold_by_bluehg"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="9"/>
+        <property name="Attribute" value="Mutant. S.W.O.R.D."/>
+        <property name="Text">&lt;i&gt;Traveler&lt;/i&gt; - &lt;b&gt;Response&lt;/b&gt;: After you change to this form, flip a non-Battlefield &lt;b&gt;&lt;i&gt;UNTRAVELED &lt;/i&gt;&lt;/b&gt;support to its &lt;b&gt;&lt;i&gt;TRAVELED&lt;/i&gt;&lt;/b&gt; support to its &lt;b&gt;&lt;i&gt;UNTRAVELED&lt;/i&gt;&lt;/b&gt; side.
+&lt;b&gt;Forced Response&lt;/b&gt;: At the end of the round, flip each &lt;b&gt;&lt;i&gt;TRAVELED &lt;/i&gt;&lt;/b&gt;support to its &lt;b&gt;&lt;i&gt;UNTRAVELED &lt;/i&gt;&lt;/b&gt;side.</property>
+      </alternate>
+    </card>
+    <card name="Battlefield" id="0a6276d1-079f-4b56-83f6-da46aa017002">
+      <property name="CardNumber" value="201702a"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="manifold_by_bluehg"/>
+      <property name="Attribute" value="Location. Untraveled."/>
+      <property name="Text">Permanent. Setup.</property>
+      <property name="Quote">&lt;i&gt;“This is what we have to do. You don't have to convince me.” - Manifold&lt;/i&gt;</property>
+      <alternate name="Battlefield" type="b">
+        <property name="CardNumber" value="201702b"/>
+        <property name="Position" value="2"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="hero"/>
+        <property name="Type" value="support"/>
+        <property name="Owner" value="manifold_by_bluehg"/>
+        <property name="Attribute" value="Location. Traveled."/>
+        <property name="Text">Permanent.
+&lt;b&gt;When Revealed&lt;/b&gt;: Choose ATK, THW, or DEF. Manifold gets +1 to the chosen power until the end of the round. (Max twice per round) 
+&lt;b&gt;Forced Response&lt;/b&gt;: When you flip to your alter-ego form, flip this card.</property>
+      </alternate>
+    </card>
+    <card name="Kata Tjuta" id="0a6276d1-079f-4b56-83f6-da46aa017003">
+      <property name="CardNumber" value="201703a"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="manifold_by_bluehg"/>
+      <property name="Attribute" value="Location. Untraveled."/>
+      <property name="Text">Permanent. Setup.</property>
+      <property name="Quote">&lt;i&gt;“This is where I was born. We're on country.” - Manifold&lt;/i&gt;</property>
+      <alternate name="Kata Tjuta" type="b">
+        <property name="CardNumber" value="201703b"/>
+        <property name="Position" value="3"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="hero"/>
+        <property name="Type" value="support"/>
+        <property name="Owner" value="manifold_by_bluehg"/>
+        <property name="Attribute" value="Location. Traveled."/>
+        <property name="Text">Permanent. Eden Fesi gets +1 REC.
+&lt;b&gt;When Revealed&lt;/b&gt;: Heal 2 damage from Eden Fesi.</property>
+        <property name="Quote">&lt;i&gt;“This is where I was born. We're on country.” - Manifold&lt;/i&gt;</property>
+      </alternate>
+    </card>
+    <card name="Krakoa" id="0a6276d1-079f-4b56-83f6-da46aa017004">
+      <property name="CardNumber" value="201704a"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="manifold_by_bluehg"/>
+      <property name="Attribute" value="Location. Untraveled."/>
+      <property name="Text">Permanent. Setup.</property>
+      <property name="Quote">&lt;i&gt;“They made up these three laws. Know what the third one is? 'Respect this sacred land.' They're okay.” - Manifold&lt;/i&gt;</property>
+      <alternate name="Krakoa" type="b">
+        <property name="CardNumber" value="201704b"/>
+        <property name="Position" value="4"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="hero"/>
+        <property name="Type" value="support"/>
+        <property name="Owner" value="manifold_by_bluehg"/>
+        <property name="Attribute" value="Location. Traveled."/>
+        <property name="Text">Permanent. Manifold gains retaliate 1.
+&lt;b&gt;When Revealed&lt;/b&gt;: Ready Eden Fesi.</property>
+        <property name="Quote">&lt;i&gt;“They made up these three laws. Know what the third one is? 'Respect this sacred land.' They're okay.” - Manifold&lt;/i&gt;</property>
+      </alternate>
+    </card>
+    <card name="The Peak VII" id="0a6276d1-079f-4b56-83f6-da46aa017005">
+      <property name="CardNumber" value="201705a"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="manifold_by_bluehg"/>
+      <property name="Attribute" value="Location. Untraveled."/>
+      <property name="Text">Permanent. Setup.</property>
+      <property name="Quote">&lt;i&gt;“S.W.O.R.D. has to speak for Sol.” - Abigail Brand&lt;/i&gt;</property>
+      <alternate name="The Peak VII" type="b">
+        <property name="CardNumber" value="201705b"/>
+        <property name="Position" value="5"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="hero"/>
+        <property name="Type" value="support"/>
+        <property name="Owner" value="manifold_by_bluehg"/>
+        <property name="Attribute" value="Location. Traveled."/>
+        <property name="Text">Permanent.
+Manifold gets +1 hand size.
+&lt;b&gt;When Revealed&lt;/b&gt;: You may shuffle 1 card from your discard pile into your deck.</property>
+        <property name="Quote">&lt;i&gt;“S.W.O.R.D. has to speak for Sol.” - Abigail Brand&lt;/i&gt;</property>
+      </alternate>
+    </card>
+    <card name="Clandestine Intel" id="0a6276d1-079f-4b56-83f6-da46aa017006">
+      <property name="CardNumber" value="201706"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="manifold_by_bluehg"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Thwart."/>
+      <property name="Text">&lt;b&gt;Hero Action &lt;/b&gt;(&lt;i&gt;thwart&lt;/i&gt;): Confuse the villain and remove threat from a scheme equal to 1 more than the number of &lt;b&gt;&lt;i&gt;TRAVELED&lt;/i&gt;&lt;/b&gt; supports you control.</property>
+    </card>
+    <card name="Folding Space" id="0a6276d1-079f-4b56-83f6-da46aa017007">
+      <property name="CardNumber" value="201707"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="4"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="manifold_by_bluehg"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">&lt;b&gt;Action&lt;/b&gt;: Change your form. Draw 1 card.</property>
+      <property name="Quote">&lt;i&gt;“If he tells the univers to fold itself until he can walk across it in a single step-it does. If he tells space to warp so light passes around him-to form a little bubble of invisibility just for him-it will. He says it's not 'tellin.' It's’asking.' It still terrifies me if I think about it for too long.” - Abigail Brand&lt;/i&gt;</property>
+    </card>
+    <card name="Quick Portal" id="0a6276d1-079f-4b56-83f6-da46aa017008">
+      <property name="CardNumber" value="201708"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="manifold_by_bluehg"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Defense. Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt; (&lt;i&gt;defense&lt;/i&gt;): When you would take any amount of damage from an attack, prevent all of that damage. Then, flip to your alter-ego form.</property>
+      <property name="Quote">&lt;i&gt;“Eden Fesi is not a teleporter. That's not what he does at all. Eden Fesi talks to space.” - Abigail Brand&lt;/i&gt;</property>
+    </card>
+    <card name="Sunfire Portal" id="0a6276d1-079f-4b56-83f6-da46aa017009">
+      <property name="CardNumber" value="201709"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="manifold_by_bluehg"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack. Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; (&lt;i&gt;attack&lt;/i&gt;): Deal damage to an enemy equal to 6 more than the number of &lt;b&gt;&lt;i&gt;TRAVELED&lt;/i&gt;&lt;/b&gt; supports you control. This attack gains ranged and overkill.</property>
+      <property name="Quote">&lt;i&gt;I talk to the universe. And we get along, so she does me little favors. Like catch a piece of sun, and move it from there to here.” - Manifold&lt;/i&gt;</property>
+    </card>
+    <card name="Positional Awareness" id="0a6276d1-079f-4b56-83f6-da46aa017010">
+      <property name="CardNumber" value="201710"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="resource"/>
+      <property name="Owner" value="manifold_by_bluehg"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After you spend this card, shuffle a card from your discard pile into your deck. You may flip a &lt;b&gt;&lt;i&gt;TRAVELED&lt;/i&gt;&lt;/b&gt; support to its &lt;b&gt;&lt;i&gt;UNTRAVELED&lt;/i&gt;&lt;/b&gt; side.</property>
+    </card>
+    <card name="Gateway" id="0a6276d1-079f-4b56-83f6-da46aa017011">
+      <property name="CardNumber" value="201711"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="manifold_by_bluehg"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Attribute" value="Persona."/>
+      <property name="Text">You get +2 hit points.
+&lt;b&gt;&lt;i&gt;Alter-Ego Action&lt;/i&gt;&lt;/b&gt;: Exhaust Gateway → flip to your hero form.</property>
+      <property name="Quote">&lt;i&gt;“He's your elder. You remeber what he said. You wanna go somewhere, you gotta know where you started from” - Baz&lt;/i&gt;</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Bending Light" id="0a6276d1-079f-4b56-83f6-da46aa017012">
+      <property name="CardNumber" value="201712"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="manifold_by_bluehg"/>
+      <property name="Cost" value="0"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Condition. Superpower."/>
+      <property name="Text">Max 1[per_hero].
+Manifold gets +2 THW and cannot attack.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When an enemy would initate an attack against you, it schemes instead.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When the round ends, discard Bending Light</property>
+    </card>
+    <card name="Manifold's Staff" id="0a6276d1-079f-4b56-83f6-da46aa017013">
+      <property name="CardNumber" value="201713"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="manifold_by_bluehg"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Item. Weapon."/>
+      <property name="Text">Manifold gets +1 ATK.
+&lt;b&gt;Hero Action&lt;/b&gt;: Exhaust Manifold's Staff → ready Manifold.</property>
+      <property name="Quote">&lt;i&gt;“What? Where am I going? Ah, you know. Where I always go. Everywhere” - Manifold&lt;/i&gt;</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Abigail Brand" id="0a6276d1-079f-4b56-83f6-da46aa017019">
+      <property name="CardNumber" value="201719"/>
+      <property name="Position" value="19"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="basic"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Mutant. S.W.O.R.D."/>
+      <property name="Text">&lt;b&gt;Force Response&lt;/b&gt;: After you play Abigail Brand, draw1 card, deal 2 damage to an enemy and remove 1 threat from a sceme. At the end of the round, if ABigail Brand is still in play, discard her.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Mysterium" id="0a6276d1-079f-4b56-83f6-da46aa017020">
+      <property name="CardNumber" value="201720"/>
+      <property name="Position" value="20"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="basic"/>
+      <property name="Type" value="resource"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="Text">You may only include this card in your deck if your identity as the &lt;b&gt;&lt;i&gt;S.W.O.R.D.&lt;/i&gt;&lt;/b&gt; trait.
+Max 2 per deck.
+Ths card generate 1 additional [wild] resource if there in another copy of Mysterium in your discard pile.</property>
+    </card>
+    <card name="Lila Cheney" id="0a6276d1-079f-4b56-83f6-da46aa017021">
+      <property name="CardNumber" value="201721"/>
+      <property name="Position" value="21"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="justice"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="S.W.O.R.D."/>
+      <property name="Text">Fragile.
+You play play Lila Cheny from your discard pile durng your turn (paying her resource cost).</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Risque" id="0a6276d1-079f-4b56-83f6-da46aa017022">
+      <property name="CardNumber" value="201722"/>
+      <property name="Position" value="22"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="justice"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="2"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="S.W.O.R.D."/>
+      <property name="Text">Response: After Risque thwarts and removes the last threat from a scheme, deal 1 damage to an enemy.</property>
+      <property name="Quote">&lt;i&gt;"You flatscans getting a little rsh? Sill feel up for a mutle bashing?"&lt;/i&gt;</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="The Launchpad" id="0a6276d1-079f-4b56-83f6-da46aa017023">
+      <property name="CardNumber" value="201723"/>
+      <property name="Position" value="23"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="justice"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Location. S.W.O.R.D."/>
+      <property name="Text">Play only if your identty has the&lt;b&gt;&lt;i&gt; S.W.O.R.D &lt;/i&gt;&lt;/b&gt;trait.
+&lt;b&gt;Action&lt;/b&gt;: Exhaust The Launchpad → choose a player in alter-ego form. that player draws 1 card.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Teleportation Exhaustion" id="0a6276d1-079f-4b56-83f6-da46aa017014" size="EncounterCard">
+      <property name="DefaultSetupPile" value="Nemesis"/>
+      <property name="CardNumber" value="201714"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="manifold_by_bluehg"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;&lt;i&gt;Give to the Eden Fesi player.
+&lt;/i&gt;&lt;/b&gt;You cannot flip any Manifold supports to their &lt;b&gt;&lt;i&gt;TRAVELED &lt;/i&gt;&lt;/b&gt;side.
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Spend 3 resources of any type → remove Teleportation Exhaustion from the game.</property>
+      <property name="Quote">&lt;i&gt;"...We just some laws. Cosmic ones." - Wiz-Kid&lt;/i&gt;</property>
+    </card>
+    <card name="Conquest at Any Cost" id="0a6276d1-079f-4b56-83f6-da46aa017015" size="SchemeCard">
+      <property name="CardNumber" value="201715"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="manifold_by_bluehg_nemesis"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="2"/>
+      <property name="BaseThreatFixed" value="True"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">&lt;b&gt;Forced Response&lt;/b&gt;: After a player changes their form, they must discard 1 card at random from their hand.
+[acceleration]</property>
+      <property name="Quote">&lt;i&gt;Emperor N'Jadaka has made a deal with a Klyntar symbiote. Now they are one and the same. They aim to remake the intergalactic Empire of Wakanda in their vision.&lt;/i&gt;</property>
+    </card>
+    <card name="Emperor N'Jadaka" id="0a6276d1-079f-4b56-83f6-da46aa017016" size="EncounterCard">
+      <property name="CardNumber" value="201716"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="manifold_by_bluehg_nemesis"/>
+      <property name="Attack" value="2"/>
+      <property name="Scheme" value="2"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="King. Symbiote. Wakanda."/>
+      <property name="Text">Retaliate 1.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When the round ends, heal 1 damage from Emperor N'Jadaka.
+&lt;i&gt;(Manifold's nemesis minion.)&lt;/i&gt;</property>
+      <property name="Quote">&lt;i&gt;"This is my word. This my redemption."&lt;/i&gt;</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Symbiotic Fury" id="0a6276d1-079f-4b56-83f6-da46aa017017" size="EncounterCard">
+      <property name="CardNumber" value="201717"/>
+      <property name="Position" value="17"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="attachment"/>
+      <property name="Owner" value="manifold_by_bluehg_nemesis"/>
+      <property name="Boost" value="2"/>
+      <property name="Attribute" value="Condition. Symbiote."/>
+      <property name="Text">Attach to Emperor N'Jadaka. If you cannot, attach to the villain.
+Attached enemy gains retaliate 1.
+&lt;b&gt;[star] Forced Response&lt;/b&gt;: After attached enemy attacks you, heal 1 damage from them.
+&lt;b&gt;Hero Action&lt;/b&gt;: Spend [mental] [physical] resources → discard this card.</property>
+    </card>
+    <card name="Soulbond Symbiote" id="0a6276d1-079f-4b56-83f6-da46aa017018" size="EncounterCard">
+      <property name="CardNumber" value="201718"/>
+      <property name="Position" value="18"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="manifold_by_bluehg_nemesis"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: If Emperor N'Jadaka is not in play, summon him and reveal him. Otherwise, Emperor N'Jadaka activates against you.</property>
+      <property name="Quote">&lt;i&gt;"When I pledged myself to the Klyntar, I pledged to something that needed me... somthing that &lt;/i&gt;&lt;b&gt;&lt;i&gt;was &lt;/i&gt;&lt;/b&gt;&lt;i&gt;me, and thus could never betray me." - Emperor N'Jadaka&lt;/i&gt;</property>
+    </card>
+  </cards>
+</set>

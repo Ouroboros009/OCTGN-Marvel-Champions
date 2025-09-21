@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='utf-8'?>
+<set name="(FMH) Weapon Hex (Laura Kinney) (By Merlin)" id="a609960e-607c-5889-921f-5e725e65ce5b" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="a609960e-607c-5889-921f-5e725e000000" name="Weapon Hex (Laura Kinney) (By Merlin)">
+      <property name="Type" value="fm_hero_setup" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+    </card>
+    <card id="a609960e-607c-5889-921f-5e725e990000" name="Weapon Hex (Laura Kinney) (By Merlin)">
+      <property name="Type" value="fm_encounter_setup" />
+      <property name="Owner" value="fm_weapon_hex_Merlin_nemesis" />
+    </card>
+    <card name="Weapon Hex" id="a609960e-607c-5889-921f-5e725e000001">
+      <property name="CardNumber" value="60501a" />
+      <property name="Position" value="1" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="hero" />
+      <property name="HP" value="12" />
+      <property name="HandSize" value="5" />
+      <property name="Attribute" value="[[Mystic. Warp.]]" />
+      <property name="Text"><i>Living Weapon </i>—<i> </i> <b>Response</b>: After you play a [[spell ]]event, ready Weapon Hex and discard X cards from the top of the encounter deck, where X is equal to the printed cost of that event (Limit once per phase.)</property>
+      <alternate name="Laura Kinney" type="b">
+        <property name="CardNumber" value="60501b" />
+        <property name="Position" value="1" />
+        <property name="Owner" value="fm_weapon_hex_Merlin" />
+        <property name="Type" value="alter_ego" />
+        <property name="HP" value="12" />
+        <property name="HandSize" value="6" />
+        <property name="Attribute" value="[[Mutant. Mystic. Warp.]]" />
+        <property name="Text"><i>Hex Chaos</i> — <b>Setup</b>: Find and put into play Chaos Magic.
+<b>Action</b>: shuffle a [[spell ]]card from your discard pile into your deck. (Limit once per round.)</property>
+      </alternate>
+    </card>
+    <card name="Chaos Magic" id="a609960e-607c-5889-921f-5e725e000002">
+      <property name="CardNumber" value="60502" />
+      <property name="Position" value="2" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Skill.]]" />
+      <property name="Text">Permanent. Setup.
+<b>Hero Action</b>: Exhaust Chaos Magic → search your deck for a [[spell ]]card and add it to your hand. Then discard 3 cards from the top of the encounter deck.</property>
+    </card>
+    <card name="Speed Weasel (gavrill kinney)" id="a609960e-607c-5889-921f-5e725e000003">
+      <property name="CardNumber" value="60503" />
+      <property name="Position" value="3" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="2" />
+      <property name="Attribute" value="[[Warp.]]" />
+      <property name="Text"><b>Hero Response</b>: After Speed Weasel activates, ready Speed Weasel and Weapon Hex (limit once per round).
+<i>“My name is Speed Weasel!!!”</i></property>
+    </card>
+    <card name="Special Target" id="a609960e-607c-5889-921f-5e725e000004">
+      <property name="CardNumber" value="60504" />
+      <property name="Position" value="4" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Spell.]]" />
+      <property name="Text"><b>Hero Action</b>: Deal X damage to an enemy, where X is equal to your ATK.
+<i>“An Hex marks the spot.”</i></property>
+    </card>
+    <card name="Special Target" id="a609960e-607c-5889-921f-5e725e000005">
+      <property name="CardNumber" value="60505" />
+      <property name="Position" value="5" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Spell.]]" />
+      <property name="Text"><b>Hero Action</b>: Deal X damage to an enemy, where X is equal to your ATK.
+<i>“An Hex marks the spot.”</i></property>
+    </card>
+    <card name="From Nothing" id="a609960e-607c-5889-921f-5e725e000006">
+      <property name="CardNumber" value="60506" />
+      <property name="Position" value="6" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Spell.]]" />
+      <property name="Text"><b>Hero Action</b>: Remove X threat from a scheme, where X is equal to your THW.
+<i>“You’re nothing.”</i></property>
+    </card>
+    <card name="From Nothing" id="a609960e-607c-5889-921f-5e725e000007">
+      <property name="CardNumber" value="60507" />
+      <property name="Position" value="7" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Spell.]]" />
+      <property name="Text"><b>Hero Action</b>: Remove X threat from a scheme, where X is equal to your THW.
+<i>“You’re nothing.”</i></property>
+    </card>
+    <card name="Death Ray" id="a609960e-607c-5889-921f-5e725e000008">
+      <property name="CardNumber" value="60508" />
+      <property name="Position" value="8" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Spell.]]" />
+      <property name="Text"><b>Hero Action</b>: Deal 7 damage to an enemy. If you discard 1 card from the top of the encounter deck, deal those damage among enemies in play.
+“Don’t threaten my sister!”
+<i>
+</i></property>
+    </card>
+    <card name="Death Ray" id="a609960e-607c-5889-921f-5e725e000009">
+      <property name="CardNumber" value="60509" />
+      <property name="Position" value="9" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Spell.]]" />
+      <property name="Text"><b>Hero Action</b>: Deal 7 damage to an enemy. If you discard 1 card from the top of the encounter deck, deal those damage among enemies in play.
+“Don’t threaten my sister!”
+<i>
+</i></property>
+    </card>
+    <card name="Magic Protection" id="a609960e-607c-5889-921f-5e725e000010">
+      <property name="CardNumber" value="60510" />
+      <property name="Position" value="10" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Spell.]]" />
+      <property name="Text"><b>Hero Interrupt</b>: When a friendly character would take any amount of damage, prevent 5 of that damage.</property>
+    </card>
+    <card name="Warp Reality" id="a609960e-607c-5889-921f-5e725e000011">
+      <property name="CardNumber" value="60511" />
+      <property name="Position" value="11" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Spell.]]" />
+      <property name="Text"><b>Hero Interrupt</b>: When an encounter card is revealed from the encounter deck, cancel all of its effects and discard it. Discard cards from the top of the encounter deck equal to the number of boost icons on that card.</property>
+    </card>
+    <card name="Warp Reality" id="a609960e-607c-5889-921f-5e725e000012">
+      <property name="CardNumber" value="60512" />
+      <property name="Position" value="12" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Spell.]]" />
+      <property name="Text"><b>Hero Interrupt</b>: When an encounter card is revealed from the encounter deck, cancel all of its effects and discard it. Discard cards from the top of the encounter deck equal to the number of boost icons on that card.</property>
+    </card>
+    <card name="Regenerative Longevity" id="a609960e-607c-5889-921f-5e725e000013">
+      <property name="CardNumber" value="60513" />
+      <property name="Position" value="13" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Superpower.]]" />
+      <property name="Text"><b>Action</b>: Heal 4 damage from among your identity and Speed Weasel.</property>
+    </card>
+    <card name="Regenerative Longevity" id="a609960e-607c-5889-921f-5e725e000014">
+      <property name="CardNumber" value="60514" />
+      <property name="Position" value="14" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Superpower.]]" />
+      <property name="Text"><b>Action</b>: Heal 4 damage from among your identity and Speed Weasel.</property>
+    </card>
+    <card name="Chaotic Energy" id="a609960e-607c-5889-921f-5e725e000015">
+      <property name="CardNumber" value="60515" />
+      <property name="Position" value="15" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Item.]]" />
+      <property name="Text"><b>Resource</b>: Exhaust Chaotic Energy → generate a [wild] resource for a [[spell ]]event.</property>
+    </card>
+    <card name="Magical Healing" id="a609960e-607c-5889-921f-5e725e000016">
+      <property name="CardNumber" value="60516" />
+      <property name="Position" value="16" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Skill. Spell.]]" />
+      <property name="Text"><b>Interrupt</b>: When Weapon Hex would be defeated, set her hit point dial to 6 instead. Then, discard this card.</property>
+    </card>
+    <card name="Weapon Hex’s Claws" id="a609960e-607c-5889-921f-5e725e000017">
+      <property name="CardNumber" value="60517" />
+      <property name="Position" value="17" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Weapon.]]" />
+      <property name="Text">Restricted.
+Weapon Hex gets +2 ATK and her basic attacks gain piercing.</property>
+    </card>
+    <card name="Protect My Sister" id="a609960e-607c-5889-921f-5e725e000018" size="EncounterCard">
+      <property name="CardNumber" value="60518" />
+      <property name="Position" value="18" />
+      <property name="Owner" value="fm_weapon_hex_Merlin" />
+      <property name="Type" value="obligation" />
+      <property name="DefaultSetupPile" value="Nemesis" />
+      <property name="Text"><b>Alter-Ego Action</b>: Exhaust Laura Kinney → remove Protect My Sister from the game.
+[hazard]</property>
+    </card>
+    <card name="Save My Sister and Others" id="a609960e-607c-5889-921f-5e725e000020" size="SchemeCard">
+      <property name="CardNumber" value="60520" />
+      <property name="Position" value="20" />
+      <property name="Owner" value="fm_weapon_hex_Merlin_nemesis" />
+      <property name="Type" value="side_scheme" />
+      <property name="Text"><i>“If you are fast with your magic, mine is better.”</i>—<i>Hellhound
+</i>Hinder 2[per_hero].
+<b>When Revealed</b>: Each player searches their deck, discard pile and hand for a hero-specific ally and places it facedown beneath this scheme. 
+<b>When Defeated</b>: Return each ally beneath it to its owner's hand.</property>
+    </card>
+    <card name="Hellhound" id="a609960e-607c-5889-921f-5e725e000019" size="EncounterCard">
+      <property name="CardNumber" value="60519" />
+      <property name="Position" value="19" />
+      <property name="Owner" value="fm_weapon_hex_Merlin_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="5" />
+      <property name="Attribute" value="[[Demon. Elite.]]" />
+      <property name="Text">Quickstrike.
+<b>When Revealed</b>: Exhaust your identity.
+<i>(Weapon Hex’s nemesis minion.)</i></property>
+    </card>
+    <card name="Repressed Animosity" id="a609960e-607c-5889-921f-5e725e000021" size="EncounterCard">
+      <property name="CardNumber" value="60521" />
+      <property name="Position" value="21" />
+      <property name="Owner" value="fm_weapon_hex_Merlin_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Text"><b>When Revealed (Alter-Ego)</b>: Search Hellhound in the encounter deck and put her into play engaged with you. If you cannot, this card gains surge.
+<b>When Revealed (hero)</b>: Hellhound attacks you. If Hellhound is not in play, this card gains surge.</property>
+    </card>
+    <card name="Repressed Animosity" id="a609960e-607c-5889-921f-5e725e000022" size="EncounterCard">
+      <property name="CardNumber" value="60522" />
+      <property name="Position" value="22" />
+      <property name="Owner" value="fm_weapon_hex_Merlin_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Text"><b>When Revealed (Alter-Ego)</b>: Search Hellhound in the encounter deck and put her into play engaged with you. If you cannot, this card gains surge.
+<b>When Revealed (hero)</b>: Hellhound attacks you. If Hellhound is not in play, this card gains surge.</property>
+    </card>
+    <card name="Repressed Animosity" id="a609960e-607c-5889-921f-5e725e000023" size="EncounterCard">
+      <property name="CardNumber" value="60523" />
+      <property name="Position" value="23" />
+      <property name="Owner" value="fm_weapon_hex_Merlin_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Text"><b>When Revealed (Alter-Ego)</b>: Search Hellhound in the encounter deck and put her into play engaged with you. If you cannot, this card gains surge.
+<b>When Revealed (hero)</b>: Hellhound attacks you. If Hellhound is not in play, this card gains surge.</property>
+    </card>
+  </cards>
+</set>

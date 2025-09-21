@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='utf-8'?>
+<set name="(FMH) Destiny (Irene Adler) (By Merlin)" id="c9f54c39-12b4-5377-ace0-55551b1f825a" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="c9f54c39-12b4-5377-ace0-55551b000000" name="Destiny (Irene Adler) (By Merlin)">
+      <property name="Type" value="fm_hero_setup" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+    </card>
+    <card id="c9f54c39-12b4-5377-ace0-55551b990000" name="Destiny (Irene Adler) (By Merlin)">
+      <property name="Type" value="fm_encounter_setup" />
+      <property name="Owner" value="fm_destiny_Merlin_nemesis" />
+    </card>
+    <card name="Destiny" id="c9f54c39-12b4-5377-ace0-55551b000001">
+      <property name="CardNumber" value="70401a" />
+      <property name="Position" value="1" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="hero" />
+      <property name="HP" value="9" />
+      <property name="HandSize" value="5" />
+      <property name="Attribute" value="[[Psionic. X-Men.]]" />
+      <property name="Text">X is the number of icons ([star][boost]) on the card tucked under Glimpse of the future.
+<b>Interrupt</b>:<i> </i>When a boost card is turned faceup, give the enemy another boost card for this activation. Then discard one of them. (limit once per phase.)</property>
+      <alternate name="Irene Adler" type="b">
+        <property name="CardNumber" value="70401b" />
+        <property name="Position" value="1" />
+        <property name="Owner" value="fm_destiny_Merlin" />
+        <property name="Type" value="alter_ego" />
+        <property name="HP" value="9" />
+        <property name="HandSize" value="6" />
+        <property name="Attribute" value="[[Mutant. Psionic.]]" />
+        <property name="Text"><b>Setup</b>: Search your deck a for a [[psionic ]]card and add it to your hand. (<i>Shuffle</i>.)
+<b>Response</b>: After you change to this form, shuffle a [[psionic ]]card from you discard pile into your deck.</property>
+      </alternate>
+    </card>
+    <card name="Glimpse of the Future" id="c9f54c39-12b4-5377-ace0-55551b000002">
+      <property name="CardNumber" value="70402" />
+      <property name="Position" value="2" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Condition. Psionic.]]" />
+      <property name="Text">Permanent. Setup.
+<b>Action</b>: Exhaust Glimpse of the Future → look at the top 3 cards of the encounter deck. Tuck one under this card so that only the boost field is visible and shuffle the other two into the encounter deck. At the end of the round, discard it</property>
+    </card>
+    <card name="Mystique (Raven darkhölme)" id="c9f54c39-12b4-5377-ace0-55551b000003">
+      <property name="CardNumber" value="70403" />
+      <property name="Position" value="3" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="3" />
+      <property name="Attribute" value="[[X-Men.]]" />
+      <property name="Text"><b>Action</b>: Exhaust Mystique and spend a resource of any type → heal 1 damage from your identity and ready it. (limit one per phase).
+<i>"The game's afoot, Irene. Our game.”</i></property>
+    </card>
+    <card name="Mental Awareness" id="c9f54c39-12b4-5377-ace0-55551b000004">
+      <property name="CardNumber" value="70404" />
+      <property name="Position" value="4" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Psionic.]]" />
+      <property name="Text"><b>Resource</b>:<b> </b>Exhaust Mental Awareness → generate a [wild] resource for a [[psionic]] card.
+<i>Destiny can focus on the most probable alternative futures.</i></property>
+    </card>
+    <card name="Mental Awareness" id="c9f54c39-12b4-5377-ace0-55551b000005">
+      <property name="CardNumber" value="70405" />
+      <property name="Position" value="5" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Psionic.]]" />
+      <property name="Text"><b>Resource</b>:<b> </b>Exhaust Mental Awareness → generate a [wild] resource for a [[psionic]] card.
+<i>Destiny can focus on the most probable alternative futures.</i></property>
+    </card>
+    <card name="Clairvoyance" id="c9f54c39-12b4-5377-ace0-55551b000006">
+      <property name="CardNumber" value="70406" />
+      <property name="Position" value="6" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Psionic. Skill.]]" />
+      <property name="Text"><b>Hero Action</b>:<b> </b>Spend any number of [mental] resource (to a maximum of 3) and exhaust Clairvoyance → for each resource spent this way, choose a different scheme and remove X threat from it, where X is the number of icons ([star][boost]) on the card tucked under Glimpse of the future.</property>
+    </card>
+    <card name="Unmask" id="c9f54c39-12b4-5377-ace0-55551b000007">
+      <property name="CardNumber" value="70407" />
+      <property name="Position" value="7" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Psionic. Skill.]]" />
+      <property name="Text"><b>Hero Action</b>: Spend any number of [mental] resource (to a maximum of 3) and exhaust Unmask → for each resource spent this way, choose a different enemy and deal X damage to them, where X is the number of icons ([star][boost]) on the card tucked under Glimpse of the future.</property>
+    </card>
+    <card name="Be Careful" id="c9f54c39-12b4-5377-ace0-55551b000008">
+      <property name="CardNumber" value="70408" />
+      <property name="Position" value="8" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Psionic. Skill.]]" />
+      <property name="Text"><b>Hero Interrupt</b>: When you would take any amount of damage, spend 1 [mental] resource and exhaust Be Careful → prevent X of that damage, where X is the number of icons ([star][boost]) on the card tucked under Glimpse of the future.</property>
+    </card>
+    <card name="Prescience" id="c9f54c39-12b4-5377-ace0-55551b000009">
+      <property name="CardNumber" value="70409" />
+      <property name="Position" value="9" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Psionic.]]" />
+      <property name="Text"><b>Forced Interrupt</b>: When you reveal a treachery card, cancel its "<b>When Revealed</b>" effects and discard it. Then, discard Prescience.</property>
+    </card>
+    <card name="Prescience" id="c9f54c39-12b4-5377-ace0-55551b000010">
+      <property name="CardNumber" value="70410" />
+      <property name="Position" value="10" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Psionic.]]" />
+      <property name="Text"><b>Forced Interrupt</b>: When you reveal a treachery card, cancel its "<b>When Revealed</b>" effects and discard it. Then, discard Prescience.</property>
+    </card>
+    <card name="Astral Projection" id="c9f54c39-12b4-5377-ace0-55551b000011">
+      <property name="CardNumber" value="70411" />
+      <property name="Position" value="11" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Text"><b>Hero Action</b> (<i>thwart</i>): Remove 3 threat from a scheme. Remove 1 additional threat for each icon ([star][boost]) on the card tucked under Glimpe of the Future.
+<i>“We have to managed this immediate threat” - Destiny</i></property>
+    </card>
+    <card name="Astral Projection" id="c9f54c39-12b4-5377-ace0-55551b000012">
+      <property name="CardNumber" value="70412" />
+      <property name="Position" value="12" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Text"><b>Hero Action</b> (<i>thwart</i>): Remove 3 threat from a scheme. Remove 1 additional threat for each icon ([star][boost]) on the card tucked under Glimpse of the Future.
+<i>“We have to managed this immediate threat” - Destiny</i></property>
+    </card>
+    <card name="Path of Violence" id="c9f54c39-12b4-5377-ace0-55551b000013">
+      <property name="CardNumber" value="70413" />
+      <property name="Position" value="13" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Text"><b>Action de héros</b> (<i>attack</i>): Deal 4 damage to an enemy. Deal 1 additional damage for each icon ([star][boost]) on the card tucked under Glimpse of the Future.
+<i>“Beware of him!” - Destiny
+</i></property>
+    </card>
+    <card name="Path of Violence" id="c9f54c39-12b4-5377-ace0-55551b000014">
+      <property name="CardNumber" value="70414" />
+      <property name="Position" value="14" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Text"><b>Action de héros</b> (<i>attack</i>): Deal 4 damage to an enemy. Deal 1 additional damage for each icon ([star][boost]) on the card tucked under Glimpse of the Future.
+<i>“Beware of him!” - Destiny
+</i></property>
+    </card>
+    <card name="Path of Violence" id="c9f54c39-12b4-5377-ace0-55551b000015">
+      <property name="CardNumber" value="70415" />
+      <property name="Position" value="15" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Text"><b>Action de héros</b> (<i>attack</i>): Deal 4 damage to an enemy. Deal 1 additional damage for each icon ([star][boost]) on the card tucked under Glimpse of the Future.
+<i>“Beware of him!” - Destiny
+</i></property>
+    </card>
+    <card name="Unconditional Love" id="c9f54c39-12b4-5377-ace0-55551b000016">
+      <property name="CardNumber" value="70416" />
+      <property name="Position" value="16" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Condition.]]" />
+      <property name="Text"><b>Action</b>: If Mystique/Raven Darkhölme is in play, ready Mystique/Raven Darkhölme and Destiny/Irene Adler. Otherwise search your deck and discard pile for Mystique and add her to your hand. (Shuffle your deck.)
+<i>“A rope through Time.”
+</i></property>
+    </card>
+    <card name="Fragment Studies" id="c9f54c39-12b4-5377-ace0-55551b000017">
+      <property name="CardNumber" value="70417" />
+      <property name="Position" value="17" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="resource" />
+      <property name="Text"><b>Response</b>: After you spend this card, shuffle 1 identity-specific card from your discard pile into your deck.</property>
+    </card>
+    <card name="Seizure" id="c9f54c39-12b4-5377-ace0-55551b000018" size="EncounterCard">
+      <property name="CardNumber" value="70418" />
+      <property name="Position" value="18" />
+      <property name="Owner" value="fm_destiny_Merlin" />
+      <property name="Type" value="obligation" />
+      <property name="DefaultSetupPile" value="Nemesis" />
+      <property name="Text">You may flip to alter-ego form. Choose:
+Exhaust Irene Adler → remove Seizure from the game.
+Discard 1 [[skill ]]upgrade you control. If no upgrade was discarded this way, this card gains surge. Discard this obligation.</property>
+    </card>
+    <card name="Mister Sinister" id="c9f54c39-12b4-5377-ace0-55551b000019" size="EncounterCard">
+      <property name="CardNumber" value="70419" />
+      <property name="Position" value="19" />
+      <property name="Owner" value="fm_destiny_Merlin_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="5" />
+      <property name="Attribute" value="[[Elite. Genius.]]" />
+      <property name="Text">Incite 2. Villainous.<b>
+</b>While Destiny's Warning side scheme is in play, Mister Sinister does not activate.<i> </i><b>
+When Revealed</b>: If Mister Sinister is already in play, discard this card then Mister Sinister activates against you even if Destiny's Warning side scheme is in play.</property>
+    </card>
+    <card name="Destiny's Warning" id="c9f54c39-12b4-5377-ace0-55551b000020" size="SchemeCard">
+      <property name="CardNumber" value="70420" />
+      <property name="Position" value="20" />
+      <property name="Owner" value="fm_destiny_Merlin_nemesis" />
+      <property name="Type" value="side_scheme" />
+      <property name="BaseThreat" value="3" />
+      <property name="Text">Wha--? You Spoilsport--!
+<b>When Revealed</b>: remove 1[per_hero] from the main scheme.
+[star] <b>Boost</b>: Put Destiny's Warning into play. 
+[hazard][hazard]</property>
+    </card>
+    <card name="So, what's the plan ?" id="c9f54c39-12b4-5377-ace0-55551b000021" size="EncounterCard">
+      <property name="CardNumber" value="70421" />
+      <property name="Position" value="21" />
+      <property name="Owner" value="fm_destiny_Merlin_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Attribute" value="[[Temporal.]]" />
+      <property name="Text"><b>When Revealed</b>: Remove 1[per_hero] threat from Destiny's Warning. If you cannot, Mister Sinister activates against you. If you cannot, this card gains surge.</property>
+    </card>
+    <card name="So, what's the plan ?" id="c9f54c39-12b4-5377-ace0-55551b000022" size="EncounterCard">
+      <property name="CardNumber" value="70422" />
+      <property name="Position" value="22" />
+      <property name="Owner" value="fm_destiny_Merlin_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Attribute" value="[[Temporal.]]" />
+      <property name="Text"><b>When Revealed</b>: Remove 1[per_hero] threat from Destiny's Warning. If you cannot, Mister Sinister activates against you. If you cannot, this card gains surge.</property>
+    </card>
+    <card name="So, what's the plan ?" id="c9f54c39-12b4-5377-ace0-55551b000023" size="EncounterCard">
+      <property name="CardNumber" value="70423" />
+      <property name="Position" value="23" />
+      <property name="Owner" value="fm_destiny_Merlin_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Attribute" value="[[Temporal.]]" />
+      <property name="Text"><b>When Revealed</b>: Remove 1[per_hero] threat from Destiny's Warning. If you cannot, Mister Sinister activates against you. If you cannot, this card gains surge.</property>
+    </card>
+  </cards>
+</set>

@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='utf-8'?>
+<set name="(FMH) Spider-Man (Miguel O'Hara) (By Rainy)" id="188a98aa-e714-56cf-92f0-8ccdf523996d" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="188a98aa-e714-56cf-92f0-8ccdf5000000" name="Spider-Man (Miguel O'Hara) (By Rainy)">
+      <property name="Type" value="fm_hero_setup" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+    </card>
+    <card id="188a98aa-e714-56cf-92f0-8ccdf5990000" name="Spider-Man (Miguel O'Hara) (By Rainy)">
+      <property name="Type" value="fm_encounter_setup" />
+      <property name="Owner" value="fm_spider-man_Rainy_nemesis" />
+    </card>
+    <card name="Spider-Man" id="188a98aa-e714-56cf-92f0-8ccdf5000001">
+      <property name="CardNumber" value="31301a" />
+      <property name="Position" value="1" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="hero" />
+      <property name="HP" value="10" />
+      <property name="HandSize" value="4" />
+      <property name="Attribute" value="[[Web-Warrior.]]" />
+      <property name="Text"><i>Acceleration</i> — [star] <b>Response</b>: After your hero uses a basic power, seek an event from your deck. You may play that event. Place each other card you discarded this way on the bottom of your deck in the order you discarded them. (Limit once per phase.)</property>
+      <alternate name="Miguel O'Hara" type="b">
+        <property name="CardNumber" value="31301b" />
+        <property name="Position" value="1" />
+        <property name="Owner" value="fm_spider-man_Rainy" />
+        <property name="Type" value="alter_ego" />
+        <property name="HP" value="10" />
+        <property name="HandSize" value="6" />
+        <property name="Attribute" value="[[Civilian. Genius.]]" />
+        <property name="Text"><i>Accelerated Healing</i> — [star] <b>Response</b>: After you make a basic recovery, discard 1 card from your hand → ready Miguel O'Hara. (Limit once per round.)
+<i>“I wish I could stay. There's so much I want to explain. But life is waiting. There's no time like the present.”</i></property>
+      </alternate>
+    </card>
+    <card name="Ghost Rider (Zero Cochrane)" id="188a98aa-e714-56cf-92f0-8ccdf5000002">
+      <property name="CardNumber" value="31302" />
+      <property name="Position" value="2" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="2" />
+      <property name="Attribute" value="[[Android. Infernal.]]" />
+      <property name="Text"><b>Response</b>: After Ghost Rider is discarded by your <i>Acceleration</i> ability, deal 1 damage to an enemy.
+<b>Interrupt</b>: When Ghost Rider is defeated, place him on the bottom of his owner's deck. 
+<i>“You can knock my circuits out for a while, but you can't delete me.”</i></property>
+    </card>
+    <card name="Lyla" id="188a98aa-e714-56cf-92f0-8ccdf5000011">
+      <property name="CardNumber" value="31311" />
+      <property name="Position" value="11" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="support" />
+      <property name="Attribute" value="[[Persona. Tech.]]" />
+      <property name="Text"><b>Action</b>: Exhaust Lyla → choose an event in your hand (in your hand or discard pile instead if you are in alter-ego form) and swap it with the top card of your deck.
+<i>“I'm a 22nd century Lyrate Life-Form Approximation. But here, I'm beyond cutting edge.” —Lyla</i></property>
+    </card>
+    <card name="Accelerated Vision" id="188a98aa-e714-56cf-92f0-8ccdf5000012">
+      <property name="CardNumber" value="31312" />
+      <property name="Position" value="12" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Condition. Superpower.]]" />
+      <property name="Text">You may resolve your <i>Acceleration</i> ability one additional time per phase (but still once per trigger).
+When resolving your <i>Acceleration</i> ability, you may continue discarding until you discard a different event and may play that instead.
+<i>“I've got to focus. Slow everything else down.” 
+—Spider-Man 2099</i></property>
+    </card>
+    <card name="Fangs and Talons" id="188a98aa-e714-56cf-92f0-8ccdf5000013">
+      <property name="CardNumber" value="31313" />
+      <property name="Position" value="13" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Condition. Superpower.]]" />
+      <property name="Text">Your hero gets +1 ATK.
+<b>Hero Interrupt</b>: When you play an [[attack]] event using your <i>Acceleration</i> ability, exhaust Fangs and Talons → increase the amount of damage that event deals by 1 and its attacks gain piercing.</property>
+    </card>
+    <card name="Hyper-Agility" id="188a98aa-e714-56cf-92f0-8ccdf5000014">
+      <property name="CardNumber" value="31314" />
+      <property name="Position" value="14" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Condition. Superpower.]]" />
+      <property name="Text">Your hero gets +1 DEF<b>.
+Hero Response</b>: After you resolve your hero's <i>Acceleration</i> ability without playing an event, reduce the damage you take from attacks by 1 until the end of the round. (Limit once per phase.)</property>
+    </card>
+    <card name="Spinnerets" id="188a98aa-e714-56cf-92f0-8ccdf5000015">
+      <property name="CardNumber" value="31315" />
+      <property name="Position" value="15" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Condition. Superpower.]]" />
+      <property name="Text"><b>Hero Response</b>: After you resolve your hero's <i>Acceleration</i> ability, place 1 web counter here (to a maximum of 2).<b>
+Hero Resource</b>: Remove X web counters from here → generate X [wild] resources for an event.</property>
+    </card>
+    <card name="Web Cape" id="188a98aa-e714-56cf-92f0-8ccdf5000016">
+      <property name="CardNumber" value="31316" />
+      <property name="Position" value="16" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Item.]]" />
+      <property name="Text">Your hero gains the [[aerial]] trait.<b>
+Hero Response</b>: After you resolve your hero's <i>Acceleration</i> ability, exhaust Web Cape → ready your hero.
+<i>“It's an anti-grav material that helps me glide.”</i></property>
+    </card>
+    <card name="Accelerated Decoy" id="188a98aa-e714-56cf-92f0-8ccdf5000004">
+      <property name="CardNumber" value="31304" />
+      <property name="Position" value="4" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Superpower.]]" />
+      <property name="Text"><b>Hero Action</b>: Choose to either confuse an enemy or give your hero a tough status card. If you played this card using your <i>Acceleration</i> ability, do both instead. 
+<i>“Tough luck, pal. I'm way too fast for you!”</i></property>
+    </card>
+    <card name="Accelerated Decoy" id="188a98aa-e714-56cf-92f0-8ccdf5000003">
+      <property name="CardNumber" value="31303" />
+      <property name="Position" value="3" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Superpower.]]" />
+      <property name="Text"><b>Hero Action</b>: Choose to either confuse an enemy or give your hero a tough status card. If you played this card using your <i>Acceleration</i> ability, do both instead. 
+<i>“Tough luck, pal. I'm way too fast for you!”</i></property>
+    </card>
+    <card name="Rapid Strikes" id="188a98aa-e714-56cf-92f0-8ccdf5000006">
+      <property name="CardNumber" value="31306" />
+      <property name="Position" value="6" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b>: Make the following attack X times to a maximum of 3 (make it one additional time if you played this card using your <i>Acceleration</i> ability):
+• Deal 2 damage to an enemy. This attack ignores the guard keyword. 
+<i>“Take him down. Fast and hard.”</i></property>
+    </card>
+    <card name="Rapid Strikes" id="188a98aa-e714-56cf-92f0-8ccdf5000005">
+      <property name="CardNumber" value="31305" />
+      <property name="Position" value="5" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b>: Make the following attack X times to a maximum of 3 (make it one additional time if you played this card using your <i>Acceleration</i> ability):
+• Deal 2 damage to an enemy. This attack ignores the guard keyword. 
+<i>“Take him down. Fast and hard.”</i></property>
+    </card>
+    <card name="Shock and Awe" id="188a98aa-e714-56cf-92f0-8ccdf5000008">
+      <property name="CardNumber" value="31308" />
+      <property name="Position" value="8" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Tactic.]]" />
+      <property name="Text"><b>Hero Action </b><i>(attack)</i>: Stun an enemy and deal 2 damage to it (4 damage instead if that enemy was not stunned this way). If you played this card using your <i>Acceleration</i> ability, stun each minion in play. 
+<i>“Surprise, mothershockers! Your number's up!”</i></property>
+    </card>
+    <card name="Shock and Awe" id="188a98aa-e714-56cf-92f0-8ccdf5000007">
+      <property name="CardNumber" value="31307" />
+      <property name="Position" value="7" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Tactic.]]" />
+      <property name="Text"><b>Hero Action </b><i>(attack)</i>: Stun an enemy and deal 2 damage to it (4 damage instead if that enemy was not stunned this way). If you played this card using your <i>Acceleration</i> ability, stun each minion in play. 
+<i>“Surprise, mothershockers! Your number's up!”</i></property>
+    </card>
+    <card name="Wall Crawling" id="188a98aa-e714-56cf-92f0-8ccdf5000010">
+      <property name="CardNumber" value="31310" />
+      <property name="Position" value="10" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Superpower. Thwart.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(thwart)</i>: Remove 2 threat from a scheme (3 threat instead if you played this card using your <i>Acceleration</i> ability.) You may place this event on the bottom of your deck.
+<i>“Better hold on tight - this thing is really moving!”</i></property>
+    </card>
+    <card name="Wall Crawling" id="188a98aa-e714-56cf-92f0-8ccdf5000009">
+      <property name="CardNumber" value="31309" />
+      <property name="Position" value="9" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Superpower. Thwart.]]" />
+      <property name="Text"><b>Hero Action</b> <i>(thwart)</i>: Remove 2 threat from a scheme (3 threat instead if you played this card using your <i>Acceleration</i> ability.) You may place this event on the bottom of your deck.
+<i>“Better hold on tight - this thing is really moving!”</i></property>
+    </card>
+    <card name="Future in Crisis" id="188a98aa-e714-56cf-92f0-8ccdf5000017" size="EncounterCard">
+      <property name="CardNumber" value="31317" />
+      <property name="Position" value="17" />
+      <property name="Owner" value="fm_spider-man_Rainy" />
+      <property name="Type" value="obligation" />
+      <property name="DefaultSetupPile" value="Nemesis" />
+      <property name="Text"><b>Action</b>: Exhaust your identity → remove Future in Crisis from the game.
+ [acceleration][crisis]
+<i>"It's gone. Nueva York is just...gone. How is this possible?"</i></property>
+    </card>
+    <card name="Containment Breach" id="188a98aa-e714-56cf-92f0-8ccdf5000018" size="SchemeCard">
+      <property name="CardNumber" value="31318" />
+      <property name="Position" value="18" />
+      <property name="Owner" value="fm_spider-man_Rainy_nemesis" />
+      <property name="Type" value="side_scheme" />
+      <property name="BaseThreat" value="1" />
+      <property name="Text"><i>Electro has escaped his containment facility, seeking revenge on his captors once he's recharged!
+</i><b>When Revealed</b>: Each player discards the top 4 cards of their deck and places threat here equal to the number of [energy] resources discarded this way.
+[amplify]</property>
+    </card>
+    <card name="Electro" id="188a98aa-e714-56cf-92f0-8ccdf5000019" size="EncounterCard">
+      <property name="CardNumber" value="31319" />
+      <property name="Position" value="19" />
+      <property name="Owner" value="fm_spider-man_Rainy_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="4" />
+      <property name="Attribute" value="[[Android.]]" />
+      <property name="Text">Quickstrike. Retaliate 1.<b>
+</b>[star]<b> Forced Response</b>: After Electro attacks you, discard the top 4 cards of your deck. Take 1 indirect damage for each [energy] resource discarded this way.<i>
+"I spent my entire existence bending the knee to humans, and I will be damned if I run from one now!"</i></property>
+    </card>
+    <card name="Power Surge" id="188a98aa-e714-56cf-92f0-8ccdf5000021" size="EncounterCard">
+      <property name="CardNumber" value="31321" />
+      <property name="Position" value="21" />
+      <property name="Owner" value="fm_spider-man_Rainy_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Text"><b>When Revealed</b>: Discard the top 5 cards of your deck. Take indirect damage equal to the number of [energy] resources discarded this way. If 2 or less damage was dealt this way, this card gains surge.
+[star]<b> Boost</b>: This card gets +1 boost icon ([boost]) for each [energy] resource in your hand.</property>
+    </card>
+    <card name="Power Surge" id="188a98aa-e714-56cf-92f0-8ccdf5000020" size="EncounterCard">
+      <property name="CardNumber" value="31320" />
+      <property name="Position" value="20" />
+      <property name="Owner" value="fm_spider-man_Rainy_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Text"><b>When Revealed</b>: Discard the top 5 cards of your deck. Take indirect damage equal to the number of [energy] resources discarded this way. If 2 or less damage was dealt this way, this card gains surge.
+[star]<b> Boost</b>: This card gets +1 boost icon ([boost]) for each [energy] resource in your hand.</property>
+    </card>
+    <card name="Charged" id="188a98aa-e714-56cf-92f0-8ccdf5000022" size="EncounterCard">
+      <property name="CardNumber" value="31322" />
+      <property name="Position" value="22" />
+      <property name="Owner" value="fm_spider-man_Rainy_nemesis" />
+      <property name="Type" value="attachment" />
+      <property name="Text">Attach to your identity.
+<b>Forced Response</b>: After you discard any number of cards from the top of your deck, take 1 indirect damage.
+<b>Hero Action</b>: Choose to either take 2 indirect damage or discard a card you control with a printed [energy] resource → discard this card.</property>
+    </card>
+  </cards>
+</set>

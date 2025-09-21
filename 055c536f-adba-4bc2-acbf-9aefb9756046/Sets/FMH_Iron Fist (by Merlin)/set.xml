@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='utf-8'?>
+<set name="(FMH) Iron Fist (Daniel Rand) (By Merlin)" id="4cae2254-7233-5851-a397-e5f8f098edd7" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="4cae2254-7233-5851-a397-e5f8f0000000" name="Iron Fist (Daniel Rand) (By Merlin)">
+      <property name="Type" value="fm_hero_setup" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+    </card>
+    <card id="4cae2254-7233-5851-a397-e5f8f0990000" name="Iron Fist (Daniel Rand) (By Merlin)">
+      <property name="Type" value="fm_encounter_setup" />
+      <property name="Owner" value="fm_iron_fist_Merlin_nemesis" />
+    </card>
+    <card name="Iron Fist" id="4cae2254-7233-5851-a397-e5f8f0000001">
+      <property name="CardNumber" value="60601a" />
+      <property name="Position" value="1" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="hero" />
+      <property name="HP" value="10" />
+      <property name="HandSize" value="5" />
+      <property name="Attribute" value="[[Defender. Hero For Hire.]]" />
+      <property name="Text"><i>Spend your Chi </i>—<i> </i><b>Interrupt</b>: When you play an Iron fist event, remove 3 chi counters from here to resolve the "Special" ability.
+<i>Master your Chi </i>—<b> Response</b>: After you play an [[attack]], [[thwart]] or [[defense]] event, place 1 chi counter on Iron Fist.</property>
+      <alternate name="Daniel Rand" type="b">
+        <property name="CardNumber" value="60601b" />
+        <property name="Position" value="1" />
+        <property name="Owner" value="fm_iron_fist_Merlin" />
+        <property name="Type" value="alter_ego" />
+        <property name="HP" value="10" />
+        <property name="HandSize" value="6" />
+        <property name="Attribute" value="[[Civilian.]]" />
+        <property name="Text"><i>Youth in K'un Lun</i> — You may include up to 3 [[skill]] in your deck from aspects other than your own.
+<i>Training was so hard in K'un Lun.</i></property>
+      </alternate>
+    </card>
+    <card name="Colleen Wing" id="4cae2254-7233-5851-a397-e5f8f0000002">
+      <property name="CardNumber" value="60602" />
+      <property name="Position" value="2" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="2" />
+      <property name="Attribute" value="[[Hero For Hire.]]" />
+      <property name="Text">[star] Colleen Wing's basic attack gains piercing.
+<i>Colleen and Misty formed a partnership as private investigators and called their firm Nightwing Restorations, Ltd.</i></property>
+    </card>
+    <card name="Book of the Iron Fist" id="4cae2254-7233-5851-a397-e5f8f0000003">
+      <property name="CardNumber" value="60603" />
+      <property name="Position" value="3" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Item.]]" />
+      <property name="Text"><b>Resource</b>: Exhaust Book of the Iron Fist → generate a [wild] resource for an event.
+<i>"Everything from the Iron Fist of the past can be found in this book." </i>—<i>Wendell Rand</i></property>
+    </card>
+    <card name="Master of Martial Arts" id="4cae2254-7233-5851-a397-e5f8f0000004">
+      <property name="CardNumber" value="60604" />
+      <property name="Position" value="4" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Title.]]" />
+      <property name="Text">Events attached to this card may be played as if they were in your hand.<b>
+Hero Action</b>: Exhaust Master of Martial Arts → search the top 5 cards of your deck for an identity-specific event and attach it facedown to this card.</property>
+    </card>
+    <card name="Lei Kung Traiing" id="4cae2254-7233-5851-a397-e5f8f0000005">
+      <property name="CardNumber" value="60605" />
+      <property name="Position" value="5" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Skill.]]" />
+      <property name="Text"><b>Hero Response</b>: After you play an event, exhaust Lei Kung Training → shuffle it into your deck. 
+<i>“Again!” —Lei Kung.</i></property>
+    </card>
+    <card name="K'un Lun" id="4cae2254-7233-5851-a397-e5f8f0000006">
+      <property name="CardNumber" value="60606" />
+      <property name="Position" value="6" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="support" />
+      <property name="Attribute" value="[[Location. Mystic.]]" />
+      <property name="Text"><i>Mystical Force </i>—<b> Alter-Ego Action</b>: Exhaust K'un Lun → choose: 
+• Heal 3 damage from your identity.
+• Heal 2 damage from another identity.
+• Heal 1 damage from an ally.
+<i>One of the 7 cities of Heaven.</i></property>
+    </card>
+    <card name="Dragon Fist" id="4cae2254-7233-5851-a397-e5f8f0000007">
+      <property name="CardNumber" value="60607" />
+      <property name="Position" value="7" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b> (<i>attack</i>): Deal 7 damage to an enemy. If you paid for this card using a [energy] resource, this attack gains overkill. 
+<b>Special</b>: Stun an enemy.
+<i>Shou Lao’s energy is quite spectacular!
+</i></property>
+    </card>
+    <card name="Dragon Fist" id="4cae2254-7233-5851-a397-e5f8f0000008">
+      <property name="CardNumber" value="60608" />
+      <property name="Position" value="8" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b> (<i>attack</i>): Deal 7 damage to an enemy. If you paid for this card using a [energy] resource, this attack gains overkill. 
+<b>Special</b>: Stun an enemy.
+<i>Shou Lao’s energy is quite spectacular!
+</i></property>
+    </card>
+    <card name="Ninjutsu" id="4cae2254-7233-5851-a397-e5f8f0000009">
+      <property name="CardNumber" value="60609" />
+      <property name="Position" value="9" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Thwart.]]" />
+      <property name="Text"><b>Hero Action</b>: (<i>thwart</i>) : Remove 3 threat from a scheme.
+<b>Special</b>: Remove 2 threat from a scheme and confuse an enemy.
+<i>Martial art strategy and tactics of espionage...</i></property>
+    </card>
+    <card name="Ninjutsu" id="4cae2254-7233-5851-a397-e5f8f0000010">
+      <property name="CardNumber" value="60610" />
+      <property name="Position" value="10" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Thwart.]]" />
+      <property name="Text"><b>Hero Action</b>: (<i>thwart</i>) : Remove 3 threat from a scheme.
+<b>Special</b>: Remove 2 threat from a scheme and confuse an enemy.
+<i>Martial art strategy and tactics of espionage...</i></property>
+    </card>
+    <card name="Muay Thai" id="4cae2254-7233-5851-a397-e5f8f0000011">
+      <property name="CardNumber" value="60611" />
+      <property name="Position" value="11" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Superpower.]]" />
+      <property name="Text"><b>Hero Action</b> (<i>attack</i>): Deal 3 damage to an enemy.
+<b>Special</b>: Deal 2 damage to an enemy. This attack gains piercing.
+<i>Knowing different martial arts help you manage all situations.
+</i></property>
+    </card>
+    <card name="Muay Thai" id="4cae2254-7233-5851-a397-e5f8f0000012">
+      <property name="CardNumber" value="60612" />
+      <property name="Position" value="12" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attaque. Super-Pouvoir.]]" />
+      <property name="Text"><b>Action de héros</b> (<i>attaque</i>) : infligez 3 dégats à un ennemi.
+<b>Special</b> : infligez 2 dégâts à un ennemi. Défaussez toute carte d'état Tenace de la cible avant d'infliger les dégâts.
+<i>La maîtrise des différents Arts Martiaux permet à l'Iron Fist de se sortir de toutes les situations.
+—Ms. Marvel</i></property>
+    </card>
+    <card name="Tai Chi" id="4cae2254-7233-5851-a397-e5f8f0000013">
+      <property name="CardNumber" value="60613" />
+      <property name="Position" value="13" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Superpower.]]" />
+      <property name="Text"><b>Hero Action</b>: Place 3 Chi counters on your identity.
+<b>Special</b>: Heal 3 damage from any character.
+<i>"Stay still. My Chi will heal you." 
+—Iron FIst</i></property>
+    </card>
+    <card name="Tai Chi" id="4cae2254-7233-5851-a397-e5f8f0000014">
+      <property name="CardNumber" value="60614" />
+      <property name="Position" value="14" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Superpower.]]" />
+      <property name="Text"><b>Hero Action</b>: Place 3 Chi counters on your identity.
+<b>Special</b>: Heal 3 damage from any character.
+<i>"Stay still. My Chi will heal you." 
+—Iron FIst</i></property>
+    </card>
+    <card name="Fujian White Crane" id="4cae2254-7233-5851-a397-e5f8f0000015">
+      <property name="CardNumber" value="60615" />
+      <property name="Position" value="15" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Defense. Superpower.]]" />
+      <property name="Text"><b>Hero Interrupt</b> (<i>defense</i>): When you would take any amount of damage, prevent 3 of that damage. 
+<b>Special</b>: Deal 3 damage to an enemy.
+<i>“One more try!”</i></property>
+    </card>
+    <card name="Fujian White Crane" id="4cae2254-7233-5851-a397-e5f8f0000016">
+      <property name="CardNumber" value="60616" />
+      <property name="Position" value="16" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Defense. Superpower.]]" />
+      <property name="Text"><b>Hero Interrupt</b> (<i>defense</i>): When you would take any amount of damage, prevent 3 of that damage. 
+<b>Special</b>: Deal 3 damage to an enemy.
+<i>“One more try!”</i></property>
+    </card>
+    <card name="Protect K'un Lun" id="4cae2254-7233-5851-a397-e5f8f0000017" size="EncounterCard">
+      <property name="CardNumber" value="60617" />
+      <property name="Position" value="17" />
+      <property name="Owner" value="fm_iron_fist_Merlin" />
+      <property name="Type" value="obligation" />
+      <property name="DefaultSetupPile" value="Nemesis" />
+      <property name="Text">You may flip to alter-ego form. Choose:
+Exhaust Daniel Rand → remove Protect K'un Lun from the game.
+Discard K'un Lun. If K'un Lun was not discarded this way, this card gains surge. Discard this obligation.</property>
+    </card>
+    <card name="Forbidden Chamber" id="4cae2254-7233-5851-a397-e5f8f0000018" size="SchemeCard">
+      <property name="CardNumber" value="60618" />
+      <property name="Position" value="18" />
+      <property name="Owner" value="fm_iron_fist_Merlin_nemesis" />
+      <property name="Type" value="side_scheme" />
+      <property name="BaseThreat" value="2" />
+      <property name="Text"><i>“Death of a father is life for the son.”
+</i>Victory 0.
+<b>When Revealed</b>: Exhaust your identity. Place 1[per_hero] threat on each side scheme. 
+[crisis]</property>
+    </card>
+    <card name="Steel Serpent" id="4cae2254-7233-5851-a397-e5f8f0000019" size="EncounterCard">
+      <property name="CardNumber" value="60619" />
+      <property name="Position" value="19" />
+      <property name="Owner" value="fm_iron_fist_Merlin_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="3" />
+      <property name="Attribute" value="[[K’Un Lun]]" />
+      <property name="Text">You cannot attack other enemies while engaged with Steel Serpent.
+[star] <b>Forced Interrupt</b>: When Steel Serpent attacks, stun your identity.
+<i>(Iron Fist’s nemesis minion.)</i></property>
+    </card>
+    <card name="Memory of the Dragon" id="4cae2254-7233-5851-a397-e5f8f0000020" size="EncounterCard">
+      <property name="CardNumber" value="60620" />
+      <property name="Position" value="20" />
+      <property name="Owner" value="fm_iron_fist_Merlin_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Attribute" value="[[K’Un Lun.]]" />
+      <property name="Text">Peril.
+<b>When Revealed</b>: Choose to either place 1[per_hero] threat on a scheme or exhaust 1 character you control.</property>
+    </card>
+    <card name="Memory of the Dragon" id="4cae2254-7233-5851-a397-e5f8f0000021" size="EncounterCard">
+      <property name="CardNumber" value="60621" />
+      <property name="Position" value="21" />
+      <property name="Owner" value="fm_iron_fist_Merlin_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Attribute" value="[[K’Un Lun.]]" />
+      <property name="Text">Peril.
+<b>When Revealed</b>: Choose to either place 1[per_hero] threat on a scheme or exhaust 1 character you control.</property>
+    </card>
+    <card name="Memory of the Dragon" id="4cae2254-7233-5851-a397-e5f8f0000022" size="EncounterCard">
+      <property name="CardNumber" value="60622" />
+      <property name="Position" value="22" />
+      <property name="Owner" value="fm_iron_fist_Merlin_nemesis" />
+      <property name="Type" value="treachery" />
+      <property name="Attribute" value="[[K’Un Lun.]]" />
+      <property name="Text">Peril.
+<b>When Revealed</b>: Choose to either place 1[per_hero] threat on a scheme or exhaust 1 character you control.</property>
+    </card>
+  </cards>
+</set>

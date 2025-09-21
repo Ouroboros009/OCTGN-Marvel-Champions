@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='utf-8'?>
+<set name="(FMH) Rom (ROM) (By Alias_&amp;_Merlin)" id="c89b0fd0-7794-55b7-8314-a57faf4202e6" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="c89b0fd0-7794-55b7-8314-a57faf000000" name="Rom (ROM) (By Alias_&amp;_Merlin)">
+      <property name="Type" value="fm_hero_setup" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+    </card>
+    <card id="c89b0fd0-7794-55b7-8314-a57faf990000" name="Rom (ROM) (By Alias_&amp;_Merlin)">
+      <property name="Type" value="fm_encounter_setup" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin_nemesis" />
+    </card>
+    <card name="ROM" id="c89b0fd0-7794-55b7-8314-a57faf000001">
+      <property name="CardNumber" value="60401a" />
+      <property name="Position" value="1" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="hero" />
+      <property name="HP" value="10" />
+      <property name="HandSize" value="5" />
+      <property name="Attribute" value="[[Android. Space Knight.]]" />
+      <property name="Text"><i>Dire Wraith Search</i> — <b>Action</b>: Spend a [energy] resource and discard an ally in play → look at the top 5 cards of your deck. add X event to your hand (to a maximum of 3) where X is the number of printed health point of the ally (Limit once per round).
+<i>“ (</i></property>
+      <alternate name="ROM" type="b">
+        <property name="CardNumber" value="60401b" />
+        <property name="Position" value="1" />
+        <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+        <property name="Type" value="alter_ego" />
+        <property name="HP" value="10" />
+        <property name="HandSize" value="6" />
+        <property name="Attribute" value="[[Civilian.]]" />
+        <property name="Text"><b>Setup: </b>Find Leader of the Space Knight upgrade and put it into play.<i>
+Help</i> — <b>Action</b>: Choose a [[space knight]] ally in your discard pile and attach it facedown to Leader of the Space Knight upgrade (Limit once per round).
+<i>“I offered my life to save Galador.” </i>— <i>ROM</i></property>
+      </alternate>
+    </card>
+    <card name="Leader of the Space Knight" id="c89b0fd0-7794-55b7-8314-a57faf000002">
+      <property name="CardNumber" value="60402" />
+      <property name="Position" value="2" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Title.]]" />
+      <property name="Text">Permanent. Setup.
+<b>Setup</b>: Find Starshine, Pulsar and Terminator and attach them facedown to this card. 
+Allies attached to this card may be played as if they were in your hand.</property>
+    </card>
+    <card name="Starshine (Landra)" id="c89b0fd0-7794-55b7-8314-a57faf000003">
+      <property name="CardNumber" value="60403" />
+      <property name="Position" value="3" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="2" />
+      <property name="Attribute" value="[[Aerial. Android. Space Knight.]]" />
+      <property name="Text"><b>Hero Action</b>: Exhaust Starshine → choose a basic power. ROM gets +1 to that power until the end of the round (limit once per round). 
+<i>“The memory of my humanity is so strong that I forgot what I have become.”</i></property>
+    </card>
+    <card name="Terminator (Balin)" id="c89b0fd0-7794-55b7-8314-a57faf000004">
+      <property name="CardNumber" value="60404" />
+      <property name="Position" value="4" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="2" />
+      <property name="Attribute" value="[[Aerial. Android. Space Knight.]]" />
+      <property name="Text"><b>Response</b>: After Terminator enters play, deal 2 damage to an enemy. 
+<i>“I enjoy their scream when I banish the Wraiths to the void.”</i></property>
+    </card>
+    <card name="Pulsar (Plor)" id="c89b0fd0-7794-55b7-8314-a57faf000005">
+      <property name="CardNumber" value="60405" />
+      <property name="Position" value="5" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="2" />
+      <property name="Attribute" value="[[Aerial. Android. Space Knight.]]" />
+      <property name="Text"><b>Response</b>: After Pulsar enters play, remove 2 threat from a scheme. 
+<i>“Rom decided to stand against this horror, alone.” (Rom Annual #2)</i></property>
+    </card>
+    <card name="Energy Analyser" id="c89b0fd0-7794-55b7-8314-a57faf000006">
+      <property name="CardNumber" value="60406" />
+      <property name="Position" value="6" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Item. Tech.]]" />
+      <property name="Text"><b>Hero Resource</b>: Exhaust Energy Analyser → generate a [energy] resource for your "<i>Dire Wraith Search</i>" ability.
+<i>“This analyser will reveal the creatures as they are.” </i>—<i>ROM</i></property>
+    </card>
+    <card name="Neutralizer" id="c89b0fd0-7794-55b7-8314-a57faf000007">
+      <property name="CardNumber" value="60407" />
+      <property name="Position" value="7" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Item. Tech.]]" />
+      <property name="Text"><b>Hero Resource</b>: Exhaust Neutralizer → generate a [physical] resource for an [[attack]] event. (2 resources for Neutralization event).
+<i>“The analyser is replaced by the Neutralizer to send back the Wraiths to the void.” </i>—<i>ROM</i></property>
+    </card>
+    <card name="Translator" id="c89b0fd0-7794-55b7-8314-a57faf000008">
+      <property name="CardNumber" value="60408" />
+      <property name="Position" value="8" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Item. Tech.]]" />
+      <property name="Text"><b>Hero Resource</b>: Exhaust Translator → generate a [mental] resource for a [[thwart]] event. (2 resources for Assess the Threat event).
+<i>“This analyser will reveal the creatures as they are.” </i>—<i>ROM</i></property>
+    </card>
+    <card name="Plandanium Armor" id="c89b0fd0-7794-55b7-8314-a57faf000009">
+      <property name="CardNumber" value="60409" />
+      <property name="Position" value="9" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Armor. Tech.]]" />
+      <property name="Text">You get +3 hit points and gain steady.
+<i>“My armor can fulfill all my needs for 5 years.” </i>—<i>ROM</i></property>
+    </card>
+    <card name="Rocket Pods" id="c89b0fd0-7794-55b7-8314-a57faf000010">
+      <property name="CardNumber" value="60410" />
+      <property name="Position" value="10" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Item. Tech.]]" />
+      <property name="Text">You gain the [[aerial]] trait.
+<b>Hero Action</b>: Exhaust Rocket Pods → ready ROM.
+<i>“Duty drives us.”</i></property>
+    </card>
+    <card name="Brandy Clark" id="c89b0fd0-7794-55b7-8314-a57faf000011">
+      <property name="CardNumber" value="60411" />
+      <property name="Position" value="11" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="support" />
+      <property name="Attribute" value="[[Persona.]]" />
+      <property name="Text"><b>Alter-Ego Action</b>: Exhaust Brandy Clark → choose 1 identity-specific card in your discard pile and shuffle it into your deck.
+<i>“Why did you kill all these innocent people? I knew them since school...” (ROM I)</i></property>
+    </card>
+    <card name="Steve Jackson" id="c89b0fd0-7794-55b7-8314-a57faf000012">
+      <property name="CardNumber" value="60412" />
+      <property name="Position" value="12" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="support" />
+      <property name="Attribute" value="[[Persona.]]" />
+      <property name="Text"><b>Interrupt </b>: When ROM would be defeated by an attack, cancel all damage and draw 2 cards. Remove this card from the game.
+<i>“So Brandy, you really believe all this robot is telling you? It's bullshit!"</i></property>
+    </card>
+    <card name="Neutralization" id="c89b0fd0-7794-55b7-8314-a57faf000013">
+      <property name="CardNumber" value="60413" />
+      <property name="Position" value="13" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack.]]" />
+      <property name="Text"><b>Hero Action</b> (<i>attack</i>): deal 4 damage to an enemy. If you paid for this card using only [physical] resources, deal 3 additional damage for each [physical] resource you overpaid for this card to a maximum of 6.
+"What Dire Wraiths fear the most is to be banished.</property>
+    </card>
+    <card name="Neutralization" id="c89b0fd0-7794-55b7-8314-a57faf000014">
+      <property name="CardNumber" value="60414" />
+      <property name="Position" value="14" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack.]]" />
+      <property name="Text"><b>Hero Action</b> (<i>attack</i>): deal 4 damage to an enemy. If you paid for this card using only [physical] resources, deal 3 additional damage for each [physical] resource you overpaid for this card to a maximum of 6.
+"What Dire Wraiths fear the most is to be banished.</property>
+    </card>
+    <card name="Neutralization" id="c89b0fd0-7794-55b7-8314-a57faf000015">
+      <property name="CardNumber" value="60415" />
+      <property name="Position" value="15" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack.]]" />
+      <property name="Text"><b>Hero Action</b> (<i>attack</i>): deal 4 damage to an enemy. If you paid for this card using only [physical] resources, deal 3 additional damage for each [physical] resource you overpaid for this card to a maximum of 6.
+"What Dire Wraiths fear the most is to be banished.</property>
+    </card>
+    <card name="Assess the Threat" id="c89b0fd0-7794-55b7-8314-a57faf000016">
+      <property name="CardNumber" value="60416" />
+      <property name="Position" value="16" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Thwart.]]" />
+      <property name="Text"><b>Hero Action</b> (<i>thwart</i>): Remove 3 threat from a scheme. If you paid for this card using only [mental] resources, remove 2 additional threat for each [mental] resource you overpaid for this card to a maximum of 4.</property>
+    </card>
+    <card name="Assess the Threat" id="c89b0fd0-7794-55b7-8314-a57faf000017">
+      <property name="CardNumber" value="60417" />
+      <property name="Position" value="17" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Thwart.]]" />
+      <property name="Text"><b>Hero Action</b> (<i>thwart</i>): Remove 3 threat from a scheme. If you paid for this card using only [mental] resources, remove 2 additional threat for each [mental] resource you overpaid for this card to a maximum of 4.</property>
+    </card>
+    <card name="Solar Charge" id="c89b0fd0-7794-55b7-8314-a57faf000018">
+      <property name="CardNumber" value="60418" />
+      <property name="Position" value="18" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Defense.]]" />
+      <property name="Text"><b>Hero Action</b> (<i>attack</i>): Deal 2 damage to an enemy.
+<b>Hero Interrupt </b>(<i>defense</i>): When you would take any amount of damage, prevent 2 of that damage.</property>
+    </card>
+    <card name="Solar Charge" id="c89b0fd0-7794-55b7-8314-a57faf000019">
+      <property name="CardNumber" value="60419" />
+      <property name="Position" value="19" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Defense.]]" />
+      <property name="Text"><b>Hero Action</b> (<i>attack</i>): Deal 2 damage to an enemy.
+<b>Hero Interrupt </b>(<i>defense</i>): When you would take any amount of damage, prevent 2 of that damage.</property>
+    </card>
+    <card name="Solar Charge" id="c89b0fd0-7794-55b7-8314-a57faf000020">
+      <property name="CardNumber" value="60420" />
+      <property name="Position" value="20" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack. Defense.]]" />
+      <property name="Text"><b>Hero Action</b> (<i>attack</i>): Deal 2 damage to an enemy.
+<b>Hero Interrupt </b>(<i>defense</i>): When you would take any amount of damage, prevent 2 of that damage.</property>
+    </card>
+    <card name="Attack on the City" id="c89b0fd0-7794-55b7-8314-a57faf000021" size="EncounterCard">
+      <property name="CardNumber" value="60421" />
+      <property name="Position" value="21" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin" />
+      <property name="Type" value="obligation" />
+      <property name="DefaultSetupPile" value="Nemesis" />
+      <property name="Text">If you are in alter-ego form, take 1 damage then flip to hero form.
+Exhaust each [[space knight ]]character you control. Discard this obligation.</property>
+    </card>
+    <card name="Doctor Dredd" id="c89b0fd0-7794-55b7-8314-a57faf000022" size="EncounterCard">
+      <property name="CardNumber" value="60422" />
+      <property name="Position" value="22" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="5" />
+      <property name="Attribute" value="[[Elite. Mystic. Polymorph.]]" />
+      <property name="Text"><b>When Revealed</b>: Find Starshine and put her out of play.
+<b>When Defeated</b>: Add Starshine to your hand.
+(ROM's nemesis minion.)</property>
+    </card>
+    <card name="Dire Wraith" id="c89b0fd0-7794-55b7-8314-a57faf000026" size="EncounterCard">
+      <property name="CardNumber" value="60426" />
+      <property name="Position" value="26" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="2" />
+      <property name="Attribute" value="[[Polymorph.]]" />
+      <property name="Text">Quickstrike.
+[star] When Dire Wraith attacks, it attacks the character you control with the less remaining hit points.
+<b>Forced Response</b>: Once defeated, shuffle Dire Wraith back into the encounter deck.</property>
+    </card>
+    <card name="Dire Wraith's Invasion" id="c89b0fd0-7794-55b7-8314-a57faf000023" size="SchemeCard">
+      <property name="CardNumber" value="60423" />
+      <property name="Position" value="23" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin_nemesis" />
+      <property name="Type" value="side_scheme" />
+      <property name="BaseThreat" value="3" />
+      <property name="Text"><i>The Dire Wraiths can suck the brain of their victim, loading their memories, taking their form.
+</i><b>Forced Response</b>: After step 1 of the villain phase, search the encounter deck and discard pile for a Dire Wraith minion and put it into play engaged with the first player.</property>
+    </card>
+    <card name="Dire Wraith" id="c89b0fd0-7794-55b7-8314-a57faf000024" size="EncounterCard">
+      <property name="CardNumber" value="60424" />
+      <property name="Position" value="24" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="2" />
+      <property name="Attribute" value="[[Polymorph.]]" />
+      <property name="Text">Quickstrike.
+[star] When Dire Wraith attacks, it attacks the character you control with the less remaining hit points.
+<b>Forced Response</b>: Once defeated, shuffle Dire Wraith back into the encounter deck.</property>
+    </card>
+    <card name="Dire Wraith" id="c89b0fd0-7794-55b7-8314-a57faf000025" size="EncounterCard">
+      <property name="CardNumber" value="60425" />
+      <property name="Position" value="25" />
+      <property name="Owner" value="fm_rom_Alias_&amp;_Merlin_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="2" />
+      <property name="Attribute" value="[[Polymorph.]]" />
+      <property name="Text">Quickstrike.
+[star] When Dire Wraith attacks, it attacks the character you control with the less remaining hit points.
+<b>Forced Response</b>: Once defeated, shuffle Dire Wraith back into the encounter deck.</property>
+    </card>
+  </cards>
+</set>

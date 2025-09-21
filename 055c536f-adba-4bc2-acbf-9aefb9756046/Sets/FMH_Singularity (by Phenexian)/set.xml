@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<set name="(FMH) Singularity (by Phenexian)" id="670dd6af-ef0f-4494-b1ec-4a405becbe36" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="670dd6af-ef0f-4494-b1ec-4a405b000000" name="singularity_by_phenexian">
+      <property name="Type" value="fm_hero_setup"/>
+      <property name="Owner" value="singularity_by_phenexian"/>
+    </card>
+    <card id="670dd6af-ef0f-4494-b1ec-4a405b990000" name="singularity_by_phenexian">
+      <property name="Type" value="fm_encounter_setup"/>
+      <property name="Owner" value="singularity_by_phenexian_nemesis"/>
+    </card>
+    <card name="Singularity" id="670dd6af-ef0f-4494-b1ec-4a405b619001">
+      <property name="CardNumber" value="261901a"/>
+      <property name="Position" value="1"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="hero"/>
+      <property name="Owner" value="singularity_by_phenexian"/>
+      <property name="HandSize" value="5"/>
+      <property name="Thwart" value="2"/>
+      <property name="Attack" value="1"/>
+      <property name="Defense" value="3"/>
+      <property name="HP" value="10"/>
+      <property name="Attribute" value="A-Force. Aerial. Cosmic Entity."/>
+      <property name="Text">&lt;i&gt;Pocket Universe&lt;/i&gt; — &lt;b&gt;Action&lt;/b&gt;: Place an ally in play facedown under Singularity. (Max 3 cards. Limit once per phase.)
+&lt;b&gt;Action&lt;/b&gt;: Play an ally under Singularity as if they were in you hand, or put a minion under Singularity into play engaged with any player.</property>
+      <property name="Unique" value="True"/>
+      <alternate name="Singularity" type="b">
+        <property name="CardNumber" value="261901b"/>
+        <property name="Position" value="1"/>
+        <property name="Quantity" value="1"/>
+        <property name="Faction" value="hero"/>
+        <property name="Type" value="alter_ego"/>
+        <property name="Owner" value="singularity_by_phenexian"/>
+        <property name="HandSize" value="6"/>
+        <property name="Recovery" value="3"/>
+        <property name="HP" value="10"/>
+        <property name="Attribute" value="Cosmic Entity."/>
+        <property name="Text">Memories from Arcadia's effect applies during deck building.
+&lt;i&gt;Childlike Curiosity&lt;/i&gt; — &lt;b&gt;Action&lt;/b&gt;: Discard a card from your hand → draw a card. (Limit once per round.)</property>
+        <property name="Quote">"Hello Friend!"</property>
+        <property name="Unique" value="True"/>
+      </alternate>
+    </card>
+    <card name="Memories from Arcadia" id="670dd6af-ef0f-4494-b1ec-4a405b619002">
+      <property name="CardNumber" value="261902"/>
+      <property name="Position" value="2"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="singularity_by_phenexian"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Memory."/>
+      <property name="Text">Permanent. Setup.
+Characters named Captain Marvel, Dazzler, Medusa, She-Hulk and Sister Grimm gain the &lt;b&gt;&lt;i&gt;A-FORCE&lt;/i&gt;&lt;/b&gt; trait.
+You may include &lt;b&gt;&lt;i&gt;A-FORCE&lt;/i&gt;&lt;/b&gt; allies from any aspect in your deck.</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Sister Grimm" id="670dd6af-ef0f-4494-b1ec-4a405b619003">
+      <property name="CardNumber" value="261903"/>
+      <property name="Position" value="3"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="ally"/>
+      <property name="Owner" value="singularity_by_phenexian"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Wild" value="1"/>
+      <property name="HP" value="2"/>
+      <property name="Attribute" value="Mystic. Runaway."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After Sister Grimm takes damage and isn't defeated, play an event from your hand ignoring all costs and trait restrictions, then remove that event from the game.</property>
+      <property name="Quote">"Nico. Who showed me what love means. And heartbreak." —Singularity</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Smile" id="670dd6af-ef0f-4494-b1ec-4a405b619004">
+      <property name="CardNumber" value="261904"/>
+      <property name="Position" value="4"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="singularity_by_phenexian"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Memory."/>
+      <property name="Text">&lt;b&gt;Resource&lt;/b&gt;: Exhaust Smile → generate a [wild] resource for an ally or ally ability.</property>
+      <property name="Quote">"She is sweetness and courage"</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Fight" id="670dd6af-ef0f-4494-b1ec-4a405b619005">
+      <property name="CardNumber" value="261905"/>
+      <property name="Position" value="5"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="singularity_by_phenexian"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Memory."/>
+      <property name="Text">&lt;b&gt;Interrupt&lt;/b&gt;: When an ally attacks, exhaust Fight → give that ally +2 ATK for that attack.</property>
+      <property name="Quote">"She is defiance and sacrifice"</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Give" id="670dd6af-ef0f-4494-b1ec-4a405b619006">
+      <property name="CardNumber" value="261906"/>
+      <property name="Position" value="6"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="singularity_by_phenexian"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Memory."/>
+      <property name="Text">&lt;b&gt;Interrupt&lt;/b&gt;: When an ally thwarts, exhaust Give → give that ally +2 THW for that thwart.</property>
+      <property name="Quote">"She is giving and forgiving"</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Feel" id="670dd6af-ef0f-4494-b1ec-4a405b619007">
+      <property name="CardNumber" value="261907"/>
+      <property name="Position" value="7"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="upgrade"/>
+      <property name="Owner" value="singularity_by_phenexian"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Memory."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After an ally is defeated by consequential damage, exhaust Feel → place that ally facedown under Singularity (max 3 cards).</property>
+      <property name="Quote">"...the little thing on which all our lives once hinged..."</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Arcadia" id="670dd6af-ef0f-4494-b1ec-4a405b619008">
+      <property name="CardNumber" value="261908"/>
+      <property name="Position" value="8"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="support"/>
+      <property name="Owner" value="singularity_by_phenexian"/>
+      <property name="Cost" value="2"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Memory."/>
+      <property name="Text">&lt;b&gt;Action&lt;/b&gt;: Exhaust Arcadia → ready a &lt;b&gt;&lt;i&gt;MEMORY&lt;/i&gt;&lt;/b&gt;&lt;i&gt; &lt;/i&gt;upgrade.</property>
+      <property name="Quote">"...In the heart of that girl, there is an island."</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Blink Away" id="670dd6af-ef0f-4494-b1ec-4a405b619009">
+      <property name="CardNumber" value="261909"/>
+      <property name="Position" value="9"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="singularity_by_phenexian"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Defense. Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Interrupt&lt;/b&gt; &lt;i&gt;(defense)&lt;/i&gt;: When an enemy attacks, prevent all damage that would be dealt to any character during that attack. Then remove 1 threat from a scheme for each ally under Singularity.</property>
+      <property name="Quote">BLIP!</property>
+    </card>
+    <card name="Portal Production" id="670dd6af-ef0f-4494-b1ec-4a405b619010">
+      <property name="CardNumber" value="261910"/>
+      <property name="Position" value="10"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="singularity_by_phenexian"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Choose one:
+• Deal 3 damage to an enemy.
+• Remove 2 threat from a scheme ignoring [crisis] icons and the patrol keyword.
+• Search your deck for an ally and put it under Singularity.</property>
+    </card>
+    <card name="Sweep Away" id="670dd6af-ef0f-4494-b1ec-4a405b619011">
+      <property name="CardNumber" value="261911"/>
+      <property name="Position" value="11"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="singularity_by_phenexian"/>
+      <property name="Cost" value="-1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Place X non-&lt;b&gt;&lt;i&gt;ELITE&lt;/i&gt;&lt;/b&gt;&lt;i&gt; &lt;/i&gt;minions under Singularity (max 3 cards under Singulaity).</property>
+      <property name="Quote">"Going. Going. Gone."</property>
+    </card>
+    <card name="Quantum Detonation" id="670dd6af-ef0f-4494-b1ec-4a405b619012">
+      <property name="CardNumber" value="261912"/>
+      <property name="Position" value="12"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="singularity_by_phenexian"/>
+      <property name="Cost" value="1"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="Attribute" value="Attack. Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack)&lt;/i&gt;: Discard any number of cards under Singularity. For each card discarded this way, deal 3 damage to an enemy. Then flip to alter-ego. Until the end of this phase you cannot play events or change form.</property>
+      <property name="Quote">"Goodbye."</property>
+    </card>
+    <card name="Cosmic Expansion" id="670dd6af-ef0f-4494-b1ec-4a405b619013">
+      <property name="CardNumber" value="261913"/>
+      <property name="Position" value="13"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="singularity_by_phenexian"/>
+      <property name="Cost" value="4"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Superpower."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt;: Put all allies under Singularity into play under your control. &lt;i&gt;(These cards don't count as having been played from hand.)&lt;/i&gt;</property>
+      <property name="Quote">"Oh, you're going to be seeing more than &lt;b&gt;stars&lt;/b&gt;." —Captain Marvel</property>
+    </card>
+    <card name="Self Actualisation" id="670dd6af-ef0f-4494-b1ec-4a405b619014">
+      <property name="CardNumber" value="261914"/>
+      <property name="Position" value="14"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="hero"/>
+      <property name="Type" value="event"/>
+      <property name="Owner" value="singularity_by_phenexian"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Attack. Thwart."/>
+      <property name="Text">&lt;b&gt;Hero Action&lt;/b&gt; &lt;i&gt;(attack/thwart)&lt;/i&gt;: For each &lt;b&gt;&lt;i&gt;MEMORY&lt;/i&gt;&lt;/b&gt;&lt;i&gt; &lt;/i&gt;and ally you control choose one:
+• Deal 1 damage to an enemy.
+• Remove 1 threat from a scheme.</property>
+      <property name="Quote">"Pain. Happiness. Sometimes they get mixed up. Sometimes you can't unmix them."</property>
+    </card>
+    <card name="Dazzler Thor" id="670dd6af-ef0f-4494-b1ec-4a405b619015">
+      <property name="CardNumber" value="261915"/>
+      <property name="Position" value="15"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="aggression"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="2"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="A-Force. Asgard."/>
+      <property name="Text">&lt;b&gt;Response&lt;/b&gt;: After you play Dazzler Thor, stun and confuse a minion for each  [energy]  resource spent to play her.</property>
+      <property name="Quote">"Mine eyes have never before seen such a cowardly beast as thyself!"</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Medusa" id="670dd6af-ef0f-4494-b1ec-4a405b619016">
+      <property name="CardNumber" value="261916"/>
+      <property name="Position" value="16"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="leadership"/>
+      <property name="Type" value="ally"/>
+      <property name="Thwart" value="1"/>
+      <property name="ThwartCost" value="1"/>
+      <property name="Attack" value="1"/>
+      <property name="AttackCost" value="1"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Physical" value="1"/>
+      <property name="HP" value="3"/>
+      <property name="Attribute" value="Inhuman. Queen."/>
+      <property name="Text">[star] &lt;b&gt;Response&lt;/b&gt;: After Medusa thwarts, remove 1 threat from a scheme.
+[star] &lt;b&gt;Response&lt;/b&gt;: After Medusa attacks, deal 1 damage to an enemy.</property>
+      <property name="Quote">"I am the face of the Inhuman nation"</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="A-Force Assemble!" id="670dd6af-ef0f-4494-b1ec-4a405b619017">
+      <property name="CardNumber" value="261917"/>
+      <property name="Position" value="17"/>
+      <property name="Quantity" value="3"/>
+      <property name="Faction" value="basic"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="A-Force."/>
+      <property name="Text">Max 1 per round.
+&lt;b&gt;Hero Action&lt;/b&gt;: Ready each &lt;b&gt;&lt;i&gt;A-FORCE&lt;/i&gt;&lt;/b&gt; character you control. Until the end of the phase, each &lt;b&gt;&lt;i&gt;A-FORCE&lt;/i&gt;&lt;/b&gt; character in play gets +1 THW and +1 ATK.</property>
+      <property name="Quote">"I think that might be trademarked." —She-Hulk</property>
+    </card>
+    <card name="Impossible A-Force" id="670dd6af-ef0f-4494-b1ec-4a405b619018">
+      <property name="CardNumber" value="261918"/>
+      <property name="Position" value="18"/>
+      <property name="Quantity" value="3"/>
+      <property name="Faction" value="leadership"/>
+      <property name="Type" value="support"/>
+      <property name="Cost" value="3"/>
+      <property name="Resource_Mental" value="1"/>
+      <property name="Attribute" value="Team."/>
+      <property name="Text">Play under any player's control. Max 1 &lt;b&gt;&lt;i&gt;TEAM&lt;/i&gt;&lt;/b&gt; card per player.
+Each of your &lt;b&gt;&lt;i&gt;A-FORCE&lt;/i&gt;&lt;/b&gt; allies gets +1 hit point. If all of your characters have the &lt;b&gt;&lt;i&gt;A-FORCE&lt;/i&gt;&lt;/b&gt; trait, each ally you control gets +1 THW and +1 ATK.</property>
+    </card>
+    <card name="Anything Anywhere" id="670dd6af-ef0f-4494-b1ec-4a405b619019">
+      <property name="CardNumber" value="261919"/>
+      <property name="Position" value="19"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="basic"/>
+      <property name="Type" value="event"/>
+      <property name="Cost" value="5"/>
+      <property name="Resource_Energy" value="1"/>
+      <property name="Attribute" value="Spell."/>
+      <property name="Text">Team-Up (Singularity and Sister Grimm). Max 1 per deck.
+&lt;b&gt;Hero Action&lt;/b&gt;: Defeat a minion and defeat a side scheme. Remove Anything Anywhere from the game.</property>
+    </card>
+    <card name="Communication Issues" id="670dd6af-ef0f-4494-b1ec-4a405b619020" size="EncounterCard">
+      <property name="DefaultSetupPile" value="Nemesis"/>
+      <property name="CardNumber" value="261920"/>
+      <property name="Position" value="20"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="obligation"/>
+      <property name="Owner" value="singularity_by_phenexian_nemesis"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;&lt;i&gt;Give to the Singularity player.&lt;/i&gt;&lt;/b&gt;
+Each ally you play cost 1 additional resource.
+&lt;b&gt;Alter-Ego Action&lt;/b&gt;: Exhaust Singularity and an ally you control → remove Communication Issues from the game.</property>
+      <property name="Quote">"What do I tell them? Everything? Nothing?" —Singularity</property>
+    </card>
+    <card name="Antimatter" id="670dd6af-ef0f-4494-b1ec-4a405b619021" size="EncounterCard">
+      <property name="CardNumber" value="261921"/>
+      <property name="Position" value="21"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="minion"/>
+      <property name="Owner" value="singularity_by_phenexian_nemesis"/>
+      <property name="Attack" value="3"/>
+      <property name="Scheme" value="1"/>
+      <property name="Boost" value="2"/>
+      <property name="HP" value="4"/>
+      <property name="Attribute" value="Cosmic Entity. Elite."/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Antimatter engages Singularity.
+&lt;b&gt;Forced Interrupt&lt;/b&gt;: When Antimatter would take damage from an attack, deal 1 damage to the attacking character.
+&lt;i&gt;(Singularity's nemesis minion.)&lt;/i&gt;</property>
+      <property name="Quote">"This blue one. It burns. It must be &lt;b&gt;destroyed&lt;/b&gt;."</property>
+      <property name="Unique" value="True"/>
+    </card>
+    <card name="Violent Rebirth" id="670dd6af-ef0f-4494-b1ec-4a405b619022" size="SchemeCard">
+      <property name="CardNumber" value="261922"/>
+      <property name="Position" value="22"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="side_scheme"/>
+      <property name="Owner" value="singularity_by_phenexian_nemesis"/>
+      <property name="Boost" value="3"/>
+      <property name="BaseThreat" value="3"/>
+      <property name="BaseThreatFixed" value="False"/>
+      <property name="EscalationThreatFixed" value="False"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Search the encounter deck and discard for Antimatter and reveal him.
+&lt;b&gt;Forced Response&lt;/b&gt;: After Antimatter is defeated, deal him to Singularity as a facedown encounter card.</property>
+      <property name="Quote">Antimatter and Singularity are entangled at a quantum level. Until you find a way to sever their connection he cannot be truly destroyed.</property>
+    </card>
+    <card name="Destructive Analysis" id="670dd6af-ef0f-4494-b1ec-4a405b619023" size="EncounterCard">
+      <property name="CardNumber" value="261923"/>
+      <property name="Position" value="23"/>
+      <property name="Quantity" value="2"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="singularity_by_phenexian_nemesis"/>
+      <property name="Boost" value="2"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Discard a card you control. Place threat on the main scheme equal to the cost of that card. If that card costs 0, this card gains surge.</property>
+      <property name="Quote">"Interesting. This oneis unlike the primary population of this planet." —Antimatter</property>
+    </card>
+    <card name="Antimatter Blast" id="670dd6af-ef0f-4494-b1ec-4a405b619024" size="EncounterCard">
+      <property name="CardNumber" value="261924"/>
+      <property name="Position" value="24"/>
+      <property name="Quantity" value="1"/>
+      <property name="Faction" value="encounter"/>
+      <property name="Type" value="treachery"/>
+      <property name="Owner" value="singularity_by_phenexian_nemesis"/>
+      <property name="Text">&lt;b&gt;When Revealed&lt;/b&gt;: Deal 2 damage to each character you control.
+[star] &lt;b&gt;Boost&lt;/b&gt;: Deal 1 damage to each character you control.</property>
+      <property name="Quote">"You will get out of my way or die." —Antimatter</property>
+    </card>
+  </cards>
+</set>

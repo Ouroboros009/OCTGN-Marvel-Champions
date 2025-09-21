@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='utf-8'?>
+<set name="(FMH) Mantis (Mantis) (By BlueHG)" id="d2407046-eb8c-5483-99d6-c7f3b237af34" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
+  <cards>
+    <card id="d2407046-eb8c-5483-99d6-c7f3b2000000" name="Mantis (Mantis) (By BLUEHG)">
+      <property name="Type" value="fm_hero_setup" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+    </card>
+    <card id="d2407046-eb8c-5483-99d6-c7f3b2990000" name="Mantis (Mantis) (By BLUEHG)">
+      <property name="Type" value="fm_encounter_setup" />
+      <property name="Owner" value="fm_mantis_BLUEHG_nemesis" />
+    </card>
+    <card name="Mantis" id="d2407046-eb8c-5483-99d6-c7f3b2000001">
+      <property name="CardNumber" value="20301a" />
+      <property name="Position" value="1" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="hero" />
+      <property name="HP" value="9" />
+      <property name="HandSize" value="5" />
+      <property name="Attribute" value="[[Guardian. Psionic.]]" />
+      <property name="Text"><i>Empathetic Advantage </i>— <b>Resource</b>: Discard a confused status card from an enemy or character you control → generate a [mental] resource. (Generate [wild][mental] resources instead if you discarded a confused status card from an enemy. Limit once per round.)</property>
+      <alternate name="Mantis" type="b">
+        <property name="CardNumber" value="20301b" />
+        <property name="Position" value="1" />
+        <property name="Owner" value="fm_mantis_BLUEHG" />
+        <property name="Type" value="alter_ego" />
+        <property name="HP" value="9" />
+        <property name="HandSize" value="6" />
+        <property name="Attribute" value="[[Outlaw. Psionic.]]" />
+        <property name="Text">[star]<i> Empathic Leveling </i>— <b>Response</b>: After you use your REC, confuse a character you control.
+<i>“This one lives to illuminate.”</i></property>
+      </alternate>
+    </card>
+    <card name="Drax" id="d2407046-eb8c-5483-99d6-c7f3b2000002">
+      <property name="CardNumber" value="20302" />
+      <property name="Position" value="2" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="ally" />
+      <property name="HP" value="3" />
+      <property name="Attribute" value="[[Guardian.]]" />
+      <property name="Text">Drax cannot attack minions.
+[star] While Drax is confused, add his THW to his ATK and his basic attacks gain piercing and ignore the guard keyword.
+<i>“Give me something worthwhile to do.” —Drax</i></property>
+    </card>
+    <card name="Precognition" id="d2407046-eb8c-5483-99d6-c7f3b2000003">
+      <property name="CardNumber" value="20303" />
+      <property name="Position" value="3" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Psionic. Thwart.]]" />
+      <property name="Text"><b>Hero Action </b><i>(thwart)</i>: Remove 2 threat from a scheme. Search the top 3 cards of your deck for a card and add it to your hand. If it is a Mantis card, remove 1 threat from a scheme. 
+<i>“A welcome and a warning in a single breath.” —Mantis</i></property>
+    </card>
+    <card name="Precognition" id="d2407046-eb8c-5483-99d6-c7f3b2000004">
+      <property name="CardNumber" value="20304" />
+      <property name="Position" value="4" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Psionic. Thwart.]]" />
+      <property name="Text"><b>Hero Action </b><i>(thwart)</i>: Remove 2 threat from a scheme. Search the top 3 cards of your deck for a card and add it to your hand. If it is a Mantis card, remove 1 threat from a scheme. 
+<i>“A welcome and a warning in a single breath.” —Mantis</i></property>
+    </card>
+    <card name="Pressure Point Strike" id="d2407046-eb8c-5483-99d6-c7f3b2000005">
+      <property name="CardNumber" value="20305" />
+      <property name="Position" value="5" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack.]]" />
+      <property name="Text"><b>Hero Action </b><i>(attack)</i>: Deal 4 damage to an enemy. If that enemy is confused, you may either deal 1 additional damage to that enemy, or discard a confused status card from that enemy to draw 1 card.</property>
+    </card>
+    <card name="Pressure Point Strike" id="d2407046-eb8c-5483-99d6-c7f3b2000006">
+      <property name="CardNumber" value="20306" />
+      <property name="Position" value="6" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Attack.]]" />
+      <property name="Text"><b>Hero Action </b><i>(attack)</i>: Deal 4 damage to an enemy. If that enemy is confused, you may either deal 1 additional damage to that enemy, or discard a confused status card from that enemy to draw 1 card.</property>
+    </card>
+    <card name="Psychic Feat" id="d2407046-eb8c-5483-99d6-c7f3b2000007">
+      <property name="CardNumber" value="20307" />
+      <property name="Position" value="7" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Psionic.]]" />
+      <property name="Text"><b>Hero Action</b>: Confuse a character you control. Then, confuse an enemy.
+<i>“No! Get out of my head!”
+“This one is the Celestial Madonna. I go where I wish.”</i></property>
+    </card>
+    <card name="Psychic Feat" id="d2407046-eb8c-5483-99d6-c7f3b2000008">
+      <property name="CardNumber" value="20308" />
+      <property name="Position" value="8" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Psionic.]]" />
+      <property name="Text"><b>Hero Action</b>: Confuse a character you control. Then, confuse an enemy.
+<i>“No! Get out of my head!”
+“This one is the Celestial Madonna. I go where I wish.”</i></property>
+    </card>
+    <card name="Psychic Feat" id="d2407046-eb8c-5483-99d6-c7f3b2000009">
+      <property name="CardNumber" value="20309" />
+      <property name="Position" value="9" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="event" />
+      <property name="Attribute" value="[[Psionic.]]" />
+      <property name="Text"><b>Hero Action</b>: Confuse a character you control. Then, confuse an enemy.
+<i>“No! Get out of my head!”
+“This one is the Celestial Madonna. I go where I wish.”</i></property>
+    </card>
+    <card name="Biopathy" id="d2407046-eb8c-5483-99d6-c7f3b2000010">
+      <property name="CardNumber" value="20310" />
+      <property name="Position" value="10" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="resource" />
+      <property name="Text"><b>Response</b>: After you spend this card, heal 1 damage from a friendly character. You may confuse a character you control to draw 1 card.</property>
+    </card>
+    <card name="Biopathy" id="d2407046-eb8c-5483-99d6-c7f3b2000011">
+      <property name="CardNumber" value="20311" />
+      <property name="Position" value="11" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="resource" />
+      <property name="Text"><b>Response</b>: After you spend this card, heal 1 damage from a friendly character. You may confuse a character you control to draw 1 card.</property>
+    </card>
+    <card name="Meditation Atrium" id="d2407046-eb8c-5483-99d6-c7f3b2000012">
+      <property name="CardNumber" value="20312" />
+      <property name="Position" value="12" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="support" />
+      <property name="Attribute" value="[[Location.]]" />
+      <property name="Text"><b>Alter-Ego Action</b>: Exhaust Meditation Atrium → search the top 3 cards of your deck for a card and add it to your hand. If it is a Mantis card, heal 1 damage from a friendly character. Shuffle your deck.</property>
+    </card>
+    <card name="Fortified Mind" id="d2407046-eb8c-5483-99d6-c7f3b2000013">
+      <property name="CardNumber" value="20313" />
+      <property name="Position" value="13" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Condition. Psionic.]]" />
+      <property name="Text">Attach to an ally. Limit 1 per ally.
+<b>Interrupt</b>: When attached ally attacks or thwarts, discard Fortified Mind → that ally gets +1 THW and +1 ATK and takes no consequential damage for this activation. Then, confuse that ally.</property>
+    </card>
+    <card name="Fortified Mind" id="d2407046-eb8c-5483-99d6-c7f3b2000014">
+      <property name="CardNumber" value="20314" />
+      <property name="Position" value="14" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Condition. Psionic.]]" />
+      <property name="Text">Attach to an ally. Limit 1 per ally.
+<b>Interrupt</b>: When attached ally attacks or thwarts, discard Fortified Mind → that ally gets +1 THW and +1 ATK and takes no consequential damage for this activation. Then, confuse that ally.</property>
+    </card>
+    <card name="Psionic Mindlock" id="d2407046-eb8c-5483-99d6-c7f3b2000015">
+      <property name="CardNumber" value="20315" />
+      <property name="Position" value="15" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Condition. Psionic.]]" />
+      <property name="Text">Attach to an enemy. If attached enemy has stalwart, it loses stalwart and gains steady.
+<b>Hero Response</b>: After attached enemy activates, discard Psionic Mindlock → deal 3 damage to that enemy and confuse it.</property>
+    </card>
+    <card name="The Celestial Madonna" id="d2407046-eb8c-5483-99d6-c7f3b2000016">
+      <property name="CardNumber" value="20316" />
+      <property name="Position" value="16" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="upgrade" />
+      <property name="Attribute" value="[[Title.]]" />
+      <property name="Text"><b>Hero Resource</b>: Exhaust The Celestial Madonna → Use Mantis’ <i>“Empathetic Advantage”</i> ability. This use does not count against that ability‘s limit.
+<i>“She’s trained since birth by priests from another world to represent all of humanity.” —Thor</i></property>
+    </card>
+    <card name="Death Blossom’s Bloom" id="d2407046-eb8c-5483-99d6-c7f3b2000018" size="SchemeCard">
+      <property name="CardNumber" value="20318" />
+      <property name="Position" value="18" />
+      <property name="Owner" value="fm_mantis_BLUEHG_nemesis" />
+      <property name="Type" value="side_scheme" />
+      <property name="BaseThreat" value="2" />
+      <property name="Text"><i>The Swordsman is attempting to dominate the planet for the Cotati. It will empower the Cotati in their mission to eradicate all non-plant life. 
+</i>Incite 1.
+Enemies cannot be confused.
+[hazard]</property>
+    </card>
+    <card name="Swordsman" id="d2407046-eb8c-5483-99d6-c7f3b2000019" size="EncounterCard">
+      <property name="CardNumber" value="20319" />
+      <property name="Position" value="19" />
+      <property name="Owner" value="fm_mantis_BLUEHG_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="4" />
+      <property name="Attribute" value="[[Cotati. Elite.]]" />
+      <property name="Text">Quickstrike. Stalwart. 
+[star] Swordsman’s attacks gain piercing.
+<i>(Mantis’ nemesis minion.)</i>
+<i>Her heart soars at the name “Jacques”—the Swordsman who died throwing himself between her and a tyrant’s spite, then sinks when it relives the moment the Prime Cotati re-animated his corpse to wear a face she couldn’t help but love. </i></property>
+    </card>
+    <card name="Plantman" id="d2407046-eb8c-5483-99d6-c7f3b2000020" size="EncounterCard">
+      <property name="CardNumber" value="20320" />
+      <property name="Position" value="20" />
+      <property name="Owner" value="fm_mantis_BLUEHG_nemesis" />
+      <property name="Type" value="minion" />
+      <property name="HP" value="4" />
+      <property name="Attribute" value="[[Criminal. Elite.]]" />
+      <property name="Text">Stalwart. Toughness.
+[star] <b>Forced Interrupt</b>: When Plantman attacks, his attacks gain overkill.
+<b>Forced Interrupt</b>: When Plantman is defeated, give the villain a tough status card.</property>
+    </card>
+    <card name="Cotati Resiliency" id="d2407046-eb8c-5483-99d6-c7f3b2000021" size="EncounterCard">
+      <property name="CardNumber" value="20321" />
+      <property name="Position" value="21" />
+      <property name="Owner" value="fm_mantis_BLUEHG_nemesis" />
+      <property name="Type" value="attachment" />
+      <property name="Attribute" value="[[Condition.]]" />
+      <property name="Text">Attach to the enemy with the highest printed hit points and without stalwart. If you cannot, this card gains surge.
+Attached enemy gains stalwart.
+<b>Hero Action</b>: Spend [mental][physical] resources → discard this card.</property>
+    </card>
+    <card name="Cotati Resiliency" id="d2407046-eb8c-5483-99d6-c7f3b2000022" size="EncounterCard">
+      <property name="CardNumber" value="20322" />
+      <property name="Position" value="22" />
+      <property name="Owner" value="fm_mantis_BLUEHG_nemesis" />
+      <property name="Type" value="attachment" />
+      <property name="Attribute" value="[[Condition.]]" />
+      <property name="Text">Attach to the enemy with the highest printed hit points and without stalwart. If you cannot, this card gains surge.
+Attached enemy gains stalwart.
+<b>Hero Action</b>: Spend [mental][physical] resources → discard this card.</property>
+    </card>
+    <card name="Psychic Tremor" id="d2407046-eb8c-5483-99d6-c7f3b2000017" size="EncounterCard">
+      <property name="CardNumber" value="20317" />
+      <property name="Position" value="17" />
+      <property name="Owner" value="fm_mantis_BLUEHG" />
+      <property name="Type" value="obligation" />
+      <property name="DefaultSetupPile" value="Nemesis" />
+      <property name="Text">You may flip to alter-ego form. Choose:
+Exhaust your alter ego → remove Psychic Tremor from the game.
+Discard 1 card from your hand for each confused character you control and each confused enemy. If no cards were discarded this way, this card gains surge. Discard this obligation.</property>
+    </card>
+  </cards>
+</set>
