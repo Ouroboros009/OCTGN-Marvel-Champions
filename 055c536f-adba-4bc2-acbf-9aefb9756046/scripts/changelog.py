@@ -406,7 +406,7 @@ changelog = {
         "Fix: Loki, God of Lies setup."
         ]),
     '0000389': ("0.0.3.89", "21 September 2025", [
-        "Enhancement: Add magnetic grid for card positioning."
+        "Enhancement: Add magnetic grid for card positioning.",
         "Fanmade: Hunting Season (By Nugget) scenarios added.",
         "Fanmade: Blink (By Kajislav) hero added.",
         "Fanmade: Destiny (By Merlin) hero added.",
@@ -426,5 +426,12 @@ changelog = {
         "Fanmade: Spider-Man 2099 (By Rainy) hero added.",
         "Fanmade: Weapon Hex (By Merlin) hero added.",
         "Fanmade: Yondu (By Hax) hero added."
+        ]),
+    '0000390': ("0.0.3.90", "11 October 2025", [
+        "Hotfix : Loki, God of Lies missing modular encounter at setup.",
+        "Hotfix : Unexpected behaviour and error messages with magnetic grid features"
+        ]),
+    '0000391': ("0.0.3.91", "30 November 2025", [
+        "Civil War added"
         ])
 }

@@ -185,7 +185,7 @@ def recommendedEncounter(group, villainName = ''):
         createCardsFromSet(group, "s.h.i.e.l.d.", "S.H.I.E.L.D.", True)
     if villainName == 'Enchantress':
         createCardsFromSet(group, "trickster_magic", "Trickster Magic", True)
-    if villainName == 'Gods of Lies':
+    if villainName == 'God of Lies':
         createCardsFromSet(group, "trickster_magic", "Trickster Magic", True)
     elif recommendedModular <> "":
         recommendedModular = recommendedModular.replace("True", "true").replace("False", "false")

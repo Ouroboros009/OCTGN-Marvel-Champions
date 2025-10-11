@@ -360,17 +360,20 @@ def turnPassed(args):
 #Triggered event OnScriptedCardsMoved and OnCardsMoved
 def moveCards(args):
     mute()
-    for card in args.cards:
-        x, y = card.position
-        cardIndex = card.index
-        if isinstance(args.toGroups[0], Table) and (x % 10 <> 0 or y % 10 <> 0):
-            x = round(x / 10) * 10
-            y = round(y / 10) * 10 
-            card.moveToTable(x, y)
-            card.index = cardIndex
+    magneticGrid(args)
     autoCharges(args)
     magikDeck(args)
 
+def magneticGrid(args):
+    for card in args.cards:
+        if card.controller == me:
+            x, y = card.position
+            cardIndex = card.index
+            if isinstance(args.toGroups[0], Table) and (x % 10 <> 0 or y % 10 <> 0):
+                x = round(x / 10) * 10
+                y = round(y / 10) * 10 
+                card.moveToTable(x, y)
+                card.index = cardIndex
 
 #------------------------------------------------------------
 # Game Flow functions
