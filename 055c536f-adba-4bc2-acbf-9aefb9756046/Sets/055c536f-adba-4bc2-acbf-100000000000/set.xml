@@ -245,5 +245,16 @@
             <property name="Type" value="hero_setup" />
             <property name="Owner" value="winter_soldier" />
         </card>
+        <card id="055c536f-adba-4bc2-acbf-100000000062" name="Tigra">
+            <property name="Type" value="hero_setup" />
+            <property name="Owner" value="tigra" />
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-100000000063" name="Hulkling">
+            <property name="Type" value="hero_setup" />
+            <property name="Owner" value="hulkling" />
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-100000000064" name="Wonder Man">
+            <property name="Owner" value="wonder_man" />
+        </card>
     </cards>
 </set>

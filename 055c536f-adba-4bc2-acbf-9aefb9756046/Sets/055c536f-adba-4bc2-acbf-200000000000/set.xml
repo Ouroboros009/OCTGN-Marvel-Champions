@@ -294,5 +294,49 @@
             <property name="nbModular" value="1"/>
             <property name="mandatoryModular" value="{'trickster_takeover_side':['Trickster Takeover Side', 'Side', False]}"/>
         </card>
+        <card id="055c536f-adba-4bc2-acbf-200000000054" name="Iron Man">
+            <property name="Type" value="villain_setup" />
+            <property name="Owner" value="iron_man_leader"/>
+            <property name="nbModular" value="4"/>
+            <property name="CW_Side" value="registration"/>
+            <property name="mandatoryModular" value="{'registration':['Registration', 'Scheme', False]}"/>
+            <property name="recommendedModular" value="{'mighty_avengers':['Mighty Avengers', 'Encounter', False], 'the_initiative':['The Initiative', 'Encounter', False], 'maria_hill_modular':['Maria Hill', 'Encounter', False], 'dangerous_recruits':['Dangerous Recruits', 'Encounter', False]}"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-200000000055" name="Captain Marvel">
+            <property name="Type" value="villain_setup" />
+            <property name="Owner" value="captain_marvel_leader"/>
+            <property name="nbModular" value="4"/>
+            <property name="CW_Side" value="registration"/>
+            <property name="mandatoryModular" value="{'registration':['Registration', 'Scheme', False]}"/>
+            <property name="recommendedModular" value="{'cape_killer':['Cape Killer', 'Encounter', False], 'martial_law':['Martial Law', 'Encounter', False], 'heroes_for_hire':['Heroes for Hire', 'Encounter', False], 'paladin':['Paladin', 'Encounter', False]}"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-200000000056" name="Captain America">
+            <property name="Type" value="villain_setup" />
+            <property name="Owner" value="captain_america_leader"/>
+            <property name="nbModular" value="4"/>
+            <property name="CW_Side" value="resistance"/>
+            <property name="mandatoryModular" value="{'resistance':['Resistance', 'Scheme', False]}"/>
+            <property name="recommendedModular" value="{'new_avengers':['New Avengers', 'Encounter', False], 'secret_avengers':['Secret Avengers', 'Encounter', False], 'namor_modular':['Namor', 'Encounter', False], 'atlanteans':['Atlanteans', 'Encounter', False]}"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-200000000057" name="Spider-Woman">
+            <property name="Type" value="villain_setup" />
+            <property name="Owner" value="spider_woman_leader"/>
+            <property name="nbModular" value="4"/>
+            <property name="CW_Side" value="resistance"/>
+            <property name="mandatoryModular" value="{'resistance':['Resistance', 'Scheme', False]}"/>
+            <property name="recommendedModular" value="{'spider_man_modular':['Spider-Man', 'Encounter', False], 'defenders':['Defenders', 'Encounter', False], 'hells_kitchen':['Hell\'s Kitchen', 'Encounter', False], 'cloak_and_dagger_modular':['Cloak and Dagger', 'Encounter', False]}"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-200000000058" name="She-Hulk">
+            <property name="Owner" value="she_hulk_leader"/>
+            <property name="nbModular" value="4"/>
+            <property name="CW_Side" value="registration"/>
+            <property name="mandatoryModular" value="{'registration':['Registration', 'Scheme', False]}"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-200000000059" name="Vision">
+            <property name="Owner" value="vision_leader"/>
+            <property name="nbModular" value="4"/>
+            <property name="CW_Side" value="resistance"/>
+            <property name="mandatoryModular" value="{'resistance':['Resistance', 'Scheme', False]}"/>
+        </card>
     </cards>
 </set>

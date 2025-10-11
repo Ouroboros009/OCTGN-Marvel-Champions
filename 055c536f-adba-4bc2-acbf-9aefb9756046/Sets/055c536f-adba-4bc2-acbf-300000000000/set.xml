@@ -433,6 +433,86 @@
             <property name="Type" value="encounter_setup"/>
             <property name="Owner" value="trickster_magic"/>
         </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000109" name="Mighty Avengers">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="mighty_avengers"/>
+            <property name="CW_Side" value="registration"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000110" name="The Initiative">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="the_initiative"/>
+            <property name="CW_Side" value="registration"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000111" name="Maria Hill">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="maria_hill_modular"/>
+            <property name="CW_Side" value="registration"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000112" name="Dangerous Recruits">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="dangerous_recruits"/>
+            <property name="CW_Side" value="registration"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000113" name="Cape Killer">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="cape_killer"/>
+            <property name="CW_Side" value="registration"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000114" name="Martial Law">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="martial_law"/>
+            <property name="CW_Side" value="registration"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000115" name="Heroes for Hire">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="heroes_for_hire"/>
+            <property name="CW_Side" value="registration"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000116" name="Paladin">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="paladin"/>
+            <property name="CW_Side" value="registration"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000117" name="New Avengers">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="new_avengers"/>
+            <property name="CW_Side" value="resistance"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000118" name="Secret Avengers">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="secret_avengers"/>
+            <property name="CW_Side" value="resistance"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000119" name="Namor">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="namor_modular"/>
+            <property name="CW_Side" value="resistance"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000120" name="Atlanteans">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="atlanteans"/>
+            <property name="CW_Side" value="resistance"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000121" name="Spider-Man">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="spider_man_modular"/>
+            <property name="CW_Side" value="resistance"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000122" name="Defenders">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="defenders"/>
+            <property name="CW_Side" value="resistance"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000123" name="Hell's Kitchen">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="hells_kitchen"/>
+            <property name="CW_Side" value="resistance"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000000124" name="Cloak and Dagger">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="cloak_and_dagger_modular"/>
+            <property name="CW_Side" value="resistance"/>
+        </card>
         <card id="055c536f-adba-4bc2-acbf-300000009001" name="Nemesis: Vulture">
             <property name="Type" value="encounter_setup"/>
             <property name="Owner" value="spider_man_nemesis"/>
@@ -676,6 +756,17 @@
         <card id="055c536f-adba-4bc2-acbf-300000009061" name="Nemesis: Crossbones">
             <property name="Type" value="encounter_setup"/>
             <property name="Owner" value="winter_soldier_nemesis"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000009062" name="Nemesis: The Hood">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="tigra_nemesis"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000009063" name="Nemesis: Super Skrull">
+            <property name="Type" value="encounter_setup"/>
+            <property name="Owner" value="hulkling_nemesis"/>
+        </card>
+        <card id="055c536f-adba-4bc2-acbf-300000009064" name="Nemesis: ">
+            <property name="Owner" value="wonder_man_nemesis"/>
         </card>
     </cards>
 </set>

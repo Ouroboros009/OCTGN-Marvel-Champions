@@ -3,7 +3,7 @@
     name="Marvel Champions"
     id="055c536f-adba-4bc2-acbf-9aefb9756046"
     octgnVersion="3.4.426.0"
-    version="0.0.3.90"
+    version="0.0.3.91"
     scriptVersion="3.1.0.2"
     markersize="15"
     tags="OCTGN, Marvel, Champions"
@@ -83,6 +83,7 @@
         <globalvariable name="playersSetup" value="0" />
         <globalvariable name="recommendedModular" value="" />
         <globalvariable name="villainSetup" value="" />
+        <globalvariable name="CW_Side" value="" />
     </globalvariables>
     <card back="cards/back.png" front="cards/front.png" width="63" height="88" cornerRadius="4">
         <property name="CardNumber" type="String" />
@@ -98,6 +99,7 @@
         <property name="Faction" type="String" />
         <property name="Type" type="String" />
         <property name="Owner" type="String" />
+        <property name="CW_Side" type="String" />
         <property name="Stage" type="Integer" />
         <property name="Standard" type="String" />
         <property name="Expert" type="String" />
@@ -135,6 +137,7 @@
         <size name="SchemeCard" width="88" height="63"  backWidth="63" backHeight="88" back="cards/altback.png" front="cards/front.png" cornerRadius="4" />
         <size name="EncounterCard" width="63" height="88" back="cards/altback.png" front="cards/front.png" cornerRadius="4" />
         <size name="VillainCard" width="63" height="88" back="cards/vilback.png" front="cards/front.png" cornerRadius="4" />
+        <size name="LeaderCard" width="63" height="88" back="cards/vilback.png" front="cards/front.png" cornerRadius="4" />
         <size name="EvidenceMeans" width="63" height="88" back="cards/evidmeansback.png" front="cards/front.png" cornerRadius="4" />
         <size name="EvidenceMotive" width="63" height="88" back="cards/evidmotiveback.png" front="cards/front.png" cornerRadius="4" />
         <size name="EvidenceOpportunity" width="63" height="88" back="cards/evidopportback.png" front="cards/front.png" cornerRadius="4" />

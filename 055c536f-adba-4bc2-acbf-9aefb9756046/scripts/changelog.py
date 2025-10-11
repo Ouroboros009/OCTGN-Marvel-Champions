@@ -431,7 +431,7 @@ changelog = {
         "Hotfix : Loki, God of Lies missing modular encounter at setup.",
         "Hotfix : Unexpected behaviour and error messages with magnetic grid features"
         ]),
-    '0000391': ("0.0.3.91", "30 November 2025", [
-        "Civil War added"
+    '0000391': ("0.0.3.91", "08 November 2025", [
+        "Civil War added (PvE only. PvP won't be added)."
         ])
 }

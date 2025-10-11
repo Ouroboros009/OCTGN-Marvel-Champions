@@ -4,7 +4,7 @@ import os
 from os import path
 import argparse
 
-runFile = 'tt'
+runFile = 'cw'
 print(f'fm_{runFile}')  # Doit afficher fm_mystique_by_merlin
 xmlSet = None
 packName = None
@@ -21,7 +21,7 @@ FANMADE = args.fanmade
 print("FanMade:", FANMADE)  # TRACE
 
 def getPack(set_code):
-    pack_path = os.path.join("datapack", f"{set_code}-pack.json")
+    pack_path = os.path.join("datapack", f"{set_code}_packs.json")
     with open(pack_path, encoding="utf-8") as pack_json_file:
         packData = json.load(pack_json_file)
         print("getPack packData:", packData)  # TRACE
@@ -118,7 +118,7 @@ def buildXmlProps(propDict, xmlElement):
 
   if 'type_code' in propDict.keys():
     type = str(propDict['type_code'])
-    if type == 'villain':
+    if type == 'villain' or type == 'leader':
         defaultSetup = ET.SubElement(xmlElement, 'property')
         defaultSetup.set('name', 'DefaultSetupPile')
         defaultSetup.set('value', 'Villain')
@@ -143,21 +143,28 @@ def buildXmlProps(propDict, xmlElement):
     cardStage = ET.SubElement(xmlElement, 'property')
     cardStage.set('name', 'Stage')
     cardStage.set('value', str(stageNumber))
-    if stageNumber == 1 and type == 'villain':
+    if (stageNumber == 1 or stageNumber == "I") and (type == 'villain' or type == 'leader'):
         cardStage = ET.SubElement(xmlElement, 'property')
         cardStage.set('name', 'Standard')
         cardStage.set('value', "True")
         cardStage = ET.SubElement(xmlElement, 'property')
         cardStage.set('name', 'Expert')
         cardStage.set('value', "False")
-    if stageNumber == 2 and type == 'villain':
+    if (stageNumber == 2 or stageNumber == "II") and (type == 'villain' or type == 'leader'):
         cardStage = ET.SubElement(xmlElement, 'property')
         cardStage.set('name', 'Standard')
         cardStage.set('value', "True")
         cardStage = ET.SubElement(xmlElement, 'property')
         cardStage.set('name', 'Expert')
         cardStage.set('value', "True")
-    if stageNumber == 3 and type == 'villain':
+    if (stageNumber == 3 or stageNumber == "III") and (type == 'villain' or type == 'leader'):
+        cardStage = ET.SubElement(xmlElement, 'property')
+        cardStage.set('name', 'Standard')
+        cardStage.set('value', "False")
+        cardStage = ET.SubElement(xmlElement, 'property')
+        cardStage.set('name', 'Expert')
+        cardStage.set('value', "True")
+    if (stageNumber == 4 or stageNumber == "IV") and (type == 'villain' or type == 'leader'):
         cardStage = ET.SubElement(xmlElement, 'property')
         cardStage.set('name', 'Standard')
         cardStage.set('value', "False")
@@ -167,7 +174,7 @@ def buildXmlProps(propDict, xmlElement):
 
   if 'stage' not in propDict.keys() and 'type_code' in propDict.keys():
     type = propDict['type_code']
-    if type == 'villain':
+    if type == 'villain' or type == 'leader':
         cardStage = ET.SubElement(xmlElement, 'property')
         cardStage.set('name', 'Stage')
         cardStage.set('value', "0")
@@ -371,6 +378,9 @@ def fillXmlSet(xmlSet, fromFile):
                 elif i['type_code'] == 'villain':
                     xmlCard.set('size', 'VillainCard')
                     buildXmlProps(i, xmlCard)
+                elif i['type_code'] == 'leader':
+                    xmlCard.set('size', 'LeaderCard')
+                    buildXmlProps(i, xmlCard)
                 elif i['type_code'] == 'obligation' or i['type_code'] == 'environment' or i['type_code'] == 'attachment' or i['type_code'] == 'minion' or i['type_code'] == 'treachery':
                     xmlCard.set('size', 'EncounterCard')
                     # Ajout pour obligation : DefaultSetupPile = Nemesis
@@ -403,6 +413,8 @@ def fillXmlSet(xmlSet, fromFile):
                         cardAlternate.set('size', 'PlayerSchemeCard')
                     elif alternateCard['type_code'] == 'villain':
                         cardAlternate.set('size', 'VillainCard')
+                    elif alternateCard['type_code'] == 'leader':
+                        cardAlternate.set('size', 'LeaderCard')
                     elif alternateCard['type_code'] == 'obligation' or alternateCard['type_code'] == 'environment' or alternateCard['type_code'] == 'attachment' or alternateCard['type_code'] == 'minion' or alternateCard['type_code'] == 'treachery':
                         cardAlternate.set('size', 'EncounterCard')
                     buildXmlProps(alternateCard, cardAlternate)

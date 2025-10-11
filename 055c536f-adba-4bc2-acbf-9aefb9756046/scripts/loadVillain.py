@@ -44,6 +44,8 @@ Reset the game in order to generate a new deck."""
     setGlobalVariable("nbModular", nbModular)
     if cardSelected[0].hasProperty("recommendedModular"):
         setGlobalVariable("recommendedModular", cardSelected[0].recommendedModular)
+    if cardSelected[0].hasProperty("CW_Side"):
+        setGlobalVariable("CW_Side", cardSelected[0].CW_Side)
 
     # Delete cards in Setup pile, choose Difficulty and load villain Cards.
     deleteCards(setupPile())

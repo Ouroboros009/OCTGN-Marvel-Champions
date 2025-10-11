@@ -43,8 +43,43 @@ def scenarioSetup(group=table, x = 0, y = 0):
     gameDifficulty = getGlobalVariable("difficulty")
     vName = getGlobalVariable("villainSetup")
 
+    # Civil War expansion takes scenario customization a step further by allowing players to mix and match different leaders with different main schemes
+    cw_Side = getGlobalVariable("CW_Side")
+    notify("{} is the CW Side".format(cw_Side))
+    if cw_Side <> "":
+        setupChoice = askChoice("How do you to setup the main scheme deck ?", ["Give me the default one", "Surprise me! (Random)"])
+        if cw_Side == "registration":
+            mainScheme_Stage1 = ["56063a", "56096a", "56121a", "56122a"]
+            mainScheme_Stage2 = ["56064a", "56097a", "56123a", "56124a"]
+        elif cw_Side == "resistance":
+            mainScheme_Stage1 = ["56141a", "56172a", "56199a", "56200a"]
+            mainScheme_Stage2 = ["56142a", "56173a", "56201a", "56202a"]
+        if setupChoice == 0:
+            deleteAllSharedCards()
+            return
+        if setupChoice == 1:
+            for c in mainSchemeDeck():
+                if vName == "Iron Man" and c.CardNumber not in ["56063a", "56064a"]:
+                    c.delete()
+                elif vName == "Captain Marvel" and c.CardNumber not in ["56096a", "56097a"]:
+                    c.delete()
+                elif vName == "Captain America" and c.CardNumber not in ["56141a", "56142a"]:
+                    c.delete()
+                elif vName == "Spider-Woman" and c.CardNumber not in ["56172a", "56173a"]:
+                    c.delete()
+                elif vName == "She-Hulk" and c.CardNumber not in ["", ""]:
+                    c.delete()
+                elif vName == "Vision" and c.CardNumber not in ["", ""]:
+                    c.delete()
+        if setupChoice == 2:
+            rndStage1 = rnd(0, len(mainScheme_Stage1) - 1)
+            rndStage2 = rnd(0, len(mainScheme_Stage2) - 1)
+            for c in mainSchemeDeck():
+                if c.CardNumber not in [mainScheme_Stage1[rndStage1], mainScheme_Stage2[rndStage2]]:
+                    c.delete()
+
     # Move cards from Villain Deck to Encounter and Scheme Decks
-    villainCards = sorted(filter(lambda card: card.Type == "villain", villainDeck()), key=lambda c: c.CardNumber)
+    villainCards = sorted(filter(lambda card: (card.Type == "villain" or card.Type == "leader"), villainDeck()), key=lambda c: c.CardNumber)
     mainSchemeCards = sorted(filter(lambda card: card.Type == "main_scheme", mainSchemeDeck()), key=lambda c: c.CardNumber)
     villainEnvCards = sorted(filter(lambda card: card.Type == "environment", encounterDeck()))
     villainAttCards = sorted(filter(lambda card: card.Type == "attachment", encounterDeck()))
@@ -231,7 +266,7 @@ def scenarioSetup(group=table, x = 0, y = 0):
             villainCards[0].alternate = "b"
         envCard = revealCardOnSetup("Alert Level", "50090a", tableLocations['environment'][0], tableLocations['environment'][1])
         if gameDifficulty == "1":
-            envCard.markers[AllPurposeMarker] += 2 * len(players)
+            envCard.markers[ThreatMarker] += 2 * len(players)
         sideDeck().visibility = "all"
 
     elif vName == "M.O.D.O.K.":
@@ -335,6 +370,42 @@ def scenarioSetup(group=table, x = 0, y = 0):
             vCardOnTable = sorted(filter(lambda card: card.Type == "villain" and card.Attribute == "Avatar of Loki.", table), reverse=True)
             for c in vCardOnTable:
                 addMarker(c, 0, 0, 17 * len(getPlayers()))
+
+    elif vName == "Iron Man":
+        # If we loaded the encounter deck - add the first villain and main scheme cards to the table
+        mainSchemeCards = sorted(filter(lambda card: card.Type == "main_scheme", mainSchemeDeck()), key=lambda c: c.Stage)
+        mainSchemeCards[0].moveToTable(tableLocations['mainScheme'][0], tableLocations['mainScheme'][1])
+        villainCards[0].moveToTable(villainX(1, 0), tableLocations['villain'][1])
+        revealCardOnSetup("Stark Tower", "56072", tableLocations['mainScheme'][0] + 100, tableLocations['mainScheme'][1])
+        attCards = filter(lambda card: card.Type == "attachment" and card.Owner == "iron_man_leader", encounterDeck())
+        x = -50
+        for c in attCards:
+            revealCardOnSetup(c.Name, c.CardNumber, tableLocations['villain'][0] + x, tableLocations['villain'][1] + 100)
+            x = x + 20
+
+    elif vName == "Captain Marvel":
+        # If we loaded the encounter deck - add the first villain and main scheme cards to the table
+        mainSchemeCards = sorted(filter(lambda card: card.Type == "main_scheme", mainSchemeDeck()), key=lambda c: c.Stage)
+        mainSchemeCards[0].moveToTable(tableLocations['mainScheme'][0], tableLocations['mainScheme'][1])
+        villainCards[0].moveToTable(villainX(1, 0), tableLocations['villain'][1])
+        revealCardOnSetup("Alpha Flight Station", "56104", tableLocations['mainScheme'][0] + 100, tableLocations['mainScheme'][1])
+        revealCardOnSetup("Energy Channel", "56098", tableLocations['environment'][0], tableLocations['environment'][1])
+
+    elif vName == "Captain America":
+        # If we loaded the encounter deck - add the first villain and main scheme cards to the table
+        mainSchemeCards = sorted(filter(lambda card: card.Type == "main_scheme", mainSchemeDeck()), key=lambda c: c.Stage)
+        mainSchemeCards[0].moveToTable(tableLocations['mainScheme'][0], tableLocations['mainScheme'][1])
+        villainCards[0].moveToTable(villainX(1, 0), tableLocations['villain'][1])
+        revealCardOnSetup("Fearless Determination", "56149", tableLocations['mainScheme'][0] + 100, tableLocations['mainScheme'][1])
+        revealCardOnSetup("Cap's Shield", "56143", tableLocations['environment'][0], tableLocations['environment'][1])
+
+    elif vName == "Spider-Woman":
+        # If we loaded the encounter deck - add the first villain and main scheme cards to the table
+        mainSchemeCards = sorted(filter(lambda card: card.Type == "main_scheme", mainSchemeDeck()), key=lambda c: c.Stage)
+        mainSchemeCards[0].moveToTable(tableLocations['mainScheme'][0], tableLocations['mainScheme'][1])
+        villainCards[0].moveToTable(villainX(1, 0), tableLocations['villain'][1])
+        revealCardOnSetup("Self-propelled Glide", "56179", tableLocations['mainScheme'][0] + 100, tableLocations['mainScheme'][1])
+        revealCardOnSetup("Finesse", "56174", tableLocations['environment'][0], tableLocations['environment'][1])
 
     else:
         # If we loaded the encounter deck - add the first villain and main scheme cards to the table
@@ -495,6 +566,7 @@ def scenarioSetup_fm(group=table, x = 0, y = 0):
 def nextSchemeStageSetup(vName = None):
     mute()
     schemeCards = []
+    cw_Side = getGlobalVariable("CW_Side")
 
     """
     Reveal the next Scheme Stage at random else reveal the next scheme stage in numerical order.
@@ -537,7 +609,7 @@ def nextSchemeStageSetup(vName = None):
                 break
 
         for card in mainSchemeDeck():
-            if num(card.CardNumber[:-1]) == currentScheme + 1:
+            if num(card.CardNumber[:-1]) == currentScheme + 1 or cw_Side != '':
                 card.moveToTable(x, y)
                 card.anchor = False
                 card.markers[AccelerationMarker] = currentAcceleration
@@ -856,7 +928,7 @@ def villainSetup(vName = ''):
     # Global Variables
     gameDifficulty = getGlobalVariable("difficulty")
 
-    vCardOnTable = sorted(filter(lambda card: card.Type == "villain", table), reverse=True)
+    vCardOnTable = sorted(filter(lambda card: (card.Type == "villain" or card.Type == "leader"), table), reverse=True)
     msCardOnTable = sorted(filter(lambda card: card.Type == "main_scheme", table))
     villainEnvCards = sorted(filter(lambda card: card.Type == "environment", encounterDeck()))
     villainAttCards = sorted(filter(lambda card: card.Type == "attachment", encounterDeck()))

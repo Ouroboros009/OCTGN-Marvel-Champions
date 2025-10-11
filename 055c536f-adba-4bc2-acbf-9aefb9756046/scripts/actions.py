@@ -328,7 +328,7 @@ def defaultCardAction(args):
         if not args.card.isFaceUp or isScheme([args.card]):
              remoteCall(args.card.controller, "revealHide", args.card)
         else:
-            if args.card.Type == "villain" or lookForVillainous(args.card):
+            if args.card.Type == "villain" or args.card.Type == "leader" or lookForVillainous(args.card):
                 villainBoost(args.card)
             elif args.card.Owner == "infinity_gauntlet":
                 infinityGauntletBoost(args.card)
@@ -380,6 +380,8 @@ def magneticGrid(args):
 #------------------------------------------------------------
 
 def dialogBox_Setup(group, type, nameList, title, text, min = 1, max = 1, isFanmade = False):
+    cw_Side = getGlobalVariable("CW_Side")
+
     if not isFanmade:
 		orderChoice = askChoice("Choose sorting order :", ["Release order", "Alphabetical"]) 
     else:
@@ -394,6 +396,11 @@ def dialogBox_Setup(group, type, nameList, title, text, min = 1, max = 1, isFanm
     for i in setup_cards:
         group.create(i, 1)
     update()
+
+    for c in group:
+        if cw_Side <> "" and c.hasProperty("CW_Side"):
+            if c.CW_Side <> cw_Side:
+                c.delete()
 
     if orderChoice == 2:
         cardsList = sorted(group, key=lambda c: c.Name)
