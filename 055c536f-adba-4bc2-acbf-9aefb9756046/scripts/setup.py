@@ -892,7 +892,7 @@ def nextVillainStageSetup(vName = None):
 
     else:
         for c in table:
-            if c.Type == 'villain':
+            if isVillain([c]):
                 x, y = c.position
                 if len(c.alternates) > 1:
                     currentVillain = num(c.CardNumber[:-1])

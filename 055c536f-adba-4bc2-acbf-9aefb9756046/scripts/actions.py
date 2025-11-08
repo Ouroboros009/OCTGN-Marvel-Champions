@@ -944,7 +944,7 @@ def revealHide(card, x = 0, y = 0):
             if isScheme([card]):
                 placeThreatOnScheme(card)
 
-            if isVillain(card):
+            if isVillain([card]):
                 setHPOnCharacter(card)
 
             # Handle environments with counters (such as Criminal Enterprise, Avengers Tower, Bell Tower, ...)
@@ -974,7 +974,7 @@ def discard(card, x = 0, y = 0):
         return
     if card.Type == "hero" or card.Type == "alter_ego":
         return
-    elif isVillain(card):
+    elif isVillain([card]):
         nextVillainStage()
     elif card.Type == "main_scheme":
         nextSchemeStage()

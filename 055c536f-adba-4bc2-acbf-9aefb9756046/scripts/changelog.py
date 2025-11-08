@@ -436,5 +436,8 @@ changelog = {
         ]),
     '0000392': ("0.0.3.92", "08 November 2025", [
         "Hotfix: leader type cards wasn't properly handled in the module."
+        ]),
+    '0000393': ("0.0.3.93", "08 November 2025", [
+        "Hotfix: previous update introduce a bug where discard didn't work anymore."
         ])
 }
