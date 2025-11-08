@@ -73,13 +73,13 @@ def isPlayerCard(card):
 
 def isVillain(cards, x = 0, y = 0):
     for c in cards:
-        if c.Type != 'villain':
+        if c.Type != 'villain' and c.Type != 'leader':
             return False
     return True
 
 def isAttackable(cards, x = 0, y = 0):
     for c in cards:
-        if c.Type != 'villain' and c.Type != 'hero' and c.Type != 'minion' and c.Type != 'ally' and c.Type != 'alter_ego':
+        if c.Type != 'villain' and c.Type != 'leader' and c.Type != 'hero' and c.Type != 'minion' and c.Type != 'ally' and c.Type != 'alter_ego':
             return False
     return True
 
@@ -277,7 +277,7 @@ def setActiveVillain(card, x = 0, y = 0):
         card.highlight = ActiveColour
 
 def getActiveVillain(group = table, x = 0, y = 0):
-    vCards = filter(lambda card: card.Type == "villain", table)
+    vCards = filter(lambda card: card.Type == "villain" or card.Type == "leader", table)
     for c in vCards:
         if str(c.highlight).upper() == ActiveColour:
             return c
@@ -746,7 +746,7 @@ def addMarker(card, x = 0, y = 0, qty = 1):
     elif isScheme([card]):
         card.markers[ThreatMarker] += qty
         notify("{} adds {} Threat on {}.".format(me, qty, card))
-    elif card.Type in ["hero", "alter_ego", "villain"]:
+    elif card.Type in ["hero", "alter_ego", "villain", "leader"]:
         card.markers[HealthMarker] += qty
         notify("{} adds {} Hit Point on {}.".format(me, qty, card))
     elif isAttackable([card]):
@@ -772,7 +772,7 @@ def removeMarker(card, x = 0, y = 0, qty = 1):
     elif isScheme([card]):
         card.markers[ThreatMarker] -= qty
         notify("{} removes {} Threat on {}.".format(me, qty, card))
-    elif card.Type in ["hero", "alter_ego", "villain"]:
+    elif card.Type in ["hero", "alter_ego", "villain", "leader"]:
         card.markers[HealthMarker] -= qty
         notify("{} removes {} Hit Point on {}.".format(me, qty, card))
     elif isAttackable([card]):
@@ -944,7 +944,7 @@ def revealHide(card, x = 0, y = 0):
             if isScheme([card]):
                 placeThreatOnScheme(card)
 
-            if card.Type == "villain":
+            if isVillain(card):
                 setHPOnCharacter(card)
 
             # Handle environments with counters (such as Criminal Enterprise, Avengers Tower, Bell Tower, ...)
@@ -974,7 +974,7 @@ def discard(card, x = 0, y = 0):
         return
     if card.Type == "hero" or card.Type == "alter_ego":
         return
-    elif card.Type == "villain":
+    elif isVillain(card):
         nextVillainStage()
     elif card.Type == "main_scheme":
         nextSchemeStage()
@@ -1529,7 +1529,7 @@ def lookForToughness(card):
     """
     Adds a Tough status card to a character if such ability is found in card's text
     """
-    if card.Type in ["villain", "minion", "ally"]:
+    if card.Type in ["villain", "leader", "minion", "ally"]:
         description_search = re.search('.*Toughness.*', card.properties["Text"], re.IGNORECASE)
         if description_search:
             tough(card)
@@ -1658,7 +1658,7 @@ def setHPOnCharacter(card):
                 if description_search and new_ironheart[0].markers[ToughMarker] == 0:
                     tough(new_ironheart[0])
 
-    if card.Type in ["hero", "alter_ego", "villain"] and card.markers[HealthMarker] == 0:
+    if card.Type in ["hero", "alter_ego", "villain", "leader"] and card.markers[HealthMarker] == 0:
         nb_players = len(getPlayers())
         base_hp = int(card.properties["HP"])
         is_per_hero = card.properties["HP_Per_Hero"] == "True"

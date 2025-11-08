@@ -433,5 +433,8 @@ changelog = {
         ]),
     '0000391': ("0.0.3.91", "08 November 2025", [
         "Civil War added (PvE only. PvP won't be added)."
+        ]),
+    '0000392': ("0.0.3.92", "08 November 2025", [
+        "Hotfix: leader type cards wasn't properly handled in the module."
         ])
 }
