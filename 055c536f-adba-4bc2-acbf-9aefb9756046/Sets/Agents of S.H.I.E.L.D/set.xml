@@ -416,6 +416,7 @@ If each of your characters has the [[S.H.I.E.L.D.]] trait, this card gains: "&lt
       </alternate>
     </card>
     <card name="Assault" id="bddee479-23cf-4576-b33c-c95ee9050035">
+      <property name="DefaultSetupLocation" value="Table"/>
       <property name="CardNumber" value="50035a"/>
       <property name="Position" value="35"/>
       <property name="Quantity" value="1"/>

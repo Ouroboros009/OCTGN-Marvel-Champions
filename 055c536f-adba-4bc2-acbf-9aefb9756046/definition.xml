@@ -106,6 +106,13 @@
              "Setup" keyword for lookForSetup() to find. Read in heroSetup().
              Origine : Merlin - generic setup of permanents, added with Jessica Jones. -->
         <property name="DefaultSetupLocation" type="String" />
+        <!-- Markers a card put into play by DefaultSetupLocation starts with, e.g. the
+             4 power counters Jean Grey's Setup places on Phoenix Force. Marker type is
+             the card's DefaultMarkerType, falling back on the all-purpose marker.
+             Read in heroSetup(), right after the DefaultSetupLocation move.
+             Added ALONE and verified to load, see the HeroSideDeck warning below.
+             Origine : Merlin - conversion of the per-hero permanent setup blocks. -->
+        <property name="DefaultSetupMarkers" type="String" />
         <!-- Side deck(s) a hero starts with, named by the identity: comma separated set
              Owners, each optionally "<owner>:<pile>" (default pile: Special) and
              ":hidden" when the pile must stay secret (face-down draw decks like

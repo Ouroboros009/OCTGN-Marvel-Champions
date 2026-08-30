@@ -34,6 +34,7 @@
       </alternate>
     </card>
     <card name="Ionic Physiology" id="7eb46497-8915-4be9-b31d-7bee67058002">
+      <property name="DefaultSetupLocation" value="Table"/>
       <property name="CardNumber" value="58002"/>
       <property name="Position" value="2"/>
       <property name="Quantity" value="1"/>

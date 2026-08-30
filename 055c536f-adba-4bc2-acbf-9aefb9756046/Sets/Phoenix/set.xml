@@ -32,6 +32,8 @@
       </alternate>
     </card>
     <card name="Phoenix Force" id="9b407333-e221-495f-a145-e5a9b4034002">
+      <property name="DefaultSetupLocation" value="Table"/>
+      <property name="DefaultSetupMarkers" value="4"/>
       <property name="CardNumber" value="34002a"/>
       <property name="Position" value="2"/>
       <property name="Quantity" value="1"/>

@@ -33,6 +33,7 @@ While you are in Intangible mass form, you get +1 hand size.
       </alternate>
     </card>
     <card name="Intangible" id="c7f3cb05-1e4d-4599-a0ae-2e727ae3e40b">
+      <property name="DefaultSetupLocation" value="Table"/>
       <property name="CardNumber" value="26002a"/>
       <property name="Position" value="2"/>
       <property name="Quantity" value="1"/>

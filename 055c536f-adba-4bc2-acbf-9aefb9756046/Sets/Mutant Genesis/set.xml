@@ -338,6 +338,7 @@ Max 1 per deck.
       </alternate>
     </card>
     <card name="Solid" id="47d34c5d-5319-45a9-a2d6-1fb975032031">
+      <property name="DefaultSetupLocation" value="Table"/>
       <property name="CardNumber" value="32031a"/>
       <property name="Position" value="31"/>
       <property name="Quantity" value="1"/>

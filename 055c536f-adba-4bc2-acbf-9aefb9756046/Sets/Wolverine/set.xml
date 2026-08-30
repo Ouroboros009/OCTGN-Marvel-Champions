@@ -30,6 +30,7 @@
       </alternate>
     </card>
     <card name="Wolverine's Claws" id="663cb632-e6c8-4e94-8676-a8e0ca035002">
+      <property name="DefaultSetupLocation" value="Table"/>
       <property name="CardNumber" value="35002"/>
       <property name="Position" value="2"/>
       <property name="Quantity" value="1"/>

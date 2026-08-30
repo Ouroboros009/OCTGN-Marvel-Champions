@@ -209,12 +209,6 @@ def heroSetup(group=table, x = 0, y = 0):
             showGroup(me.piles['Special'], False)
             me.piles['Special'].visibility = "all"
 
-        # Vision
-        if heroPlayed == 'vision':
-            # me.counters['Default Card Draw'].value += 1
-            for c in filter(lambda card: card.CardNumber == "26002a", me.Deck):
-                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
-
         # Ironheart
         if heroPlayed == 'ironheart':
             showGroup(me.piles['Special'], False)
@@ -223,22 +217,6 @@ def heroSetup(group=table, x = 0, y = 0):
         # SP//dr
         if heroPlayed == 'spdr':
             for c in me.piles['Special']:
-                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
-
-        # Shadowcat
-        if heroPlayed == 'shadowcat':
-            for c in filter(lambda card: card.CardNumber == "32031a", me.Deck):
-                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
-
-        # Phoenix
-        if heroPlayed == 'phoenix':
-            for c in filter(lambda card: card.CardNumber == "34002a", me.Deck):
-                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
-                c.markers[AllPurposeMarker] = 4
-
-        # Wolverine
-        if heroPlayed == 'wolverine':
-            for c in filter(lambda card: card.CardNumber == "35002", me.Deck):
                 c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
 
         # Rogue
@@ -254,21 +232,6 @@ def heroSetup(group=table, x = 0, y = 0):
             for c in filter(lambda card: card.CardNumber == "41002a", me.Special):
                 c.moveToTable(playerX(id)+(70*i),tableLocations['hero'][1])
                 i += 1
-
-        # X-23
-        if heroPlayed == 'x23':
-            for c in filter(lambda card: card.CardNumber == "43002", me.Deck):
-                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
-
-        # Nick Fury
-        if heroPlayed == 'nick_fury':
-            for c in filter(lambda card: card.CardNumber == "50035a", me.Deck):
-                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
-
-        # Wonder Man
-        if heroPlayed == 'wonder_man':
-            for c in filter(lambda card: card.CardNumber == "58002", me.Deck):
-                c.moveToTable(playerX(id)+70,tableLocations['hero'][1])
 
         #------------------------------------------------------------
         # Specific Fanmade Hero setup
@@ -296,21 +259,39 @@ def heroSetup(group=table, x = 0, y = 0):
         # instead: Jessica Jones' alter-ego reads "Setup: Put the Alias
         # Investigations support into play", while the support itself only reads
         # "Permanent.". lookForSetup() scans the deck and can never match those,
-        # which is why every such hero so far needed its own hard-coded block
-        # above, with the card number written in the engine.
+        # which is why every such hero used to need its own hard-coded block,
+        # with the card number written in the engine.
         # Letting the card state its own intent - same spirit as the existing
         # DefaultSetupPile / DefaultDiscardPile properties - means a new pack
         # ships with its set.xml alone, without patching the engine.
+        # The seven per-hero blocks that used to do this by card number
+        # (Wolverine, Vision, Shadowcat, Phoenix, X-23, Wonder Man, Nick Fury)
+        # were removed and their cards now carry the property in their
+        # set.xml, so every hero goes through this single loop (convergence
+        # requested by the maintainer in the PR #21 review). A card must never
+        # be covered by both a hard-coded block and the property, or it would
+        # be put into play twice.
+        # DefaultSetupMarkers places the markers such a card starts with:
+        # Jean Grey reads "Setup: Put your Phoenix Force upgrade into play
+        # [...] Place 4 power counters on it.". The marker type follows the
+        # card's DefaultMarkerType when it declares one, like addMarker()
+        # does, and falls back on the all-purpose marker - exactly what the
+        # old Phoenix block placed.
         # The shift is shared with the "Setup" loop above so the cards line up
         # next to the hero instead of stacking on each other.
-        # Heroes already covered by a hard-coded block must NOT carry the
-        # property, or their card would be put into play twice.
         # Origine : Merlin - generic replacement for the per-hero permanent
-        # setup blocks, introduced with the Jessica Jones pack.
+        # setup blocks, introduced with the Jessica Jones pack; the seven
+        # existing blocks converted at the maintainer's request (2026).
         for c in me.Deck:
             if c.hasProperty("DefaultSetupLocation") and c.properties["DefaultSetupLocation"].strip().lower() == "table":
                 c.moveToTable(playerX(id)+70+shift,tableLocations['hero'][1])
                 shift += 70
+                if c.hasProperty("DefaultSetupMarkers") and c.properties["DefaultSetupMarkers"].strip() != "":
+                    if c.hasProperty("DefaultMarkerType") and c.DefaultMarkerType not in ["", "Any"]:
+                        markerKey = globals()[c.DefaultMarkerType + "Marker"]
+                    else:
+                        markerKey = AllPurposeMarker
+                    c.markers[markerKey] = num(c.properties["DefaultSetupMarkers"])
                 notify("{} puts {} into play (setup).".format(me, c))
         # "Starting." cards go to the player's hand
         #------------------------------------------------------------
