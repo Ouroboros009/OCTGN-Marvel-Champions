@@ -342,5 +342,46 @@
             <property name="mandatoryModular" value="{'resistance':['Resistance', 'Scheme', False], 'synthezoid_resistance':['Synthezoid Resistance', 'Scheme', False]}"/>
             <property name="recommendedModular" value="{'young_avengers':['Young Avengers', 'Encounter', False], 'scarlet_twins':['Scarlet Twins', 'Encounter', False], 'moon_knight_modular':['Moon Knight', 'Encounter', False], 'royal_guard':['Royal Guard', 'Encounter', False]}"/>
         </card>
+		<card id="055c536f-adba-4bc2-acbf-200000000060" name="Protection Racket">
+			<property name="Type" value="villain_setup"/>
+			<property name="Owner" value="protection_racket_by_ffg"/>
+			<property name="nbModular" value="2"/>
+			<property name="recommendedModular" value="{'disasters_by_ffg': ['Disasters', 'Encounter', False], 'tracksuit_mafia_by_ffg': ['Tracksuit Mafia', 'Encounter', False]}"/>
+			<property name="nbUnderling" value="1"/>
+		</card>
+		<card id="055c536f-adba-4bc2-acbf-200000000061" name="Stop The Presses!">
+			<property name="Type" value="villain_setup"/>
+			<property name="Owner" value="stop_the_presses_by_ffg"/>
+			<property name="nbModular" value="2"/>
+			<property name="recommendedModular" value="{'tombstone_by_ffg': ['Tombstone', 'Encounter', False], 'tracksuit_mafia_by_ffg': ['Tracksuit Mafia', 'Encounter', False]}"/>
+			<property name="nbUnderling" value="1"/>
+		</card>
+		<card id="055c536f-adba-4bc2-acbf-200000000062" name="Art Museum Heist">
+			<property name="Type" value="villain_setup"/>
+			<property name="Owner" value="art_museum_heist_by_ffg"/>
+			<property name="nbModular" value="2"/>
+			<property name="recommendedModular" value="{'cops_by_ffg': ['Cops', 'Encounter', False], 'the_owl_by_ffg': ['The Owl', 'Encounter', False]}"/>
+			<property name="nbUnderling" value="1"/>
+		</card>
+		<card id="055c536f-adba-4bc2-acbf-200000000063" name="The Getaway">
+			<property name="Type" value="villain_setup"/>
+			<property name="Owner" value="the_getaway_by_ffg"/>
+			<property name="nbModular" value="2"/>
+			<property name="recommendedModular" value="{'cops_by_ffg': ['Cops', 'Encounter', False], 'drive_by_ffg': ['Drive', 'Encounter', False]}"/>
+			<property name="nbUnderling" value="1"/>
+		</card>
+		<card id="055c536f-adba-4bc2-acbf-200000000064" name="The Raft Breakout">
+			<property name="Type" value="villain_setup"/>
+			<property name="Owner" value="the_raft_breakout_by_ffg"/>
+			<property name="nbModular" value="2"/>
+			<property name="recommendedModular" value="{'the_owl_by_ffg': ['The Owl', 'Encounter', False], 'tombstone_by_ffg': ['Tombstone', 'Encounter', False]}"/>
+			<property name="nbUnderling" value="1"/>
+		</card>
+		<card id="055c536f-adba-4bc2-acbf-200000000065" name="Kingpin">
+			<property name="Type" value="villain_setup"/>
+			<property name="Owner" value="kingpin_by_ffg"/>
+			<property name="nbModular" value="2"/>
+			<property name="recommendedModular" value="{'tombstone_by_ffg': ['Tombstone', 'Encounter', False], 'tracksuit_mafia_by_ffg': ['Tracksuit Mafia', 'Encounter', False]}"/>
+		</card>
     </cards>
 </set>

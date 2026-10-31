@@ -1,14 +1,6 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <set name="Luke Cage" id="a3c3eaa3-8300-4b7a-981d-d77e29778cdf" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
   <cards>
-    <card id="a3c3eaa3-8300-4b7a-981d-d77e29000000" name="Luke Cage">
-      <property name="Type" value="hero_setup"/>
-      <property name="Owner" value="luke_cage_by_ffg"/>
-    </card>
-    <card id="a3c3eaa3-8300-4b7a-981d-d77e29990000" name="Luke Cage Nemesis">
-      <property name="Type" value="encounter_setup"/>
-      <property name="Owner" value="luke_cage_by_ffg_nemesis"/>
-    </card>
     <card name="Luke Cage" id="a3c3eaa3-8300-4b7a-981d-d77e29062001">
       <property name="CardNumber" value="62001a"/>
       <property name="Position" value="1"/>

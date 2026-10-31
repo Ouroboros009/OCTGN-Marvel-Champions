@@ -1,14 +1,6 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <set name="Jessica Jones" id="79de0c38-0a41-40e6-b617-9a864607c595" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
   <cards>
-    <card id="79de0c38-0a41-40e6-b617-9a8646000000" name="Jessica Jones">
-      <property name="Type" value="hero_setup"/>
-      <property name="Owner" value="jessica_jones_by_ffg"/>
-    </card>
-    <card id="79de0c38-0a41-40e6-b617-9a8646990000" name="Jessica Jones Nemesis">
-      <property name="Type" value="encounter_setup"/>
-      <property name="Owner" value="jessica_jones_by_ffg_nemesis"/>
-    </card>
     <card name="Jessica Jones" id="79de0c38-0a41-40e6-b617-9a8646061001">
       <property name="CardNumber" value="61001a"/>
       <property name="Position" value="1"/>

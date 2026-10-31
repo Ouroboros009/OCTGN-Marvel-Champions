@@ -1,36 +1,6 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes'?>
 <set name="Fear No Evil" id="8bff88d5-017f-44ab-b109-0def9a7249c1" gameId="055c536f-adba-4bc2-acbf-9aefb9756046" gameVersion="0.0.0.0" version="1.0.0.0">
   <cards>
-    <card id="055c536f-adba-4bc2-acbf-100000000066" name="Daredevil">
-      <property name="Type" value="hero_setup"/>
-      <property name="Owner" value="daredevil_by_ffg"/>
-    </card>
-    <card id="055c536f-adba-4bc2-acbf-100000000067" name="Echo">
-      <property name="Type" value="hero_setup"/>
-      <property name="Owner" value="echo_by_ffg"/>
-    </card>
-    <card id="055c536f-adba-4bc2-acbf-200000000060" name="Protection Racket">
-      <property name="Type" value="villain_setup"/>
-      <property name="Owner" value="protection_racket_by_ffg"/>
-      <property name="nbModular" value="2"/>
-      <property name="recommendedModular" value="{'disasters_by_ffg': ['Disasters', 'Encounter', False], 'tracksuit_mafia_by_ffg': ['Tracksuit Mafia', 'Encounter', False]}"/>
-      <property name="nbUnderling" value="1"/>
-    </card>
-    <card id="055c536f-adba-4bc2-acbf-200000000061" name="Stop The Presses!">
-      <property name="Type" value="villain_setup"/>
-      <property name="Owner" value="stop_the_presses_by_ffg"/>
-      <property name="nbModular" value="2"/>
-      <property name="recommendedModular" value="{'tombstone_by_ffg': ['Tombstone', 'Encounter', False], 'tracksuit_mafia_by_ffg': ['Tracksuit Mafia', 'Encounter', False]}"/>
-      <property name="nbUnderling" value="1"/>
-    </card>
-    <card id="055c536f-adba-4bc2-acbf-300000009066" name="Daredevil Nemesis">
-      <property name="Type" value="encounter_setup"/>
-      <property name="Owner" value="daredevil_by_ffg_nemesis"/>
-    </card>
-    <card id="055c536f-adba-4bc2-acbf-300000009067" name="Echo Nemesis">
-      <property name="Type" value="encounter_setup"/>
-      <property name="Owner" value="echo_by_ffg_nemesis"/>
-    </card>
     <card id="8bff88d5-017f-44ab-b109-0def9a000006" name="Bullseye">
       <property name="Type" value="underling_setup"/>
       <property name="Owner" value="bullseye_by_ffg"/>
@@ -50,57 +20,6 @@
     <card id="8bff88d5-017f-44ab-b109-0def9a000010" name="Typhoid Mary">
       <property name="Type" value="underling_setup"/>
       <property name="Owner" value="typhoid_mary_by_ffg"/>
-    </card>
-    <card id="055c536f-adba-4bc2-acbf-200000000062" name="Art Museum Heist">
-      <property name="Type" value="villain_setup"/>
-      <property name="Owner" value="art_museum_heist_by_ffg"/>
-      <property name="nbModular" value="2"/>
-      <property name="recommendedModular" value="{'cops_by_ffg': ['Cops', 'Encounter', False], 'the_owl_by_ffg': ['The Owl', 'Encounter', False]}"/>
-      <property name="nbUnderling" value="1"/>
-    </card>
-    <card id="055c536f-adba-4bc2-acbf-200000000063" name="The Getaway">
-      <property name="Type" value="villain_setup"/>
-      <property name="Owner" value="the_getaway_by_ffg"/>
-      <property name="nbModular" value="2"/>
-      <property name="recommendedModular" value="{'cops_by_ffg': ['Cops', 'Encounter', False], 'drive_by_ffg': ['Drive', 'Encounter', False]}"/>
-      <property name="nbUnderling" value="1"/>
-    </card>
-    <card id="055c536f-adba-4bc2-acbf-200000000064" name="The Raft Breakout">
-      <property name="Type" value="villain_setup"/>
-      <property name="Owner" value="the_raft_breakout_by_ffg"/>
-      <property name="nbModular" value="2"/>
-      <property name="recommendedModular" value="{'the_owl_by_ffg': ['The Owl', 'Encounter', False], 'tombstone_by_ffg': ['Tombstone', 'Encounter', False]}"/>
-      <property name="nbUnderling" value="1"/>
-    </card>
-    <card id="055c536f-adba-4bc2-acbf-200000000065" name="Kingpin">
-      <property name="Type" value="villain_setup"/>
-      <property name="Owner" value="kingpin_by_ffg"/>
-      <property name="nbModular" value="2"/>
-      <property name="recommendedModular" value="{'tombstone_by_ffg': ['Tombstone', 'Encounter', False], 'tracksuit_mafia_by_ffg': ['Tracksuit Mafia', 'Encounter', False]}"/>
-    </card>
-    <card id="055c536f-adba-4bc2-acbf-300000000134" name="Disasters">
-      <property name="Type" value="encounter_setup"/>
-      <property name="Owner" value="disasters_by_ffg"/>
-    </card>
-    <card id="055c536f-adba-4bc2-acbf-300000000135" name="Cops">
-      <property name="Type" value="encounter_setup"/>
-      <property name="Owner" value="cops_by_ffg"/>
-    </card>
-    <card id="055c536f-adba-4bc2-acbf-300000000136" name="Drive">
-      <property name="Type" value="encounter_setup"/>
-      <property name="Owner" value="drive_by_ffg"/>
-    </card>
-    <card id="055c536f-adba-4bc2-acbf-300000000137" name="The Owl">
-      <property name="Type" value="encounter_setup"/>
-      <property name="Owner" value="the_owl_by_ffg"/>
-    </card>
-    <card id="055c536f-adba-4bc2-acbf-300000000138" name="Tombstone">
-      <property name="Type" value="encounter_setup"/>
-      <property name="Owner" value="tombstone_by_ffg"/>
-    </card>
-    <card id="055c536f-adba-4bc2-acbf-300000000139" name="Tracksuit Mafia">
-      <property name="Type" value="encounter_setup"/>
-      <property name="Owner" value="tracksuit_mafia_by_ffg"/>
     </card>
     <card name="Daredevil" id="8bff88d5-017f-44ab-b109-0def9a060001">
       <property name="HeroSideDeck" value="daredevil_sense_deck"/>

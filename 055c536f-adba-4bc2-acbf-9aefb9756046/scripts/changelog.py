@@ -478,5 +478,19 @@ changelog = {
         ]),
     '0000397': ("0.0.3.97", "29 August 2026", [
         "Fear No Evil added"
+        ]),
+    '0000398': ("0.0.3.98", "31 October 2026", [
+        "Jessica Jones Hero pack added",
+        "Luke Cage Hero pack added",
+        "Hawkeye pack (fan-made hero by Cptscorp) added",
+        "White Tiger pack (fan-made hero by Andy N) added",
+        "White Queen pack (fan-made hero by JG) added",
+        "Shang-Chi pack (fan-made hero by Hax) added",
+        "US Agent pack (fan-made hero by Hax) added",
+        "Civil War Expansion #1 pack (fan-made expansion by boomguy) added",
+        "Feature : Add free-standing THW/ATK/DEF/REC stat tokens",
+        "Feature : Add an action clock, checklist counters and resource tokens",
+        "Feature : Set a scenario up from an mc4db mission code",
+        "Feature : Add a Temporary Hand Size counter"
         ])
 }

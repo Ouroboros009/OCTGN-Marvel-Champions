@@ -557,6 +557,30 @@
             <property name="Type" value="encounter_setup"/>
             <property name="Owner" value="all_versus_all"/>
         </card>
+		<card id="055c536f-adba-4bc2-acbf-300000000134" name="Disasters">
+			<property name="Type" value="encounter_setup"/>
+			<property name="Owner" value="disasters_by_ffg"/>
+		</card>
+		<card id="055c536f-adba-4bc2-acbf-300000000135" name="Cops">
+			<property name="Type" value="encounter_setup"/>
+			<property name="Owner" value="cops_by_ffg"/>
+		</card>
+		<card id="055c536f-adba-4bc2-acbf-300000000136" name="Drive">
+			<property name="Type" value="encounter_setup"/>
+			<property name="Owner" value="drive_by_ffg"/>
+		</card>
+		<card id="055c536f-adba-4bc2-acbf-300000000137" name="The Owl">
+			<property name="Type" value="encounter_setup"/>
+			<property name="Owner" value="the_owl_by_ffg"/>
+		</card>
+		<card id="055c536f-adba-4bc2-acbf-300000000138" name="Tombstone">
+			<property name="Type" value="encounter_setup"/>
+			<property name="Owner" value="tombstone_by_ffg"/>
+		</card>
+		<card id="055c536f-adba-4bc2-acbf-300000000139" name="Tracksuit Mafia">
+			<property name="Type" value="encounter_setup"/>
+			<property name="Owner" value="tracksuit_mafia_by_ffg"/>
+		</card>
         <card id="055c536f-adba-4bc2-acbf-300000009001" name="Nemesis: Vulture">
             <property name="Type" value="encounter_setup"/>
             <property name="Owner" value="spider_man_nemesis"/>
@@ -817,5 +841,21 @@
             <property name="Type" value="encounter_setup"/>
             <property name="Owner" value="hercules_nemesis"/>
         </card>
+		<card id="055c536f-adba-4bc2-acbf-300000009066" name="Nemesis: Bullseye">
+			<property name="Type" value="encounter_setup"/>
+			<property name="Owner" value="daredevil_by_ffg_nemesis"/>
+		</card>
+		<card id="055c536f-adba-4bc2-acbf-300000009067" name="Nemesis: Kingpin">
+			<property name="Type" value="encounter_setup"/>
+			<property name="Owner" value="echo_by_ffg_nemesis"/>
+		</card>
+		<card id="055c536f-adba-4bc2-acbf-300000009068" name="Nemesis: Purple Man">
+			<property name="Type" value="encounter_setup"/>
+			<property name="Owner" value="jessica_jones_by_ffg_nemesis"/>
+		</card>
+		<card id="055c536f-adba-4bc2-acbf-300000009069" name="Nemesis: Cottonmouth">
+			<property name="Type" value="encounter_setup"/>
+			<property name="Owner" value="luke_cage_by_ffg_nemesis"/>
+		</card>
     </cards>
 </set>
