@@ -689,7 +689,10 @@ def specific_hero_flip(card, x = 0, y = 0):
             card.markers[AllPurposeMarker] = 0
             notify("{} removes all Marker from {}.".format(me, card))
     if card.Owner == 'vision':
-        upgradeCard = filter(lambda c: c.CardNumber == "26002a", table)
+        # Intangible is numbered "26002", as marvelcdb codes it, so that a deck
+        # loaded by URL finds it (it was "26002a" and never got created).
+        # Origine : Merlin - fix, Vision's Intangible missing on URL deck load (2026).
+        upgradeCard = filter(lambda c: c.CardNumber == "26002", table)
         if card.Type == "alter_ego" and len(upgradeCard) != 0:
             me.counters["Default Card Draw"].value += 1
     if card.Owner == 'spdr':
