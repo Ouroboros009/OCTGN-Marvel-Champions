@@ -221,6 +221,10 @@
         <groupaction menu="Advance Phase" default="False" shortcut="F12" execute="advanceGame" />
         <groupaction menu="Pull boost/encounter card" shortcut="alt+enter" execute="villainBoost" />
         <groupaction menu="Ready All Cards" shortcut="ctrl+Q" execute="readyAll" />
+        <!-- Set one of your own counters by typing its value: the +/- buttons of
+             the counter row can be swallowed by the hand area of the client.
+             Origine : Merlin - taille de main temporaire (2026). -->
+        <groupaction menu="Set a counter..." default="False" shortcut="ctrl+K" execute="setCounter" />
         <groupaction menu="Take control of targeted cards" default="False" shortcut="F8" execute="passSharedControl" />
         <groupactions menu="Random">
             <groupaction menu="Coin Flip" default="False" execute="flipCoin" />
@@ -306,9 +310,17 @@
         <counter name="Default Card Draw" default="0" reset="True" icon="symbols/open-hands.png" />
         <counter name="Additionnal Alter-Ego Card Draw" default="0" reset="True" icon="symbols/open-hands-alter.png" />
         <counter name="Additionnal Hero Card Draw" default="0" reset="True" icon="symbols/open-hands-hero.png" />
+        <!-- One-shot hand size bonus for the current round, whatever
+             the form. Set by hand; spent and reset to 0 by refillHand() at the
+             end of the player phase.
+             Origine : Merlin - taille de main temporaire (2026). -->
+        <counter name="Temporary Hand Size" default="0" reset="True" icon="symbols/open-hands-temp.png" />
         <group name="Hand" visibility="all" ordered="False" icon="symbols/hand.png" viewState="expanded">
             <groupaction menu="Random Discard" execute="randomDiscard" />
             <groupaction menu="Mulligan Hand" execute="mulligan" />
+            <!-- Same entry as on the table, closer to the counter row.
+                 Origine : Merlin - taille de main temporaire (2026). -->
+            <groupaction menu="Set a counter..." shortcut="ctrl+K" execute="setCounter" />
 			<cardaction menu="Switch Card with top Deck Card" execute="switchCard" />
             <cardaction menu="Discard Card" shortcut="del" execute="discard" />
         </group>

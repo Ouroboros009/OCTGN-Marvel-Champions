@@ -321,6 +321,33 @@ def markersUpdate(args):
     # elif args.marker == "Damage" and (args.card.Type == "hero" or args.card.Type == "alter_ego"):
         # args.card.owner.counters["HP"].value = args.card.owner.counters["HP"].value - (args.card.markers[DamageMarker] - args.value)
 
+def setCounter(group = None, x = 0, y = 0):
+    """
+    Set one of your own counters from a menu, by typing its new value.
+    The +/- buttons of the counter row can stop responding, on any counter:
+    the OCTGN client lays the hand area 200 px over that row
+    (PlayerControl.xaml, Margin="0,-200,0,0") and CardScroller grabs every
+    click inside the bounding box of its content, so the lower half of the
+    row - the "-" buttons - gets swallowed. A menu entry does not go through
+    those buttons. Counters are listed from me.counters in definition order,
+    so a counter added later shows up by itself; only your own. askInteger
+    only accepts positive numbers, which suits every counter of this game.
+    Origine : Merlin - taille de main temporaire (2026).
+    """
+    mute()
+    counters = sorted(me.counters.values(), key=lambda c: c._id)
+    if not counters:
+        return
+    choice = askChoice("Which counter do you want to set?",
+                       ["{} ({})".format(c.name, c.value) for c in counters])
+    if not choice:
+        return
+    counter = counters[choice - 1]
+    value = askInteger("New value for {}:".format(counter.name), counter.value)
+    if value is None:
+        return
+    counter.value = value
+
 #Triggered even OnCardDoubleClicked
 def defaultCardAction(args):
     mute()
@@ -493,24 +520,40 @@ def doEndHeroPhase():
     mute()
     debug("doEndHeroPhase()")
 
+    #------------------------------------------------------------
+    # Each player now refills their own hand on their own client (refillHand),
+    # instead of this loop reading every player's counters from the client
+    # that advanced the phase, and showing everybody's discard dialog there.
+    # OCTGN counters are per-client copies synced with a delay: read by its
+    # owner, a counter is always up to date; reset by its owner (Temporary
+    # Hand Size), it never races with the owner's own clicks.
+    # Origine : Merlin - taille de main temporaire (2026).
+    #------------------------------------------------------------
     for p in players:
-        p_hand_size = countHandSize(p.piles['Hand'])
         remoteCall(p, "clearTargets", [])
         remoteCall(p, "readyAll", [])
-        remoteCall(p, "drawMany", [p.piles['Deck'], maxHandSize(p) - p_hand_size, True])
+        remoteCall(p, "refillHand", [])
 
-        # Check for hand size!
-        if p_hand_size > maxHandSize(p):
-            discardCount = p_hand_size - maxHandSize(p)
-            dlg = cardDlg(p.piles['Hand'])
-            dlg.title = "You have more than the allowed cards in hand."
-            dlg.text = "Select " + str(discardCount) + " Card(s) to discard :"
-            dlg.min = 0
-            dlg.max = discardCount
-            cardsSelected = dlg.show()
-            if cardsSelected is not None:
-                for card in cardsSelected:
-                    remoteCall(p,"discard",[card])
+def refillHand():
+    """
+    End of the player phase, run by each player on their own client: draw up to
+    the hand size, then spend the one-shot Temporary Hand Size bonus.
+    No discard-down step: in Marvel Champions the hand size is only a draw
+    target, a hand may stay above it (unlike Arkham Horror LCG). The former
+    doEndHeroPhase loop offered to discard the excess; that prompt is gone.
+    Origine : Merlin - taille de main temporaire (2026).
+    """
+    mute()
+    handSize = countHandSize(me.piles['Hand'])
+    maxSize = maxHandSize(me)
+    if maxSize > handSize:
+        drawMany(me.piles['Deck'], maxSize - handSize, True)
+
+    # The temporary bonus only lasts until this refill.
+    temporary = me.counters["Temporary Hand Size"].value
+    if temporary != 0:
+        notify("{}'s temporary hand size ({}{}) is spent and reset to 0.".format(me, "+" if temporary > 0 else "", temporary))
+        me.counters["Temporary Hand Size"].value = 0
 
 def passSharedControl(group, x=0, y=0):
     notify(me.name + " takes control of targeted cards")
@@ -1762,6 +1805,10 @@ def maxHandSize(p):
     if p.getGlobalVariable("cardForm") != "alter_ego":
         additionnal_handSize = p.counters["Additionnal Hero Card Draw"].value
     handSize = p.counters["Default Card Draw"].value + additionnal_handSize
+    # One-shot bonus for the current round, in either form; spent by
+    # refillHand() at the end of the player phase.
+    # Origine : Merlin - taille de main temporaire (2026).
+    handSize += p.counters["Temporary Hand Size"].value
     return handSize
 
 def lookForAttribute(card, attrib):
